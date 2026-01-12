@@ -11,6 +11,7 @@ import './css/embla.css'
 import Image from 'next/image'
 import Link from 'next/link'
 import GetFinalPrice from '@My_UIgetFinalPrice'
+import { addOne } from 'lib/cart/cart.actions'
 
 const EmblaCarousel = (props) => {
     const { slides, options } = props
@@ -29,23 +30,33 @@ const EmblaCarousel = (props) => {
     return (
         <section className="embla">
             <div className="embla__viewport" ref={emblaRef}>
-                <div className="embla__container">
+                <ul className="embla__container">
                     {slides.map((item, i) => (
-                        <Link href={`/products/${item.ID}`} key={item.ID} className="embla__slide text-center rounded-xl shadow-md shadow-gray-400 hover:shadow-lg hover:translate-y-1.5 ease-in transition-all duration-300 m-5">
-                            <Image
-                                width={512} height={512}
-                                src={item.image.url || '/raster/product.jpg'}
-                                alt={item.name || 'Product image '}
-                                className="mb-4 mx-auto"
-                            />
-                            <p className="text-sm mb-1">{item.name}</p>
-
-                            <div className="text-sm">
-                                <GetFinalPrice basePrice={item.basePrice} discountPercent={item.discountPercent} />
+                        <li key={item.ID} className="embla__slide grid grid-rows-[17rem_auto_4rem_auto] gap-y-2 rounded-xl shadow-md shadow-gray-400 hover:shadow-lg hover:translate-y-1.5 ease-in transition-all duration-300 m-5">
+                            <Link href={`/products/${item.ID}`} className='relative'>
+                                <Image
+                                    fill
+                                    src={item.image.url || '/raster/product.jpg'}
+                                    alt={item.name || 'Product image '}
+                                    className=" object-contain p-2"
+                                />
+                            </Link>
+                            <div className="text-lg font-bold w-11/12 mx-auto ">
+                                <GetFinalPrice 
+                                basePrice={item.basePrice} 
+                                discountPercent={item.discountPercent} 
+                                className=' text-primary bg-secondary px-2 rounded tracking-wide font-mono'
+                                />
                             </div>
-                        </Link>
+                            <Link href={`/products/${item.ID}`}>
+                                <p className="text-md text-gray-800 font-semibold my-1 w-11/12 mx-auto text-wide">{item.name}</p>
+                            </Link>
+                            <button onClick={() => addOne(item.ID)} className=' bg-primary text-white w-11/12 h-fit mx-auto rounded-md my-2 py-2 text-center ' >
+                                Add To Cart
+                            </button>
+                        </li>
                     ))}
-                </div>
+                </ul>
             </div>
 
             <div className="embla__controls">
