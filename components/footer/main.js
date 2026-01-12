@@ -14,7 +14,7 @@ const Footer = () => {
 
                         {/* Contact Section */}
                         <div className="text-center mb-8">
-                            <p className="text-lg text-primary">Contact Us</p>
+                            <p className="text-lg text-primary uppercase tracking-widest font-semibold">Contact Us</p>
                             <p>{navData.contact.phone}</p>
                             <p>{navData.contact.email}</p>
                         </div>
@@ -23,11 +23,11 @@ const Footer = () => {
 
                     {/* Information Section */}
                     <div className="mb-8">
-                        <h3 className="text-xl mb-4 text-primary">Information</h3>
-                        <ul className="space-y-2">
+                        <h3 className="text-xl mb-4 text-primary ">Information</h3>
+                        <ul className="space-y-2 px-2" >
                             {navData.information.map((item, index) => (
                                 <li key={index}>
-                                    <a href={item.link} className=" hover:underline">{item.title}</a>
+                                    <a href={item.link} className="uppercase tracking-widest font-semibold text-sm">{item.title}</a>
                                 </li>
                             ))}
                         </ul>
@@ -36,10 +36,10 @@ const Footer = () => {
                     {/* Helpful Links Section */}
                     <div className="mb-8 ">
                         <h3 className="text-xl mb-4 text-primary">Helpful Links</h3>
-                        <ul className="space-y-2">
+                        <ul className="space-y-2 px-2">
                             {navData.helpfulLinks.map((item, index) => (
                                 <li key={index}>
-                                    <a href={item.link} className=" hover:underline">{item.title}</a>
+                                    <a href={item.link} className="uppercase tracking-widest font-semibold text-sm">{item.title}</a>
                                 </li>
                             ))}
                         </ul>

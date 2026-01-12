@@ -5,13 +5,11 @@ import { useCartTotal } from 'lib/cart/getCartTotals';
 import { openCart } from 'lib/cart/cart.ui';
 
 const navItems = [
-    { label: 'Collections', id: 'collections' },
-    { label: 'Interiors', id: 'interiors' },
-    { label: 'Exteriors', id: 'exteriors' },
-    { label: 'Pro Program', id: 'pro' },
-    { label: 'Inspiration', id: 'inspiration' },
-    { label: 'Sale', id: 'sale' },
-    { label: 'Help', id: 'help' }
+    { label: 'Collections', id: 'collections', href: '/collections' },
+    { label: 'Interiors', id: 'interiors', href: '/collections/interior' },
+    { label: 'Exteriors', id: 'exteriors', href: '/collections/exterior' },
+    { label: 'Sale', id: 'sale', href: '/collections/sales' },
+    { label: 'Contact', id: 'contact', href: '/contact' }
 ];
 
 const NavBar = ({ }) => {
@@ -29,7 +27,7 @@ const NavBar = ({ }) => {
     };
 
     return (
-        <header className="sticky top-0 z-30 bg-[#121212] border-b border-white/5 px-8 py-5">
+        <header className="sticky top-0 z-30 bg-white/25 shadow-gray-200 border-b border-gray-400 shadow-xl backdrop-blur-md text-black  px-8 py-2.5">
             <div className="max-w-400 mx-auto flex items-center justify-between">
 
                 {/* Navigation Links - Matching the screenshot style */}
@@ -38,7 +36,7 @@ const NavBar = ({ }) => {
                         <button
                             key={item.id}
                             onClick={() => scrollToSection(item.id)}
-                            className="text-[11px] uppercase tracking-[0.15em] font-bold text-white/60 hover:text-white transition-all whitespace-nowrap cursor-pointer"
+                            className="text-sm uppercase tracking-widest font-semibold  transition-all whitespace-nowrap cursor-pointer"
                         >
                             {item.label}
                         </button>
@@ -46,33 +44,33 @@ const NavBar = ({ }) => {
                 </nav>
 
                 {/* Actions Area */}
-                <div className="flex items-center gap-8 flex-1 justify-end ml-12">
+                <div className="flex items-center gap-2 flex-1 justify-end ml-12">
 
                     {/* Search Bar - Matching the rounded pill design from screenshot */}
                     <div className="relative w-full max-w-85">
-                        <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-white/30" />
+                        <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-primary " />
                         <input
                             type="text"
                             placeholder="Search..."
-                            className="w-full bg-[#1c1c1c] border border-white/10 rounded-full py-2.5 pl-11 pr-5 text-sm text-white placeholder:text-white/20 focus:outline-none search-input-focus transition-all shadow-inner"
+                            className="w-full bg-secondary/75 border border-transparent focus:border-primary rounded-full py-2.5 pl-11 pr-5 text-sm text-inherit placeholder:text-gray-700 focus:outline-none search-input-focus transition-all shadow-md shadow-gray-300 focus:shadow-primary/25"
                         />
                     </div>
 
                     {/* Icons */}
-                    <div className="flex items-center gap-3">
+                    <div className="flex items-center gap-1">
                         <button
                             onClick={openCart}
-                            className="p-2.5 hover:bg-white/5 rounded-full transition-all relative group"
+                            className="px-2 hover:bg-white/5 rounded-full transition-all relative group"
                         >
-                            <ShoppingCart className="w-5.5 h-5.5 text-white/80 group-hover:text-white" />
+                            <ShoppingCart className={`w-fit h-full ${cartCount>0?'text-primary/75':'text-inherit'}`} />
                             {cartCount > 0 && (
-                                <span className="absolute -top-0.5 -right-0.5 w-5 h-5 bg-blue-600 rounded-full border-2 border-[#121212] text-[10px] flex items-center justify-center font-black shadow-lg">
+                                <span className="absolute -top-2/5 -right-px  text-md font-bold text-primary ">
                                     {cartCount}
                                 </span>
                             )}
                         </button>
-                        <button className="p-2.5 hover:bg-white/5 rounded-full transition-all group">
-                            <User className="w-5.5 h-5.5 text-white/80 group-hover:text-white" />
+                        <button className="px-2 hover:bg-white/5 rounded-full transition-all group">
+                            <User className="w-fit h-full text-inherit" />
                         </button>
                     </div>
                 </div>

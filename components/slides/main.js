@@ -49,9 +49,9 @@ const EmblaCarousel = (props) => {
                                 />
                             </div>
                             <Link href={`/products/${item.ID}`}>
-                                <p className="text-md text-gray-800 font-semibold my-1 w-11/12 mx-auto text-wide">{item.name}</p>
+                                <p className="text-md text-gray-800 font-semibold my-1 w-11/12 mx-auto tracking-wide ">{item.name}</p>
                             </Link>
-                            <button onClick={() => addOne(item.ID)} className=' bg-primary text-white w-11/12 h-fit mx-auto rounded-md my-2 py-2 text-center ' >
+                            <button onClick={() => addOne(item.ID)} className=' bg-primary text-white w-11/12 h-fit mx-auto rounded-xl hover:bg-black transition-all duration-300 ease-in cursor-pointer my-2 py-2 text-center ' >
                                 Add To Cart
                             </button>
                         </li>
