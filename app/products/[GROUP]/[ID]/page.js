@@ -5,11 +5,13 @@ import productReview from "@StaticData/products.json";
 import RecommendationsSection from "@My_UIrecommended_section";
 import ReviewsSection from "@My_UIreview_section";
 
-export default function HomePage() {
+export default async function ProductPage({ params }) {
+  const ID = (await params)?.ID;
+
   return (
     <main className="">
       <div className="max-w-6xl mx-auto bg-white px-12 py-16">
-        <ProductSection product={productData[0]} />
+        <ProductSection product={productData.find(x => x.ID == ID)} />
         <RecommendationsSection items={productRec} />
         <ReviewsSection reviews={productReview.reviews} />
       </div>
