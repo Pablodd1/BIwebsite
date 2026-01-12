@@ -2,7 +2,7 @@ import productData from "StaticData//products_full.json";
 import { NextResponse } from "next/server";
 
 export async function GET(request, { params }) {
-    const { id } = params;
+    const { ID } = await params;
 
     // Parse requested fields from query string
     const { searchParams } = new URL(request.url);
@@ -11,7 +11,7 @@ export async function GET(request, { params }) {
 
     // Find product by ID
     const product = productData.find(
-        (item) => String(item.id) === String(id)
+        (item) => String(item.ID) === String(ID)
     );
 
     if (!product) {
@@ -23,7 +23,7 @@ export async function GET(request, { params }) {
 
     // If no fields requested, return full product
     if (!fields) {
-        return NextResponse.json(product);
+        return NextResponse.json({});
     }
 
     // Pick only requested fields
