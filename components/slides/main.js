@@ -31,7 +31,7 @@ const EmblaCarousel = (props) => {
             <div className="embla__viewport" ref={emblaRef}>
                 <div className="embla__container">
                     {slides.map((item, i) => (
-                        <Link href={`/products/${item.category}/${item.ID}`} key={item.ID} className="embla__slide text-center rounded-xl shadow-md shadow-gray-400 hover:shadow-lg hover:translate-y-1.5 ease-in transition-all duration-300 m-5">
+                        <Link href={`/products/${item.ID}`} key={item.ID} className="embla__slide text-center rounded-xl shadow-md shadow-gray-400 hover:shadow-lg hover:translate-y-1.5 ease-in transition-all duration-300 m-5">
                             <Image
                                 width={512} height={512}
                                 src={item.image.url || '/raster/product.jpg'}
