@@ -1,0 +1,29 @@
+{
+  "logo": {
+    "text": "Your Logo",
+    "tagline": "Your Tagline here"
+  },
+  "contact": {
+    "phone": "+91 9999 999 999",
+    "email": "youremail@com"
+  },
+  "information": [
+    { "title": "About Us", "link": "#" },
+    { "title": "More Search", "link": "#" },
+    { "title": "Blog", "link": "#" },
+    { "title": "Testimonials", "link": "#" },
+    { "title": "Events", "link": "#" }
+  ],
+  "helpfulLinks": [
+    { "title": "Services", "link": "#" },
+    { "title": "Supports", "link": "#" },
+    { "title": "Terms & Condition", "link": "#" },
+    { "title": "Privacy Policy", "link": "#" }
+  ],
+  "socialIcons": [
+    { "icon": "facebook", "link": "#" },
+    { "icon": "twitter", "link": "#" },
+    { "icon": "linkedin", "link": "#" },
+    { "icon": "instagram", "link": "#" }
+  ]
+}
