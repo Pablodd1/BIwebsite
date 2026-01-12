@@ -2,6 +2,7 @@
 import React from 'react';
 import { Search, ShoppingCart, User } from 'lucide-react';
 import { useCartTotal } from 'lib/cart/getCartTotals';
+import { openCart } from 'lib/cart/cart.ui';
 
 const navItems = [
     { label: 'Collections', id: 'collections' },
@@ -28,7 +29,7 @@ const NavBar = ({ }) => {
     };
 
     return (
-        <header className="sticky top-0 z-60 bg-[#121212] border-b border-white/5 px-8 py-5">
+        <header className="sticky top-0 z-30 bg-[#121212] border-b border-white/5 px-8 py-5">
             <div className="max-w-400 mx-auto flex items-center justify-between">
 
                 {/* Navigation Links - Matching the screenshot style */}
@@ -60,7 +61,7 @@ const NavBar = ({ }) => {
                     {/* Icons */}
                     <div className="flex items-center gap-3">
                         <button
-                            onClick={onOpenCart}
+                            onClick={openCart}
                             className="p-2.5 hover:bg-white/5 rounded-full transition-all relative group"
                         >
                             <ShoppingCart className="w-5.5 h-5.5 text-white/80 group-hover:text-white" />

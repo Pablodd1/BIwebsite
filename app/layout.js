@@ -3,6 +3,7 @@ import "./globals.css";
 import Footer from "@My_UIfooter/main";
 import NavBar from "@My_UInavbar/main";
 import CartInit from "lib/cart/initCart";
+import CartDrawer from "@My_UIcart/CartDrawer.client";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -28,6 +29,7 @@ export default function RootLayout({ children }) {
         {children}
         <Footer />
         <CartInit />
+        <CartDrawer />
       </body>
     </html>
   );
