@@ -1,4 +1,4 @@
-import GetFinalPrice from "@My_UIgetFinalPrice";
+import GetFinalPrice from "My_UI/getFinalPrice";
 import Image from "next/image";
 
 export default function ProductSection({ product }) {

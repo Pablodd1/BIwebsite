@@ -1,8 +1,8 @@
 {
   "compilerOptions": {
     "paths": {
-      "@My_UI*": ["./components/*"],
-      "@StaticData*": ["./static_data/*"],
+      "My_UI/*": ["./components/*"],
+      "StaticData/*": ["./static_data/*"],
       "lib/*": ["./utils/*"]
     }
   }

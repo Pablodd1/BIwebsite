@@ -38,7 +38,7 @@ export default function CartDrawer() {
 
           {/* Drawer */}
           <motion.aside
-            className="fixed top-0 right-0 h-full w-[380px] bg-white z-50 shadow-xl flex flex-col"
+            className="fixed top-0 right-0 h-full w-95 bg-white z-50 shadow-xl flex flex-col"
             initial={{ x: "100%" }}
             animate={{ x: 0 }}
             exit={{ x: "100%" }}

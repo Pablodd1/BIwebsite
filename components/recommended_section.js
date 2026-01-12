@@ -1,8 +1,8 @@
-import GetFinalPrice from "@My_UIgetFinalPrice";
-import EmblaCarousel from "@My_UI/slides/main";
+import GetFinalPrice from "My_UI/getFinalPrice";
+import EmblaCarousel from "My_UI//slides/main";
 import Image from "next/image";
 import Link from "next/link";
-import Stylish_H2 from "@My_UIstylish_h2";
+import Stylish_H2 from "My_UI/stylish_h2";
 
 const OPTIONS = { slidesToScroll: 'auto' }
 const SLIDE_COUNT = 10

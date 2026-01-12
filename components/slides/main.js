@@ -10,7 +10,7 @@ import useEmblaCarousel from 'embla-carousel-react'
 import './css/embla.css'
 import Image from 'next/image'
 import Link from 'next/link'
-import GetFinalPrice from '@My_UIgetFinalPrice'
+import GetFinalPrice from 'My_UI/getFinalPrice'
 import { addOne } from 'lib/cart/cart.actions'
 
 const EmblaCarousel = (props) => {

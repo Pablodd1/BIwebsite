@@ -1,4 +1,4 @@
-import Stylish_H2 from "@My_UIstylish_h2";
+import Stylish_H2 from "My_UI/stylish_h2";
 
 export default function ReviewsSection({ reviews }) {
     return (
