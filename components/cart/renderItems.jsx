@@ -2,39 +2,44 @@
 
 import { useEffect, useState } from "react"
 import { motion, AnimatePresence } from "framer-motion"
-import { addOne, removeOne } from "lib/cart/cart.actions"
+import { addProduct, removeProduct } from "lib/cart/cart.actions"
 import Image from "next/image"
 import GetFinalPrice from "My_UI/getFinalPrice"
-import { getCart } from "lib/cart/cart.core"
 import { subscribeCart } from "lib/cart/cart.events"
 import { Minus, Plus } from "lucide-react"
+import { getCart } from "lib/cart/cart.core"
+import { notify } from "lib/notify"
 
-async function fetchProduct(id) {
-    const res = await fetch(
-        `/API/products/${id}?fields=id,name,basePrice,image,discountPercent`,
-        { cache: "no-store" }
-    )
-    if (!res.ok) throw new Error("Failed")
-    return res.json()
-}
-
-export default function RenderItemsList() {
-    const [items, setItems] = useState(() => getCart().items)
-    const ids = Object.keys(items)
-
+export default function RenderItemsList({ container }) {
+    const [items, setItems] = useState(container.items || [])
     const [products, setProducts] = useState({})
     const [loading, setLoading] = useState(true)
 
-    /* 🔴 SUBSCRIBE TO CART CHANGES */
-    useEffect(() => {
-        return subscribeCart(() => {
-            setItems({ ...getCart().items })
-        })
-    }, [])
+    async function fetchProduct(id) {
+        const res = await fetch(
+            `/API/products/${id}?fields=id,name,basePrice,image,discountPercent`,
+            { cache: "no-store" }
+        )
+        if (!res.ok) notify("error", "Incomplete data", "Products are not loaded successfully. Please refresh your page.")
+        return res.json()
+    }
 
-    /* Fetch products only when ids change */
+    /* 🔴 LIVE CART SUBSCRIPTION */
     useEffect(() => {
-        if (!ids.length) {
+        const sync = () => {
+            const fresh = getCart()
+                ?.find(c => c.id === container.id)
+
+            setItems(fresh?.items || [])
+        }
+
+        sync()
+        return subscribeCart(sync)
+    }, [container.id])
+
+    /* Fetch product details when item list changes */
+    useEffect(() => {
+        if (!items.length) {
             setProducts({})
             setLoading(false)
             return
@@ -44,64 +49,63 @@ export default function RenderItemsList() {
         setLoading(true)
 
         Promise.all(
-            ids.map(async (id) => {
-                if (products[id]) return [id, products[id]]
-                const data = await fetchProduct(id)
-                return [id, data]
+            items.map(async (item) => {
+                if (products[item.ID]) return [item.ID, products[item.ID]]
+                const data = await fetchProduct(item.ID)
+                return { ID: item.ID, ...data }
             })
-        ).then((entries) => {
+        ).then(entries => {
             if (!alive) return
-            setProducts((prev) => ({ ...prev, ...Object.fromEntries(entries) }))
+            setProducts(prev => ({
+                ...prev,
+                ...Object.fromEntries(entries.map(entry => [entry.ID, entry]))
+            }))
             setLoading(false)
         })
 
         return () => {
             alive = false
         }
-    }, [ids.join(",")])
+    }, [items])
 
     if (loading)
         return (
             <div className="space-y-3">
                 {Array.from({ length: 3 }).map((_, i) => (
-                    <div
-                        key={i}
-                        className="h-20 rounded-lg bg-gray-100 animate-pulse"
-                    />
+                    <div key={i} className="h-20 rounded-lg bg-gray-100 animate-pulse" />
                 ))}
             </div>
         )
 
-    if (!ids.length)
+    if (!items.length)
         return (
-            <div className="py-12 text-center text-sm text-gray-500">
-                Your cart is empty
+            <div className="py-6 text-center text-sm text-gray-500">
+                No products in this container
             </div>
         )
 
     return (
         <div className="space-y-4">
             <AnimatePresence>
-                {ids.map((id) => {
-                    const p = products[id]
-                    const qty = items[id]
-
+                {items.map(item => {
+                    const p = products[item.ID]
                     if (!p) return null
 
                     return (
                         <motion.div
-                            key={id}
+                            key={item.ID}
                             layout
                             initial={{ opacity: 0, y: 6 }}
                             animate={{ opacity: 1, y: 0 }}
                             exit={{ opacity: 0 }}
-                            className="flex gap-4 rounded-xl border p-3"
+                            className="flex gap-4 rounded-xl border border-accent1 bg-primary p-3"
                         >
-                            <div className="h-16 w-16 shrink-0 overflow-hidden rounded-lg relative bg-gray-100">
+                            <div className="h-16 w-16 shrink-0 overflow-hidden rounded-lg relative bg-accent2">
                                 <Image
-                                    src={p.image.url || '/raster/product.jpg'}
-                                    alt={p.name} fill
-                                    className="h-full w-full object-contain p-1"
+                                    src={p.image?.url || "/raster/product.jpg"}
+                                    alt={p.name}
+                                    fill
+                                    className="object-contain p-1"
                                 />
                             </div>
 
@@ -112,34 +116,35 @@ export default function RenderItemsList() {
 
                                 <div className="mt-auto flex items-center justify-between">
                                     <span className="text-sm font-semibold">
-                                        <GetFinalPrice basePrice={p.basePrice} discountPercent={p.discountPercent} />
+                                        <GetFinalPrice
+                                            basePrice={p.basePrice}
+                                            discountPercent={p.discountPercent}
+                                        />
                                     </span>
 
                                     <div className="flex items-center gap-2">
                                         <button
-                                            onClick={() => removeOne(id)}
-                                            aria-label="Decrease quantity"
-                                            className="flex h-7 w-7 items-center justify-center rounded-md border transition hover:bg-gray-100 active:scale-95"
+                                            onClick={() => removeProduct(container.id, item.ID)}
+                                            className="flex h-7 w-7 items-center justify-center rounded-md border hover:bg-gray-100"
                                         >
                                             <Minus
                                                 size={14}
-                                                strokeWidth={2}
-                                                className={qty === 1 ? "text-red-500" : undefined}
+                                                className={item.qty === 1 ? "text-red-500" : ""}
                                             />
                                         </button>
 
-                                        <span className="min-w-5 text-center text-sm font-medium">
-                                            {qty}
-                                        </span>
+                                        <input
+                                            value={item.qty}
+                                            onChange={(e) => addProduct(container.id, item.ID, e.target.value)}
+                                            className="min-w-5 max-w-15 text-center text-sm font-medium"
+                                        />
 
                                         <button
-                                            onClick={() => addOne(id)}
-                                            aria-label="Increase quantity"
-                                            className="flex h-7 w-7 items-center justify-center rounded-md border transition hover:bg-gray-100 active:scale-95"
+                                            onClick={() => addProduct(container.id, item.ID)}
+                                            className="flex h-7 w-7 items-center justify-center rounded-md border hover:bg-gray-100"
                                         >
-                                            <Plus size={14} strokeWidth={2} />
+                                            <Plus size={14} />
                                         </button>
-
                                     </div>
                                 </div>
                             </div>

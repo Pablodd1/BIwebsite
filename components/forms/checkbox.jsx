@@ -12,7 +12,7 @@ export default function RangeCheckboxGroup({ title, options, value, onChange }) 
                 value[0] === opt.value[0] &&
                 value[1] === opt.value[1]}
               onChange={() => onChange(opt.value)}
-              className="accent-primary "
+              className="accent-primary text-secondary"
             />
             {opt.label}
           </label>

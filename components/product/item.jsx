@@ -26,7 +26,13 @@ export default function ProductItem({ item, isSlides = false }) {
             <Link href={`/products/${item.ID}`}>
                 <p className="text-md text-gray-800 font-semibold my-1 w-11/12 mx-auto tracking-wide ">{item.name}</p>
             </Link>
-            <AddToContainer itemID={item.ID}  />
+            <AddToContainer
+                item={{
+                    ID: item.ID,
+                    dimension: item.dimension,
+                    price: item.price
+                }}
+            />
         </li>
     )
 }

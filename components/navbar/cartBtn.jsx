@@ -1,7 +1,7 @@
 'use client'
 
 import { openCart } from "lib/cart/cart.ui"
-import { useCartTotal } from "lib/cart/getCartTotals"
+import { useCartTotal } from "lib/cart/useCartTotals"
 import { ShoppingCart } from "lucide-react"
 
 export function CartButton() {
@@ -13,8 +13,8 @@ export function CartButton() {
         >
             <ShoppingCart fill={cartCount > 0 ? "#ca3500bf":'none'} className={`w-fit h-full ${cartCount > 0 ? 'text-orange-700/75' : 'text-inherit'}`} />
             {cartCount > 0 && (
-                <span className="absolute -top-2/5 -right-px  text-md font-semibold text-orange-700 ">
-                    {cartCount}
+                <span className="absolute -top-5 -right-px  text-3xl font-semibold text-orange-700 ">
+                    •
                 </span>
             )}
         </button>

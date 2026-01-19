@@ -10,7 +10,7 @@ export function closeCart() {
 }
 
 export function subscribeCartUI(onOpen, onClose) {
-  if (!emitter) return () => {}
+  if (!emitter) return () => { }
 
   emitter.addEventListener("cart:open", onOpen)
   emitter.addEventListener("cart:close", onClose)

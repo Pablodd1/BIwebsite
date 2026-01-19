@@ -4,6 +4,11 @@ import Footer from "My_UI/footer/main";
 import NavBar from "My_UI/navbar/main";
 import CartInit from "lib/cart/initCart";
 import CartDrawer from "My_UI/cart/CartDrawer.client";
+import { Suspense } from "react";
+import { Loader } from "lucide-react";
+import dynamic from "next/dynamic";
+
+const NotifyPortal = dynamic(() => import("lib/notify"));
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -30,6 +35,11 @@ export default function RootLayout({ children }) {
         <Footer />
         <CartInit />
         <CartDrawer />
+        <div id="modal-root" />
+        <div id="notify-container" />
+        <Suspense fallback={<Loader />}>
+          <NotifyPortal />
+        </Suspense>
       </body>
     </html>
   );

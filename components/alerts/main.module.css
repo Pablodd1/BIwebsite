@@ -1,0 +1,14 @@
+
+.progress {
+    animation: progressBar 5s linear forwards;
+}
+
+@keyframes progressBar {
+    from {
+        transform: translateX(0%);
+    }
+
+    to {
+        transform: translateX(100%);
+    }
+}

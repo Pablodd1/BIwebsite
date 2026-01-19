@@ -1,0 +1,103 @@
+'use client';
+
+import { useState } from 'react';
+import jsonData from '@UTILS/data/products/bundles.json'; // Static import
+import { notify } from '@MyHooks/notify';
+
+const UploadToMySQLButton = ({ tag = 'bundle_data' }) => {
+    const [loading, setLoading] = useState(false);
+
+    const handleUpload = async () => {
+        const token = localStorage.getItem('token');
+        if (!token) {
+            notify('error', 'Unauthorized', 'Please login first.', 4000);
+            window.location.href = '/panel/auth/sign-in';
+            return;
+        }
+
+        if (!Array.isArray(jsonData) || jsonData.length === 0) {
+            notify('error', 'No Data', 'Bundle JSON is empty or invalid.');
+            return;
+        }
+
+        setLoading(true);
+
+        let totalBundles = 0;
+        let successCount = 0;
+        let errorCount = 0;
+
+        for (let i = 0; i < jsonData.length; i++) {
+            const parentProduct = jsonData[i];
+            const {
+                productID,
+                startingPrice,
+                group,
+                label,
+                bundles = []
+            } = parentProduct;
+
+            for (let j = 0; j < bundles.length; j++) {
+                const bundle = bundles[j];
+
+                // Compose final bundle object to send
+                const bundlePayload = {
+                    ID: bundle.ID,
+                    productID,
+                    startingPrice,
+                    price: bundle.price,
+                    pVariant:label,
+                    subtitle: bundle.subtitle,
+                    keyParam: bundle.keyParam,
+                    group,
+                    isSingleItem: !!bundle.singleItem,
+                    products: bundle.products, // nested array
+                };
+
+                totalBundles++;
+
+                try {
+                    const response = await fetch('/server-API/forms/update-data', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                            Authorization: `Bearer ${token}`,
+                        },
+                        body: JSON.stringify({
+                            dataTag: tag,
+                            ...bundlePayload
+                        }),
+                    });
+
+                    const result = await response.json();
+
+                    if (response.ok && result.success) {
+                        successCount++;
+                        notify('success', `Uploaded (${successCount}/${totalBundles})`, bundle.ID);
+                    } else {
+                        errorCount++;
+                        notify('error', `Failed (${successCount + errorCount}/${totalBundles})`, result.message || 'Unknown error');
+                    }
+                } catch (err) {
+                    errorCount++;
+                    notify('error', `Error (${successCount + errorCount}/${totalBundles})`, err.message);
+                }
+            }
+        }
+
+        notify('info', 'Upload Complete', `${successCount} succeeded, ${errorCount} failed.`, 6000);
+        setLoading(false);
+    };
+
+    return (
+        <button
+            onClick={handleUpload}
+            disabled={loading}
+            aria-label='Upload Set'
+            className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 disabled:opacity-50"
+        >
+            {loading ? 'Uploading Bundles...' : 'Upload Bundles to MySQL'}
+        </button>
+    );
+};
+
+export default UploadToMySQLButton;

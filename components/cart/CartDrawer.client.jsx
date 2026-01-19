@@ -3,15 +3,17 @@
 import { useEffect, useState } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import { subscribeCartUI, closeCart } from "lib/cart/cart.ui"
-import { totalQty } from "lib/cart/cart.selectors"
+import { subscribeCart } from "lib/cart/cart.events"
 import { getCart } from "lib/cart/cart.core"
+import { totalQty } from "lib/cart/cart.selectors"
 import RenderItemsList from "./renderItems"
 
 export default function CartDrawer() {
   const [open, setOpen] = useState(false)
-  const [qty, setQty] = useState(0);
-  const { items } = getCart()
-  
+  const [qty, setQty] = useState(0)
+  const [containers, setContainers] = useState([])
+
+  /* UI open / close */
   useEffect(() => {
     return subscribeCartUI(
       () => setOpen(true),
@@ -19,9 +21,18 @@ export default function CartDrawer() {
     )
   }, [])
 
+  /* 🔴 LIVE CART SUBSCRIPTION */
   useEffect(() => {
-    setQty(totalQty())
-  }, [open])
+    const sync = () => {
+      const container = getCart()
+      console.log(container,'d')
+      setContainers([...container])
+      setQty(totalQty())
+    }
+
+    sync()
+    return subscribeCart(sync)
+  }, [])
 
   return (
     <AnimatePresence>
@@ -47,7 +58,7 @@ export default function CartDrawer() {
             {/* Header */}
             <div className="flex items-center justify-between p-4 border-b">
               <h2 className="text-lg font-semibold">
-                Cart ({qty})
+                Cart ({Number(qty)})
               </h2>
               <button
                 onClick={closeCart}
@@ -58,15 +69,19 @@ export default function CartDrawer() {
             </div>
 
             {/* Body */}
-            <div className="flex-1 overflow-y-auto p-4">
-              {
-                items ? <RenderItemsList list={items} />
-                  :
-                  <p className="text-sm text-gray-500">
-                    Cart items go here
-                  </p>
-              }
-
+            <div className="flex-1 overflow-y-auto p-4 space-y-6">
+              {containers.length ? (
+                containers.map(container => (
+                  <RenderItemsList
+                    key={container.id}
+                    container={container}
+                  />
+                ))
+              ) : (
+                <p className="text-sm text-gray-500 text-center py-10">
+                  Cart is empty
+                </p>
+              )}
             </div>
 
             {/* Footer */}

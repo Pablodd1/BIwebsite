@@ -48,7 +48,14 @@ export default function ProductSection({ product }) {
                     <GetFinalPrice basePrice={product.basePrice} discountPercent={product.discountPercent} />
                 </div>
 
-                <AddToContainer itemID={product.ID} isProductPage/>
+                <AddToContainer
+                    item={{
+                        ID: product.ID,
+                        dimension: product.dimension,
+                        price: product.price
+                    }}
+                    isProductPage
+                />
             </div>
         </section>
     );
