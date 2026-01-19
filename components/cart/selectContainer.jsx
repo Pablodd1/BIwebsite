@@ -73,7 +73,7 @@ export default function ContainerModal({ showModal, toggleModal, item }) {
                                 <button
                                     key={i}
                                     onClick={() => addProduct(id, item)}
-                                    className="w-11/12 mx-auto my-7  border-accent1 border shadow-md overflow-hidden shadow-gray-400  rounded-lg flex flex-col gap-2 bg-primary hover:border-secondary ease-in duration-300 transition-all relative"
+                                    className="w-11/12 mx-auto my-2.5  border-accent1 border shadow-md overflow-hidden shadow-gray-400  rounded-lg flex flex-col gap-2 bg-primary hover:border-secondary ease-in duration-300 transition-all relative"
                                 >
                                     <div className=" grid grid-cols-[5rem_auto] rounded-2xl gap-2">
                                         <figure className="relative flex flex-col justify-center items-center px-2 py-1 bg-accent1 h-full w-full" >
