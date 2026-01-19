@@ -5,7 +5,7 @@ export default function SearchFrom() {
 
     return (
         <div className="relative w-full max-w-85">
-            <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-primary " />
+            <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-accent1 " />
             <input
                 type="text"
                 placeholder="Search..."

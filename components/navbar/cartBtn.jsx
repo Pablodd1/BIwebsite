@@ -9,11 +9,11 @@ export function CartButton() {
     return (
         <button
             onClick={openCart}
-            className="px-2 hover:bg-white/5 rounded-full transition-all relative group"
+            className="px-2 hover:bg-white/5 rounded-full transition-all relative group cursor-pointer"
         >
-            <ShoppingCart className={`w-fit h-full ${cartCount > 0 ? 'text-primary/75' : 'text-inherit'}`} />
+            <ShoppingCart fill={cartCount > 0 ? "#ca3500bf":'none'} className={`w-fit h-full ${cartCount > 0 ? 'text-orange-700/75' : 'text-inherit'}`} />
             {cartCount > 0 && (
-                <span className="absolute -top-2/5 -right-px  text-md font-bold text-primary ">
+                <span className="absolute -top-2/5 -right-px  text-md font-semibold text-orange-700 ">
                     {cartCount}
                 </span>
             )}

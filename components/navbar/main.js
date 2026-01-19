@@ -1,11 +1,12 @@
 import React from 'react';
-import { Search, User } from 'lucide-react';
+import { House, Library, Search, Shapes, User } from 'lucide-react';
 import Link from 'next/link';
-import { CartButton } from './buttons';
+import { CartButton } from './cartBtn';
 import SearchFrom from './search';
 
 const navItems = [
-    { label: 'Collections', id: 'collections', href: '/collections' },
+    { label: 'Home', id: 'home', href: '/', icon: <House />, onlyIcon: true },
+    { label: 'Collections', id: 'collections', icon:<Library className=' text-inherit h-5' />, href: '/collections' },
     { label: 'Interiors', id: 'interiors', href: '/collections/interior' },
     { label: 'Exteriors', id: 'exteriors', href: '/collections/exterior' },
     { label: 'Sale', id: 'sale', href: '/collections/sales' },
@@ -15,18 +16,30 @@ const navItems = [
 const NavBar = ({ }) => {
 
     return (
-        <header className="sticky top-0 z-30 bg-white/25 shadow-gray-200 border-b border-gray-400 shadow-xl backdrop-blur-md text-black  px-8 py-2.5">
+        <header className="sticky top-0 z-30 bg-primary/75 shadow-accent2 border-b border-gray-300 shadow-sm backdrop-blur-md text-black  pr-8 pl-5 py-2.5">
             <div className="max-w-400 mx-auto flex items-center justify-between">
 
                 {/* Navigation Links - Matching the screenshot style */}
-                <nav className="flex items-center gap-10">
+                <nav className="flex items-center ">
                     {navItems.map((item) => (
                         <Link
                             key={item.id}
                             href={item.href}
-                            className="text-sm uppercase tracking-widest font-semibold  transition-all whitespace-nowrap cursor-pointer"
+                            className="text-sm uppercase tracking-widest mx-5 first-of-type:mx-0 font-semibold flex items-center transition-all whitespace-nowrap cursor-pointer"
                         >
-                            {item.label}
+                            {
+                                item.onlyIcon
+                                    ? item.icon
+                                    :
+                                    <>
+                                        {
+                                            item.icon ?
+                                                <span className='inline-flex' >{item.icon}</span>
+                                                : null
+                                        }
+                                        {item.label}
+                                    </>
+                            }
                         </Link>
                     ))}
                 </nav>
