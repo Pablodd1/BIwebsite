@@ -1,3 +1,4 @@
+import AddToContainer from "My_UI/cart/addToContainer";
 import GetFinalPrice from "My_UI/getFinalPrice";
 import Image from "next/image";
 
@@ -47,9 +48,7 @@ export default function ProductSection({ product }) {
                     <GetFinalPrice basePrice={product.basePrice} discountPercent={product.discountPercent} />
                 </div>
 
-                <button className="bg-black text-white px-8 py-3 text-sm tracking-wide uppercase">
-                    Add to cart
-                </button>
+                <AddToContainer itemID={product.ID} isProductPage/>
             </div>
         </section>
     );

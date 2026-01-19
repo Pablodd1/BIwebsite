@@ -1,4 +1,5 @@
 import { addOne } from "lib/cart/cart.actions";
+import AddToContainer from "My_UI/cart/addToContainer";
 import GetFinalPrice from "My_UI/getFinalPrice";
 import Image from "next/image";
 import Link from "next/link";
@@ -19,15 +20,13 @@ export default function ProductItem({ item, isSlides = false }) {
                 <GetFinalPrice
                     basePrice={item.basePrice}
                     discountPercent={item.discountPercent}
-                    className=' text-primary bg-secondary px-2 rounded tracking-wide font-mono'
+                    className=' text-black bg-primary shadow shadow-secondary/75 px-2 rounded-md tracking-wide font-mono'
                 />
             </div>
             <Link href={`/products/${item.ID}`}>
                 <p className="text-md text-gray-800 font-semibold my-1 w-11/12 mx-auto tracking-wide ">{item.name}</p>
             </Link>
-            <button onClick={() => addOne(item.ID)} className=' bg-primary text-white w-11/12 h-fit mx-auto rounded-xl hover:bg-black transition-all duration-300 ease-in cursor-pointer my-2 py-2 text-center ' >
-                Add To Cart
-            </button>
+            <AddToContainer itemID={item.ID}  />
         </li>
     )
 }

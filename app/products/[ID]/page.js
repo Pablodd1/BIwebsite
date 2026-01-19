@@ -1,9 +1,9 @@
-import ProductSection from "My_UI/product_section";
+import ProductSection from "My_UI/product_ui/product_section";
 import productData from "StaticData//products_full.json";
 import productRec from "StaticData//products_thumb.json";
 import productReview from "StaticData//products.json";
-import RecommendationsSection from "My_UI/recommended_section";
-import ReviewsSection from "My_UI/review_section";
+import RecommendationsSection from "My_UI/product_ui/recommended_section";
+import ReviewsSection from "My_UI/product_ui/review_section";
 
 export default async function ProductPage({ params }) {
   const ID = (await params)?.ID;
