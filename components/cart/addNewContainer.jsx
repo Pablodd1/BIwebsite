@@ -1,8 +1,6 @@
 'use client'
-import { addOne } from "lib/cart/cart.actions";
 import { Loader, PackagePlus } from "lucide-react";
 import { Suspense, useState } from "react";
-import ContainerModal from "./selectContainer";
 import NewContainerModal from "./newContainer";
 
 
@@ -11,7 +9,6 @@ export default function AddNewContainer({ item, isProductPage = false,callback }
     const toggleModal = () => {
         setShowModal(prev => {
             const next = !prev;
-            if (callback) callback(next);
             return next;
         });
     }
@@ -25,7 +22,7 @@ export default function AddNewContainer({ item, isProductPage = false,callback }
                 <PackagePlus className="h-5 stroke-1" />
             </button>
             <Suspense fallback={<Loader />} >
-                <NewContainerModal {...{ showModal, toggleModal }} />
+                <NewContainerModal {...{ showModal, toggleModal, callback }} />
             </Suspense>
         </>
     )

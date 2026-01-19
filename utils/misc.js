@@ -20,16 +20,6 @@ export const calSave = (basePrice, price) => basePrice === 0 ? (price === 0 ? 0 
 export const getContainerVolume = (c) =>
   c.length * c.width * c.height;
 
-export function generateUnknownUserID() {
-    const existingID = localStorage.getItem('visitorID');
-    if (existingID)
-        return existingID;
-    else {
-        const randomNum = String(Math.floor(Math.random() * 1000)).padStart(3, "0");
-        localStorage.setItem('visitorID', `USR-UnKnown-${randomNum}`)
-        return `USR-UnKnown-${randomNum}`;
-    }
-}
 
 export const formatDate = (date) => {
     const d = new Date(date);

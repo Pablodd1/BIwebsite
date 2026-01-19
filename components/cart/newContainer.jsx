@@ -2,6 +2,7 @@ import React from "react";
 import dynamic from "next/dynamic";
 import { Container, SquareCheckBig } from "lucide-react";
 import { addContainer } from "lib/cart/cart.core";
+import { generateID } from "lib/misc";
 
 const Modal = dynamic(() => import("My_UI/MyModal/main"));
 
@@ -22,7 +23,7 @@ const CONTAINERS = [
     },
 ];
 
-export default function NewContainerModal({ showModal, toggleModal, }) {
+export default function NewContainerModal({ showModal, toggleModal, callback }) {
     return (
         <Modal
             light
@@ -42,7 +43,7 @@ export default function NewContainerModal({ showModal, toggleModal, }) {
                     return (
                         <button
                             key={c.id}
-                            onClick={() => [addContainer(c),toggleModal()]}
+                            onClick={() => [addContainer({ ...c, id: generateID() }), callback(c), toggleModal()]}
                             className="w-full border bg-primary rounded-lg p-4 flex items-center gap-4 hover:bg-accent1 transition-all ease-in duration-300"
                         >
                             <Container size={28} />

@@ -5,12 +5,11 @@ import { Suspense, useState } from "react";
 import ContainerModal from "./selectContainer";
 
 
-export default function AddToContainer({ item, isProductPage = false,callback }) {
+export default function AddToContainer({ item, isProductPage = false, callback }) {
     const [showModal, setShowModal] = useState(false);
     const toggleModal = () => {
         setShowModal(prev => {
             const next = !prev;
-            if (callback) callback(next);
             return next;
         });
     }
@@ -28,7 +27,7 @@ export default function AddToContainer({ item, isProductPage = false,callback })
                 Add To Container
             </button>
             {/* <Suspense fallback={<Loader />} > */}
-                <ContainerModal {...{ showModal, toggleModal, item }} />
+            <ContainerModal {...{ showModal, toggleModal, item,  }} />
             {/* </Suspense> */}
         </>
     )
