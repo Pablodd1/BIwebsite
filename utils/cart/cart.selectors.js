@@ -2,8 +2,8 @@ import { getCart } from "./cart.core"
 
 export function totalQty() {
   return getCart().reduce((sum, container) => {
-    const containerQty = container.items.reduce((a, i) => a + i.qty, 0)
-    return sum + containerQty
+    const containerQty = container.items.reduce((a, i) => Number(a) + Number(i.qty), 0)
+    return Number(sum) + Number(containerQty)
   }, 0)
 }
 
