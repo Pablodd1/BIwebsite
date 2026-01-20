@@ -25,7 +25,6 @@ export default function CartDrawer() {
   useEffect(() => {
     const sync = () => {
       const container = getCart()
-      console.log(container,'d')
       setContainers([...container])
       setQty(totalQty())
     }

@@ -112,7 +112,7 @@ export default function ContainerModal({ showModal, toggleModal, item }) {
                         })}
                     </div>
                 )}
-                <AddNewContainer callback={(c) => [setReload(prev => prev + 1), console.log(c.id, reload)]} />
+                <AddNewContainer callback={(c) => setReload(prev => prev + 1)} />
             </main>
         </Modal>
     )
