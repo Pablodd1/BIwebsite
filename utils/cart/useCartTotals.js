@@ -28,7 +28,7 @@ export function useCartItemQty(containerId, productId) {
   return qty
 }
 
-export function useAllContainers() {
+export function useAllContainers(exDependency) {
   const [containers, setContainers] = useState(getCart())
 
   useEffect(() => {
@@ -36,7 +36,7 @@ export function useAllContainers() {
       setContainers([...getCart()])
     })
     return unsub
-  }, [])
+  }, [exDependency])
 
   return containers
 }

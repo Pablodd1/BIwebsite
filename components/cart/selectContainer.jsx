@@ -9,15 +9,22 @@ import AddNewContainer from "./addNewContainer"
 import { addProduct } from "lib/cart/cart.actions"
 import { containerFillPercent } from "lib/cart/cart.utils"
 import { useAllContainers } from "lib/cart/useCartTotals"
+import { subscribeCart } from "lib/cart/cart.events"
+import { getCart } from "lib/cart/cart.core"
 
 const Modal = dynamic(() => import("My_UI/MyModal/main"))
 
 export default function ContainerModal({ showModal, toggleModal, item }) {
-    const [refreshContainers, setRefreshContainers] = useState(false)
-    const containers = useAllContainers()
- const handleAddNewContainer = () => {
-        setRefreshContainers(prev => !prev)  // Toggle the state to refresh containers
-    }
+    const [containers, setContainers] = useState({ data: getCart(), relaod: 0 })
+    const [reload, setReload] = useState(0)
+
+    useEffect(() => {
+        const unsub = subscribeCart(() => {
+            const temp =
+                setContainers({ data: getCart(), reload })
+        })
+        return unsub
+    }, [reload])
 
     return (
         <Modal
@@ -48,11 +55,10 @@ export default function ContainerModal({ showModal, toggleModal, item }) {
             <main className="relative flex flex-col px-3 h-96 max-h-2/5 mx-auto w-full py-4 text-sm md:text-md">
 
                 <Stylish_H3 h3="Select" />
-                {containers?.length === 0 ? (
+                {containers?.data?.length === 0 ? (
                     <div className="h-96 w-full text-gray-300 font-bold flex flex-col items-center justify-center gap-4">
                         <Container className="h-16 w-16 stroke-1" />
                         No Container
-                        <AddNewContainer  callback={handleAddNewContainer} />
                     </div>
                 ) : (
                     <div className="flex flex-col ">
@@ -60,7 +66,7 @@ export default function ContainerModal({ showModal, toggleModal, item }) {
                             <Lightbulb className="h-full w-auto bg-orange-800 px-1 text-white rounded-sm" />
                             <p className="border-l-4 pl-2 border-orange-800 ">Click on the container to add the product. For custom quantities, use the cart icon in the top-right corner.</p>
                         </div>
-                        {containers.map((container, i) => {
+                        {containers?.data?.map((container, i) => {
                             const { id, meta, items, label } = container
                             const volume =
                                 meta?.internal?.length *
@@ -106,7 +112,7 @@ export default function ContainerModal({ showModal, toggleModal, item }) {
                         })}
                     </div>
                 )}
-                <AddNewContainer  callback={handleAddNewContainer} />
+                <AddNewContainer callback={(c) => [setReload(prev => prev + 1), console.log(c.id, reload)]} />
             </main>
         </Modal>
     )
