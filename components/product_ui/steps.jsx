@@ -29,7 +29,7 @@ const steps = [
 
 export default function HowShippingWorks() {
   return (
-    <section className="w-full py-32 my-14 bg-primary">
+    <section className="w-full py-32 my-14 bg-accent1">
       <div className="mx-auto max-w-5xl px-4">
         <Stylish_H2 h2={"How Shipping Works"} className="mb-2 text-center text-lg uppercase tracking-wider font-semibold"/>
 
@@ -44,7 +44,7 @@ export default function HowShippingWorks() {
             return (
               <div
                 key={step.id}
-                className="relative flex flex-col items-center rounded-xl first-of-type:bg-black first-of-type:text-white bg-accent1 px-5 py-10 text-center shadow-lg "
+                className="relative flex flex-col items-center rounded-xl first-of-type:bg-black first-of-type:text-white bg-primary px-5 py-10 text-center shadow-lg "
               >
                 {/* Icon */}
                 <div className="mb-4 flex h-14 w-14 items-center justify-center rounded-full bg-black text-white">
@@ -62,8 +62,7 @@ export default function HowShippingWorks() {
                 {/* Arrow (desktop only) */}
                 {index !== steps.length - 1 && (
                   <ArrowRight
-                    size={18}
-                    className="absolute -right-3 top-1/2 hidden -translate-y-1/2 text-gray-300 md:block"
+                    className="absolute left-full top-1/2 hidden -translate-y-1/2 text-secondary h-10 stroke-3 md:block"
                   />
                 )}
               </div>

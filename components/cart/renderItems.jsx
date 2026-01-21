@@ -135,7 +135,7 @@ export default function RenderItemsList({ container }) {
 
                                         <input
                                             value={item.qty}
-                                            onChange={(e) => addProduct(container.id, item.ID, e.target.value)}
+                                            onChange={(e) => addProduct(container.id, item.ID, Number(e.target.value))}
                                             className="min-w-5 max-w-15 text-center text-sm font-medium"
                                         />
 

@@ -59,7 +59,7 @@ export function addOne(containerId, product, qty) {
 
   const existing = container.items.find(i => i.id === product.id)
   if (existing) {
-    existing.qty = qty ? qty : existing.qty + 1
+    existing.qty = qty ? qty : Number(existing.qty) + 1
   } else {
     container.items.push({ ...product, qty: 1, type: "product" })
   }
