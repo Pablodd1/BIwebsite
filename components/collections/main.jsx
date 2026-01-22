@@ -8,20 +8,13 @@ import CollectionHero from "My_UI/collections/collection_hero";
 import FilterUI from "My_UI/collections/filters_UI";
 
 
-export default function Collections_UI({ h1, description, productURL, cover }) {
+export default function Collections_UI({ h1, description, productURL, cover, prefilters }) {
     const [products, setProducts] = useState([]);
     const [currentPage, setCurrentPage] = useState(1);
     const [totalItems, setTotalItems] = useState(0);
     const [loading, setLoading] = useState(true);
 
-    const [filters, setFilters] = useState({
-        collection: "All",
-        subcategories: [],
-        thicknessRange: [],
-        widthRange: [],
-        lengthRange: [],
-        sort: "name-asc",
-    });
+    const [filters, setFilters] = useState(prefilters);
 
     // Fetch products
     useEffect(() => {
