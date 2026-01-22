@@ -16,7 +16,7 @@ export default function MyPagination({ current, total, pageSize, onChange, class
                         <button
                             className={`px-4 flex py-2 rounded-lg border border-gray-500/75 text-sm transition
                                                      ${page === current
-                                    ? "bg-primary text-white border-secondary"
+                                    ? "bg-primary text-black border-secondary"
                                     : "bg-white text-gray-700 hover:bg-gray-100"
                                 }`}
                         >
