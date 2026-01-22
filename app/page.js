@@ -7,6 +7,9 @@ import ReviewsSection from "My_UI/product_ui/review_section";
 import HeroSec from "My_UI/homepage/herosection";
 import WhyWeSection from "My_UI/homepage/why_we";
 import HowShippingWorks from "My_UI/product_ui/steps";
+import BuiltForBulk from "My_UI/homepage/buy_bulk";
+import WhoItsFor from "My_UI/homepage/for_whom";
+import HomeCTA from "My_UI/homepage/home_CTA";
 
 export default function HomePage() {
   return (
@@ -14,8 +17,11 @@ export default function HomePage() {
       <HeroSec />
       <WhyWeSection />
       <HowShippingWorks />
+      <BuiltForBulk />
+      <WhoItsFor />
+      <HomeCTA />
       <div className="max-w-6xl mx-auto bg-white px-12 py-16">
-        <RecommendationsSection items={productRec} title="Start Selecting Now" />
+        <RecommendationsSection items={productRec} title="Best Selling Products" />
       </div>
     </main>
   );

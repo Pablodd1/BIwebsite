@@ -1,10 +1,12 @@
 import { ChevronsRight } from 'lucide-react'
 import style from './main.module.css'
+import Link from 'next/link'
 
-export default function MyButton({ label = "My Button", icon, noIcon = false, className, fullWidth = false, isPrimary, reverse = false }) {
+export default function MyButton({ href = '/', label = "My Button", icon, noIcon = false, className, fullWidth = false, isPrimary, reverse = false }) {
 
     return (
-        <button
+        <Link
+            href={href}
             className={` 
                 flex items-center justify-center relative overflow-hidden cursor-pointer
                 rounded-full group gap-2 
@@ -26,7 +28,7 @@ export default function MyButton({ label = "My Button", icon, noIcon = false, cl
                         ${style.button_content}`
                     } />
             }
-        </button>
+        </Link>
 
     )
 }
