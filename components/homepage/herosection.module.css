@@ -1,0 +1,32 @@
+/* .bannerLink {
+    position: absolute;
+    top: 30%;
+    right: 1.5rem;
+    display: grid;
+    row-gap: 0.5rem;
+    visibility: hidden;
+} */
+
+@media (min-width: 1024px) {
+    .bannerLink {
+        visibility: visible;
+    }
+}
+
+.bannerLink::before,
+.bannerLink::after {
+    content: "";
+    position: absolute;
+    width: 4rem;
+    height: 1.5px;
+    background: var(--color-primary);
+    transform: rotate(90deg);
+}
+
+.bannerLink::before {
+    top: -3rem;
+}
+
+.bannerLink::after {
+    bottom: -3rem;
+}
