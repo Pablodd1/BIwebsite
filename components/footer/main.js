@@ -1,4 +1,13 @@
+import Link from 'next/link';
 import navData from './links.json';
+import { Facebook, Instagram, Twitter, Youtube } from "lucide-react";
+
+const socials = [
+    { Icon: Facebook, label: "Facebook" },
+    { Icon: Instagram, label: "Instagram" },
+    { Icon: Twitter, label: "Twitter" },
+    { Icon: Youtube, label: "YouTube" },
+];
 
 const Footer = () => {
     return (
@@ -60,10 +69,10 @@ const Footer = () => {
 
                 {/* Social Icons */}
                 <div className="relative flex justify-center space-x-4 border-t-2 border-gray-100 py-5">
-                    {navData.socialIcons.map((icon, index) => (
-                        <a key={index} href={icon.link} className={`w-8 h-8 overflow-hidden flex items-center justify-center rounded-full bg-primary`}>
-                            <span className={``}>{icon.icon}</span>
-                        </a>
+                    {socials.map(({ Icon, link }, index) => (
+                        <Link key={index} href={link || ''} className={`w-8 h-8 p-1 overflow-hidden flex items-center justify-center rounded-full bg-primary`}>
+                            <Icon strokeWidth={1} className=" text-white fill-secondary w-full min-h-fit h-auto max-w-12 hover:fill-black" />
+                        </Link>
                     ))}
                     {/* Bottom Copyright */}
                     <div className="text-center font-serif text-sm absolute right-0">
