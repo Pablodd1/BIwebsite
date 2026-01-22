@@ -6,6 +6,7 @@ import MyPagination from "My_UI/product/pagination";
 import { applyFilters, sortProducts } from "lib/applyFilters";
 import CollectionHero from "My_UI/collections/collection_hero";
 import FilterUI from "My_UI/collections/filters_UI";
+import NoProductsFound from "./noproduct";
 
 
 export default function Collections_UI({ h1, description, productURL, cover, prefilters }) {
@@ -44,21 +45,23 @@ export default function Collections_UI({ h1, description, productURL, cover, pre
             {
                 loading
                     ? <div className="text-center py-20 text-gray-500">Loading products...</div> :
-                    <>
-                        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 max-w-7xl mx-auto ">
-                            {displayedProducts.map(p => <ProductItem key={p.ID} item={p} />)}
-                        </div>
+                    displayedProducts?.length > 0 ?
+                        <>
+                            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 max-w-7xl mx-auto ">
+                                {displayedProducts.map(p => <ProductItem key={p.ID} item={p} />)}
+                            </div>
 
-                        <div className="my-10">
-                            <MyPagination
-                                current={currentPage}
-                                total={totalItems}
-                                pageSize={15}
-                                onChange={setCurrentPage}
-                                className="flex justify-center gap-2"
-                            />
-                        </div>
-                    </>
+                            <div className="my-10">
+                                <MyPagination
+                                    current={currentPage}
+                                    total={totalItems}
+                                    pageSize={15}
+                                    onChange={setCurrentPage}
+                                    className="flex justify-center gap-2"
+                                />
+                            </div>
+                        </>
+                        : <NoProductsFound />
             }
         </div>
     );

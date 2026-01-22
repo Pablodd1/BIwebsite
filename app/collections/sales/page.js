@@ -12,7 +12,15 @@ export default function Collections() {
                 src: '/raster/collection-banner.png',
                 alt: '/raster/collection-banner.png'
             }}
-            productURL="/API/collections?"
+            productURL="/API/collections?onlyDiscounted=true&"
+            prefilters={{
+                collection: "All",
+                subcategories: [],
+                thicknessRange: [],
+                widthRange: [],
+                lengthRange: [],
+                sort: "name-asc",
+            }}
         />
     );
 }
