@@ -8,22 +8,57 @@
     "email": "youremail@com"
   },
   "information": [
-    { "title": "About Us", "link": "#" },
-    { "title": "More Search", "link": "#" },
-    { "title": "Blog", "link": "#" },
-    { "title": "Testimonials", "link": "#" },
-    { "title": "Events", "link": "#" }
+    {
+      "title": "Collections",
+      "link": "/collections"
+    },
+    {
+      "title": "Exteriors",
+      "link": "/collections/exterior"
+    },
+    {
+      "title": "Interiors",
+      "link": "/collections/interior"
+    },
+    {
+      "title": "Sales",
+      "link": "/collections/sales"
+    }
   ],
   "helpfulLinks": [
-    { "title": "Services", "link": "#" },
-    { "title": "Supports", "link": "#" },
-    { "title": "Terms & Condition", "link": "#" },
-    { "title": "Privacy Policy", "link": "#" }
+    {
+      "title": "About Us",
+      "link": "/about"
+    },
+    {
+      "title": "Supports",
+      "link": "/contact"
+    },
+    {
+      "title": "Terms & Condition",
+      "link": "/policies"
+    },
+    {
+      "title": "Privacy Policy",
+      "link": "/policies"
+    }
   ],
   "socialIcons": [
-    { "icon": "facebook", "link": "#" },
-    { "icon": "twitter", "link": "#" },
-    { "icon": "linkedin", "link": "#" },
-    { "icon": "instagram", "link": "#" }
+    {
+      "icon": "facebook",
+      "link": "#"
+    },
+    {
+      "icon": "twitter",
+      "link": "#"
+    },
+    {
+      "icon": "linkedin",
+      "link": "#"
+    },
+    {
+      "icon": "instagram",
+      "link": "#"
+    }
   ]
 }
