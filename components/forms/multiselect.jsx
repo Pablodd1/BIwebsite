@@ -9,7 +9,7 @@ export default function MultiSelect({ label, options, value, onChange }) {
   }
   return (
     <div className="relative col-span-2 md:col-span-1 ">
-      <button onClick={() => setOpen(!open)} className="w-full  border rounded-lg px-3 py-2 text-sm flex justify-between">
+      <button aria-label="Toggle selection" onClick={() => setOpen(!open)} className="w-full  border rounded-lg px-3 py-2 text-sm flex justify-between">
         {value.length ? `${value.length} selected` : label}
         <ChevronDown size={16} />
       </button>

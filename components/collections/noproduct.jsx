@@ -48,6 +48,7 @@ export default function NoProductsFound({
             <div className="mt-10 flex flex-col sm:flex-row gap-3">
                 {onResetFilters && (
                     <button
+                        aria-label="Reset filters"
                         onClick={onResetFilters}
                         className="rounded-full bg-black px-6 py-2 text-sm text-white hover:opacity-90"
                     >
@@ -56,7 +57,7 @@ export default function NoProductsFound({
                 )}
 
                 <Link
-                    href="/collections"
+                    href="/collections" aria-label={`Go To collections page`}
                     className="rounded-full border px-6 py-2 text-sm hover:bg-gray-50"
                 >
                     Browse All Products

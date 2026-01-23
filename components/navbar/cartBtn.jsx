@@ -9,6 +9,7 @@ export function CartButton() {
     return (
         <button
             onClick={openCart}
+            aria-label="Open cart"
             className="px-2 hover:bg-white/5 rounded-full transition-all relative group cursor-pointer"
         >
             <ShoppingCart fill={cartCount > 0 ? "#ca3500bf":'none'} className={`w-fit h-full ${cartCount > 0 ? 'text-orange-700/75' : 'text-inherit'}`} />

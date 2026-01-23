@@ -31,7 +31,7 @@ export default function NotFoundPage() {
                 {/* Actions */}
                 <div className="mt-10 flex flex-col sm:flex-row justify-center gap-3">
                     <Link
-                        href="/"
+                        href="/" aria-label="Go To Home page"
                         className="flex items-center justify-center gap-2 rounded-full bg-black px-6 py-2 text-sm text-white hover:opacity-90"
                     >
                         <ArrowLeft size={16} />
@@ -39,7 +39,7 @@ export default function NotFoundPage() {
                     </Link>
 
                     <Link
-                        href="/collections"
+                        href="/collections" aria-label="Go To collections page"
                         className="flex items-center justify-center gap-2 rounded-full border px-6 py-2 text-sm hover:bg-gray-50"
                     >
                         <Package size={16} />

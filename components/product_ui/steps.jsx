@@ -52,9 +52,9 @@ export default function HowShippingWorks() {
                 </div>
 
                 {/* Text */}
-                <h4 className="text-sm font-semibold">
+                <h3 className="text-sm font-semibold">
                  <span className="font-extrabold tracking-wider">0{index+1}  — </span>{step.title}
-                </h4>
+                </h3>
                 <p className="mt-1 text-xs text-muted-foreground">
                   {step.desc}
                 </p>

@@ -5,6 +5,7 @@ export default function CollectionToggle({ value, onChange }) {
             {options.map(opt => (
                 <button
                     key={opt}
+                    aria-label={"Select " + opt}
                     onClick={() => onChange(opt)}
                     className={`px-4 py-2 rounded-lg text-sm transition w-1/3 ${value === opt ? "bg-secondary text-white shadow" : "text-gray-700 hover:bg-white"
                         }`}

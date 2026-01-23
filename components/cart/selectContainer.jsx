@@ -43,7 +43,7 @@ export default function ContainerModal({ showModal, toggleModal, item }) {
             footer={
                 <footer className="w-full flex items-center justify-end bg-white/75 px-6 py-2">
                     <Link
-                        href={"/checkout"}
+                        href={"/checkout"} 
                         aria-label="checkout"
                         className="bg-primary text-black border-2 border-accent1 hover:bg-secondary font-semibold tracking-wider w-full md:max-w-44 rounded-full text-center py-2 my-2 cursor-pointer"
                     >
@@ -78,6 +78,7 @@ export default function ContainerModal({ showModal, toggleModal, item }) {
                             return (
                                 <button
                                     key={i}
+                                    aria-label="Add product"
                                     onClick={() => addProduct(id, item)}
                                     className="w-11/12 mx-auto my-2.5  border-accent1 border shadow-md overflow-hidden shadow-gray-400  rounded-lg flex flex-col gap-2 bg-primary hover:border-secondary ease-in duration-300 transition-all relative"
                                 >

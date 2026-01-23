@@ -124,6 +124,7 @@ export default function RenderItemsList({ container }) {
 
                                     <div className="flex items-center gap-2">
                                         <button
+                                            aria-label="Remove Product"
                                             onClick={() => removeProduct(container.id, item.ID)}
                                             className="flex h-7 w-7 items-center justify-center rounded-md border hover:bg-gray-100"
                                         >
@@ -140,6 +141,7 @@ export default function RenderItemsList({ container }) {
                                         />
 
                                         <button
+                                            aria-label="Add product"
                                             onClick={() => addProduct(container.id, item.ID)}
                                             className="flex h-7 w-7 items-center justify-center rounded-md border hover:bg-gray-100"
                                         >

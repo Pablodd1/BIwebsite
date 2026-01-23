@@ -11,6 +11,7 @@ export default function ProductItem({ item, isSlides = false }) {
             <Link href={`/products/${item.ID}`} className='   relative h-full w-full'>
                 <Image
                     fill
+                    aria-label={`Go To product with ID ${item.ID}`}
                     src={item.image.url || '/raster/product.jpg'}
                     alt={item.name || 'Product image '}
                     className=" object-contain object-center "
@@ -23,7 +24,7 @@ export default function ProductItem({ item, isSlides = false }) {
                     className=' text-black bg-primary shadow shadow-secondary/75 px-2 rounded-md tracking-wide font-mono'
                 />
             </div>
-            <Link href={`/products/${item.ID}`}>
+            <Link href={`/products/${item.ID}`} aria-label={`Go To product with ID ${item.ID}`}>
                 <p className="text-md text-gray-800 font-semibold my-1 w-11/12 mx-auto tracking-wide ">{item.name}</p>
             </Link>
             <AddToContainer

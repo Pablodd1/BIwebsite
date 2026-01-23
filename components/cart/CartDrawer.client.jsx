@@ -61,6 +61,7 @@ export default function CartDrawer() {
               </h2>
               <button
                 onClick={closeCart}
+                aria-label="Close Drawer"
                 className="text-sm opacity-70 hover:opacity-100"
               >
                 ✕
@@ -85,7 +86,7 @@ export default function CartDrawer() {
 
             {/* Footer */}
             <div className="p-4 border-t">
-              <button className="w-full bg-black text-white py-2 rounded-md">
+              <button aria-label="Checkout" className="w-full bg-black text-white py-2 rounded-md">
                 Checkout
               </button>
             </div>

@@ -6,7 +6,7 @@ export default function MyButton({ href = '/', label = "My Button", icon, noIcon
 
     return (
         <Link
-            href={href}
+            href={href} aria-label={`Go To ${href}`}
             className={` 
                 flex items-center justify-center relative overflow-hidden cursor-pointer
                 rounded-full group gap-2 

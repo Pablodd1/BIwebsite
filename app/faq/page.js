@@ -38,6 +38,7 @@ const FAQSection = ({ icon: Icon, title, items }) => {
                         >
                             <button
                                 onClick={() => setOpenIndex(isOpen ? null : idx)}
+                                aria-label={isOpen?"Close Answer of this FAQ":"Show answer of FAQ"}
                                 className="w-full flex items-center justify-between gap-4 px-6 py-5 text-left hover:bg-gray-50 transition"
                             >
                                 <span className="font-medium text-gray-900">

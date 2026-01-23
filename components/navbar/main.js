@@ -27,6 +27,7 @@ const NavBar = async ({ searchParams}) => {
                         <Link
                             key={item.id}
                             href={item.href}
+                            aria-label={`Go To ${item.href}`}
                             className="text-sm uppercase tracking-widest mx-5 first-of-type:mx-0 font-semibold flex items-center transition-all whitespace-nowrap cursor-pointer"
                         >
                             {

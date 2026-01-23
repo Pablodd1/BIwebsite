@@ -12,7 +12,7 @@ const socials = [
 
 const Footer = () => {
     return (
-        <footer className="bg-black text-accent2 pt-16">
+        <footer className="bg-black text-gray-300 pt-16">
             <div className="container mx-auto px-6">
                 <section className=' grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-[1fr_0.7fr_0.75fr_1fr] gap-y-16 lg:gap-y-2' >
                     <article className='lg:w-2/3 sm:col-span-2 md:col-span-3 lg:col-span-1' >
@@ -64,7 +64,7 @@ const Footer = () => {
                                 placeholder="Enter your email"
                                 className="p-2 rounded-t-lg placeholder:text-accent2 border-2 border-primary"
                             />
-                            <button className="bg-primary text-secondary  font-semibold hover:bg-secondary hover:text-white transition-all ease-in duration-300 cursor-pointer tracking-superwide uppercase py-2 px-3.5 rounded-b-lg ">Subscribe</button>
+                            <button aria-label='Subscribe Button' className="bg-primary text-secondary  font-semibold hover:bg-secondary hover:text-white transition-all ease-in duration-300 cursor-pointer tracking-superwide uppercase py-2 px-3.5 rounded-b-lg ">Subscribe</button>
                         </div>
                     </div>
                 </section>
@@ -72,7 +72,7 @@ const Footer = () => {
                 {/* Social Icons */}
                 <div className="relative flex justify-center space-x-4 border-t-2 border-gray-100 py-5">
                     {socials.map(({ Icon, link }, index) => (
-                        <Link key={index} href={link || ''} className={`w-8 h-8 p-1 overflow-hidden flex items-center justify-center rounded-full bg-primary`}>
+                        <Link key={index} href={link || ''} aria-label={`Go To ${link}`} className={`w-8 h-8 p-1 overflow-hidden flex items-center justify-center rounded-full bg-primary`}>
                             <Icon strokeWidth={1} className=" text-white fill-secondary w-full min-h-fit h-auto max-w-12 hover:fill-black" />
                         </Link>
                     ))}

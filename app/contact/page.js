@@ -133,7 +133,7 @@ export default function ContactPage() {
 
                                 <div className="sm:col-span-2">
                                     <button
-                                        type="submit"
+                                        type="submit" aria-label="Submit Form"
                                         className="flex w-full items-center justify-center gap-2 rounded-xl bg-black px-5 py-3 text-sm font-semibold text-white transition hover:bg-gray-900 active:scale-[0.98]"
                                     >
                                         <Send size={16} />
