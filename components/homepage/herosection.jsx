@@ -24,7 +24,7 @@ export default function HeroSec() {
                             src="/raster/contianer front4.webp"
                             alt="banner image"
                             width={1024} height={1024}
-                            fetchPriority="high"
+                            fetchPriority="high" priority
                             className="mx-auto max-w-4/5 md:min-w-[512] max-h-full w-3/5 md:h-auto z-10  md:w-full "
                         />
                         <figcaption className="absolute text-gray-900 top-1/2 left-1/2 -translate-1/2 w-full  md:w-[150%] h-[150%] z-0 " >

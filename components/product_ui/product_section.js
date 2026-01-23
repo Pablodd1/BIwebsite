@@ -12,7 +12,7 @@ export default async function ProductSection({ product }) {
                     src={product.image.url || '/raster/product.jpg'}
                     alt={product.name || 'Product Image'}
                     className="max-w-md w-full object-contain"
-                    width={1024} height={1024}
+                    width={1024} height={1024} priority
                 />
             </div>
 

@@ -10,7 +10,7 @@ export default function CollectionHero({ h1, description, cover }) {
             <Image
                 fill alt={cover.alt}
                 src={cover.src}
-                className="object-cover"
+                className="object-cover" priority
             />
             <figcaption className=" z-20 bottom-7 absolute left-5" >
                 <h1 className=" text-3xl lg:text-6xl lg:leading-18 w-4/5 font-extrabold tracking-wider capitalize text-white " >

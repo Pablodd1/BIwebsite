@@ -44,7 +44,7 @@ export async function generateMetadata() {
     applicationName: data?.appName || "Unitec USA Design",
     generator: "Next.js",
     creator: "MyAbabeel (Muhammad Talha)",
-    manifest: "/manifest.json",
+    manifest: "/favicons/manifest.json",
 
     alternates: {
       canonical: data?.canonicalURL || defaults.canonical,
