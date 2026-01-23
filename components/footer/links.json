@@ -39,6 +39,10 @@
       "link": "/faq"
     },
     {
+      "title": "Search Products",
+      "link": "/collections/search"
+    },
+    {
       "title": "Terms & Condition",
       "link": "/terms"
     },

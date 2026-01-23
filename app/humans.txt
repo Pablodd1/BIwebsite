@@ -1,0 +1,17 @@
+/* TEAM */
+Developer: Muhammad Talha (MyAbabeel)
+Website: https://www.myababeel.com
+LinkedIn: https://www.linkedin.com/in/chauhdri
+GitHub: https://github.com/Chauhdri
+Instagram: https://www.instagram.com/mtalhachauhdri
+Location: Pakistan
+
+MyAbabeel
+Instagram: https://www.instagram.com/myababeel
+Facebook: https://www.facebook.com/myababeel.posts
+
+
+/* SITE */
+Standards: HTML5, CSS3, Next.js (App Router)
+Components: Tailwind CSS, Framer Motion
+Build: SEO-Optimized, SSR-first, Custom CMS Integration
