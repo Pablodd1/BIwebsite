@@ -7,13 +7,13 @@ import Link from "next/link";
 
 export default function ProductItem({ item, isSlides = false }) {
     return (
-        <li className={`${isSlides ? 'embla__slide' : ''} grid grid-rows-[17rem_auto_4rem_auto] gap-y-2 rounded-xl shadow-md shadow-gray-400 hover:shadow-lg hover:translate-y-1.5 ease-in transition-all duration-300 m-5`}>
-            <Link href={`/products/${item.ID}`} className='relative'>
+        <li className={`${isSlides ? 'embla__slide' : ''} overflow-hidden grid grid-rows-[17rem_auto_4rem_auto] gap-y-2 rounded-xl shadow-md shadow-gray-400 hover:shadow-lg hover:translate-y-1.5 ease-in transition-all duration-300 m-5`}>
+            <Link href={`/products/${item.ID}`} className='   relative h-full w-full'>
                 <Image
                     fill
                     src={item.image.url || '/raster/product.jpg'}
                     alt={item.name || 'Product image '}
-                    className=" object-contain p-2"
+                    className=" object-contain object-top "
                 />
             </Link>
             <div className="text-lg font-bold w-11/12 mx-auto ">

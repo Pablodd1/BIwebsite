@@ -16,7 +16,7 @@ export default function SearchFrom({ full = false }) {
     };
 
     return (
-        <div className={` relative w-full  ${full ? ' max-w-4/5 lg:max-w-xl my-20 h-screen' : 'max-w-85'}`}>
+        <div className={` relative w-full  ${full ? ' max-w-4/5 lg:max-w-xl my-20 ' : 'max-w-85'}`}>
             <Search className={`absolute text-secondary ${full ? 'left-3 top-2 w-6 h-6 ' : 'w-4 h-4 left-4  top-1/2 -translate-y-1/2'} `} />
             <input
                 type="search"
