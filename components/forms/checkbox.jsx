@@ -5,7 +5,7 @@ export default function RangeCheckboxGroup({ title, options, value, onChange }) 
       <p className="mb-2 text-sm font-medium  ">{title}</p>
       <div className="space-y-2">
         {options.map(opt => (
-          <label key={opt.key} className="flex items-center gap-2 cursor-pointer text-sm ">{console.log("value:", value, opt.value)}
+          <label key={opt.key} className="flex items-center gap-2 cursor-pointer text-sm ">
             <input
               type="checkbox"
               checked={Array.isArray(value) &&

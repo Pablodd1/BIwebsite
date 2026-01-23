@@ -62,7 +62,6 @@ export const formatDate = (date) => {
  * ];
  * 
  * const result = reGenerateList(content, keyPairs);
- * console.log(result);
  * // Output: [
  * //   { icon: 'HPSolarModule', label: 'High Performance Solar Modules', title: 'Select a product', description: 'Lorem Ipsum is simply text of the printing and type' }
  * // ]
