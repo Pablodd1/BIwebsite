@@ -17,7 +17,7 @@ export default function RenderItemsList({ container }) {
 
     async function fetchProduct(id) {
         const res = await fetch(
-            `/API/products/${id}?fields=id,name,basePrice,image,discountPercent`,
+            `/API/products/${id}?fields=ID,name,basePrice,image,discountPercent`,
             { cache: "no-store" }
         )
         if (!res.ok) notify("error", "Incomplete data", "Products are not loaded successfully. Please refresh your page.")

@@ -2,14 +2,15 @@ import AddToContainer from "My_UI/cart/addToContainer";
 import GetFinalPrice from "My_UI/getFinalPrice";
 import Image from "next/image";
 
-export default function ProductSection({ product }) {
+export default async function ProductSection({ product }) {
+
     return (
         <section className="grid grid-cols-1 md:grid-cols-2 gap-16">
             {/* Image */}
             <div className="flex justify-center">
                 <Image
                     src={product.image.url || '/raster/product.jpg'}
-                    alt={product.title || 'Product Image'}
+                    alt={product.name || 'Product Image'}
                     className="max-w-md w-full object-contain"
                     width={1024} height={1024}
                 />
@@ -39,7 +40,7 @@ export default function ProductSection({ product }) {
                     item={{
                         ID: product.ID,
                         dimension: product.dimension,
-                        price: product.price
+                        price: product.basePrice
                     }}
                     isProductPage
                 />

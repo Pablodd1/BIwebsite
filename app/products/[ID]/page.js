@@ -1,9 +1,11 @@
 import ProductSection from "My_UI/product_ui/product_section";
-import productData from "StaticData/products_full.json";
 import productReview from "StaticData/products.json";
 import RecommendationsSection from "My_UI/product_ui/recommended_section";
 import ReviewsSection from "My_UI/product_ui/review_section";
 import HowShippingWorks from "My_UI/product_ui/steps";
+import ProductDimensions from "My_UI/product_ui/dimension";
+import ProductUseCases from "My_UI/product_ui/technical";
+import ProductStory from "My_UI/product_ui/story";
 
 // app/products/[ID]/page.jsx (or equivalent)
 
@@ -74,14 +76,28 @@ export async function generateMetadata({ params }, parent) {
   };
 }
 
+async function fetchProduct(id) {
+  const res = await fetch(
+    `${process.env.BASE_URL}/API/products/${id}?fields=ID,category,collection,itemsPerBox,subcategory,name,basePrice,image,discountPercent,description,dimension`,
+    { cache: "no-store" }
+  )
+  if (!res.ok) notify("error", "Incomplete data", "Products are not loaded successfully. Please refresh your page.")
+  return res.json()
+}
+
+
 
 export default async function ProductPage({ params }) {
   const ID = (await params)?.ID;
+  const product = await fetchProduct(ID)
 
   return (
     <main className="">
-      <div className="max-w-6xl mx-auto bg-white px-12 py-16">
-        <ProductSection product={productData.find(x => x.ID == ID)} />
+      <div className="max-w-6xl mx-auto bg-white px-12 flex flex-col gap-15 py-16">
+        <ProductSection product={product} />
+        <ProductStory product={product} description={product.description} />
+        <ProductDimensions dimension={product.dimension} />
+        <ProductUseCases description={product.description} />
       </div>
       <HowShippingWorks />
       <div className="max-w-11/12 mx-auto bg-white px-12 py-16">

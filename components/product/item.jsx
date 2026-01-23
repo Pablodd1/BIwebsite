@@ -13,7 +13,7 @@ export default function ProductItem({ item, isSlides = false }) {
                     fill
                     src={item.image.url || '/raster/product.jpg'}
                     alt={item.name || 'Product image '}
-                    className=" object-contain object-top "
+                    className=" object-contain object-center "
                 />
             </Link>
             <div className="text-lg font-bold w-11/12 mx-auto ">
@@ -30,7 +30,7 @@ export default function ProductItem({ item, isSlides = false }) {
                 item={{
                     ID: item.ID,
                     dimension: item.dimension,
-                    price: item.price
+                    price: item.basePrice
                 }}
             />
         </li>
