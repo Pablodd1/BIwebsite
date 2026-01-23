@@ -6,8 +6,8 @@ import Collections_UI from "My_UI/collections/main";
 export default function Collections() {
     return (
         <Collections_UI
-            h1={"Explore All Collections"}
-            description={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."}
+            h1={"Our Product Collections"}
+            description={"Explore the complete range of Unitec USA Design PVC and WPC building materials. From exterior-grade panels to interior finishes, our collections are engineered for durability, ease of installation, and modern design across residential and commercial applications."}
             cover={{
                 src: '/raster/collection-banner.png',
                 alt: '/raster/collection-banner.png'
