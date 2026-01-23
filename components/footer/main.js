@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import navData from './links.json';
 import { Facebook, Instagram, Twitter, Youtube } from "lucide-react";
+import Logo from 'My_UI/logo';
 
 const socials = [
     { Icon: Facebook, label: "Facebook" },
@@ -16,8 +17,9 @@ const Footer = () => {
                 <section className=' grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-[1fr_0.7fr_0.75fr_1fr] gap-y-16 lg:gap-y-2' >
                     <article className='lg:w-2/3 sm:col-span-2 md:col-span-3 lg:col-span-1' >
                         {/* Logo Section */}
-                        <div className="text-center mb-8">
-                            <h1 className=" text-2xl">{navData.logo.text}</h1>
+                        <div className="text-center mb-8 w-fit mx-auto ">
+                            <Logo size={150} className="mx-auto bg-primary p-1 mb-3 rounded-md" />
+                            <h1 className=" text-2xl uppercase tracking-wider text-primary first-line:font-bold">{navData.logo.text}</h1>
                             <p className="text-lg">{navData.logo.tagline}</p>
                         </div>
 
