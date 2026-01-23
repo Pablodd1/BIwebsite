@@ -32,8 +32,8 @@ export default function ProductStory({ product, description }) {
                 />
             </div>
 
-            <section className="mt-10 border-t border-gray-400 pt-10 ">
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            <section className="mt-10 border-t border-gray-400  pt-10 ">
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
                     <HighlightItem
                         icon={<Layers  />}
                         label="Category"
@@ -65,17 +65,17 @@ export default function ProductStory({ product, description }) {
 
 function ApplicationItem({ icon, title, text }) {
     return (
-        <div className="flex items-start gap-4  bg-gray-700 px-3 py-3 rounded-2xl">
+        <div className="grid relative items-start gap-4 shadow-md border-secondary border min-h-fit bg-primary px-3 py-3 rounded-2xl">
 
-            <div className=" border-l-4 border-primary/75 py-2 pl-2 ml-1">
-                <p className="text-sm font-medium text-white tracking-wide">
+            <div className=" border-l-4 border-accent1/75 py-2 pl-2 ml-1">
+                <p className="text-sm font-medium text-secondary tracking-wide">
                     {title}
                 </p>
-                <p className="mt-1 text-xs text-white/75 leading-relaxed">
+                <p className="mt-1 text-xs text-secondary/75 leading-relaxed">
                     {text}
                 </p>
             </div>
-            <div className="mr-1 h-full text-primary/70">
+            <div className="absolute top-2 right-2 mr-1 h-4/5 text-accent1/25">
                 {icon}
             </div>
         </div>

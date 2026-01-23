@@ -38,31 +38,47 @@ export default function ProductUseCases({ description }) {
                 </div>
 
                 {/* Ideal Applications */}
-                <div className="space-y-4">
-                    <h3 className="text-sm uppercase tracking-wide text-gray-500">
+                <div className="rounded-2xl border bg-white p-6 shadow-sm">
+                    <h3 className="text-lg font-semibold">
                         Ideal Applications
                     </h3>
 
-                    <ul className="space-y-4">
-                        <li className="flex items-start gap-3 text-gray-700 text-sm">
-                            <Home className="text-green-600 mt-1" size={18} />
-                            Residential interiors: walls, ceilings, and decorative finishes
-                        </li>
-                        <li className="flex items-start gap-3 text-gray-700 text-sm">
-                            <Building className="text-green-600 mt-1" size={18} />
-                            Commercial and corporate environments: offices, lobbies, and conference rooms
-                        </li>
-                        <li className="flex items-start gap-3 text-gray-700 text-sm">
-                            <Ruler className="text-green-600 mt-1" size={18} />
-                            Architectural detailing: moldings, panels, and cladding
-                        </li>
-                        <li className="flex items-start gap-3 text-gray-700 text-sm">
-                            <Zap className="text-green-600 mt-1" size={18} />
-                            Renovation & retrofitting: fast-install solutions for minimal disruption
-                        </li>
-                    </ul>
+                    <div className="mt-4 space-y-4">
+                        <Difference
+                            icon={Home}
+                            title="Residential interiors"
+                            text="walls, ceilings, and decorative finishes"
+                        />
+                        <Difference
+                            icon={Building}
+                            title="Commercial environments"
+                            text="offices, lobbies, and conference rooms"
+                        />
+                        <Difference
+                            icon={Ruler}
+                            title="Architectural detailing"
+                            text="oldings, panels, and cladding"
+                        />
+                        <Difference
+                            icon={Zap}
+                            title="Renovation & retrofitting"
+                            text="fast-install solutions for minimal disruption"
+                        />
+                    </div>
                 </div>
             </div>
         </section>
     );
+}
+
+function Difference({ icon: Icon, title, text }) {
+    return (
+        <div className="flex gap-3">
+            <Icon size={18} />
+            <div>
+                <p className="text-sm font-semibold">{title}</p>
+                <p className="text-sm text-gray-600">{text}</p>
+            </div>
+        </div>
+    )
 }

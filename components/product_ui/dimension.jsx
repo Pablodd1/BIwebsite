@@ -5,10 +5,10 @@ import { UnfoldVertical, Crop, Move, Layers } from "lucide-react";
 import Stylish_H2 from "My_UI/stylish_h2";
 
 const ICONS = {
-    width: <UnfoldVertical size={20} className="text-blue-600 rotate-90" />,
-    height: <Crop size={20} className="text-green-600" />,
-    length: <UnfoldVertical size={20} className="text-purple-600" />,
-    thickness: <Layers size={20} className="text-yellow-600" />,
+    width: <UnfoldVertical className="text-current rotate-90 " />,
+    height: <Crop className="text-current" />,
+    length: <UnfoldVertical className="text-current" />,
+    thickness: <Layers className="text-current" />,
 };
 
 export default function ProductDimensions({ dimension }) {
@@ -28,15 +28,15 @@ export default function ProductDimensions({ dimension }) {
         <section className="mt-20 w-full mx-auto px-4 md:px-0">
             <Stylish_H2 h2={"Technical Specifications"} />
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+            <div className="flex items-stretch justify-evenly w-full gap-8">
                 {filtered.map(([key, val]) => {
                     return (
                         <motion.div
                             key={key}
                             whileHover={{ scale: 1.05 }}
-                            className="bg-accent1 rounded-xl shadow-md p-6 flex flex-col items-center gap-4"
+                            className="bg-black rounded-xl shadow-md p-6 w-full flex flex-col items-center gap-4"
                         >
-                            <div className="flex items-center justify-center w-16 h-16 bg-gray-100 rounded-full">
+                            <div className="flex items-center justify-center w-16 h-16 bg-primary text-secondary  rounded-full">
                                 {ICONS[key] || null}
                             </div>
 

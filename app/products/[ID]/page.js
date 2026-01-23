@@ -93,7 +93,7 @@ export default async function ProductPage({ params }) {
 
   return (
     <main className="">
-      <div className="max-w-6xl mx-auto bg-white px-12 flex flex-col gap-15 py-16">
+      <div className="max-w-6xl mx-auto bg-white px-2 md:px-5 lg:px-12 flex flex-col gap-15 py-16">
         <ProductSection product={product} />
         <ProductStory product={product} description={product.description} />
         <ProductDimensions dimension={product.dimension} />
