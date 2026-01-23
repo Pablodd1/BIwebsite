@@ -8,10 +8,6 @@ import {
 } from './buttons'
 import useEmblaCarousel from 'embla-carousel-react'
 import './css/embla.css'
-import Image from 'next/image'
-import Link from 'next/link'
-import GetFinalPrice from 'My_UI/getFinalPrice'
-import { addOne } from 'lib/cart/cart.actions'
 import ProductItem from 'My_UI/product/item'
 
 const EmblaCarousel = (props) => {
@@ -29,8 +25,8 @@ const EmblaCarousel = (props) => {
     } = usePrevNextButtons(emblaApi)
 
     return (
-        <section className="embla">
-            <div className="embla__viewport" ref={emblaRef}>
+        <section className={`embla`}>
+            <div className={`px-10  embla__viewport`} ref={emblaRef}>
                 <ul className="embla__container">
                     {slides.map((item, i) => (
                         <ProductItem isSlides item={item} key={i} />
