@@ -19,7 +19,7 @@ export async function generateMetadata(_, parent) {
             url: `${process.env.BASE_URL}/interiors`,
             images: [
                 {
-                    url: `/raster/interior.jpg` || process.env.DEFAULT_IMAGE,
+                    url: `/raster/interior.webp` || process.env.DEFAULT_IMAGE,
                     width: 1200,
                     height: 630,
                     alt:"Unitec USA Design – Innovative PVC & WPC Building Materials",
@@ -31,7 +31,7 @@ export async function generateMetadata(_, parent) {
             title: "Interior Building Solutions – Unitec USA Design",
             description:
                 "Modern PVC & WPC interior panels for walls, ceilings, and decorative finishes.",
-            images: [`/raster/interior.jpg` || process.env.DEFAULT_IMAGE],
+            images: [`/raster/interior.webp` || process.env.DEFAULT_IMAGE],
         },
     };
 }
@@ -43,7 +43,7 @@ export default function Collections() {
             h1={"Interior Design Solutions"}
             description={"Transform interior spaces with Unitec’s premium PVC and WPC panels. Designed for walls, ceilings, decorative finishes, and high-humidity environments, our interior solutions combine elegant aesthetics with antimicrobial, waterproof, and maintenance-free performance—perfect for homes, offices, healthcare, and hospitality spaces."}
             cover={{
-                src: '/raster/interior.jpg',
+                src: '/raster/interior.webp',
                 alt: '/raster/collection-interior'
             }}
             productURL="/API/collections?"

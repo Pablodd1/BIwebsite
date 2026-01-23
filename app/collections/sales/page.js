@@ -18,7 +18,7 @@ export async function generateMetadata(_, parent) {
             url: `${process.env.BASE_URL}/sale`,
             images: [
                 {
-                    url: `/raster/sale.jpg` || process.env.DEFAULT_IMAGE,
+                    url: `/raster/sale.webp` || process.env.DEFAULT_IMAGE,
                     width: 1200,
                     height: 630,
                     alt:"Unitec USA Design – Innovative PVC & WPC Building Materials",
@@ -42,7 +42,7 @@ export default function Collections() {
             h1={"Sale & Clearance Products"}
             description={"Get premium PVC and WPC building materials at reduced prices. Our sale section features discounted, high-quality products ideal for bulk orders, contractor projects, and cost-conscious developments—without compromising on performance, durability, or warranty coverage."}
             cover={{
-                src: '/raster/sale.jpg',
+                src: '/raster/sale.webp',
                 alt: '/raster/collection-sale'
             }}
             productURL="/API/collections?onlyDiscounted=true&"

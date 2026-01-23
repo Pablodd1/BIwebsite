@@ -21,7 +21,7 @@ export default function HeroSec() {
 
                     <figure className="order-2 md:order-1 relative  max-h-full flex items-center justify-center overflow-visible ">
                         <Image
-                            src="/raster/contianer front4.png"
+                            src="/raster/contianer front4.webp"
                             alt="banner image"
                             width={1024} height={1024}
                             fetchPriority="high"

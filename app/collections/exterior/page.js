@@ -20,7 +20,7 @@ export async function generateMetadata(_, parent) {
             url: `${process.env.BASE_URL}/exteriors`,
             images: [
                 {
-                    url: `/raster/exterior.jpg` || process.env.DEFAULT_IMAGE,
+                    url: `/raster/exterior.webp` || process.env.DEFAULT_IMAGE,
                     width: 1200,
                     height: 630,
                     alt:"Unitec USA Design – Innovative PVC & WPC Building Materials",
@@ -32,7 +32,7 @@ export async function generateMetadata(_, parent) {
             title: "Exterior Building Solutions – Unitec USA Design",
             description:
                 "Weatherproof, UV-resistant PVC sheets for exterior architectural applications.",
-            images: [`/raster/exterior.jpg` || process.env.DEFAULT_IMAGE],
+            images: [`/raster/exterior.webp` || process.env.DEFAULT_IMAGE],
         },
     };
 }
@@ -43,7 +43,7 @@ export default function Collections() {
             h1={"Exterior Building Solutions"}
             description={"Discover high-performance PVC sheets designed for exterior applications. Built to withstand moisture, UV exposure, fire, and harsh environmental conditions, our exterior solutions deliver long-lasting durability with zero maintenance—ideal for facades, cladding, roofing, and outdoor architectural elements."}
             cover={{
-                src: '/raster/exterior.jpg',
+                src: '/raster/exterior.webp',
                 alt: '/raster/collection-exterior'
             }}
             productURL="/API/collections?"

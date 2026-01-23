@@ -47,7 +47,7 @@ export default async function SearchPage({ searchParams }) {
                 alt="banner"
                 className={` ${query ? ' z-0 aspect-2/1 max-h-[428] shadow-md shadow-accent2 object-cover object-top ' : "object-center object-contain"}`}
                 fill
-                src={`/raster/${query ? "containers.jpg" : "contianer front2.png"}`}
+                src={`/raster/${query ? "containers.webp" : "contianer front2.png"}`}
             />
             {
                 query
