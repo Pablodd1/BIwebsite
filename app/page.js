@@ -15,7 +15,7 @@ export default function HomePage() {
       <BuiltForBulk />
       <WhoItsFor />
       <HomeCTA />
-      <div className="max-w-6xl mx-auto bg-white px-12 py-16">
+      <div className=" mx-auto bg-white px-12 py-16">
         <RecommendationsSection title="Best Selling Products" />
       </div>
     </main>

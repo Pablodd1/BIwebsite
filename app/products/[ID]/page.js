@@ -14,8 +14,8 @@ export default async function ProductPage({ params }) {
         <ProductSection product={productData.find(x => x.ID == ID)} />
       </div>
       <HowShippingWorks />
-      <div className="max-w-6xl mx-auto bg-white px-12 py-16">
-        <RecommendationsSection  itemID={ID} />
+      <div className="max-w-11/12 mx-auto bg-white px-12 py-16">
+        <RecommendationsSection itemID={ID} />
         <ReviewsSection reviews={productReview.reviews} />
       </div>
     </main>
