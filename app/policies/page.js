@@ -18,146 +18,108 @@ export default function PoliciesPage() {
             {/* ================= HERO ================= */}
             <section className="bg-gray-100 py-20">
                 <div className="mx-auto max-w-5xl px-4">
-                    <motion.h1
-                        initial={{ opacity: 0, y: 16 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        className="text-3xl font-bold"
-                    >
-                        Terms & Policies
+                    <motion.h1 className="text-3xl font-bold">
+                        Privacy Policy
                     </motion.h1>
 
                     <p className="mt-4 max-w-3xl text-sm text-gray-600">
-                        These terms outline how our platform operates, how data is handled,
-                        and what users can expect when using our container-based bulk
-                        ordering and logistics services.
+                        This Privacy Policy explains how Unitec USA Design collects, uses, and protects
+                        your information when you visit our website or engage with our products
+                        and services.
                     </p>
+
                 </div>
             </section>
 
             {/* ================= CONTENT ================= */}
             <section className="py-20">
                 <div className="mx-auto max-w-5xl px-4 space-y-14">
-
-                    <Policy
-                        icon={FileText}
-                        title="1. Platform Usage"
-                    >
+                    <Policy icon={Shield} title="1. Introduction">
                         <p>
-                            Our platform is designed for businesses purchasing, planning,
-                            or managing products in bulk using container-based workflows.
-                            By accessing or using the platform, you agree to use it only
-                            for lawful business purposes.
+                            Unitec USA Design (“we,” “our,” or “us”) is committed to protecting your
+                            privacy. This policy explains how we collect, use, disclose, and safeguard
+                            your information when you visit www.unitecusadesign.com.
                         </p>
-
                         <p>
-                            You are responsible for ensuring that all information provided,
-                            including product quantities, dimensions, and shipment details,
-                            is accurate to the best of your knowledge.
+                            By using our website or services, you agree to the practices described
+                            in this Privacy Policy.
                         </p>
                     </Policy>
 
-                    <Policy
-                        icon={Truck}
-                        title="2. Containers & Product Allocation"
-                    >
+                    <Policy icon={FileText} title="2. Information We Collect">
                         <p>
-                            Containers represent physical shipping units with defined
-                            internal dimensions. Product placement within containers is
-                            calculated based on volume and quantity.
+                            We may collect personal information such as your name, email address,
+                            phone number, mailing address, company details, billing information,
+                            and project specifications.
                         </p>
-
                         <p>
-                            The platform provides estimates and planning tools only.
-                            Actual shipment feasibility may vary due to packaging,
-                            handling, or carrier constraints.
+                            We also automatically collect technical data including IP address,
+                            browser type, pages viewed, and usage behavior through cookies
+                            and similar technologies.
                         </p>
                     </Policy>
 
-                    <Policy
-                        icon={AlertTriangle}
-                        title="3. Accuracy & Limitations"
-                    >
-                        <p>
-                            While we strive to provide accurate calculations and system
-                            feedback, the platform does not guarantee that container
-                            capacity, shipping costs, or delivery timelines are exact.
-                        </p>
-
-                        <p>
-                            Users should independently verify critical logistics decisions
-                            before final shipment.
-                        </p>
-                    </Policy>
-
-                    <Policy
-                        icon={Shield}
-                        title="4. User Responsibilities"
-                    >
+                    <Policy icon={Scale} title="3. How We Use Your Information">
                         <ul className="list-disc pl-5 space-y-2">
-                            <li>Maintain the confidentiality of your account credentials</li>
-                            <li>Ensure compliance with local and international trade laws</li>
-                            <li>Provide truthful and accurate business information</li>
-                            <li>Use the platform in a non-abusive and lawful manner</li>
+                            <li>Process orders and deliver products</li>
+                            <li>Respond to inquiries and provide customer support</li>
+                            <li>Improve our website, products, and services</li>
+                            <li>Send updates or marketing communications (with consent)</li>
+                            <li>Prevent fraud and comply with legal obligations</li>
                         </ul>
                     </Policy>
 
-                    <Policy
-                        icon={Lock}
-                        title="5. Data & Privacy"
-                    >
+                    <Policy icon={AlertTriangle} title="4. Information Sharing">
                         <p>
-                            We collect and process data necessary to operate the platform,
-                            improve user experience, and support logistics workflows.
+                            We do not sell your personal information. We may share data with trusted
+                            service providers, authorized partners (with consent), or when required
+                            by law.
                         </p>
-
                         <p>
-                            We do not sell user data. Access to sensitive information is
-                            restricted and protected using industry-standard security
-                            practices.
+                            Information may also be disclosed in connection with business transfers
+                            such as mergers or acquisitions.
                         </p>
                     </Policy>
 
-                    <Policy
-                        icon={Scale}
-                        title="6. Intellectual Property"
-                    >
+                    <Policy icon={Lock} title="5. Data Security">
                         <p>
-                            All platform content, workflows, designs, and logic are the
-                            intellectual property of the company unless otherwise stated.
+                            We use industry-standard safeguards including encryption, secure servers,
+                            access controls, and regular security reviews to protect your data.
                         </p>
-
                         <p>
-                            Users may not copy, resell, reverse-engineer, or misuse any
-                            part of the platform without written permission.
+                            While we take reasonable measures, no online system can be guaranteed
+                            to be 100% secure.
                         </p>
                     </Policy>
 
-                    <Policy
-                        icon={RefreshCcw}
-                        title="7. Changes to These Terms"
-                    >
+                    <Policy icon={RefreshCcw} title="6. Cookies & Tracking">
                         <p>
-                            We may update these terms periodically to reflect changes
-                            in our services, legal requirements, or operational practices.
+                            Cookies help us remember preferences, analyze traffic, personalize content,
+                            and improve site functionality.
                         </p>
-
                         <p>
-                            Continued use of the platform after updates indicates
-                            acceptance of the revised terms.
+                            You may manage cookie settings through your browser. Disabling cookies
+                            may affect certain features.
                         </p>
                     </Policy>
 
-                    <Policy
-                        icon={Mail}
-                        title="8. Contact"
-                    >
+                    <Policy icon={Shield} title="7. Your Privacy Rights">
                         <p>
-                            If you have questions regarding these terms or policies,
-                            please contact our support or legal team.
+                            You may request access, correction, or deletion of your personal data,
+                            opt out of marketing communications, or withdraw consent at any time.
                         </p>
-
                         <p className="font-medium">
-                            📧 support@yourcompany.com
+                            📧 privacy@unitecusadesign.com
+                        </p>
+                    </Policy>
+
+                    <Policy icon={Mail} title="8. Contact">
+                        <p>
+                            For questions about this Privacy Policy or our data practices, please
+                            contact our Privacy Department.
+                        </p>
+                        <p className="font-medium">
+                            📧 privacy@unitecusadesign.com
                         </p>
                     </Policy>
 

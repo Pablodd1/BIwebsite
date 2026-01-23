@@ -68,9 +68,21 @@ export default function ContactPage() {
                         <div className="mt-8 space-y-4">
                             <InfoCard
                                 icon={Mail}
-                                title="Email Us"
+                                title="Bulk Sale"
+                                value="wholesale@unitecusadesign.com"
+                                hint="Best for distributor and wholesale inquiries"
+                            />
+                            <InfoCard
+                                icon={Mail}
+                                title="Product's Query"
                                 value="sales@yourcompany.com"
-                                hint="Best for quotations & documents"
+                                hint="Best for product queries"
+                            />
+                            <InfoCard
+                                icon={Mail}
+                                title="Technical Support"
+                                value="support@unitecusadesign.com"
+                                hint="Best for technical support"
                             />
                             <InfoCard
                                 icon={Phone}
@@ -101,7 +113,7 @@ export default function ContactPage() {
                             <form className="mt-6 grid gap-4 sm:grid-cols-2">
                                 <Input label="Full Name" placeholder="John Doe" />
                                 <Input label="Company Name" placeholder="Your Company LLC" />
-                                <Input label="Email" placeholder="you@company.com" />
+                                <Input label="Email" placeholder="your-name@example.com" />
                                 <Input label="Phone" placeholder="+1 234 567 890" />
 
                                 <div className="sm:col-span-2">
