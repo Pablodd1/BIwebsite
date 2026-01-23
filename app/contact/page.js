@@ -157,8 +157,8 @@ export default function ContactPage() {
 
 function TrustItem({ icon: Icon, label, value }) {
     return (
-        <div className="rounded-xl bg-white/5 p-4 text-center min-h-fit">
-            <Icon strokeWidth={0.5} className="mx-auto mb-5 h-full w-auto text-gray-300" />
+        <div className="rounded-xl bg-white/5 p-4 text-center md:min-h-fit">
+            <Icon strokeWidth={0.5} className="mx-auto mb-5 h-18 md:h-full w-auto text-gray-300" />
             <p className="text-xs text-gray-400 uppercase tracking-wide">{label}</p>
             <p className="text-sm font-thin tracking-widest uppercase my-2 ">{value}</p>
         </div>

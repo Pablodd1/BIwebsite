@@ -24,13 +24,13 @@ export default function RecommendationsSection({ itemID, title = "You might also
     return (
         <section className="my-24 w-11/12">
             <Stylish_H2 h2={title} />
-            <div className="grid grid-cols-2 md:grid-cols-4 w-full gap-8">
+            {/* <div className="grid grid-cols-2 md:grid-cols-4 w-full gap-8"> */}
                 {
                     loading
                         ? <div className="text-center  col-span-full min-h-24 w-full min-w-96 py-20 text-gray-500">Loading products...</div>
                         : <EmblaCarousel slides={products} options={OPTIONS} />
                 }
-            </div>
+            {/* </div> */}
         </section>
     );
 }

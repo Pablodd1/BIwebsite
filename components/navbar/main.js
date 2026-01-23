@@ -6,23 +6,24 @@ import SearchFrom from './search';
 import Logo from 'My_UI/logo';
 
 const navItems = [
-    { label: 'Home', id: 'home', href: '/', icon: <Logo size={50} />, onlyIcon: true },
-    { label: 'Collections', id: 'collections', icon:<Library className=' text-inherit h-5' />, href: '/collections' },
+    { label: 'Home', id: 'home', href: '/', icon: <Logo size={50} className={'min-w-10'} />, onlyIcon: true },
+    { label: 'Collections', id: 'collections', icon: <Library className=' text-inherit h-5' />, href: '/collections' },
     { label: 'Interiors', id: 'interiors', href: '/collections/interior' },
     { label: 'Exteriors', id: 'exteriors', href: '/collections/exterior' },
     { label: 'Sale', id: 'sale', href: '/collections/sales' },
     { label: 'Contact', id: 'contact', href: '/contact' }
 ];
 
-const NavBar = ({ }) => {
+const NavBar = async ({ searchParams}) => {
+    const q = (await searchParams)?.q
 
     return (
         <header className="sticky top-0 z-30 bg-primary/75 shadow-accent2 border-b border-gray-300 shadow-sm backdrop-blur-md text-black  pr-8 pl-5 py-2.5">
             <div className="max-w-400 mx-auto flex items-center justify-between">
 
                 {/* Navigation Links - Matching the screenshot style */}
-                <nav className="flex items-center ">
-                    {navItems.map((item) => (
+                <nav className="items-center flex ">
+                    {navItems.map((item, index) => (
                         <Link
                             key={item.id}
                             href={item.href}
@@ -35,10 +36,10 @@ const NavBar = ({ }) => {
                                     <>
                                         {
                                             item.icon ?
-                                                <span className='inline-flex' >{item.icon}</span>
+                                                <span className={`lg:inline-flex ${index > 1 ? "hidden" : "inline-flex"}`} >{item.icon}</span>
                                                 : null
                                         }
-                                        {item.label}
+                                        <span className={`lg:block ${index > 1 ? "hidden" : ""}`}> {item.label}</span>
                                     </>
                             }
                         </Link>
@@ -46,17 +47,17 @@ const NavBar = ({ }) => {
                 </nav>
 
                 {/* Actions Area */}
-                <div className="flex items-center gap-2 flex-1 justify-end ml-12">
+                <div className="flex items-center gap-2 flex-1 justify-end ml-2 md:ml-12">
 
                     {/* Search Bar - Matching the rounded pill design from screenshot */}
-                    <SearchFrom />
+                    <SearchFrom query={q} />
 
                     {/* Icons */}
                     <div className="flex items-center gap-1">
                         <CartButton />
-                        <div className="px-2 hover:bg-white/5 rounded-full transition-all group">
+                        {/* <div className="px-2 hover:bg-white/5 rounded-full transition-all group">
                             <User className="w-fit h-full text-inherit" />
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </div>

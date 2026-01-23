@@ -3,9 +3,8 @@
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { Search } from "lucide-react";
-import Image from "next/image";
 
-export default function SearchFrom({ full = false }) {
+export default function SearchFrom({ full = false, query: q }) {
     const [query, setQuery] = useState("");
     const router = useRouter();
 
@@ -16,14 +15,14 @@ export default function SearchFrom({ full = false }) {
     };
 
     return (
-        <div className={` relative w-full  ${full ? ' max-w-4/5 lg:max-w-xl my-20 ' : 'max-w-85'}`}>
+        <div className={` relative w-full  ${full ? ' max-w-4/5 lg:max-w-xl my-20 ' : ' hidden sm:block max-w-85'}`}>
             <Search className={`absolute text-secondary ${full ? 'left-3 top-2 w-6 h-6 ' : 'w-4 h-4 left-4  top-1/2 -translate-y-1/2'} `} />
             <input
                 type="search"
                 inputMode="search"
                 enterKeyHint="search"
                 autoComplete="off"
-                value={query}
+                value={q || query}
                 onChange={(e) => setQuery(e.target.value)}
                 onKeyDown={handleKeyDown}
                 placeholder="Search..."

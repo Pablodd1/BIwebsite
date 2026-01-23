@@ -47,7 +47,7 @@ export default function Collections_UI({ h1, description, productURL, cover, pre
                     ? <div className="text-center py-20 text-gray-500">Loading products...</div> :
                     displayedProducts?.length > 0 ?
                         <>
-                            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 max-w-7xl mx-auto ">
+                            <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-2 max-w-7xl mx-auto ">
                                 {displayedProducts.map(p => <ProductItem key={p.ID} item={p} />)}
                             </div>
 

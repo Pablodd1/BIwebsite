@@ -38,7 +38,7 @@ export default function WhyWeSection() {
                     {features.map((item, index) => (
                         <div
                             key={item.id}
-                            className="flex flex-col border-r-2 border-accent2/75 py-5 last-of-type:border-r-0"
+                            className="flex flex-col border-b-2 md:border-r-2 border-accent2/75 py-5 last-of-type:border-0 md:border-b-0"
                         >
                             <span className="text-sm tracking-widest text-secondary font-extrabold mb-2">
                                 {item.id}

@@ -30,19 +30,6 @@ export default function ProductSection({ product }) {
                     <div className="border-b pb-2">Shipping & Returns</div>
                 </div>
 
-                <div className="flex items-center gap-4 mb-6">
-                    <select className="border px-3 py-2 text-sm">
-                        {product.colors?.map((color) => (
-                            <option key={color}>{color}</option>
-                        ))}
-                    </select>
-
-                    <select className="border px-3 py-2 text-sm">
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                    </select>
-                </div>
 
                 <div className="text-lg font-medium mb-6">
                     <GetFinalPrice basePrice={product.basePrice} discountPercent={product.discountPercent} />
