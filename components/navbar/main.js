@@ -3,9 +3,10 @@ import { House, Library, Search, Shapes, User } from 'lucide-react';
 import Link from 'next/link';
 import { CartButton } from './cartBtn';
 import SearchFrom from './search';
+import Logo from 'My_UI/logo';
 
 const navItems = [
-    { label: 'Home', id: 'home', href: '/', icon: <House />, onlyIcon: true },
+    { label: 'Home', id: 'home', href: '/', icon: <Logo size={50} />, onlyIcon: true },
     { label: 'Collections', id: 'collections', icon:<Library className=' text-inherit h-5' />, href: '/collections' },
     { label: 'Interiors', id: 'interiors', href: '/collections/interior' },
     { label: 'Exteriors', id: 'exteriors', href: '/collections/exterior' },
