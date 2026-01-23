@@ -5,6 +5,7 @@ import SearchFrom from "My_UI/navbar/search";
 import ProductItem from "My_UI/product/item";
 import MyPagination from "My_UI/product/pagination";
 import RecommendationsSection from "My_UI/product_ui/recommended_section";
+import Image from "next/image";
 import { useSearchParams } from "next/navigation";
 import { useEffect, useState } from "react";
 
@@ -56,8 +57,14 @@ export default function Collections() {
                     : <NoProductsFound />
         )
             :
-            <section className="min-h-screen flex flex-col items-center justify-center py-[15%]" >
-                <SearchFrom />
+            <section className="min-h-screen bg-primary flex flex-col items-center justify-center py-10" >
+                <Image
+                    alt="banner"
+                    className=" object-center object-contain"
+                    fill
+                    src={"/raster/contianer front2.png"}
+                />
+                <SearchFrom full />
                 <RecommendationsSection />
             </section>
 
