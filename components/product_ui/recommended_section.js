@@ -1,5 +1,5 @@
 'use client'
-import EmblaCarousel from "My_UI//slides/main";
+import EmblaCarousel from "My_UI/slides/main";
 import Stylish_H2 from "My_UI/stylish_h2";
 import { useEffect, useState } from "react";
 
