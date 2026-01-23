@@ -7,6 +7,7 @@ Disallow:
 Disallow: /admin/
 Disallow: /user/
 Disallow: /checkout/
+Disallow: /collections/search
 
 # Allow Googlebot complete access
 User-agent: Googlebot

@@ -11,7 +11,6 @@ import {
     RefreshCcw,
     Mail,
 } from "lucide-react"
-
 export default function PoliciesPage() {
     return (
         <main className="w-full">

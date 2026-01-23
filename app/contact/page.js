@@ -13,7 +13,8 @@ import {
     Send,
 } from "lucide-react"
 import Stylish_H2 from "My_UI/stylish_h2"
-import Map from "./map"
+import Map from "./map";
+
 
 export default function ContactPage() {
     return (

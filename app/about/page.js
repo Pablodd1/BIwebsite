@@ -22,14 +22,13 @@ import {
     Volume2,
     Palette,
 } from "lucide-react"
-import HowShippingWorks from "My_UI/product_ui/steps"
 import Stylish_H2 from "My_UI/stylish_h2"
 
 export default function AboutPage() {
     return (
         <main className="w-full">
             {/* ================= HERO ================= */}
-            <section className="bg-gradient-to-br from-black to-gray-900 py-24 text-white">
+            <section className="bg-linear-to-br from-black to-gray-900 py-24 text-white">
                 <div className="mx-auto max-w-6xl px-4">
                     <motion.h1
                         initial={{ opacity: 0, y: 20 }}
