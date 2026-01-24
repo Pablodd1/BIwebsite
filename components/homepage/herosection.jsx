@@ -21,10 +21,10 @@ export default function HeroSec() {
 
                     <figure className="order-2 md:order-1 relative  max-h-full flex items-center justify-center overflow-visible ">
                         <Image
-                            src="/raster/contianer front4.webp"
+                            src="/raster/containes.avif"
                             alt="banner image"
-                            width={1024} height={1024}
-                            fetchPriority="high" priority
+                            width={512} height={512}
+                            priority
                             className="mx-auto max-w-4/5 md:min-w-[512] max-h-full w-3/5 md:h-auto z-10  md:w-full "
                         />
                         <figcaption className="absolute text-gray-900 top-1/2 left-1/2 -translate-1/2 w-full  md:w-[150%] h-[150%] z-0 " >
