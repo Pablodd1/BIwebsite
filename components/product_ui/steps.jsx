@@ -1,3 +1,5 @@
+"use client"
+
 import {
   Truck,
   Container,
@@ -5,36 +7,39 @@ import {
   ArrowRight,
 } from "lucide-react"
 import Stylish_H2 from "My_UI/stylish_h2"
-
-const steps = [
-  {
-    id: 1,
-    title: "Select Products",
-    desc: "Choose one or multiple products",
-    icon: PackageSearch ,
-  },
-  {
-    id: 2,
-    title: "Fill the Container",
-    desc: "Products are packed into a container",
-    icon: Container ,
-  },
-  {
-    id: 3,
-    title: "Get It Shipped",
-    desc: "Container ships safely to you",
-    icon: Truck,
-  },
-]
+import { useLanguage } from "lib/LanguageContext"
 
 export default function HowShippingWorks() {
+  const { t } = useLanguage();
+
+  const steps = [
+    {
+      id: 1,
+      title: t("steps.items.select.title"),
+      desc: t("steps.items.select.desc"),
+      icon: PackageSearch,
+    },
+    {
+      id: 2,
+      title: t("steps.items.fill.title"),
+      desc: t("steps.items.fill.desc"),
+      icon: Container,
+    },
+    {
+      id: 3,
+      title: t("steps.items.ship.title"),
+      desc: t("steps.items.ship.desc"),
+      icon: Truck,
+    },
+  ]
+
   return (
     <section className="w-full py-32 my-14 bg-accent1">
       <div className="mx-auto max-w-5xl px-4">
-        <Stylish_H2 h2={"How Shipping Works"} className="mb-2 text-center text-lg uppercase tracking-wider font-semibold"/>
+        <Stylish_H2 h2={t("steps.title")} className="mb-2 text-center text-lg uppercase tracking-wider font-semibold" />
 
         <p className="mb-14 mt-2 text-sm text-muted-foreground">
-          Simple, transparent, and optimized for safe delivery
+          {t("steps.subtitle")}
         </p>
 
         <div className="grid gap-6 md:grid-cols-3">
@@ -48,12 +53,12 @@ export default function HowShippingWorks() {
               >
                 {/* Icon */}
                 <div className="mb-4 flex h-14 w-14 items-center justify-center rounded-full bg-black text-white">
-                  <Icon className=" h-auto w-2/3 stroke-1"/>
+                  <Icon className=" h-auto w-2/3 stroke-1" />
                 </div>
 
                 {/* Text */}
                 <h3 className="text-sm font-semibold">
-                 <span className="font-extrabold tracking-wider">0{index+1}  — </span>{step.title}
+                  <span className="font-extrabold tracking-wider">0{index + 1}  — </span>{step.title}
                 </h3>
                 <p className="mt-1 text-xs text-muted-foreground">
                   {step.desc}
@@ -72,7 +77,7 @@ export default function HowShippingWorks() {
 
         {/* Confidence footer */}
         <div className="mt-6 rounded-xl text-black px-4 py-3 text-center text-xs">
-          You stay in control — containers update automatically as you add or remove products.
+          {t("steps.footer")}
         </div>
       </div>
     </section>

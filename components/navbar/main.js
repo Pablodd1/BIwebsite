@@ -1,9 +1,14 @@
+"use client";
+
 import React from 'react';
 import { House, Library, Search, Shapes, User } from 'lucide-react';
 import Link from 'next/link';
 import { CartButton } from './cartBtn';
 import SearchFrom from './search';
 import Logo from 'My_UI/logo';
+import LanguageToggle from './LanguageToggle';
+import { useLanguage } from 'lib/LanguageContext';
+import { useBrand } from 'lib/BrandContext';
 
 const navItems = [
     { label: 'Home', id: 'home', href: '/', icon: <Logo size={50} className={'min-w-10'} />, onlyIcon: true },
@@ -14,8 +19,21 @@ const navItems = [
     { label: 'Contact', id: 'contact', href: '/contact' }
 ];
 
-const NavBar = async ({ searchParams}) => {
-    const q = (await searchParams)?.q
+const BrandToggle = () => {
+    const { activeBrand, toggleBrand } = useBrand();
+    return (
+        <button
+            onClick={toggleBrand}
+            className="text-xs font-bold px-2 py-1 bg-black text-white rounded hover:bg-gray-800 transition-colors uppercase ml-2"
+        >
+            {activeBrand === 'binw' ? 'UNITEC' : 'BINW'}
+        </button>
+    )
+}
+
+const NavBar = ({ searchParams }) => {
+    const { t } = useLanguage();
+    const q = searchParams?.q
 
     return (
         <header className="sticky top-0 z-30 bg-primary/75 shadow-accent2 border-b border-gray-300 shadow-sm backdrop-blur-md text-black  pr-8 pl-5 py-2.5">
@@ -40,7 +58,7 @@ const NavBar = async ({ searchParams}) => {
                                                 <span className={`lg:inline-flex ${index > 1 ? "hidden" : "inline-flex"}`} >{item.icon}</span>
                                                 : null
                                         }
-                                        <span className={`lg:block ${index > 1 ? "hidden" : ""}`}> {item.label}</span>
+                                        <span className={`lg:block ${index > 1 ? "hidden" : ""}`}> {t(`nav.${item.id}`)}</span>
                                     </>
                             }
                         </Link>
@@ -56,6 +74,8 @@ const NavBar = async ({ searchParams}) => {
                     {/* Icons */}
                     <div className="flex items-center gap-1">
                         <CartButton />
+                        <LanguageToggle />
+                        <BrandToggle />
                         {/* <div className="px-2 hover:bg-white/5 rounded-full transition-all group">
                             <User className="w-fit h-full text-inherit" />
                         </div> */}

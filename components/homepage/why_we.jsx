@@ -1,36 +1,38 @@
-import Stylish_H2 from "My_UI/stylish_h2";
+"use client";
 
-const features = [
-    {
-        id: "01",
-        title: "Innovation",
-        text: "We challenge traditional construction methods by developing advanced PVC and WPC building materials that combine modern design, performance, and ease of installation. Our products are engineered to simplify projects without sacrificing quality or aesthetics.",
-    },
-    {
-        id: "02",
-        title: "Quality & Durability",
-        text: "Every Unitec product is built to last. With high pure-PVC content, 100% waterproof performance, fire-resistant properties, and industry-leading warranties, we deliver materials that outperform conventional alternatives in real-world conditions.",
-    },
-    {
-        id: "03",
-        title: "Sustainability",
-        text: "Environmental responsibility is built into everything we make. Our materials contain recycled content, are fully recyclable, require zero maintenance, and reduce long-term waste—supporting sustainable construction without compromise.",
-    },
-];
+import Stylish_H2 from "My_UI/stylish_h2";
+import { useLanguage } from "lib/LanguageContext";
 
 export default function WhyWeSection() {
+    const { t } = useLanguage();
+
+    const features = [
+        {
+            id: "01",
+            title: t("why.features.innovation.title"),
+            text: t("why.features.innovation.text"),
+        },
+        {
+            id: "02",
+            title: t("why.features.quality.title"),
+            text: t("why.features.quality.text"),
+        },
+        {
+            id: "03",
+            title: t("why.features.sustainability.title"),
+            text: t("why.features.sustainability.text"),
+        },
+    ];
+
     return (
         <section className="w-full bg-white px-6 md:px-16 lg:px-24 py-16 my-20 relative">
             <div className="max-w-6xl mx-auto">
                 {/* Header */}
-                <Stylish_H2 h2={"Why Unitec"} />
+                <Stylish_H2 h2={t("why.title")} />
 
                 {/* Description */}
                 <p className="max-w-3xl text-md text-accent2 mx-auto text-center mb-14">
-                    Unitec USA Design was founded on a simple idea: building materials should be
-                    innovative, durable, and environmentally responsible—without being complicated
-                    or costly. We create modern PVC and WPC solutions that help professionals and
-                    homeowners build smarter, faster, and with confidence.
+                    {t("why.description")}
                 </p>
 
                 {/* Features */}

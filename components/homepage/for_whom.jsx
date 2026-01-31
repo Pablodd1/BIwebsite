@@ -3,26 +3,29 @@
 import { motion } from "framer-motion"
 import { Warehouse, Truck, Factory } from "lucide-react"
 import MyButton from "My_UI/btn/main"
-
-const USERS = [
-    {
-        icon: Warehouse,
-        title: "Wholesalers",
-        desc: "Buy in volume, consolidate shipments, and control cost per unit with precision.",
-    },
-    {
-        icon: Truck,
-        title: "Importers & exporters",
-        desc: "Plan container loads in advance and eliminate shipping inefficiencies.",
-    },
-    {
-        icon: Factory,
-        title: "Manufacturers",
-        desc: "Ship products in bulk directly to partners without fragmented logistics.",
-    },
-]
+import { useLanguage } from "lib/LanguageContext"
 
 export default function WhoItsFor() {
+    const { t } = useLanguage();
+
+    const USERS = [
+        {
+            icon: Warehouse,
+            title: t("whom.users.wholesalers.title"),
+            desc: t("whom.users.wholesalers.desc"),
+        },
+        {
+            icon: Truck,
+            title: t("whom.users.importers.title"),
+            desc: t("whom.users.importers.desc"),
+        },
+        {
+            icon: Factory,
+            title: t("whom.users.manufacturers.title"),
+            desc: t("whom.users.manufacturers.desc"),
+        },
+    ]
+
     return (
         <section className="py-24">
             <div className="max-w-6xl mx-auto px-4">
@@ -33,14 +36,13 @@ export default function WhoItsFor() {
                         viewport={{ once: true }}
                     >
                         <h2 className="text-3xl w-4/5 tracking-wider font-medium uppercase">
-                            Designed for serious bulk buyers
+                            {t("whom.title")}
                         </h2>
                         <p className="my-4 text-sm w-8/12 text-gray-600 leading-relaxed">
-                            If your business ships products by container — not parcels —
-                            this platform gives you the clarity and control traditional ecommerce never could.
+                            {t("whom.description")}
                         </p>
                         <MyButton
-                            label="About Us"
+                            label={t("whom.btn")}
                             href="/about"
                             className={{
                                 btn: "bg-primary px-5 py-2 h-10 ",

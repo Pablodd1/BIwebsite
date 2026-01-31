@@ -3,8 +3,10 @@
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { Search } from "lucide-react";
+import { useLanguage } from "lib/LanguageContext";
 
 export default function SearchFrom({ full = false, query: q }) {
+    const { t } = useLanguage();
     const [query, setQuery] = useState("");
     const router = useRouter();
 
@@ -25,7 +27,7 @@ export default function SearchFrom({ full = false, query: q }) {
                 value={q || query}
                 onChange={(e) => setQuery(e.target.value)}
                 onKeyDown={handleKeyDown}
-                placeholder="Search..."
+                placeholder={t("search.placeholder")}
                 className={`w-full ${full ? 'bg-white/95' : 'bg-accent1/75'} border border-transparent focus:border-primary rounded-full py-2.5 pl-11 pr-5 text-sm text-inherit placeholder:text-gray-700 focus:outline-none search-input-focus transition-all`}
             />
         </div>

@@ -21,7 +21,25 @@ const inter = Inter({
 
 export async function generateMetadata() {
   const data = null;
-  const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL || process.env.BASE_URL;
+  const rawBaseUrl = process.env.NEXT_PUBLIC_BASE_URL || process.env.BASE_URL || "";
+  const resolveBaseUrl = (value) => {
+    if (!value) {
+      return "http://localhost:3000";
+    }
+
+    const trimmed = value.trim();
+    if (!trimmed) {
+      return "http://localhost:3000";
+    }
+
+    const withProtocol = /^https?:\/\//i.test(trimmed) ? trimmed : `https://${trimmed}`;
+    try {
+      return new URL(withProtocol).toString();
+    } catch {
+      return "http://localhost:3000";
+    }
+  };
+  const BASE_URL = resolveBaseUrl(rawBaseUrl);
 
   const defaults = {
     title:
@@ -123,21 +141,27 @@ export async function generateMetadata() {
   }
 }
 
+import Providers from "./providers";
+
+// ... existing imports
+
 export default function RootLayout({ children }) {
 
   return (
     <html lang="en">
       <body className={`${inter.className}`}>
-        <NavBar />
-        {children}
-        <Footer />
-        <CartInit />
-        <CartDrawer />
-        <div id="modal-root" />
-        <div id="notify-container" />
-        <Suspense fallback={<Loader />}>
-          <NotifyPortal />
-        </Suspense>
+        <Providers>
+          <NavBar />
+          {children}
+          <Footer />
+          <CartInit />
+          <CartDrawer />
+          <div id="modal-root" />
+          <div id="notify-container" />
+          <Suspense fallback={<Loader />}>
+            <NotifyPortal />
+          </Suspense>
+        </Providers>
       </body>
     </html>
   );

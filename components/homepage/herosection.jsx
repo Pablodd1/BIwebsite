@@ -1,7 +1,10 @@
+"use client";
+
 import Image from "next/image";
 import styles from "./herosection.module.css";
 import MyButton from "My_UI/btn/main";
 import { Facebook, Instagram, Twitter, Youtube } from "lucide-react";
+import { useLanguage } from "lib/LanguageContext";
 
 const socials = [
     { Icon: Facebook, label: "Facebook" },
@@ -11,8 +14,10 @@ const socials = [
 ];
 
 export default function HeroSec() {
+    const { t } = useLanguage();
+
     return (
-        <main className="overflow-hidden bg-accent1 min-h-screen">
+        <main className="overflow-hidden bg-accent1 min-h-screen relative">
             <section className="pt-24 md:pb-12">
                 <div className="relative mx-auto max-w-300 px-6
                         grid gap-y-12 gap-x-8
@@ -35,14 +40,14 @@ export default function HeroSec() {
                     </figure>
                     <div className="flex flex-col justify-center gap-6 ">
                         <h1 className="text-3xl md:text-6xl md:leading-18 tracking-wide font-semibold  w-11/12 ">
-                            Fill Your <strong className=" bg-primary rounded-2xl px-1 text-orange-800" >Container.</strong> Ship Your Way.
+                            {t('hero.title_start')} <strong className=" bg-primary rounded-2xl px-1 text-orange-800" >{t('hero.title_highlight')}</strong> {t('hero.title_end')}
                         </h1>
 
                         <p className="text-base font-normal text-black w-8/12">
-                            Choose the products you want, pack them into your container, and we’ll handle the shipping — simple, flexible, and built around you.
+                            {t('hero.subtitle')}
                         </p>
                         <MyButton
-                            label="Explore Products"
+                            label={t('hero.btn')}
                             href="/collections"
                             className={{
                                 btn: "bg-primary px-5 py-2 h-10 ",

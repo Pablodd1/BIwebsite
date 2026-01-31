@@ -3,31 +3,34 @@
 import { motion } from "framer-motion"
 import { Boxes, Ruler, Layers3, ShieldCheck } from "lucide-react"
 import Stylish_H2 from "My_UI/stylish_h2"
-
-const FEATURES = [
-    {
-        icon: Boxes,
-        title: "Container-first commerce",
-        desc: "Products are grouped by containers, not scattered carts. This ensures accurate volume planning and shipping efficiency.",
-    },
-    {
-        icon: Ruler,
-        title: "Volume-aware packing",
-        desc: "Every product contributes to container capacity so you always know how full your shipment is before checkout.",
-    },
-    {
-        icon: Layers3,
-        title: "Multi-product optimization",
-        desc: "Mix and match multiple products intelligently within a single container to reduce cost per unit.",
-    },
-    {
-        icon: ShieldCheck,
-        title: "Predictable logistics",
-        desc: "No hidden shipping surprises. What you see in the container is exactly what gets shipped.",
-    },
-]
+import { useLanguage } from "lib/LanguageContext"
 
 export default function BuiltForBulk() {
+    const { t } = useLanguage();
+
+    const FEATURES = [
+        {
+            icon: Boxes,
+            title: t("bulk.features.container.title"),
+            desc: t("bulk.features.container.desc"),
+        },
+        {
+            icon: Ruler,
+            title: t("bulk.features.volume.title"),
+            desc: t("bulk.features.volume.desc"),
+        },
+        {
+            icon: Layers3,
+            title: t("bulk.features.multi.title"),
+            desc: t("bulk.features.multi.desc"),
+        },
+        {
+            icon: ShieldCheck,
+            title: t("bulk.features.logistics.title"),
+            desc: t("bulk.features.logistics.desc"),
+        },
+    ]
+
     return (
         <section className="py-24 bg-gray-50">
             <div className="max-w-6xl mx-auto px-4">
@@ -37,10 +40,9 @@ export default function BuiltForBulk() {
                     viewport={{ once: true }}
                     className=""
                 >
-                    <Stylish_H2 h2={"Built for bulk. Designed for control."} />
+                    <Stylish_H2 h2={t("bulk.title")} />
                     <p className="mt-4 text-gray-600 text-sm">
-                        Traditional carts weren&apos;t made for container shipping.
-                        We built a system that thinks in volume, not guesswork.
+                        {t("bulk.subtitle")}
                     </p>
                 </motion.div>
 

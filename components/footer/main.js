@@ -1,16 +1,47 @@
+"use client";
+
 import Link from 'next/link';
-import navData from './links.json';
 import { Facebook, Instagram, Twitter, Youtube } from "lucide-react";
 import Logo from 'My_UI/logo';
+import { useLanguage } from 'lib/LanguageContext';
+import { useBrand } from 'lib/BrandContext';
 
 const socials = [
-    { Icon: Facebook, label: "Facebook" },
-    { Icon: Instagram, label: "Instagram" },
-    { Icon: Twitter, label: "Twitter" },
-    { Icon: Youtube, label: "YouTube" },
+    { Icon: Facebook, label: "Facebook", link: "#" },
+    { Icon: Instagram, label: "Instagram", link: "#" },
+    { Icon: Twitter, label: "Twitter", link: "#" },
+    { Icon: Youtube, label: "YouTube", link: "#" },
 ];
 
 const Footer = () => {
+    const { t } = useLanguage();
+    const { brand } = useBrand();
+
+    const navData = {
+        logo: {
+            text: brand.name,
+            tagline: t("footer.logo.tagline")
+        },
+        contact: {
+            phone: "+91 9999 999 999",
+            email: "info@unitecusadesign.com"
+        },
+        information: [
+            { title: t("footer.information.links.collections"), link: "/collections" },
+            { title: t("footer.information.links.exteriors"), link: "/collections/exterior" },
+            { title: t("footer.information.links.interiors"), link: "/collections/interior" },
+            { title: t("footer.information.links.sales"), link: "/collections/sales" }
+        ],
+        helpfulLinks: [
+            { title: t("footer.helpful.links.about"), link: "/about" },
+            { title: t("footer.helpful.links.supports"), link: "/contact" },
+            { title: t("footer.helpful.links.faqs"), link: "/faq" },
+            { title: t("footer.helpful.links.search"), link: "/collections/search" },
+            { title: t("footer.helpful.links.terms"), link: "/terms" },
+            { title: t("footer.helpful.links.privacy"), link: "/policies" }
+        ]
+    };
+
     return (
         <footer className="bg-black text-gray-300 pt-16">
             <div className="container mx-auto px-6">
@@ -25,7 +56,7 @@ const Footer = () => {
 
                         {/* Contact Section */}
                         <div className="text-center mb-8">
-                            <p className="text-lg text-accent1 uppercase tracking-widest font-semibold">Contact Us</p>
+                            <p className="text-lg text-accent1 uppercase tracking-widest font-semibold">{t("footer.contact.title")}</p>
                             <p>{navData.contact.phone}</p>
                             <p>{navData.contact.email}</p>
                         </div>
@@ -34,7 +65,7 @@ const Footer = () => {
 
                     {/* Information Section */}
                     <div className="mb-8">
-                        <h3 className="text-xl mb-4 text-accent1 ">Information</h3>
+                        <h3 className="text-xl mb-4 text-accent1 ">{t("footer.information.title")}</h3>
                         <ul className="space-y-2 px-2" >
                             {navData.information.map((item, index) => (
                                 <li key={index}>
@@ -46,7 +77,7 @@ const Footer = () => {
 
                     {/* Helpful Links Section */}
                     <div className="mb-8 ">
-                        <h3 className="text-xl mb-4 text-accent1">Helpful Links</h3>
+                        <h3 className="text-xl mb-4 text-accent1">{t("footer.helpful.title")}</h3>
                         <ul className="space-y-2 px-2">
                             {navData.helpfulLinks.map((item, index) => (
                                 <li key={index}>
@@ -57,14 +88,14 @@ const Footer = () => {
                     </div>
                     {/* Subscribe Section */}
                     <div className="text-center mb-8 max-w-64 float-right mx-auto lg:mr-0 relative lg:ml-auto w-full sm:col-span-2 md:col-span-3 lg:col-span-1 ">
-                        <p className="text-lg">Subscribe for More Info</p>
+                        <p className="text-lg">{t("footer.subscribe.title")}</p>
                         <div className="flex flex-col justify-center my-5">
                             <input
                                 type="email"
-                                placeholder="Enter your email"
+                                placeholder={t("footer.subscribe.placeholder")}
                                 className="p-2 rounded-t-lg placeholder:text-accent2 border-2 border-primary"
                             />
-                            <button aria-label='Subscribe Button' className="bg-primary text-secondary  font-semibold hover:bg-secondary hover:text-white transition-all ease-in duration-300 cursor-pointer tracking-superwide uppercase py-2 px-3.5 rounded-b-lg ">Subscribe</button>
+                            <button aria-label='Subscribe Button' className="bg-primary text-secondary  font-semibold hover:bg-secondary hover:text-white transition-all ease-in duration-300 cursor-pointer tracking-superwide uppercase py-2 px-3.5 rounded-b-lg ">{t("footer.subscribe.btn")}</button>
                         </div>
                     </div>
                 </section>
@@ -78,7 +109,7 @@ const Footer = () => {
                     ))}
                     {/* Bottom Copyright */}
                     <div className="text-center font-serif text-sm absolute right-0">
-                        <p>&copy; 2016 Company Name. All rights reserved.</p>
+                        <p>&copy; 2016 Company Name. {t("footer.rights")}</p>
                     </div>
                 </div>
 
