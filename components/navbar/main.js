@@ -13,9 +13,19 @@ import { useBrand } from 'lib/BrandContext';
 const navItems = [
     { label: 'Home', id: 'home', href: '/', icon: <Logo size={50} className={'min-w-10'} />, onlyIcon: true },
     { label: 'Collections', id: 'collections', icon: <Library className=' text-inherit h-5' />, href: '/collections' },
+
     { label: 'Interiors', id: 'interiors', href: '/collections/interior' },
     { label: 'Exteriors', id: 'exteriors', href: '/collections/exterior' },
-    { label: 'Sale', id: 'sale', href: '/collections/sales' },
+    {
+        label: 'About Us',
+        id: 'institutional',
+        href: '/about',
+        submenu: [
+            { label: 'Who we are', href: '/about#who-we-are' },
+            { label: 'Committed to quality', href: '/about#quality' },
+            { label: 'Negotiation modalities', href: '/about#negotiation' },
+        ]
+    },
     { label: 'Contact', id: 'contact', href: '/contact' }
 ];
 
@@ -42,26 +52,47 @@ const NavBar = ({ searchParams }) => {
                 {/* Navigation Links - Matching the screenshot style */}
                 <nav className="items-center flex ">
                     {navItems.map((item, index) => (
-                        <Link
-                            key={item.id}
-                            href={item.href}
-                            aria-label={`Go To ${item.href}`}
-                            className="text-sm uppercase tracking-widest mx-5 first-of-type:mx-0 font-semibold flex items-center transition-all whitespace-nowrap cursor-pointer"
-                        >
-                            {
-                                item.onlyIcon
-                                    ? item.icon
-                                    :
-                                    <>
-                                        {
-                                            item.icon ?
-                                                <span className={`lg:inline-flex ${index > 1 ? "hidden" : "inline-flex"}`} >{item.icon}</span>
-                                                : null
-                                        }
-                                        <span className={`lg:block ${index > 1 ? "hidden" : ""}`}> {t(`nav.${item.id}`)}</span>
-                                    </>
-                            }
-                        </Link>
+                        <div key={item.id} className="relative group mx-5 first-of-type:mx-0">
+                            <Link
+                                href={item.href}
+                                aria-label={`Go To ${item.href}`}
+                                className="text-sm uppercase tracking-widest  font-semibold flex items-center transition-all whitespace-nowrap cursor-pointer"
+                            >
+                                {
+                                    item.onlyIcon
+                                        ? item.icon
+                                        :
+                                        <>
+                                            {
+                                                item.icon ?
+                                                    <span className={`lg:inline-flex ${index > 1 ? "hidden" : "inline-flex"}`} >{item.icon}</span>
+                                                    : null
+                                            }
+                                            <span className={`lg:block ${index > 1 ? "hidden" : ""}`}> {item.id === 'institutional' ? "INSTITUTIONAL INFORMATION" : t(`nav.${item.id}`)}</span>
+                                        </>
+                                }
+                            </Link>
+
+                            {/* Dropdown Menu */}
+                            {item.submenu && (
+                                <div className="absolute left-5 top-full pt-2 w-max opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 ease-in-out">
+                                    <div className="bg-white/95 backdrop-blur-sm shadow-lg rounded-md border border-gray-100 overflow-hidden flex flex-col min-w-[200px]">
+                                        <div className="px-4 py-2 bg-gray-50 text-xs font-bold text-gray-500 uppercase tracking-wider border-b border-gray-100">
+                                            About Us
+                                        </div>
+                                        {item.submenu.map((subItem) => (
+                                            <Link
+                                                key={subItem.href}
+                                                href={subItem.href}
+                                                className="px-4 py-3 text-sm hover:bg-gray-50 transition-colors border-b last:border-0 border-gray-50 text-gray-700 hover:text-black"
+                                            >
+                                                {subItem.label}
+                                            </Link>
+                                        ))}
+                                    </div>
+                                </div>
+                            )}
+                        </div>
                     ))}
                 </nav>
 
