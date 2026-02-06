@@ -36,9 +36,11 @@ export async function generateMetadata(_, parent) {
 }
 
 
-export default function Collections() {
+export default async function Collections({ searchParams }) {
+    const sp = await searchParams;
     return (
         <Collections_UI
+            searchParams={sp}
             h1={"Sale & Clearance Products"}
             description={"Get premium PVC and WPC building materials at reduced prices. Our sale section features discounted, high-quality products ideal for bulk orders, contractor projects, and cost-conscious developments—without compromising on performance, durability, or warranty coverage."}
             cover={{

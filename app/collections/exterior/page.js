@@ -37,9 +37,11 @@ export async function generateMetadata(_, parent) {
     };
 }
 
-export default function Collections() {
+export default async function Collections({ searchParams }) {
+    const sp = await searchParams;
     return (
         <Collections_UI
+            searchParams={sp}
             h1={"Exterior Building Solutions"}
             description={"Discover high-performance PVC sheets designed for exterior applications. Built to withstand moisture, UV exposure, fire, and harsh environmental conditions, our exterior solutions deliver long-lasting durability with zero maintenance—ideal for facades, cladding, roofing, and outdoor architectural elements."}
             cover={{

@@ -10,10 +10,10 @@ import FilterUI from "My_UI/collections/filters_UI";
 import NoProductsFound from "./noproduct";
 
 
-export default function Collections_UI({ h1, description, productURL, cover, prefilters }) {
-    const searchParams = useSearchParams();
-    const queryCategory = searchParams.get("category");
-    const querySubcategory = searchParams.get("subcategory");
+export default function Collections_UI({ searchParams, h1, description, productURL, cover, prefilters }) {
+    
+    const queryCategory = searchParams.category;
+    const querySubcategory = searchParams.subcategory;
 
     const [products, setProducts] = useState([]);
     const [currentPage, setCurrentPage] = useState(1);

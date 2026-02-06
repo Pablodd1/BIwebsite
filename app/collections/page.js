@@ -37,9 +37,11 @@ export async function generateMetadata(_, parent) {
 }
 
 
-export default function Collections() {
+export default async function Collections({ searchParams }) {
+    const sp = await searchParams;
     return (
         <Collections_UI
+            searchParams={sp}
             h1={"Our Product Collections"}
             description={"Explore Unitec USA Design’s complete range of PVC and WPC building materials. From interior finishes to exterior-grade solutions, our collections are engineered for durability, zero maintenance, and modern design flexibility. Whether you’re sourcing for residential, commercial, or large-scale projects, find everything in one place."}
             cover={{

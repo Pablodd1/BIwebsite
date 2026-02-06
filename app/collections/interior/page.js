@@ -37,9 +37,11 @@ export async function generateMetadata(_, parent) {
 }
 
 
-export default function Collections() {
+export default async function Collections({ searchParams }) {
+    const sp = await searchParams;
     return (
         <Collections_UI
+            searchParams={sp}
             h1={"Interior Design Solutions"}
             description={"Transform interior spaces with Unitec’s premium PVC and WPC panels. Designed for walls, ceilings, decorative finishes, and high-humidity environments, our interior solutions combine elegant aesthetics with antimicrobial, waterproof, and maintenance-free performance—perfect for homes, offices, healthcare, and hospitality spaces."}
             cover={{

@@ -1,5 +1,5 @@
 import ProductSection from "My_UI/product_ui/product_section";
-import productReview from "StaticData/products.json";
+// import productReview from "StaticData/products.json";
 import RecommendationsSection from "My_UI/product_ui/recommended_section";
 import ReviewsSection from "My_UI/product_ui/review_section";
 import HowShippingWorks from "My_UI/product_ui/steps";
@@ -104,7 +104,7 @@ export default async function ProductPage({ params }) {
       <HowShippingWorks />
       <div className="max-w-11/12 mx-auto bg-white px-12 py-16">
         <RecommendationsSection itemID={ID} />
-        <ReviewsSection reviews={productReview.reviews} />
+        {/* <ReviewsSection reviews={productReview.reviews} /> */}
       </div>
     </main>
   );
