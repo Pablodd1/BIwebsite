@@ -6,6 +6,8 @@ import HowShippingWorks from "My_UI/product_ui/steps";
 import ProductDimensions from "My_UI/product_ui/dimension";
 import ProductUseCases from "My_UI/product_ui/technical";
 import ProductStory from "My_UI/product_ui/story";
+import { notify } from "lib/notify";
+import NotFoundPage from "../../not-found";
 
 // app/products/[ID]/page.jsx (or equivalent)
 
@@ -78,10 +80,10 @@ export async function generateMetadata({ params }, parent) {
 
 async function fetchProduct(id) {
   const res = await fetch(
-    `${process.env.BASE_URL}/API/products/${id}?fields=ID,category,collection,itemsPerBox,subcategory,name,basePrice,image,discountPercent,description,dimension`,
+    `${process.env.BASE_URL}/API/products/${id}?fields=id,category,collection,itemsPerBox,subcategory,name,basePrice,image,discountPercent,description,dimensions`,
     { cache: "no-store" }
   )
-  if (!res.ok) notify("error", "Incomplete data", "Products are not loaded successfully. Please refresh your page.")
+  if (!res.ok) return <NotFoundPage />
   return res.json()
 }
 
@@ -96,7 +98,7 @@ export default async function ProductPage({ params }) {
       <div className="max-w-6xl mx-auto bg-white px-2 md:px-5 lg:px-12 flex flex-col gap-15 py-16">
         <ProductSection product={product} />
         <ProductStory product={product} description={product.description} />
-        <ProductDimensions dimension={product.dimension} />
+        <ProductDimensions dimension={product.dimensions} />
         <ProductUseCases description={product.description} />
       </div>
       <HowShippingWorks />

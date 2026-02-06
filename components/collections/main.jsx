@@ -1,6 +1,7 @@
 
 'use client';
 import { useState, useEffect } from "react";
+import { useSearchParams } from "next/navigation";
 import ProductItem from "My_UI/product/item"
 import MyPagination from "My_UI/product/pagination";
 import { applyFilters, sortProducts } from "lib/applyFilters";
@@ -10,12 +11,27 @@ import NoProductsFound from "./noproduct";
 
 
 export default function Collections_UI({ h1, description, productURL, cover, prefilters }) {
+    const searchParams = useSearchParams();
+    const queryCategory = searchParams.get("category");
+    const querySubcategory = searchParams.get("subcategory");
+
     const [products, setProducts] = useState([]);
     const [currentPage, setCurrentPage] = useState(1);
     const [totalItems, setTotalItems] = useState(0);
     const [loading, setLoading] = useState(true);
 
     const [filters, setFilters] = useState(prefilters);
+
+    // Sync filters with URL params
+    useEffect(() => {
+        if (queryCategory || querySubcategory) {
+            setFilters(prev => ({
+                ...prev,
+                category: queryCategory || prev.category,
+                subcategories: querySubcategory ? [querySubcategory] : prev.subcategories
+            }));
+        }
+    }, [queryCategory, querySubcategory]);
 
     // Fetch products
     useEffect(() => {
@@ -48,7 +64,7 @@ export default function Collections_UI({ h1, description, productURL, cover, pre
                     displayedProducts?.length > 0 ?
                         <>
                             <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-2 max-w-7xl mx-auto ">
-                                {displayedProducts.map(p => <ProductItem key={p.ID} item={p} />)}
+                                {displayedProducts.map(p => <ProductItem key={p.id} item={p} />)}
                             </div>
 
                             <div className="my-10">

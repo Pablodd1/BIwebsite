@@ -1,0 +1,94 @@
+{
+    "faqs": [
+        {
+            "id": 1,
+            "question": "How do I place an order?",
+            "answer": "Contact our sales team:\n- Distribution Sales Manager: Johana Mesa at +1 (786) 968-5783\n- Sales Representatives: Antonio Borjas +1 (786) 546-9051\n- Southwest Florida: Marlon Moncada +1 (239) 878-9299\n- International Orders: Alexander Gomez Zapata +57 311 3017763"
+        },
+        {
+            "id": 2,
+            "question": "What payment terms do you offer?",
+            "answer": "We offer flexible payment terms including FOB and CIF. Contact our sales team for specific terms, minimum order quantities, and payment options."
+        },
+        {
+            "id": 3,
+            "question": "Do you ship internationally?",
+            "answer": "Yes! We serve customers across the Americas and globally. Contact Alexander Gomez Zapata (+57 311 3017763) for international shipping details."
+        },
+        {
+            "id": 4,
+            "question": "What surfaces can I install PVC products on?",
+            "answer": "Clean, dry, flat surfaces including:\n- Drywall, concrete, plywood (for wall installations with PEGATEC)\n- Structural framing (for ceilings, roofing, facades with mechanical fastening)\n- Level subfloors (for SPC flooring with click-lock system)"
+        },
+        {
+            "id": 5,
+            "question": "Do I need a professional installer?",
+            "answer": "Depends on the product:\n- DIY-Friendly: SPC flooring, self-adhesive wall panels, some laminates\n- Professional Recommended: Roofing, exterior facades, structural ceiling systems\n- Safety First: Any installation above ground level or on roofs requires professional installation for safety and warranty compliance"
+        },
+        {
+            "id": 6,
+            "question": "How do I clean and maintain PVC products?",
+            "answer": "Very easy maintenance:\n- Regular Cleaning: Wipe with damp cloth and mild soap\n- Stain Removal: Use neutral detergent, avoid abrasive cleaners\n- No Special Treatment: No waxing, sealing, or refinishing needed\n- Longevity: Products maintain appearance with minimal care"
+        },
+        {
+            "id": 7,
+            "question": "Are these products suitable for wet areas?",
+            "answer": "Yes! 100% waterproof. Perfect for:\n- Bathrooms (walls, floors, ceilings)\n- Kitchens (backsplashes, walls, floors)\n- Pool areas (decking, walls, outdoor spaces)\n- Laundry rooms\n- Commercial wet areas (restaurants, hotels, spas)"
+        },
+        {
+            "id": 8,
+            "question": "What if I find defects after receiving my order?",
+            "answer": "Important warranty guidelines:\n- Inspect ALL products upon delivery before signing receipt\n- Report missing items or shipping damage immediately\n- Do NOT install products with visible defects\n- Contact sales team immediately if defects are found\n- Warranty excludes defects visible before installation\n- Follow technical datasheets for proper use and installation"
+        },
+        {
+            "id": 9,
+            "question": "Do you offer samples?",
+            "answer": "Yes! Contact our sales team to request product samples. This helps you see the quality, finish, and color in person before placing a large order."
+        },
+        {
+            "id": 10,
+            "question": "What's the difference between COP and USD pricing?",
+            "answer": "Our catalog lists prices in Colombian Pesos (COP). For USD pricing or international currency conversions, contact our sales team for current exchange rates and quotations."
+        },
+        {
+            "id": 11,
+            "question": "Can I visit your showroom?",
+            "answer": "Yes! Our headquarters and showroom are located at:\n6120 NW 74th Ave, Doral, Miami, FL 33166, United States\n\nPlease call ahead to schedule an appointment:\n- Main Line: +1 (786) 968-5783\n- Distribution Manager: Johana Mesa +1 (786) 968-5783"
+        },
+        {
+            "id": 12,
+            "question": "What's your lead time for orders?",
+            "answer": "Lead times vary based on product availability and order volume. Contact our sales team for current lead times and stock availability."
+        },
+        {
+            "id": 13,
+            "question": "Do you work with contractors and builders?",
+            "answer": "Absolutely! We specialize in partnerships with:\n- General contractors\n- Builders and developers\n- Architects and designers\n- Distributors and retailers\n- Interior designers\n\nContact us for contractor pricing and project support."
+        },
+        {
+            "id": 14,
+            "question": "What certifications do your products have?",
+            "answer": "Our products are manufactured with:\n- Quality audits at source (China and LATAM)\n- Partnerships with internationally certified manufacturers\n- Fire-retardant properties meeting safety standards\n- Waterproof certifications\n- Sustainable and recyclable materials\n\nContact us for specific certification documentation"
+        }
+    ],
+    "unitConversions": {
+        "length": [
+            "1 meter (m) = 3.28084 feet (ft) = 39.3701 inches (in)",
+            "1 centimeter (cm) = 0.393701 inches (in)",
+            "1 millimeter (mm) = 0.0393701 inches (in)"
+        ],
+        "weight": [
+            "1 kilogram (kg) = 2.20462 pounds (lbs)"
+        ],
+        "area": [
+            "1 square meter (m²) = 10.764 square feet (ft²)"
+        ],
+        "examples": [
+            "290 cm = 9.51 ft = 114.17 in",
+            "122 cm = 4 ft = 48.03 in",
+            "244 cm = 8 ft = 96.06 in",
+            "2.5 mm = 0.098 in"
+        ],
+        "note": "All catalog prices are in Colombian Pesos (COP). For USD or other currencies, contact sales team."
+    }
+}

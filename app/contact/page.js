@@ -68,34 +68,49 @@ export default function ContactPage() {
                         {/* Contact cards */}
                         <div className="mt-8 space-y-4">
                             <InfoCard
-                                icon={Mail}
-                                title="Bulk Sale"
-                                value="wholesale@unitecusadesign.com"
-                                hint="Best for distributor and wholesale inquiries"
-                            />
-                            <InfoCard
-                                icon={Mail}
-                                title="Product's Query"
-                                value="sales@yourcompany.com"
-                                hint="Best for product queries"
-                            />
-                            <InfoCard
-                                icon={Mail}
-                                title="Technical Support"
-                                value="support@unitecusadesign.com"
-                                hint="Best for technical support"
+                                icon={MapPin}
+                                title="Headquarters"
+                                value="6120 NW 74th Ave, Doral, Miami, FL 33166"
+                                hint="United States"
                             />
                             <InfoCard
                                 icon={Phone}
-                                title="Call"
-                                value="+1 (000) 123-4567"
-                                hint="Mon – Fri, Business Hours"
+                                title="General Inquiries"
+                                value="+1 (786) 968-5783"
+                                hint="@building.innovation"
+                            />
+
+                            <h3 className="text-lg font-semibold mt-6 mb-2">Active Staff</h3>
+
+                            <InfoCard
+                                icon={Phone}
+                                title="Juan David Garcia (CEO)"
+                                value="+1 (786) 657-5441"
+                                hint="General inquiries through main line"
                             />
                             <InfoCard
-                                icon={MapPin}
-                                title="Warehouse / Office"
-                                value="International Shipping Hub"
-                                hint="By appointment_toggle only"
+                                icon={Phone}
+                                title="Alexander Gomez Zapata (Global)"
+                                value="+57 311 3017763"
+                                hint="International Account Manager"
+                            />
+                            <InfoCard
+                                icon={Phone}
+                                title="Johana Mesa (Distribution)"
+                                value="+1 (786) 968-5783"
+                                hint="Distribution Sales Manager"
+                            />
+                            <InfoCard
+                                icon={Phone}
+                                title="Antonio Borjas (Sales)"
+                                value="+1 (786) 546-9051"
+                                hint="Sales Representative"
+                            />
+                            <InfoCard
+                                icon={Phone}
+                                title="Marlon Moncada (SW Florida)"
+                                value="+1 (239) 878-9299"
+                                hint="Sales Representative"
                             />
                         </div>
                     </div>

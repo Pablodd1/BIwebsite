@@ -24,16 +24,16 @@ export function containerFillPercent(container, currentItemId = null) {
     let usedByOthers = 0
 
     for (const item of container.items) {
-        if (!item?.dimension || typeof calcSheetVol !== "function") continue
+        if (!item?.dimensions || typeof calcSheetVol !== "function") continue
 
-        const volResult = calcSheetVol(item.dimension)
+        const volResult = calcSheetVol(item.dimensions)
 
         // safety: calcSheetVol must return { value }
         if (!volResult || typeof volResult.value !== "number") continue
 
         const itemVolume = volResult.value * (item.qty || 1)
-        
-        if (item.ID === currentItemId) usedByCurrent += itemVolume
+
+        if (item.id === currentItemId) usedByCurrent += itemVolume
         else usedByOthers += itemVolume
     }
 

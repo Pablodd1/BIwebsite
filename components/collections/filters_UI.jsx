@@ -11,13 +11,14 @@ function toggleRange(current, next) {
         return next;
 }
 
-export default function FilterUI({ filters,products, setFilters }) {
+export default function FilterUI({ filters, products, setFilters }) {
 
     // Derived filter options
-    const subCategoriesFromData = Array.from(new Set(products.map(p => p.subcategory)));
-    const thicknessRanges = buildRanges(products.map(p => p.dimension.thickness.value));
-    const widthRanges = buildRanges(products.map(p => p.dimension.width.value));
-    const lengthRanges = buildRanges(products.map(p => p.dimension.length.value));
+    // Derived filter options
+    const subCategoriesFromData = Array.from(new Set(products.map(p => p.subcategory).filter(Boolean)));
+    const thicknessRanges = buildRanges(products.map(p => p.dimensions?.metric?.thickness || 0).filter(v => v > 0));
+    const widthRanges = buildRanges(products.map(p => p.dimensions?.metric?.width || 0).filter(v => v > 0));
+    const lengthRanges = buildRanges(products.map(p => p.dimensions?.metric?.length || 0).filter(v => v > 0));
 
     return (
 

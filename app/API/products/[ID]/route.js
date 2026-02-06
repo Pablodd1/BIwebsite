@@ -11,7 +11,7 @@ export async function GET(request, { params }) {
 
     // Find product by ID
     const product = productData.find(
-        (item) => String(item.ID) === String(ID)
+        (item) => String(item.id) === String(ID)
     );
 
     if (!product) {
@@ -29,8 +29,12 @@ export async function GET(request, { params }) {
     // Pick only requested fields
     const filteredProduct = {};
     for (const field of fields) {
-        if (field in product) {
-            filteredProduct[field] = product[field];
+        // Handle ID fetching explicitly if requested as ID vs id
+        const key = field === 'ID' ? 'id' : field;
+        const targetKey = field === 'dimension' ? 'dimensions' : key; // backward compat request
+
+        if (targetKey in product) {
+            filteredProduct[field] = product[targetKey];
         }
     }
 

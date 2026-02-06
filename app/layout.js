@@ -43,13 +43,13 @@ export async function generateMetadata() {
 
   const defaults = {
     title:
-      "Unitec USA Design | Premium PVC & WPC Building Materials for Modern Construction",
+      "Building Innovation | We design the future!",
     description:
-      "Unitec USA Design delivers innovative PVC and WPC building materials for residential and commercial projects. Durable, waterproof, fire-resistant, zero-maintenance solutions engineered for modern architecture.",
+      "At Building Innovation, we simplify construction through innovative, sustainable, and high-design solutions. We offer a comprehensive portfolio of architectural materials that creates value and enhances quality of life.",
     keywords:
-      "Unitec USA Design, PVC Building Materials, WPC Panels, PVC Ceiling Panels, Wall Cladding, Facade Systems, Waterproof Building Materials, Fire Resistant Panels, Sustainable Construction Materials, Bulk Building Materials, Container Shipping Building Products",
+      "Building Innovation, Architectural Materials, Sustainable Construction, High-Design Solutions, PVC Building Materials, WPC Panels, Construction Innovation Latin America",
     image: process.env.DEFAULT_IMAGE,
-    siteName: "Unitec USA Design",
+    siteName: "Building Innovation",
     canonical: BASE_URL,
   }
 
@@ -59,9 +59,9 @@ export async function generateMetadata() {
     description: data?.metaDescription || defaults.description,
     keywords: data?.metaKeywords || defaults.keywords,
 
-    applicationName: data?.appName || "Unitec USA Design",
+    applicationName: data?.appName || "Building Innovation",
     generator: "Next.js",
-    creator: "MyAbabeel (Muhammad Talha)",
+    creator: "Building Innovation Tech Team",
     manifest: "/favicons/manifest.json",
 
     alternates: {
@@ -107,10 +107,10 @@ export async function generateMetadata() {
     openGraph: {
       title:
         data?.ogTitle ||
-        "Unitec USA Design | Innovative PVC & WPC Solutions for Modern Spaces",
+        "Building Innovation | We design the future!",
       description:
         data?.ogDescription ||
-        "Discover premium PVC and WPC building products designed for durability, sustainability, and effortless installation. Trusted by architects, builders, and developers across North America.",
+        "At Building Innovation, we simplify construction through innovative, sustainable, and high-design solutions.",
       url: data?.canonicalURL || defaults.canonical,
       siteName: data?.ogSiteName || defaults.siteName,
       images: [
@@ -120,7 +120,7 @@ export async function generateMetadata() {
           height: 630,
           alt:
             data?.ogImageAlt ||
-            "Unitec USA Design – Innovative PVC & WPC Building Materials",
+            "Building Innovation – Future of Construction",
         },
       ],
       locale: "en_US",
@@ -129,19 +129,20 @@ export async function generateMetadata() {
 
     twitter: {
       card: data?.twitterCard || "summary_large_image",
-      site: "@UnitecUSADesign",
+      site: "@building.innovation",
       title:
         data?.twitterTitle ||
-        "Unitec USA Design | Smarter Building Materials",
+        "Building Innovation | We design the future!",
       description:
         data?.twitterDescription ||
-        "Premium PVC & WPC materials engineered for durability, sustainability, and modern design. Built for bulk. Designed to last.",
+        "Simplifying construction through innovative, sustainable, and high-design solutions.",
       images: [data?.twitterImage || defaults.image],
     },
   }
 }
 
 import Providers from "./providers";
+import WhatsAppBubble from "My_UI/ui/whatsapp_bubble";
 
 // ... existing imports
 
@@ -156,6 +157,7 @@ export default function RootLayout({ children }) {
           <Footer />
           <CartInit />
           <CartDrawer />
+          <WhatsAppBubble />
           <div id="modal-root" />
           <div id="notify-container" />
           <Suspense fallback={<Loader />}>

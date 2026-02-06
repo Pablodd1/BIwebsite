@@ -7,8 +7,8 @@ const FIELDS = [
   "basePrice",
   "discountPercent",
   "image",
-  "ID",
-  "dimension",
+  "id",
+  "dimensions",
   "collection",
   "subcategory",
 ];

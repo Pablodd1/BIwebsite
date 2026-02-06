@@ -26,7 +26,7 @@
  * });
  * // { value: 0.001872, unit: 'm³' }
  */
-export default function calcSheetVol(dimension) {
+export default function calcSheetVol(dimensions) {
     const convertToMeters = (value, unit) => {
         if (typeof value !== 'number' || isNaN(value)) return 0;
 
@@ -42,9 +42,13 @@ export default function calcSheetVol(dimension) {
         }
     };
 
-    const width = convertToMeters(dimension.width?.value, dimension.width?.unit);
-    const length = convertToMeters(dimension.length?.value, dimension.length?.unit);
-    const thickness = convertToMeters(dimension.thickness?.value, dimension.thickness?.unit);
+    // Support new data structure, fallback to metric
+    const data = dimensions?.metric || dimensions;
+    if (!data) return { value: 0, unit: 'm³' };
+
+    const width = convertToMeters(data.width, data.widthUnit);
+    const length = convertToMeters(data.length, data.lengthUnit);
+    const thickness = convertToMeters(data.thickness, data.thicknessUnit);
 
     const volumeValue = width * length * thickness;
 

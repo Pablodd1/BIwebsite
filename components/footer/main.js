@@ -1,7 +1,7 @@
 "use client";
 
 import Link from 'next/link';
-import { Facebook, Instagram, Twitter, Youtube } from "lucide-react";
+import { Facebook, Instagram, Twitter, Youtube, MessageCircle } from "lucide-react";
 import Logo from 'My_UI/logo';
 import { useLanguage } from 'lib/LanguageContext';
 import { useBrand } from 'lib/BrandContext';
@@ -11,6 +11,7 @@ const socials = [
     { Icon: Instagram, label: "Instagram", link: "#" },
     { Icon: Twitter, label: "Twitter", link: "#" },
     { Icon: Youtube, label: "YouTube", link: "#" },
+    { Icon: MessageCircle, label: "WhatsApp", link: "https://wa.me/17869685783" },
 ];
 
 const Footer = () => {
@@ -19,12 +20,17 @@ const Footer = () => {
 
     const navData = {
         logo: {
-            text: brand.name,
-            tagline: t("footer.logo.tagline")
+            text: "Building Innovation",
+            tagline: "We design the future!"
         },
         contact: {
-            phone: "+91 9999 999 999",
-            email: "info@unitecusadesign.com"
+            phone: "+1 (786) 968-5783",
+            email: "info@building-innovation.com", // Placeholder based on domain logic, can be updated if specified
+            address: [
+                "6120 NW 74th Ave",
+                "Doral, Miami, FL 33166",
+                "United States"
+            ]
         },
         information: [
             { title: t("footer.information.links.collections"), link: "/collections" },
@@ -33,7 +39,7 @@ const Footer = () => {
             { title: t("footer.information.links.sales"), link: "/collections/sales" }
         ],
         helpfulLinks: [
-            { title: t("footer.helpful.links.about"), link: "/about" },
+            { title: t("footer.helpful.links.about"), link: "/about/who-we-are" },
             { title: t("footer.helpful.links.supports"), link: "/contact" },
             { title: t("footer.helpful.links.faqs"), link: "/faq" },
             { title: t("footer.helpful.links.search"), link: "/collections/search" },
@@ -55,10 +61,12 @@ const Footer = () => {
                         </div>
 
                         {/* Contact Section */}
-                        <div className="text-center mb-8">
+                        <div className="text-center mb-8 flex flex-col gap-1">
                             <p className="text-lg text-accent1 uppercase tracking-widest font-semibold">{t("footer.contact.title")}</p>
                             <p>{navData.contact.phone}</p>
-                            <p>{navData.contact.email}</p>
+                            {navData.contact.address.map((line, i) => (
+                                <p key={i}>{line}</p>
+                            ))}
                         </div>
 
                     </article>
@@ -109,7 +117,7 @@ const Footer = () => {
                     ))}
                     {/* Bottom Copyright */}
                     <div className="text-center font-serif text-sm absolute right-0">
-                        <p>&copy; 2016 Company Name. {t("footer.rights")}</p>
+                        <p>All rights reserved &copy; - 2026 Building Innovation.</p>
                     </div>
                 </div>
 

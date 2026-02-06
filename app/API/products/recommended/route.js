@@ -6,8 +6,8 @@ const FIELDS = [
     "basePrice",
     "discountPercent",
     "image",
-    "ID",
-    "dimension",
+    "id",
+    "dimensions",
     "collection",
     "subcategory",
 ];
@@ -15,7 +15,7 @@ const FIELDS = [
 // Utility: pick random unique items
 function pickRandomItems(items, count, excludeId = null) {
     const pool = excludeId
-        ? items.filter((item) => item.ID !== excludeId)
+        ? items.filter((item) => item.id !== excludeId)
         : [...items];
 
     const shuffled = pool.sort(() => 0.5 - Math.random());
@@ -38,7 +38,7 @@ export async function GET(request) {
 
     if (currentProductID) {
         const currentIndex = productData.findIndex(
-            (item) => String(item.ID) === String(currentProductID)
+            (item) => String(item.id) === String(currentProductID)
         );
 
         if (currentIndex !== -1) {
@@ -76,8 +76,8 @@ export async function GET(request) {
     const uniqueItems = Array.from(
         new Map(
             resultItems
-                .filter((item) => item.ID !== currentProductID)
-                .map((item) => [item.ID, item])
+                .filter((item) => item.id !== currentProductID)
+                .map((item) => [item.id, item])
         ).values()
     ).slice(0, 8);
 

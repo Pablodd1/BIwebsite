@@ -14,39 +14,57 @@ const ICONS = {
 export default function ProductDimensions({ dimension }) {
     if (!dimension) return null;
 
-    // Filter out zero-value dimensions
-    const filtered = Object.entries(dimension).filter(
-        ([_, val]) => val.value && val.value !== 0
+    // Check if we have valid dimensions to show
+    const hasDimensions = ['width', 'length', 'thickness'].some(key =>
+        dimension?.metric?.[key] || dimension?.imperial?.[key]
     );
 
-    if (!filtered.length) return null;
-
-    // Find max for relative sizing
-    const maxValue = Math.max(...filtered.map(([_, val]) => val.value));
+    if (!hasDimensions) return null;
 
     return (
         <section className="mt-20 w-full mx-auto px-4 md:px-0">
             <Stylish_H2 h2={"Technical Specifications"} />
 
-            <div className="flex items-stretch justify-evenly w-full gap-8">
-                {filtered.map(([key, val]) => {
+            <div className="flex items-stretch justify-center flex-wrap w-full gap-6">
+                {['width', 'length', 'thickness'].map((key) => {
+                    const metricParams = dimension?.metric;
+                    const imperialParams = dimension?.imperial;
+
+                    const valMetric = metricParams?.[key];
+                    const unitMetric = metricParams?.[`${key}Unit`];
+
+                    const valImp = imperialParams?.[key];
+                    const unitImp = imperialParams?.[`${key}Unit`];
+
+                    if (!valMetric && !valImp) return null;
+
                     return (
                         <motion.div
                             key={key}
-                            whileHover={{ scale: 1.05 }}
-                            className="bg-black rounded-xl shadow-md p-6 w-full flex flex-col items-center gap-4"
+                            whileHover={{ y: -5 }}
+                            className="bg-white rounded-2xl border border-gray-100 shadow-xl shadow-gray-200/50 p-6 w-full md:w-64 flex flex-col items-center gap-4 relative overflow-hidden group"
                         >
-                            <div className="flex items-center justify-center w-16 h-16 bg-primary text-secondary  rounded-full">
-                                {ICONS[key] || null}
+                            <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-primary to-yellow-400 transform origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
+
+                            <div className="flex items-center justify-center w-14 h-14 bg-gray-50 text-gray-800 rounded-full group-hover:bg-primary group-hover:text-black transition-colors duration-300">
+                                {ICONS[key] || <Layers className="text-current w-6 h-6" />}
                             </div>
 
                             <div className="text-center">
-                                <p className="text-primary uppercase text-xs tracking-wider">{key}</p>
-                                <p className="text-lg font-semibold text-orange-700 mt-1">
-                                    {val.value} {val.unit}
-                                </p>
+                                <p className="text-gray-400 uppercase text-[10px] font-bold tracking-[0.2em] mb-2">{key}</p>
+                                <div className="flex flex-col gap-1">
+                                    {valMetric && valMetric !== 0 && (
+                                        <span className="text-2xl font-bold text-gray-800">
+                                            {Number(valMetric).toLocaleString('en-US')} <span className="text-sm font-normal text-gray-500">{unitMetric}</span>
+                                        </span>
+                                    )}
+                                    {valImp && valImp !== 0 && (
+                                        <span className="text-sm font-medium text-gray-400 border-t border-gray-100 pt-1 mt-1 inline-block">
+                                            {Number(valImp).toLocaleString('en-US', { maximumFractionDigits: 2 })} {unitImp}
+                                        </span>
+                                    )}
+                                </div>
                             </div>
-
                         </motion.div>
                     );
                 })}

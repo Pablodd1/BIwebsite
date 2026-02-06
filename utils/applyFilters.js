@@ -12,13 +12,20 @@ export function buildRanges(values) {
 
 export function applyFilters(products, filters) {
     return products.filter(p => {
-        if (filters.collection && filters.collection !== 'All' && p.collection !== filters.collection) return false;
+        if (filters.collection && filters.collection !== 'All' && p.collection?.toLowerCase() !== filters.collection?.toLowerCase()) return false;
+        if (filters.category && filters.category !== 'All' && p.category?.toLowerCase() !== filters.category?.toLowerCase()) return false;
         if (filters.subcategories.length && !filters.subcategories.includes(p.subcategory)) return false;
 
         const inRange = (range, value) => !range?.length || (value >= range[0] && value <= range[1]);
-        if (!inRange(filters.thicknessRange, p.dimension.thickness.value)) return false;
-        if (!inRange(filters.widthRange, p.dimension.width.value)) return false;
-        if (!inRange(filters.lengthRange, p.dimension.length.value)) return false;
+
+        // Handle new dimensions structure (metric default)
+        const dim = p.dimensions?.metric || p.dimension;
+        // fallback to old structure if strict migration not done or mixed data? 
+        // Use new structure access: dim.thickness (value in new schema is direct property if I wrote it as metric.thickness = value)
+
+        if (!inRange(filters.thicknessRange, dim?.thickness)) return false;
+        if (!inRange(filters.widthRange, dim?.width)) return false;
+        if (!inRange(filters.lengthRange, dim?.length)) return false;
 
         return true;
     });
