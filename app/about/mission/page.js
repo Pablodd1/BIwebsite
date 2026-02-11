@@ -4,11 +4,6 @@ import React from 'react';
 import { Target, Lightbulb, Heart, Globe, CheckCircle } from 'lucide-react';
 import { useLanguage } from 'lib/LanguageContext';
 
-export const metadata = {
-    title: "Our Mission | Building Innovation",
-    description: "At BUILDING INNOVATION, we simplify the world of construction through innovative, sustainable, and high-design solutions.",
-};
-
 export default function MissionPage() {
     const { t } = useLanguage();
     

@@ -3,11 +3,6 @@
 import React from 'react';
 import { useLanguage } from 'lib/LanguageContext';
 
-export const metadata = {
-    title: "Who We Are | Building Innovation",
-    description: "We are an international company dedicated to the development and supply of innovative solutions for construction and architectural design.",
-};
-
 export default function WhoWeArePage() {
     const { t } = useLanguage();
     const intro = t('whoWeAre.intro') || [];

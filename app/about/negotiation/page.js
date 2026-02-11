@@ -4,11 +4,6 @@ import React from 'react';
 import { Ship, Package, DollarSign, Handshake } from 'lucide-react';
 import { useLanguage } from 'lib/LanguageContext';
 
-export const metadata = {
-    title: "Business Terms | Building Innovation",
-    description: "At Building Innovation, we operate under the main international trade terms to offer flexibility and security.",
-};
-
 export default function NegotiationPage() {
     const { t } = useLanguage();
     

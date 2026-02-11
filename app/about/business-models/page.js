@@ -4,11 +4,6 @@ import React from 'react';
 import { Briefcase, Handshake, TrendingUp, Globe, Ship, Package, DollarSign, Users, CheckCircle2, ArrowRight, Building2, Store, HardHat } from 'lucide-react';
 import { useLanguage } from 'lib/LanguageContext';
 
-export const metadata = {
-    title: "Business Models | Building Innovation",
-    description: "Discover our flexible business models and partnership opportunities. From FOB to CIF terms, we offer solutions tailored to your specific needs.",
-};
-
 export default function BusinessModelsPage() {
     const { t } = useLanguage();
     

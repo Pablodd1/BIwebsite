@@ -4,11 +4,6 @@ import React from 'react';
 import { ShieldCheck, Eye, Award, TrendingUp } from 'lucide-react';
 import { useLanguage } from 'lib/LanguageContext';
 
-export const metadata = {
-    title: "Committed to Quality | Building Innovation",
-    description: "At Building Innovation, quality is not a standard—it is a promise.",
-};
-
 export default function QualityPage() {
     const { t } = useLanguage();
     

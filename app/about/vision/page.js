@@ -4,11 +4,6 @@ import React from 'react';
 import { Eye, Rocket, Globe2, Users, Award, TrendingUp, Building2, MapPin } from 'lucide-react';
 import { useLanguage } from 'lib/LanguageContext';
 
-export const metadata = {
-    title: "Our Vision | Building Innovation",
-    description: "To become a leading brand in construction innovation in Latin America, recognized for simplifying construction processes and delivering high value architectural solutions.",
-};
-
 export default function VisionPage() {
     const { t } = useLanguage();
     
