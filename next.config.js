@@ -14,13 +14,6 @@ const nextConfig = {
     ],
   },
 
-  // Internationalization
-  i18n: {
-    locales: ['en', 'es'],
-    defaultLocale: 'en',
-    localeDetection: true,
-  },
-
   // Trailing slash for SEO
   trailingSlash: true,
 
