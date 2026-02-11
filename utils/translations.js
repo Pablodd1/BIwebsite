@@ -165,10 +165,10 @@ const translations = {
             businessModels: "Modalidades de Negociaciones"
         },
         hero: {
-            title_start: "Llena Tu",
+            title_start: "Llene Su",
             title_highlight: "Contenedor.",
-            title_end: "Envía a Tu Manera.",
-            subtitle: "Elige los productos que desees, empácalos en tu contenedor y nosotros nos encargamos del envío: simple, flexible y diseñado para ti.",
+            title_end: "Envíe a Su Manera.",
+            subtitle: "Elija los productos que desee, empácelos en su contenedor y nosotros nos encargamos del envío: simple, flexible y diseñado para usted.",
             btn: "Explorar Productos"
         },
         why: {
@@ -199,7 +199,7 @@ const translations = {
                 },
                 volume: {
                     title: "Embalaje consciente del volumen",
-                    desc: "Cada producto contribuye a la capacidad del contenedor para que siempre sepas cuán lleno está tu envío antes de pagar."
+                    desc: "Cada producto contribuye a la capacidad del contenedor para que siempre sepa cuán lleno está su envío antes de pagar."
                 },
                 multi: {
                     title: "Optimización multiproducto",
@@ -217,7 +217,7 @@ const translations = {
             items: {
                 select: {
                     title: "Seleccionar Productos",
-                    desc: "Elige uno o múltiples productos"
+                    desc: "Elija uno o múltiples productos"
                 },
                 fill: {
                     title: "Llenar el Contenedor",
@@ -225,14 +225,14 @@ const translations = {
                 },
                 ship: {
                     title: "Hazlo Enviar",
-                    desc: "El contenedor se envía de forma segura a ti"
+                    desc: "El contenedor se envía de forma segura a usted"
                 }
             },
-            footer: "Mantienes el control — los contenedores se actualizan automáticamente a medida que agregas o quitas productos."
+            footer: "Mantiene el control — los contenedores se actualizan automáticamente a medida que agrega o quita productos."
         },
         whom: {
             title: "Diseñado para compradores mayoristas serios",
-            description: "Si tu negocio envía productos por contenedor — no por paquetes — esta plataforma te da la claridad y el control que el comercio electrónico tradicional nunca podría.",
+            description: "Si su negocio envía productos por contenedor — no por paquetes — esta plataforma le da la claridad y el control que el comercio electrónico tradicional nunca podría.",
             btn: "Sobre Nosotros",
             users: {
                 wholesalers: {
@@ -250,8 +250,8 @@ const translations = {
             }
         },
         cta: {
-            title: "Empieza a llenar tu primer contenedor",
-            text: "Explora productos, mira cómo caben dentro de los contenedores y envía con total confianza — antes de pagar.",
+            title: "Empiece a llenar su primer contenedor",
+            text: "Explore productos, vea cómo caben dentro de los contenedores y envíe con total confianza — antes de pagar.",
             btn: "Explorar Productos"
         },
         recommendations: {
@@ -290,8 +290,8 @@ const translations = {
                 }
             },
             subscribe: {
-                title: "Suscríbete para Más Información",
-                placeholder: "Ingresa tu email",
+                title: "Suscríbase para Más Información",
+                placeholder: "Ingrese su correo electrónico",
                 btn: "Suscribirse"
             },
             rights: "Todos los derechos reservados."
