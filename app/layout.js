@@ -1,11 +1,12 @@
-import { Inter } from 'next/font/google'
+import { Montserrat } from 'next/font/google'
 import "./globals.css";
 import { getDictionary } from "lib/i18n/getDictionary";
 
-const inter = Inter({
+const montserrat = Montserrat({
   subsets: ['latin'],
-  weight: ['300', '400', '500', '600', '700'],
+  weight: ['400', '500', '700'],
   display: 'swap',
+  variable: '--font-montserrat',
 });
 
 export async function generateMetadata({ params }) {
@@ -186,7 +187,7 @@ export default async function RootLayout({ children, params }) {
           }}
         />
       </head>
-      <body className={`${inter.className}`}>
+      <body className={`${montserrat.className} font-medium`}>
         <RootLayoutClient lang={lang} dict={dict}>
           {children}
         </RootLayoutClient>

@@ -13,8 +13,68 @@
   --color-secondary: #9D624B;
   --color-accent1: #C6AA77;
   --color-accent2: #706F6C;
+  --font-family-sans: 'Montserrat', sans-serif;
 }
 
+/* Base font setup - Medium 500 for body text */
 body {
-  font-family: 'Inter';
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+}
+
+/* Titles - Bold 700 */
+h1, h2, h3, h4, h5, h6,
+.font-bold,
+[class*="font-bold"],
+[class*="title"],
+[class*="Title"],
+.uppercase {
+  font-weight: 700 !important;
+}
+
+/* Specific title classes */
+.text-4xl, .text-3xl, .text-2xl, .text-xl,
+[class*="text-4xl"],
+[class*="text-3xl"],
+[class*="text-2xl"] {
+  font-weight: 700;
+}
+
+/* Buttons and CTAs - Bold */
+button, 
+.btn,
+[class*="btn"],
+[class*="Btn"],
+[class*="cta"],
+[class*="CTA"] {
+  font-weight: 700;
+}
+
+/* Navigation - Bold */
+nav, .nav, [class*="nav"] {
+  font-weight: 700;
+}
+
+/* Body text and descriptions - Medium 500 */
+p, span, 
+.text-sm, 
+.text-base,
+.text-gray-600,
+.text-gray-500,
+.text-gray-400,
+[class*="description"],
+[class*="Description"] {
+  font-weight: 500;
+}
+
+/* List items and details - Medium */
+li, ul, ol {
+  font-weight: 500;
+}
+
+/* Labels and placeholders - Medium */
+label,
+input::placeholder,
+textarea::placeholder {
+  font-weight: 500;
 }
