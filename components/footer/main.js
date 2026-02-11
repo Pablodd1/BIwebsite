@@ -33,18 +33,20 @@ const Footer = () => {
             ]
         },
         information: [
-            { title: t("footer.information.links.collections"), link: "/collections" },
+            { title: t("footer.information.links.productList"), link: "/collections" },
             { title: t("footer.information.links.exteriors"), link: "/collections/exterior" },
             { title: t("footer.information.links.interiors"), link: "/collections/interior" },
             { title: t("footer.information.links.sales"), link: "/collections/sales" }
         ],
         helpfulLinks: [
-            { title: t("footer.helpful.links.about"), link: "/about/who-we-are" },
+            { title: t("footer.helpful.links.whoWeAre"), link: "/about/who-we-are" },
+            { title: t("footer.helpful.links.ourMission"), link: "/about/mission" },
+            { title: t("footer.helpful.links.ourVision"), link: "/about/vision" },
+            { title: t("footer.helpful.links.quality"), link: "/about/quality" },
+            { title: t("footer.helpful.links.business"), link: "/about/business-models" },
             { title: t("footer.helpful.links.supports"), link: "/contact" },
             { title: t("footer.helpful.links.faqs"), link: "/faq" },
-            { title: t("footer.helpful.links.search"), link: "/collections/search" },
-            { title: t("footer.helpful.links.terms"), link: "/terms" },
-            { title: t("footer.helpful.links.privacy"), link: "/policies" }
+            { title: t("footer.helpful.links.search"), link: "/collections/search" }
         ]
     };
 

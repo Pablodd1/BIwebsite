@@ -14,20 +14,22 @@ import MegaMenu from './MegaMenu';
 const navItems = [
     { label: 'Home', id: 'home', href: '/', icon: <Logo size={50} className={'min-w-10'} />, onlyIcon: true },
     {
-        label: 'Product Lines',
-        id: 'collections',
+        label: 'Products List',
+        id: 'productList',
         icon: <Library className=' text-inherit h-5' />,
         href: '/collections',
         megaMenu: true
     },
     {
-        label: 'About Us',
+        label: 'Institutional',
         id: 'institutional',
         href: '/about',
         submenu: [
-            { label: 'Who we are', href: '/about/who-we-are' },
-            { label: 'Committed to quality', href: '/about/quality' },
-            { label: 'Negotiation modalities', href: '/about/negotiation' },
+            { label: 'whoWeAre', href: '/about/who-we-are' },
+            { label: 'ourMission', href: '/about/mission' },
+            { label: 'ourVision', href: '/about/vision' },
+            { label: 'qualityCommitment', href: '/about/quality' },
+            { label: 'businessModels', href: '/about/business-models' },
         ]
     },
     { label: 'Contact', id: 'contact', href: '/contact' }
@@ -72,7 +74,7 @@ const NavBar = ({ searchParams }) => {
                                                     <span className={`lg:inline-flex ${index > 1 ? "hidden" : "inline-flex"}`} >{item.icon}</span>
                                                     : null
                                             }
-                                            <span className={`lg:block ${index > 1 ? "hidden" : ""}`}> {item.id === 'institutional' ? "About Us" : t(`nav.${item.id}`)}</span>
+                                            <span className={`lg:block ${index > 1 ? "hidden" : ""}`}> {t(`nav.${item.id}`)}</span>
                                         </>
                                 }
                             </Link>
@@ -91,7 +93,7 @@ const NavBar = ({ searchParams }) => {
                                                 href={subItem.href}
                                                 className="px-4 py-3 text-sm hover:bg-gray-50 transition-colors border-b last:border-0 border-gray-50 text-gray-700 hover:text-black"
                                             >
-                                                {subItem.label}
+                                                {t(`nav.${subItem.label}`)}
                                             </Link>
                                         ))}
                                     </div>
