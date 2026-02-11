@@ -3,10 +3,17 @@ const translations = {
         nav: {
             home: "Home",
             collections: "Collections",
+            productList: "Products List",
+            institutional: "Institutional",
             interiors: "Interiors",
             exteriors: "Exteriors",
             sale: "Sale",
-            contact: "Contact"
+            contact: "Contact",
+            whoWeAre: "Who We Are",
+            ourMission: "Our Mission",
+            ourVision: "Our Vision",
+            qualityCommitment: "Committed to Quality",
+            businessModels: "Business Models"
         },
         hero: {
             title_start: "Fill Your",
@@ -145,10 +152,17 @@ const translations = {
         nav: {
             home: "Inicio",
             collections: "Colecciones",
+            productList: "Lista de Productos",
+            institutional: "Institucional",
             interiors: "Interiores",
             exteriors: "Exteriores",
             sale: "Venta",
-            contact: "Contacto"
+            contact: "Contacto",
+            whoWeAre: "Quiénes Somos",
+            ourMission: "Nuestra Misión",
+            ourVision: "Nuestra Visión",
+            qualityCommitment: "Comprometidos con la Calidad",
+            businessModels: "Modalidades de Negociaciones"
         },
         hero: {
             title_start: "Llena Tu",
