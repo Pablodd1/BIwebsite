@@ -5,18 +5,26 @@ import HowShippingWorks from "My_UI/product_ui/steps";
 import BuiltForBulk from "My_UI/homepage/buy_bulk";
 import WhoItsFor from "My_UI/homepage/for_whom";
 import HomeCTA from "My_UI/homepage/home_CTA";
+import { getDictionary } from "lib/i18n/getDictionary";
 
-export default function HomePage() {
+export default async function HomePage({ params }) {
+  const lang = params?.lang || 'en';
+  const dict = getDictionary(lang);
+
   return (
     <main className="">
-      <HeroSec />
-      <WhyWeSection />
-      <HowShippingWorks />
-      <BuiltForBulk />
-      <WhoItsFor />
-      <HomeCTA />
-      <div className=" mx-auto bg-white px-12 py-16">
-        <RecommendationsSection title="Best Selling Products" />
+      <HeroSec lang={lang} dict={dict} />
+      <WhyWeSection lang={lang} dict={dict} />
+      <HowShippingWorks lang={lang} dict={dict} />
+      <BuiltForBulk lang={lang} dict={dict} />
+      <WhoItsFor lang={lang} dict={dict} />
+      <HomeCTA lang={lang} dict={dict} />
+      <div className="mx-auto bg-white px-12 py-16">
+        <RecommendationsSection 
+          title={dict.hero.stats.products} 
+          lang={lang} 
+          dict={dict} 
+        />
       </div>
     </main>
   );
