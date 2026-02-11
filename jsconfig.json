@@ -3,7 +3,7 @@
     "paths": {
       "My_UI/*": ["./components/*"],
       "StaticData/*": ["./static_data/*"],
-      "lib/*": ["./lib/*"],
+      "lib/*": ["./utils/*"],
       "utils/*": ["./utils/*"],
       "Media/*": ["./media/*"]
     }
