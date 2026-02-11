@@ -23,8 +23,11 @@ import {
     Palette,
 } from "lucide-react"
 import Stylish_H2 from "My_UI/stylish_h2"
+import { useLanguage } from 'lib/LanguageContext';
 
 export default function AboutPage() {
+    const { t } = useLanguage();
+    
     return (
         <main className="w-full">
             {/* ================= HERO ================= */}
@@ -35,14 +38,12 @@ export default function AboutPage() {
                         animate={{ opacity: 1, y: 0 }}
                         className="max-w-4xl text-3xl font-bold leading-tight md:text-4xl"
                     >
-                        Built for Scale.
-                        <span className="text-gray-300"> Designed for Containers.</span>
+                        {t('about.hero.title')}
+                        <span className="text-gray-300"> {t('about.hero.subtitle')}</span>
                     </motion.h1>
 
                     <p className="mt-5 max-w-3xl text-sm text-gray-300">
-                        We help businesses move products in bulk using a structured,
-                        container-first approach — reducing waste, optimizing space,
-                        and simplifying logistics from order to shipment.
+                        {t('about.hero.description')}
                     </p>
                 </div>
             </section>
@@ -53,27 +54,22 @@ export default function AboutPage() {
             <section className="py-20">
                 <div className="mx-auto max-w-6xl px-4 grid gap-12 lg:grid-cols-2">
                     <div>
-                        <Stylish_H2 h2={" Why We Exist"} />
+                        <Stylish_H2 h2={t('about.story.title')} />
 
                         <p className="mt-4 text-sm text-gray-600 leading-relaxed">
-                            Bulk shipping is broken when treated like normal e-commerce.
-                            Products aren&apos;t individual units — they are volumes, dimensions,
-                            and constraints inside a container.
+                            {t('about.story.p1')}
                         </p>
 
                         <p className="mt-4 text-sm text-gray-600 leading-relaxed">
-                            We built our platform around a simple belief:
-                            <strong> containers come first, products come second.</strong>
-                            This mindset allows businesses to plan shipments realistically,
-                            avoid overbooking, and gain full visibility into capacity.
+                            {t('about.story.p2')}
                         </p>
                     </div>
 
                     <div className="grid grid-cols-2 gap-4">
-                        <Stat icon={Boxes} label="Bulk-First Logic" />
-                        <Stat icon={Ruler} label="Dimension-Aware" />
-                        <Stat icon={Truck} label="Logistics Ready" />
-                        <Stat icon={ShieldCheck} label="Operationally Safe" />
+                        <Stat icon={Boxes} label={t('about.story.stats.bulk')} />
+                        <Stat icon={Ruler} label={t('about.story.stats.dimension')} />
+                        <Stat icon={Truck} label={t('about.story.stats.logistics')} />
+                        <Stat icon={ShieldCheck} label={t('about.story.stats.safe')} />
                     </div>
                 </div>
             </section>
@@ -89,26 +85,20 @@ export default function AboutPage() {
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                     >
-                        <Stylish_H2 h2={"Our Mission"} />
+                        <Stylish_H2 h2={t('about.mission.title')} />
 
                         <p className="mt-4 text-sm text-gray-600 leading-relaxed">
-                            At Unitec USA Design, our mission is to redefine modern construction
-                            by delivering innovative, sustainable, and high-quality PVC and WPC
-                            building materials that elevate everyday spaces.
+                            {t('about.mission.p1')}
                         </p>
 
                         <p className="mt-4 text-sm text-gray-600 leading-relaxed">
-                            We believe building materials should do more than perform —
-                            they should inspire creativity, simplify installation, and
-                            contribute to a more sustainable built environment.
+                            {t('about.mission.p2')}
                         </p>
 
                         <ul className="mt-6 space-y-3 text-sm text-gray-700">
-                            <ListItem text="Innovative, future-ready product development" />
-                            <ListItem text="Eco-conscious materials and manufacturing" />
-                            <ListItem text="Premium quality without compromise" />
-                            <ListItem text="Solutions that empower professionals and homeowners" />
-                            <ListItem text="Accessible materials for projects of any scale" />
+                            {t('about.mission.items')?.map((item, idx) => (
+                                <ListItem key={idx} text={item} />
+                            ))}
                         </ul>
                     </motion.div>
 
@@ -119,25 +109,21 @@ export default function AboutPage() {
                         viewport={{ once: true }}
                         className="rounded-2xl border bg-white p-6 shadow-sm"
                     >
-                        <h3 className="text-lg font-semibold">Our Vision</h3>
+                        <h3 className="text-lg font-semibold">{t('about.vision.title')}</h3>
 
                         <p className="mt-4 text-sm text-gray-600 leading-relaxed">
-                            Our vision is to become the leading provider of PVC and WPC
-                            building solutions across North America — transforming how
-                            professionals and homeowners approach construction and design.
+                            {t('about.vision.p1')}
                         </p>
 
                         <p className="mt-4 text-sm text-gray-600 leading-relaxed">
-                            We’re building toward a future where sustainable construction,
-                            design freedom, and maintenance-free living are the standard,
-                            not the exception.
+                            {t('about.vision.p2')}
                         </p>
 
                         <div className="mt-6 grid gap-4 sm:grid-cols-2">
-                            <Stat icon={Globe} label="Nationwide Reach" />
-                            <Stat icon={ShieldCheck} label="Sustainable Focus" />
-                            <Stat icon={Target} label="Design Freedom" />
-                            <Stat icon={Users} label="Built for Professionals" />
+                            <Stat icon={Globe} label={t('about.vision.stats.reach')} />
+                            <Stat icon={ShieldCheck} label={t('about.vision.stats.sustainable')} />
+                            <Stat icon={Target} label={t('about.vision.stats.design')} />
+                            <Stat icon={Users} label={t('about.vision.stats.professionals')} />
                         </div>
                     </motion.div>
 
@@ -148,28 +134,27 @@ export default function AboutPage() {
             {/* ================= HOW IT WORKS ================= */}
             <section className="bg-gray-50 py-20">
                 <div className="mx-auto max-w-6xl px-4">
-                    <Stylish_H2 h2={"How Our System Works"} />
+                    <Stylish_H2 h2={t('about.howItWorks.title')} />
 
                     <p className="mx-auto mt-3 max-w-2xl text-center text-sm text-gray-600">
-                        Our workflow mirrors real-world container planning — not
-                        traditional carts.
+                        {t('about.howItWorks.subtitle')}
                     </p>
 
                     <div className="mt-12 grid gap-6 md:grid-cols-3">
                         <Step
                             icon={Layers}
-                            title="Create Containers"
-                            text="Each order starts with a physical container definition including internal dimensions."
+                            title={t('about.howItWorks.steps.create.title')}
+                            text={t('about.howItWorks.steps.create.desc')}
                         />
                         <Step
                             icon={Boxes}
-                            title="Fill with Products"
-                            text="Products are added based on size and quantity, not just price."
+                            title={t('about.howItWorks.steps.fill.title')}
+                            text={t('about.howItWorks.steps.fill.desc')}
                         />
                         <Step
                             icon={Truck}
-                            title="Ship with Confidence"
-                            text="Know exactly how full each container is before shipment."
+                            title={t('about.howItWorks.steps.ship.title')}
+                            text={t('about.howItWorks.steps.ship.desc')}
                         />
                     </div>
                 </div>
@@ -178,20 +163,19 @@ export default function AboutPage() {
             {/* ================= WHY CHOOSE UNITEC ================= */}
             <section className="py-20">
                 <div className="mx-auto max-w-6xl px-4">
-                    <Stylish_H2 h2={"Why Choose Unitec"} />
+                    <Stylish_H2 h2={t('about.whyChoose.title')} />
 
                     <p className="mt-4 max-w-2xl text-sm text-gray-600">
-                        Our products are engineered to outperform traditional building materials
-                        while simplifying installation and long-term ownership.
+                        {t('about.whyChoose.description')}
                     </p>
 
                     <div className="mt-10 grid gap-6 md:grid-cols-3">
-                        <Feature icon={ShieldCheck} title="15–25 Year Warranties" text="Industry-leading durability backed by confidence." />
-                        <Feature icon={Droplets} title="100% Waterproof" text="No rot, rust, or moisture damage — ever." />
-                        <Feature icon={ToolCase} title="Zero Maintenance" text="No painting, sealing, or refinishing required." />
-                        <Feature icon={Flame} title="Fire Resistant" text="Self-extinguishing with low flame propagation." />
-                        <Feature icon={Leaf} title="Eco-Friendly" text="Recyclable materials with recycled content." />
-                        <Feature icon={Zap} title="Fast Installation" text="Save time and labor on every project." />
+                        <Feature icon={ShieldCheck} title={t('about.whyChoose.features.warranty.title')} text={t('about.whyChoose.features.warranty.desc')} />
+                        <Feature icon={Droplets} title={t('about.whyChoose.features.waterproof.title')} text={t('about.whyChoose.features.waterproof.desc')} />
+                        <Feature icon={ToolCase} title={t('about.whyChoose.features.maintenance.title')} text={t('about.whyChoose.features.maintenance.desc')} />
+                        <Feature icon={Flame} title={t('about.whyChoose.features.fire.title')} text={t('about.whyChoose.features.fire.desc')} />
+                        <Feature icon={Leaf} title={t('about.whyChoose.features.eco.title')} text={t('about.whyChoose.features.eco.desc')} />
+                        <Feature icon={Zap} title={t('about.whyChoose.features.install.title')} text={t('about.whyChoose.features.install.desc')} />
                     </div>
                 </div>
             </section>
@@ -199,20 +183,19 @@ export default function AboutPage() {
             {/* ================= PRODUCT RANGE ================= */}
             <section className="bg-gray-50 py-20">
                 <div className="mx-auto max-w-6xl px-4">
-                    <Stylish_H2 h2={"Our Product Range"} />
+                    <Stylish_H2 h2={t('about.productRange.title')} />
 
                     <p className="mt-4 max-w-2xl text-sm text-gray-600">
-                        With 100+ product lines across 22 categories, Unitec delivers
-                        complete solutions for residential and commercial construction.
+                        {t('about.productRange.description')}
                     </p>
 
                     <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-                        <Stat icon={Layers} label="Wall Panels & Cladding" />
-                        <Stat icon={Home} label="Ceilings & Roofing" />
-                        <Stat icon={Grid} label="Flooring Systems" />
-                        <Stat icon={Layout} label="Facade Solutions" />
-                        <Stat icon={Volume2} label="Acoustic Treatments" />
-                        <Stat icon={Palette} label="Decorative Finishes" />
+                        <Stat icon={Layers} label={t('about.productRange.categories.walls')} />
+                        <Stat icon={Home} label={t('about.productRange.categories.ceilings')} />
+                        <Stat icon={Grid} label={t('about.productRange.categories.flooring')} />
+                        <Stat icon={Layout} label={t('about.productRange.categories.facades')} />
+                        <Stat icon={Volume2} label={t('about.productRange.categories.acoustic')} />
+                        <Stat icon={Palette} label={t('about.productRange.categories.decorative')} />
                     </div>
                 </div>
             </section>
@@ -221,42 +204,39 @@ export default function AboutPage() {
             <section className="py-20">
                 <div className="mx-auto max-w-6xl px-4 grid gap-12 lg:grid-cols-2">
                     <div>
-                        <Stylish_H2 h2={"Built for Real Businesses"} />
+                        <Stylish_H2 h2={t('about.trust.title')} />
 
                         <p className="mt-4 text-sm text-gray-600 leading-relaxed">
-                            Our platform is designed for manufacturers, exporters,
-                            distributors, and logistics-driven companies that move
-                            serious volume — not casual shoppers.
+                            {t('about.trust.description')}
                         </p>
 
                         <ul className="mt-6 space-y-3 text-sm text-gray-700">
-                            <ListItem text="Exporters & Wholesalers" />
-                            <ListItem text="Manufacturers shipping in bulk" />
-                            <ListItem text="B2B e-commerce operations" />
-                            <ListItem text="Freight-optimized supply chains" />
+                            {t('about.trust.partners')?.map((item, idx) => (
+                                <ListItem key={idx} text={item} />
+                            ))}
                         </ul>
                     </div>
 
                     <div className="rounded-2xl border bg-white p-6 shadow-sm">
                         <h3 className="text-lg font-semibold">
-                            What Makes Us Different
+                            {t('about.trust.different.title')}
                         </h3>
 
                         <div className="mt-4 space-y-4">
                             <Difference
                                 icon={Target}
-                                title="Container-Driven UX"
-                                text="We don’t fake physical reality — volume is enforced."
+                                title={t('about.trust.different.items.container.title')}
+                                text={t('about.trust.different.items.container.desc')}
                             />
                             <Difference
                                 icon={Globe}
-                                title="Global-Ready"
-                                text="Designed for international shipping logic."
+                                title={t('about.trust.different.items.global.title')}
+                                text={t('about.trust.different.items.global.desc')}
                             />
                             <Difference
                                 icon={Users}
-                                title="B2B Focused"
-                                text="Every feature serves operational teams."
+                                title={t('about.trust.different.items.b2b.title')}
+                                text={t('about.trust.different.items.b2b.desc')}
                             />
                         </div>
                     </div>
@@ -268,25 +248,21 @@ export default function AboutPage() {
                 <div className="mx-auto max-w-6xl px-4 grid gap-12 lg:grid-cols-2">
 
                     <div>
-                        <Stylish_H2 h2={"Sustainability Built In"} />
+                        <Stylish_H2 h2={t('about.sustainability.title')} />
                         <ul className="mt-6 space-y-3 text-sm text-gray-700">
-                            <ListItem text="Recycled PVC content in all products" />
-                            <ListItem text="Fully recyclable at end of life" />
-                            <ListItem text="Low VOC emissions for indoor safety" />
-                            <ListItem text="Long lifespan reduces replacement waste" />
-                            <ListItem text="Energy-efficient manufacturing processes" />
+                            {t('about.sustainability.items')?.map((item, idx) => (
+                                <ListItem key={idx} text={item} />
+                            ))}
                         </ul>
                     </div>
 
                     <div className="rounded-2xl border bg-white p-6 shadow-sm">
-                        <h3 className="text-lg font-semibold">Quality Assurance</h3>
+                        <h3 className="text-lg font-semibold">{t('about.sustainability.quality.title')}</h3>
 
                         <ul className="mt-4 space-y-3 text-sm text-gray-700">
-                            <ListItem text="ISO-certified manufacturing facilities" />
-                            <ListItem text="Third-party laboratory testing" />
-                            <ListItem text="Strict production-stage inspections" />
-                            <ListItem text="Real-world performance validation" />
-                            <ListItem text="Continuous improvement protocols" />
+                            {t('about.sustainability.quality.items')?.map((item, idx) => (
+                                <ListItem key={idx} text={item} />
+                            ))}
                         </ul>
                     </div>
 
@@ -298,27 +274,15 @@ export default function AboutPage() {
                 <div className="mx-auto max-w-6xl px-4 grid gap-12 lg:grid-cols-2">
 
                     <div>
-                        <Stylish_H2 h2={"Innovation Leadership"} />
+                        <Stylish_H2 h2={t('about.innovation.title')} />
                         <p className="mt-4 text-sm text-gray-600">
-                            We continuously invest in research and development to deliver
-                            advanced materials, modern finishes, and smarter installation systems.
+                            {t('about.innovation.description')}
                         </p>
 
                         <ul className="mt-6 space-y-3 text-sm text-gray-700">
-                            <ListItem text="Advanced manufacturing technologies" />
-                            <ListItem text="Expanded product applications" />
-                            <ListItem text="Improved durability and performance" />
-                            <ListItem text="Modern color trends and textures" />
-                        </ul>
-                    </div>
-
-                    <div className="rounded-2xl border bg-white p-6 shadow-sm">
-                        <h3 className="text-lg font-semibold">Customer Success</h3>
-                        <ul className="mt-4 space-y-3 text-sm text-gray-700">
-                            <ListItem text="Expert technical support" />
-                            <ListItem text="Installation guides & video tutorials" />
-                            <ListItem text="Sample programs & consultations" />
-                            <ListItem text="Warranty and post-sale support" />
+                            {t('about.innovation.items')?.map((item, idx) => (
+                                <ListItem key={idx} text={item} />
+                            ))}
                         </ul>
                     </div>
 
@@ -330,18 +294,18 @@ export default function AboutPage() {
             <section className="bg-black py-20 text-white">
                 <div className="mx-auto max-w-6xl px-4 text-center">
                     <h2 className="text-2xl font-semibold">
-                        Ready to Ship Smarter?
+                        {t('about.cta.title')}
                     </h2>
 
                     <p className="mx-auto mt-3 max-w-xl text-sm text-gray-300">
-                        Let&apos;s plan containers, not guesses.
+                        {t('about.cta.description')}
                     </p>
 
                     <a
                         href="/contact"
                         className="mx-auto mt-6 inline-flex items-center gap-2 rounded-xl bg-white px-6 py-3 text-sm font-semibold text-black transition hover:bg-gray-200"
                     >
-                        Contact Our Team
+                        {t('about.cta.button')}
                         <ArrowRight size={16} />
                     </a>
                 </div>

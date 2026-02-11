@@ -295,6 +295,293 @@ const translations = {
                 btn: "Suscribirse"
             },
             rights: "Todos los derechos reservados."
+        },
+        about: {
+            title: "Sobre Nosotros",
+            hero: {
+                title: "Construido para Escala.",
+                subtitle: "Diseñado para Contenedores.",
+                description: "Ayudamos a las empresas a mover productos a granel utilizando un enfoque estructurado centrado en contenedores — reduciendo desperdicio, optimizando espacio y simplificando la logística desde el pedido hasta el envío."
+            },
+            story: {
+                title: "Por Qué Existimos",
+                p1: "El envío a granel está roto cuando se trata como el comercio electrónico normal. Los productos no son unidades individuales — son volúmenes, dimensiones y restricciones dentro de un contenedor.",
+                p2: "Construimos nuestra plataforma alrededor de una creencia simple: los contenedores van primero, los productos van segundo. Esta mentalidad permite a las empresas planificar envíos realistas, evitar sobre reservas y obtener total visibilidad de la capacidad.",
+                stats: {
+                    bulk: "Lógica para Granel",
+                    dimension: "Consciente de Dimensiones",
+                    logistics: "Listo para Logística",
+                    safe: "Operacionalmente Seguro"
+                }
+            },
+            mission: {
+                title: "Nuestra Misión",
+                p1: "En Unitec USA Design, nuestra misión es redefinir la construcción moderna entregando materiales de construcción innovadores, sostenibles y de alta calidad de PVC y WPC que elevan los espacios cotidianos.",
+                p2: "Creemos que los materiales de construcción deben hacer más que funcionar — deben inspirar creatividad, simplificar la instalación y contribuir a un entorno construido más sostenible.",
+                items: [
+                    "Desarrollo de productos innovador y preparado para el futuro",
+                    "Materiales y manufactura eco-conscientes",
+                    "Calidad premium sin compromiso",
+                    "Soluciones que empoderan profesionales y propietarios",
+                    "Materiales accesibles para proyectos de cualquier escala"
+                ]
+            },
+            vision: {
+                title: "Nuestra Visión",
+                p1: "Nuestra visión es convertirnos en el proveedor líder de soluciones de construcción de PVC y WPC en toda América del Norte — transformando cómo profesionales y propietarios abordan la construcción y el diseño.",
+                p2: "Estamos construyendo hacia un futuro donde la construcción sostenible, la libertad de diseño y la vida libre de mantenimiento sean el estándar, no la excepción.",
+                stats: {
+                    reach: "Alcance Nacional",
+                    sustainable: "Enfoque Sostenible",
+                    design: "Libertad de Diseño",
+                    professionals: "Construido para Profesionales"
+                }
+            },
+            howItWorks: {
+                title: "Cómo Funciona Nuestro Sistema",
+                subtitle: "Nuestro flujo de trabajo refleja la planificación real de contenedores — no carritos tradicionales.",
+                steps: {
+                    create: {
+                        title: "Crear Contenedores",
+                        desc: "Cada pedido comienza con una definición física de contenedor incluyendo dimensiones internas."
+                    },
+                    fill: {
+                        title: "Llenar con Productos",
+                        desc: "Los productos se agregan basados en tamaño y cantidad, no solo precio."
+                    },
+                    ship: {
+                        title: "Enviar con Confianza",
+                        desc: "Sepa exactamente qué tan lleno está cada contenedor antes del envío."
+                    }
+                }
+            },
+            whyChoose: {
+                title: "Por Qué Elegir Unitec",
+                description: "Nuestros productos están diseñados para superar a los materiales de construcción tradicionales mientras simplifican la instalación y la propiedad a largo plazo.",
+                features: {
+                    warranty: { title: "Garantías de 15–25 Años", desc: "Durabilidad líder en la industria respaldada por confianza." },
+                    waterproof: { title: "100% Impermeable", desc: "Sin pudrición, óxido o daño por humedad — nunca." },
+                    maintenance: { title: "Cero Mantenimiento", desc: "No requiere pintura, sellado o reacabado." },
+                    fire: { title: "Resistente al Fuego", desc: "Autoextinguible con baja propagación de llama." },
+                    eco: { title: "Ecológico", desc: "Materiales reciclables con contenido reciclado." },
+                    install: { title: "Instalación Rápida", desc: "Ahorre tiempo y mano de obra en cada proyecto." }
+                }
+            },
+            productRange: {
+                title: "Nuestra Gama de Productos",
+                description: "Con más de 100 líneas de productos en 22 categorías, Unitec entrega soluciones completas para construcción residencial y comercial.",
+                categories: {
+                    walls: "Paneles de Pared y Revestimiento",
+                    ceilings: "Techos y Cubiertas",
+                    flooring: "Sistemas de Piso",
+                    facades: "Soluciones de Fachada",
+                    acoustic: "Tratamientos Acústicos",
+                    decorative: "Acabados Decorativos"
+                }
+            },
+            trust: {
+                title: "Construido para Negocios Reales",
+                description: "Nuestra plataforma está diseñada para fabricantes, exportadores, distribuidores y empresas impulsadas por logística que mueven volumen serio — no compradores casuales.",
+                partners: [
+                    "Exportadores y Mayoristas",
+                    "Fabricantes que envían a granel",
+                    "Operaciones de comercio electrónico B2B",
+                    "Cadenas de suministro optimizadas para carga"
+                ],
+                different: {
+                    title: "Lo Que Nos Hace Diferentes",
+                    items: {
+                        container: { title: "UX Centrado en Contenedores", desc: "No fingimos la realidad física — el volumen se impone." },
+                        global: { title: "Listo para Global", desc: "Diseñado para lógica de envío internacional." },
+                        b2b: { title: "Enfocado en B2B", desc: "Cada característica sirve a equipos operacionales." }
+                    }
+                }
+            },
+            sustainability: {
+                title: "Sostenibilidad Integrada",
+                items: [
+                    "Contenido de PVC reciclado en todos los productos",
+                    "Totalmente reciclable al final de su vida útil",
+                    "Bajas emisiones de VOC para seguridad interior",
+                    "Larga vida útil reduce desperdicio de reemplazo",
+                    "Procesos de manufactura energéticamente eficientes"
+                ],
+                quality: {
+                    title: "Aseguramiento de Calidad",
+                    items: [
+                        "Instalaciones de manufactura certificadas ISO",
+                        "Pruebas de laboratorio de terceros",
+                        "Inspecciones estrictas en etapa de producción",
+                        "Validación de rendimiento en el mundo real",
+                        "Protocolos de mejora continua"
+                    ]
+                }
+            },
+            innovation: {
+                title: "Liderazgo en Innovación",
+                description: "Invertimos continuamente en investigación y desarrollo para entregar materiales avanzados, acabados modernos y sistemas de instalación más inteligentes.",
+                items: [
+                    "Tecnologías de manufactura avanzadas",
+                    "Aplicaciones de productos expandidas",
+                    "Durabilidad y rendimiento mejorados",
+                    "Tendencias modernas de colores y texturas"
+                ]
+            },
+            cta: {
+                title: "¿Listo para Enviar Más Inteligente?",
+                description: "Planifiquemos contenedores, no conjeturas.",
+                button: "Contacte a Nuestro Equipo"
+            }
+        },
+        whoWeAre: {
+            title: "Quiénes Somos",
+            company: "Building Innovation",
+            tagline: "\"¡Diseñamos el futuro!\"",
+            intro: [
+                "Somos una empresa internacional dedicada al desarrollo y suministro de soluciones innovadoras para construcción y diseño arquitectónico.",
+                "Nos destacamos por combinar calidad, tecnología y funcionalidad en cada producto, transformando espacios y mejorando el valor de cada proyecto.",
+                "Nuestra filosofía se construye sobre excelencia, mejora continua y servicio personalizado, fortaleciendo alianzas a largo plazo con nuestros distribuidores y socios estratégicos en las Américas y alrededor del mundo.",
+                "Creemos en la innovación como fuerza motriz del crecimiento, y trabajamos todos los días para anticipar las tendencias del mercado.",
+                "Somos Building Innovation: diseño, calidad y el futuro en cada detalle."
+            ],
+            mission: {
+                title: "Misión",
+                text: "En BUILDING INNOVATION, simplificamos el mundo de la construcción a través de soluciones innovadoras, sostenibles y de alto diseño, ofreciendo un portafolio integral de materiales arquitectónicos que crean valor, fomentan alianzas estratégicas y mejoran la experiencia de construcción y calidad de vida."
+            },
+            vision: {
+                title: "Visión",
+                text: "Convertirnos en una marca líder en innovación de construcción en América Latina, reconocida por simplificar procesos de construcción, marcar tendencias en diseño y sostenibilidad, y entregar soluciones arquitectónicas de alto valor. Aspiramos a construir un modelo de negocio escalable y colaborativo, fortaleciendo alianzas estratégicas y creando un impacto positivo en la industria, las personas y el medio ambiente."
+            },
+            headquarters: {
+                title: "Sede Global",
+                address: "6120 NW 74th Ave",
+                city: "Doral, Miami, FL 33166",
+                country: "Estados Unidos",
+                phone: "+1 (786) 968-5783"
+            }
+        },
+        quality: {
+            title: "Comprometidos con la Calidad",
+            quote: "\"En Building Innovation, la calidad no es un estándar—es una promesa.\"",
+            intro: "Cada producto pasa por procesos de control técnico y selección de materiales certificados, asegurando durabilidad, precisión y acabados de alta gama.",
+            commitment: "Nuestro compromiso con la excelencia se refleja en:",
+            pillars: {
+                audits: {
+                    title: "Auditorías de Calidad en Origen",
+                    desc: "Inspecciones rigurosas en China y LATAM para asegurar cumplimiento con nuestros altos estándares."
+                },
+                supervision: {
+                    title: "Supervisión Continua",
+                    desc: "Monitoreo en cada etapa de producción para garantizar consistencia y precisión."
+                },
+                partnerships: {
+                    title: "Alianzas Certificadas",
+                    desc: "Colaboración con fabricantes internacionalmente certificados alineados con nuestros objetivos de calidad."
+                },
+                innovation: {
+                    title: "Innovación Continua",
+                    desc: "Evolución constante para superar expectativas del mercado y establecer referencias de la industria."
+                }
+            },
+            closing: "Calidad que puede ver, sentir y confiar a través del tiempo"
+        },
+        businessModels: {
+            title: "Modelos de Negocio",
+            intro: "En Building Innovation, operamos bajo los principales términos de comercio internacional para ofrecer flexibilidad, transparencia y seguridad para nuestros socios en todo el mundo.",
+            tradeTerms: {
+                title: "Términos de Comercio Internacional",
+                subtitle: "Ofrecemos Incoterms flexibles para acomodar diferentes necesidades de negocio y preferencias logísticas",
+                fob: {
+                    title: "FOB (Free on Board)",
+                    desc: "Manejamos la mercancía hasta que se carga a bordo de la embarcación en el puerto de embarque. Usted retiene el control sobre la logística de flete y seguro desde ese punto.",
+                    benefits: [
+                        "Gestionamos la logística previa al embarque",
+                        "El cliente controla flete marítimo y seguro",
+                        "Ideal para importadores experimentados"
+                    ]
+                },
+                cif: {
+                    title: "CIF (Cost, Insurance, and Freight)",
+                    desc: "Gestionamos costos, seguro y flete hasta su puerto de destino, proporcionando una experiencia de servicio completo sin complicaciones desde nuestra puerta hasta la suya.",
+                    benefits: [
+                        "Solución de envío todo-en-uno",
+                        "Manejamos seguro y flete",
+                        "Perfecto para operaciones optimizadas"
+                    ]
+                }
+            },
+            partnership: {
+                title: "Oportunidades de Alianza",
+                subtitle: "Trabajamos con varios tipos de socios para expandir nuestro alcance y servir mejor a los clientes",
+                types: {
+                    distributors: {
+                        title: "Distribuidores",
+                        desc: "Acuerdos de distribución exclusivos y no exclusivos para mercados regionales",
+                        benefits: ["Precios mayoristas competitivos", "Soporte de marketing", "Opciones de territorio exclusivo", "Acceso prioritario a productos"]
+                    },
+                    retailers: {
+                        title: "Minoristas",
+                        desc: "Asóciese con nosotros para ofrecer materiales de construcción premium a sus clientes",
+                        benefits: ["Protección de margen minorista", "Materiales de punto de venta", "Capacitación de productos", "Soporte de inventario"]
+                    },
+                    contractors: {
+                        title: "Contratistas",
+                        desc: "Precios por volumen y soporte de proyecto para profesionales de construcción",
+                        benefits: ["Precios basados en proyecto", "Consulta técnica", "Entrega prioritaria", "Descuentos por volumen"]
+                    },
+                    international: {
+                        title: "Internacional",
+                        desc: "Alianzas de exportación para distribución y representación global",
+                        benefits: ["Soporte de documentación de exportación", "Asistencia de aduanas", "Precios en múltiples monedas", "Coordinación logística global"]
+                    }
+                }
+            },
+            benefits: {
+                title: "Beneficios para Socios",
+                items: {
+                    flexibility: {
+                        title: "Flexibilidad en Logística y Costos",
+                        desc: "Soluciones adaptables para ajustarse a su presupuesto específico, cronograma y preferencias operacionales. Elija el modelo que funcione mejor para su negocio."
+                    },
+                    transparency: {
+                        title: "Transparencia Durante Todo el Proceso",
+                        desc: "Visibilidad y comunicación claras desde la producción hasta la entrega. Sin tarifas ocultas ni sorpresas en ninguna etapa del proceso."
+                    },
+                    tailored: {
+                        title: "Soluciones a Medida",
+                        desc: "Personalizamos nuestro servicio para asegurar operaciones seguras y eficientes con control total desde el origen hasta el destino, cumpliendo sus requisitos específicos."
+                    }
+                }
+            },
+            process: {
+                title: "Cómo Convertirse en Socio",
+                steps: ["Consulta", "Evaluación", "Acuerdo", "Lanzamiento"]
+            },
+            cta: {
+                title: "¿Listo para Explorar una Alianza?",
+                desc: "Contacte a nuestro equipo de ventas para discutir qué modelo de negocio funciona mejor para sus necesidades. Estamos aquí para ayudarle a tener éxito."
+            }
+        },
+        negotiation: {
+            title: "Términos de Negocio",
+            intro: "En Building Innovation, operamos bajo los principales términos de comercio internacional para ofrecer flexibilidad y seguridad.",
+            options: {
+                title: "Estas opciones nos permiten ofrecer a nuestros socios:",
+                items: {
+                    flexibility: {
+                        title: "Flexibilidad en logística y costos",
+                        desc: "Soluciones adaptables para ajustarse a su presupuesto y cronograma específicos."
+                    },
+                    transparency: {
+                        title: "Transparencia a lo largo de toda la cadena de suministro",
+                        desc: "Visibilidad y comunicación claras desde la producción hasta la entrega."
+                    },
+                    solutions: {
+                        title: "Soluciones adaptadas a las necesidades de cada cliente",
+                        desc: "Personalizamos nuestro servicio para asegurar operaciones seguras y eficientes con control total desde el origen hasta el destino."
+                    }
+                }
+            }
         }
     }
 };
