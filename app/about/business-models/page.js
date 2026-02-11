@@ -1,5 +1,7 @@
+"use client";
+
 import React from 'react';
-import { Ship, Package, DollarSign, Handshake, Briefcase, Building2, Store, HardHat, Globe, CheckCircle2, ArrowRight } from 'lucide-react';
+import { Briefcase, Handshake, TrendingUp, Globe, Ship, Package, DollarSign, Users, CheckCircle2, ArrowRight, Building2, Store, HardHat } from 'lucide-react';
 import { useLanguage } from 'lib/LanguageContext';
 
 export const metadata = {

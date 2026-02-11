@@ -1,3 +1,5 @@
+"use client";
+
 import React from 'react';
 import { Eye, Rocket, Globe2, Users, Award, TrendingUp, Building2, MapPin } from 'lucide-react';
 import { useLanguage } from 'lib/LanguageContext';

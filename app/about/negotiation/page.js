@@ -1,3 +1,5 @@
+"use client";
+
 import React from 'react';
 import { Ship, Package, DollarSign, Handshake } from 'lucide-react';
 import { useLanguage } from 'lib/LanguageContext';

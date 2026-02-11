@@ -1,3 +1,5 @@
+"use client";
+
 import React from 'react';
 import { Target, Lightbulb, Heart, Globe, CheckCircle } from 'lucide-react';
 import { useLanguage } from 'lib/LanguageContext';
