@@ -74,12 +74,12 @@ export default function MissionPage() {
                     </h2>
 
                     <div className="grid md:grid-cols-2 gap-8">
-                        {t('about.mission.items')?.map((item, idx) => (
+                        {t('about.mission.items') && Array.isArray(t('about.mission.items')) ? t('about.mission.items').map((item, idx) => (
                             <div key={idx} className="bg-white p-6 rounded-xl border border-gray-100 shadow-sm flex items-start gap-4">
                                 <CheckCircle className="w-6 h-6 text-black flex-shrink-0 mt-1" />
                                 <p className="text-gray-700">{item}</p>
                             </div>
-                        ))}
+                        )) : null}
                     </div>
                 </div>
             </section>

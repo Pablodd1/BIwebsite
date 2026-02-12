@@ -96,9 +96,9 @@ export default function AboutPage() {
                         </p>
 
                         <ul className="mt-6 space-y-3 text-sm text-gray-700">
-                            {t('about.mission.items')?.map((item, idx) => (
+                            {t('about.mission.items') && Array.isArray(t('about.mission.items')) ? t('about.mission.items').map((item, idx) => (
                                 <ListItem key={idx} text={item} />
-                            ))}
+                            )) : null}
                         </ul>
                     </motion.div>
 
@@ -211,9 +211,9 @@ export default function AboutPage() {
                         </p>
 
                         <ul className="mt-6 space-y-3 text-sm text-gray-700">
-                            {t('about.trust.partners')?.map((item, idx) => (
+                            {t('about.trust.partners') && Array.isArray(t('about.trust.partners')) ? t('about.trust.partners').map((item, idx) => (
                                 <ListItem key={idx} text={item} />
-                            ))}
+                            )) : null}
                         </ul>
                     </div>
 
@@ -250,9 +250,9 @@ export default function AboutPage() {
                     <div>
                         <Stylish_H2 h2={t('about.sustainability.title')} />
                         <ul className="mt-6 space-y-3 text-sm text-gray-700">
-                            {t('about.sustainability.items')?.map((item, idx) => (
+                            {t('about.sustainability.items') && Array.isArray(t('about.sustainability.items')) ? t('about.sustainability.items').map((item, idx) => (
                                 <ListItem key={idx} text={item} />
-                            ))}
+                            )) : null}
                         </ul>
                     </div>
 
@@ -260,9 +260,9 @@ export default function AboutPage() {
                         <h3 className="text-lg font-semibold">{t('about.sustainability.quality.title')}</h3>
 
                         <ul className="mt-4 space-y-3 text-sm text-gray-700">
-                            {t('about.sustainability.quality.items')?.map((item, idx) => (
+                            {t('about.sustainability.quality.items') && Array.isArray(t('about.sustainability.quality.items')) ? t('about.sustainability.quality.items').map((item, idx) => (
                                 <ListItem key={idx} text={item} />
-                            ))}
+                            )) : null}
                         </ul>
                     </div>
 
@@ -280,9 +280,9 @@ export default function AboutPage() {
                         </p>
 
                         <ul className="mt-6 space-y-3 text-sm text-gray-700">
-                            {t('about.innovation.items')?.map((item, idx) => (
+                            {t('about.innovation.items') && Array.isArray(t('about.innovation.items')) ? t('about.innovation.items').map((item, idx) => (
                                 <ListItem key={idx} text={item} />
-                            ))}
+                            )) : null}
                         </ul>
                     </div>
 

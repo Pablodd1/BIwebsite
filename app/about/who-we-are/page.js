@@ -17,9 +17,9 @@ export default function WhoWeArePage() {
                     <p className="text-xl text-gray-500 italic mb-6">{t('whoWeAre.tagline')}</p>
 
                     <div className="text-lg text-gray-700 leading-relaxed text-justify space-y-4">
-                        {intro.map((paragraph, idx) => (
+                        {intro && Array.isArray(intro) ? intro.map((paragraph, idx) => (
                             <p key={idx}>{paragraph}</p>
-                        ))}
+                        )) : null}
                     </div>
                 </div>
             </section>
