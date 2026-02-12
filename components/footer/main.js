@@ -11,7 +11,8 @@ const socials = [
     { Icon: Instagram, label: "Instagram", link: "#" },
     { Icon: Twitter, label: "Twitter", link: "#" },
     { Icon: Youtube, label: "YouTube", link: "#" },
-    { Icon: MessageCircle, label: "WhatsApp", link: "https://wa.me/17869685783" },
+    { Icon: MessageCircle, label: "WhatsApp USA", link: "https://wa.me/17869685783" },
+    { Icon: MessageCircle, label: "WhatsApp Colombia", link: "https://wa.me/573142332147" },
 ];
 
 const Footer = () => {

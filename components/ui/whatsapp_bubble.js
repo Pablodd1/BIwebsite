@@ -3,9 +3,8 @@ import { MessageCircle } from 'lucide-react';
 import Link from 'next/link';
 
 export default function WhatsAppBubble() {
-    // Escala CRM / Default Corporate Number
-    // Ideally this should be an environment variable, but using the provided main line for now
-    const phoneNumber = "17869685783";
+    // Colombian WhatsApp Number
+    const phoneNumber = "573142332147";
     const message = encodeURIComponent("Hello, I am interested in your products.");
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;
 
