@@ -51,7 +51,7 @@ export default function BusinessModelsPage() {
                                         <CheckCircle2 className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
                                         <span>{benefit}</span>
                                     </li>
-                                ))}
+                                )) : null}
                             </ul>
                         </div>
 
@@ -74,7 +74,7 @@ export default function BusinessModelsPage() {
                                         <CheckCircle2 className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
                                         <span>{benefit}</span>
                                     </li>
-                                ))}
+                                )) : null}
                             </ul>
                         </div>
                     </div>
@@ -108,7 +108,7 @@ export default function BusinessModelsPage() {
                                             <div className="w-1.5 h-1.5 bg-black rounded-full"></div>
                                             {benefit}
                                         </li>
-                                    ))}
+                                    )) : null}
                                 </ul>
                             </div>
                         ))}
