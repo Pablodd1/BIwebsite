@@ -46,7 +46,7 @@ export default function BusinessModelsPage() {
                                 {t('businessModels.tradeTerms.fob.desc')}
                             </p>
                             <ul className="space-y-3">
-                                {t('businessModels.tradeTerms.fob.benefits')?.map((benefit, idx) => (
+                                {t('businessModels.tradeTerms.fob.benefits') && Array.isArray(t('businessModels.tradeTerms.fob.benefits')) ? t('businessModels.tradeTerms.fob.benefits').map((benefit, idx) => (
                                     <li key={idx} className="flex items-start gap-3 text-sm text-gray-700">
                                         <CheckCircle2 className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
                                         <span>{benefit}</span>
@@ -69,7 +69,7 @@ export default function BusinessModelsPage() {
                                 {t('businessModels.tradeTerms.cif.desc')}
                             </p>
                             <ul className="space-y-3">
-                                {t('businessModels.tradeTerms.cif.benefits')?.map((benefit, idx) => (
+                                {t('businessModels.tradeTerms.cif.benefits') && Array.isArray(t('businessModels.tradeTerms.cif.benefits')) ? t('businessModels.tradeTerms.cif.benefits').map((benefit, idx) => (
                                     <li key={idx} className="flex items-start gap-3 text-sm text-gray-700">
                                         <CheckCircle2 className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
                                         <span>{benefit}</span>
@@ -92,7 +92,7 @@ export default function BusinessModelsPage() {
                     </p>
 
                     <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-                        {Object.entries(t('businessModels.partnership.types') || {}).map(([key, type]) => (
+                        {Object.entries(t('businessModels.partnership') || {}).map(([key, type]) => (
                             <div key={key} className="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm">
                                 <div className="w-12 h-12 bg-black rounded-lg flex items-center justify-center mb-4">
                                     {key === 'distributors' && <Building2 className="w-6 h-6 text-white" />}
@@ -103,7 +103,7 @@ export default function BusinessModelsPage() {
                                 <h3 className="text-lg font-bold mb-2">{type.title}</h3>
                                 <p className="text-gray-600 text-sm mb-4">{type.desc}</p>
                                 <ul className="space-y-2">
-                                    {type.benefits?.map((benefit, idx) => (
+                                    {type.benefits && Array.isArray(type.benefits) ? type.benefits.map((benefit, idx) => (
                                         <li key={idx} className="flex items-center gap-2 text-xs text-gray-600">
                                             <div className="w-1.5 h-1.5 bg-black rounded-full"></div>
                                             {benefit}
