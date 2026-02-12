@@ -123,6 +123,7 @@ const translations = {
             information: {
                 title: "Information",
                 links: {
+                    productList: "Products List",
                     collections: "Collections",
                     exteriors: "Exteriors",
                     interiors: "Interiors",
@@ -132,6 +133,11 @@ const translations = {
             helpful: {
                 title: "Helpful Links",
                 links: {
+                    whoWeAre: "Who We Are",
+                    ourMission: "Our Mission",
+                    ourVision: "Our Vision",
+                    quality: "Committed to Quality",
+                    business: "Business Models",
                     about: "About Us",
                     supports: "Supports",
                     faqs: "FAQs",
@@ -272,6 +278,7 @@ const translations = {
             information: {
                 title: "Información",
                 links: {
+                    productList: "Lista de Productos",
                     collections: "Colecciones",
                     exteriors: "Exteriores",
                     interiors: "Interiores",
@@ -281,6 +288,11 @@ const translations = {
             helpful: {
                 title: "Enlaces Útiles",
                 links: {
+                    whoWeAre: "Quiénes Somos",
+                    ourMission: "Nuestra Misión",
+                    ourVision: "Nuestra Visión",
+                    quality: "Comprometidos con la Calidad",
+                    business: "Modelos de Negocio",
                     about: "Sobre Nosotros",
                     supports: "Soporte",
                     faqs: "Preguntas Frecuentes",
