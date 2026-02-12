@@ -6,20 +6,20 @@ import Link from 'next/link';
 const productCategories = {
     Interior: {
         "PAREDES": [
-            "ROLLO MARMOL",
-            "ACOLCHADO",
-            "MARMOL",
-            "ACUSTICO",
-            "PANEL PS",
+            "Rollo Marmol",
+            "Acolchado",
+            "Marmol",
+            "Acustico",
+            "Panel PS",
             "PU",
-            "MUROFLEX",
-            "UNIFLEX"
+            "Muroflex",
+            "Uniflex"
         ],
         "LAMINAS": [
-            "FOAM BOARD",
-            "MARMOL",
-            "PAREDES",
-            "PVC BOARD"
+            "Foam Board",
+            "Marmol",
+            "Paredes",
+            "PVC Board"
         ],
         "JARDINES ARTIFICIALES": [],
         "PANELES WPC Y ANGULOS": [
@@ -34,85 +34,91 @@ const productCategories = {
     },
     Exterior: {
         "CUBIERTAS UPVC": [
-            "TEJAS"
+            "Tejas"
         ],
         "PAREDES": [
-            "FACHADA",
-            "POLIFACHADA"
+            "Fachada",
+            "Polifachada"
         ],
         "JARDINES ARTIFICIALES": [],
         "PANELES WPC Y ANGULOS": [
             "WPC Exterior"
         ],
         "PISOS": [
-            "DECK"
+            "Deck"
         ]
     }
 };
 
 const MegaMenu = () => {
     return (
-        <div className="hidden lg:block absolute left-0 top-full pt-2 w-full opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 ease-in-out z-50">
-            <div className="bg-white shadow-2xl rounded-b-xl border border-gray-100 overflow-hidden flex max-w-7xl mx-auto">
-
+        <div className="max-w-7xl mx-auto p-8">
+            <div className="grid grid-cols-2 gap-8">
                 {/* Interior Section */}
-                <div className="flex-1 p-8 border-r border-gray-100">
-                    <h3 className="text-xl font-bold mb-6 bg-yellow-300 w-fit px-2 py-1 uppercase tracking-wider">Interior</h3>
-                    <div className="grid grid-cols-2 gap-x-8 gap-y-6">
+                <div>
+                    <h3 className="text-lg font-bold mb-6 uppercase tracking-wider text-black border-b-2 border-secondary pb-2">
+                        Interior
+                    </h3>
+                    <div className="grid grid-cols-2 gap-x-8 gap-y-4">
                         {Object.entries(productCategories.Interior).map(([category, subcategories]) => (
-                            <div key={category} className="mb-2 break-inside-avoid">
+                            <div key={category} className="mb-4">
                                 <Link
-                                    href={`/collections/interior?category=${category}`}
-                                    className="font-bold text-gray-800 hover:text-black mb-1 block text-sm uppercase"
+                                    href={`/collections/interior?category=${encodeURIComponent(category)}`}
+                                    className="font-bold text-gray-800 hover:text-secondary mb-2 block text-sm uppercase transition-colors"
                                 >
                                     {category}
                                 </Link>
-                                <ul className="space-y-1">
-                                    {subcategories.map(sub => (
-                                        <li key={sub}>
-                                            <Link
-                                                href={`/collections/interior?category=${category}&subcategory=${sub}`}
-                                                className="text-gray-500 hover:text-yellow-600 text-xs transition-colors block py-0.5"
-                                            >
-                                                - {sub}
-                                            </Link>
-                                        </li>
-                                    ))}
-                                </ul>
+                                {subcategories.length > 0 && (
+                                    <ul className="space-y-1">
+                                        {subcategories.map(sub => (
+                                            <li key={sub}>
+                                                <Link
+                                                    href={`/collections/interior?category=${encodeURIComponent(category)}&subcategory=${encodeURIComponent(sub)}`}
+                                                    className="text-gray-600 hover:text-secondary text-xs transition-colors block py-0.5 hover:underline"
+                                                >
+                                                    {sub}
+                                                </Link>
+                                            </li>
+                                        ))}
+                                    </ul>
+                                )}
                             </div>
                         ))}
                     </div>
                 </div>
 
                 {/* Exterior Section */}
-                <div className="flex-1 p-8">
-                    <h3 className="text-xl font-bold mb-6 bg-yellow-300 w-fit px-2 py-1 uppercase tracking-wider">Exterior</h3>
-                    <div className="grid grid-cols-2 gap-x-8 gap-y-6">
+                <div>
+                    <h3 className="text-lg font-bold mb-6 uppercase tracking-wider text-black border-b-2 border-secondary pb-2">
+                        Exterior
+                    </h3>
+                    <div className="grid grid-cols-2 gap-x-8 gap-y-4">
                         {Object.entries(productCategories.Exterior).map(([category, subcategories]) => (
-                            <div key={category} className="mb-2 break-inside-avoid">
+                            <div key={category} className="mb-4">
                                 <Link
-                                    href={`/collections/exterior?category=${category}`}
-                                    className="font-bold text-gray-800 hover:text-black mb-1 block text-sm uppercase"
+                                    href={`/collections/exterior?category=${encodeURIComponent(category)}`}
+                                    className="font-bold text-gray-800 hover:text-secondary mb-2 block text-sm uppercase transition-colors"
                                 >
                                     {category}
                                 </Link>
-                                <ul className="space-y-1">
-                                    {subcategories.map(sub => (
-                                        <li key={sub}>
-                                            <Link
-                                                href={`/collections/exterior?category=${category}&subcategory=${sub}`}
-                                                className="text-gray-500 hover:text-yellow-600 text-xs transition-colors block py-0.5"
-                                            >
-                                                - {sub}
-                                            </Link>
-                                        </li>
-                                    ))}
-                                </ul>
+                                {subcategories.length > 0 && (
+                                    <ul className="space-y-1">
+                                        {subcategories.map(sub => (
+                                            <li key={sub}>
+                                                <Link
+                                                    href={`/collections/exterior?category=${encodeURIComponent(category)}&subcategory=${encodeURIComponent(sub)}`}
+                                                    className="text-gray-600 hover:text-secondary text-xs transition-colors block py-0.5 hover:underline"
+                                                >
+                                                    {sub}
+                                                </Link>
+                                            </li>
+                                        ))}
+                                    </ul>
+                                )}
                             </div>
                         ))}
                     </div>
                 </div>
-
             </div>
         </div>
     );
