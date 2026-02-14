@@ -1,6 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
+import Image from "next/image"
 import {
     Phone,
     Mail,
@@ -23,8 +24,20 @@ export default function ContactPage() {
     return (
         <main className="w-full">
             {/* ================= HERO ================= */}
-            <section className="relative overflow-hidden bg-linear-160 from-gray-900 to-black py-20 text-white min-h-fit">
-                <div className="mx-auto max-w-6xl px-4">
+            <section className="relative overflow-hidden py-20 text-white min-h-fit">
+                {/* Background Image */}
+                <div className="absolute inset-0 z-0">
+                    <Image
+                        src="/raster/containes.avif"
+                        alt="Containers background"
+                        fill
+                        priority
+                        className="object-cover"
+                    />
+                    <div className="absolute inset-0 bg-black/70"></div>
+                </div>
+                
+                <div className="mx-auto max-w-6xl px-4 relative z-10">
                     <motion.h1
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
