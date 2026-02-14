@@ -16,7 +16,7 @@ export const BRAND_CONFIG = {
         id: 'unitec',
         name: "UNITEC",
         logoText: "UNITEC",
-        logoImage: "/unitec-logo.png", // We will need to create/upload this
+        logoImage: "/unitec-logo.png",
         metaTitle: "UNITEC | Premium Building Solutions"
     }
 };
