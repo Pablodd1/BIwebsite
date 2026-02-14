@@ -412,6 +412,31 @@ const translations = {
             sendInquiry: "Send Inquiry",
             responseTimeText: "Our team usually responds within 24 business hours."
         },
+        quality: {
+            title: "Committed to Quality",
+            quote: "\"At Building Innovation, quality is not a standard—it's a promise.\"",
+            intro: "Every product undergoes certified technical control processes and material selection, ensuring durability, precision, and high-end finishes.",
+            commitment: "Our commitment to excellence is reflected in:",
+            pillars: {
+                audits: {
+                    title: "Quality Audits at Origin",
+                    desc: "Rigorous inspections in China and LATAM to ensure compliance with our high standards."
+                },
+                supervision: {
+                    title: "Continuous Supervision",
+                    desc: "Monitoring at every production stage to guarantee consistency and precision."
+                },
+                partnerships: {
+                    title: "Certified Partnerships",
+                    desc: "Collaboration with internationally certified manufacturers aligned with our quality objectives."
+                },
+                innovation: {
+                    title: "Continuous Innovation",
+                    desc: "Constant evolution to exceed market expectations and set industry benchmarks."
+                }
+            },
+            closing: "Quality you can see, feel, and trust over time"
+        },
         terms: {
             title: "Terms & Conditions",
             description: "These Terms govern your access to and use of the Unitec USA Design website, products, and services.",
