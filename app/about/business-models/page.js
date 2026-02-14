@@ -14,7 +14,7 @@ export default function BusinessModelsPage() {
                 className="bg-cover bg-center bg-no-repeat relative py-24 text-white"
                 style={{ backgroundImage: 'linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(/raster/containers.webp)' }}
             >
-                <div className="mx-auto max-w-6xl px-4 text-center relative z-10">
+                <div className="mx-auto max-w-6xl px-4 text-center">
                     <h1 className="text-4xl md:text-5xl font-bold mb-6 uppercase tracking-wider">
                         {t('businessModels.title')}
                     </h1>
