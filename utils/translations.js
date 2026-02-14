@@ -113,7 +113,6 @@ const translations = {
             placeholder: "Search..."
         },
         footer: {
-            brandName: "Building Innovation",
             logo: {
                 text: "Building Innovation",
                 tagline: "We design the future!"
@@ -614,9 +613,8 @@ const translations = {
             placeholder: "Buscar..."
         },
         footer: {
-            brandName: "Unitec",
             logo: {
-                text: "Unitec",
+                text: "Innovación en Construcción",
                 tagline: "¡Diseñamos el futuro!"
             },
             contact: {

@@ -21,7 +21,7 @@ const Footer = () => {
 
     const navData = {
         logo: {
-            text: t("footer.brandName"),
+            text: brand.name,
             tagline: t("footer.logo.tagline")
         },
         contact: {
@@ -120,7 +120,7 @@ const Footer = () => {
                     ))}
                     {/* Bottom Copyright */}
                     <div className="text-center font-serif text-sm absolute right-0">
-                        <p>{t('footer.rights')} &copy; - 2026 {t('footer.brandName')}.</p>
+                        <p>{t('footer.rights')} &copy; - 2026 {brand.name}.</p>
                     </div>
                 </div>
 
