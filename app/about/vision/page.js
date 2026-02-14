@@ -10,7 +10,10 @@ export default function VisionPage() {
     return (
         <main className="w-full">
             {/* Hero Section */}
-            <section className="bg-linear-to-br from-gray-900 to-black py-24 text-white">
+            <section 
+                className="bg-cover bg-center bg-no-repeat relative py-24 text-white"
+                style={{ backgroundImage: 'linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(/raster/containers.webp)' }}
+            >
                 <div className="mx-auto max-w-6xl px-4 text-center">
                     <h1 className="text-4xl md:text-5xl font-bold mb-6 uppercase tracking-wider">
                         {t('about.vision.title')}

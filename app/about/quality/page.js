@@ -8,8 +8,20 @@ export default function QualityPage() {
     const { t } = useLanguage();
     
     return (
-        <main className="container mx-auto px-6 py-20 max-w-4xl">
-            <h1 className="text-4xl font-bold mb-12 text-center uppercase tracking-wider">{t('quality.title')}</h1>
+        <main className="w-full">
+            {/* Hero Section */}
+            <section 
+                className="bg-cover bg-center bg-no-repeat relative py-24 text-white"
+                style={{ backgroundImage: 'linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(/raster/containers.webp)' }}
+            >
+                <div className="mx-auto max-w-6xl px-4 text-center">
+                    <h1 className="text-4xl md:text-5xl font-bold mb-6 uppercase tracking-wider">
+                        {t('quality.title')}
+                    </h1>
+                </div>
+            </section>
+
+            <div className="container mx-auto px-6 py-20 max-w-4xl">
 
             <div className="max-w-3xl mx-auto mb-16 text-center">
                 <p className="text-2xl font-medium text-gray-800 italic mb-8">
@@ -62,6 +74,7 @@ export default function QualityPage() {
                 <h3 className="text-2xl font-bold tracking-widest uppercase">
                     {t('quality.closing')}
                 </h3>
+            </div>
             </div>
         </main>
     );

@@ -152,6 +152,77 @@ const translations = {
                 btn: "Subscribe"
             },
             rights: "All rights reserved."
+        },
+        businessModels: {
+            title: "Business Models",
+            intro: "At Building Innovation, we operate under leading international trade terms to offer flexibility, transparency, and security for our partners worldwide.",
+            tradeTerms: {
+                title: "International Trade Terms",
+                subtitle: "We offer flexible Incoterms to accommodate different business needs and logistics preferences",
+                fob: {
+                    title: "FOB (Free on Board)",
+                    desc: "We handle the merchandise until it's loaded onto the vessel at the port of shipment. You retain control over freight and insurance logistics from that point.",
+                    benefits: [
+                        "We manage pre-shipment logistics",
+                        "Client controls ocean freight and insurance",
+                        "Ideal for experienced importers"
+                    ]
+                },
+                cif: {
+                    title: "CIF (Cost, Insurance, and Freight)",
+                    desc: "We manage costs, insurance, and freight to your destination port, providing a complete hassle-free service experience from our door to yours.",
+                    benefits: [
+                        "All-in-one shipping solution",
+                        "We handle insurance and freight",
+                        "Perfect for optimized operations"
+                    ]
+                }
+            },
+            partnership: {
+                title: "Partnership Opportunities",
+                subtitle: "We work with various partner types to expand our reach and better serve customers",
+                distributors: {
+                    title: "Distributors",
+                    desc: "Exclusive and non-exclusive distribution agreements for regional markets",
+                    benefits: ["Competitive wholesale prices", "Marketing support", "Exclusive territory options", "Priority product access"]
+                },
+                retailers: {
+                    title: "Retailers",
+                    desc: "Partner with us to offer premium building materials to your customers",
+                    benefits: ["Retail margin protection", "Point-of-sale materials", "Product training", "Inventory support"]
+                },
+                contractors: {
+                    title: "Contractors",
+                    desc: "Volume pricing and project support for construction professionals",
+                    benefits: ["Project-based pricing", "Technical consultation", "Priority delivery", "Volume discounts"]
+                },
+                international: {
+                    title: "International",
+                    desc: "Export partnerships for distribution and global representation",
+                    benefits: ["Export documentation support", "Customs assistance", "Multi-currency pricing", "Global logistics coordination"]
+                }
+            },
+            benefits: {
+                title: "Partner Benefits",
+                items: {
+                    flexibility: {
+                        title: "Flexibility in Logistics and Costs",
+                        desc: "Adaptable solutions to fit your specific budget, timeline, and operational preferences. Choose the model that works best for your business."
+                    },
+                    transparency: {
+                        title: "Transparency Throughout the Process",
+                        desc: "Clear visibility and communication from production to delivery. No hidden fees or surprises at any stage."
+                    },
+                    tailored: {
+                        title: "Tailored Solutions",
+                        desc: "We customize our service to ensure secure and efficient operations with full control from origin to destination, meeting your specific requirements."
+                    }
+                }
+            },
+            cta: {
+                title: "Ready to Explore a Partnership?",
+                desc: "Contact our sales team to discuss which business model works best for your needs. We're here to help you succeed."
+            }
         }
     },
     es: {

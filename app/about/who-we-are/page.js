@@ -8,8 +8,18 @@ export default function WhoWeArePage() {
     const intro = t('whoWeAre.intro') || [];
     
     return (
-        <main className="container mx-auto px-6 py-20 max-w-4xl">
-            <h1 className="text-4xl font-bold mb-10 text-center uppercase tracking-wider">{t('whoWeAre.title')}</h1>
+        <main className="w-full">
+            {/* Hero Section */}
+            <section 
+                className="bg-cover bg-center bg-no-repeat relative py-24 text-white"
+                style={{ backgroundImage: 'linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(/raster/containers.webp)' }}
+            >
+                <div className="mx-auto max-w-6xl px-4 relative z-10">
+                    <h1 className="text-4xl font-bold mb-10 text-center uppercase tracking-wider">{t('whoWeAre.title')}</h1>
+                </div>
+            </section>
+
+            <div className="container mx-auto px-6 py-20 max-w-4xl">
 
             <section className="mb-16">
                 <div className="bg-gray-50 p-8 rounded-2xl border border-gray-100">
@@ -50,6 +60,7 @@ export default function WhoWeArePage() {
                     <p>{t('whoWeAre.headquarters.phone')}</p>
                 </div>
             </section>
+            </div>
         </main>
     );
 }

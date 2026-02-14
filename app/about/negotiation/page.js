@@ -8,11 +8,21 @@ export default function NegotiationPage() {
     const { t } = useLanguage();
     
     return (
-        <main className="container mx-auto px-6 py-20 max-w-4xl">
-            <h1 className="text-4xl font-bold mb-4 text-center uppercase tracking-wider">{t('negotiation.title')}</h1>
-            <p className="text-center text-gray-500 mb-12 max-w-2xl mx-auto">
-                {t('negotiation.intro')}
-            </p>
+        <main className="w-full">
+            {/* Hero Section */}
+            <section 
+                className="bg-cover bg-center bg-no-repeat relative py-24 text-white"
+                style={{ backgroundImage: 'linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(/raster/containers.webp)' }}
+            >
+                <div className="mx-auto max-w-6xl px-4 text-center">
+                    <h1 className="text-4xl font-bold mb-4 uppercase tracking-wider">{t('negotiation.title')}</h1>
+                    <p className="text-center text-gray-300 max-w-2xl mx-auto">
+                        {t('negotiation.intro')}
+                    </p>
+                </div>
+            </section>
+
+            <div className="container mx-auto px-6 py-20 max-w-4xl">
 
             <div className="mb-16 grid grid-cols-1 md:grid-cols-2 gap-6">
                 {/* FOB */}
@@ -70,6 +80,7 @@ export default function NegotiationPage() {
                         <p className="text-gray-600">{t('negotiation.options.items.solutions.desc')}</p>
                     </div>
                 </div>
+            </div>
             </div>
         </main>
     );
