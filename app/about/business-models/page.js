@@ -36,10 +36,10 @@ export default function BusinessModelsPage() {
 
                     <div className="grid md:grid-cols-2 gap-8">
                         {/* FOB */}
-                        <div className="bg-gray-50 rounded-2xl p-8 border border-gray-100 hover:shadow-lg transition-shadow">
+                        <div className="bg-gray-50 rounded-2xl p-8 border border-gray-100 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group">
                             <div className="flex items-center gap-4 mb-6">
-                                <div className="w-16 h-16 bg-black rounded-xl flex items-center justify-center">
-                                    <Ship className="w-8 h-8 text-white" />
+                                <div className="w-16 h-16 bg-black rounded-xl flex items-center justify-center group-hover:bg-primary transition-colors duration-300">
+                                    <Ship className="w-8 h-8 text-white group-hover:text-white" />
                                 </div>
                                 <div>
                                     <h3 className="text-2xl font-bold">{t('businessModels.tradeTerms.fob.title')}</h3>
@@ -59,10 +59,10 @@ export default function BusinessModelsPage() {
                         </div>
 
                         {/* CIF */}
-                        <div className="bg-gray-50 rounded-2xl p-8 border border-gray-100 hover:shadow-lg transition-shadow">
+                        <div className="bg-gray-50 rounded-2xl p-8 border border-gray-100 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group">
                             <div className="flex items-center gap-4 mb-6">
-                                <div className="w-16 h-16 bg-black rounded-xl flex items-center justify-center">
-                                    <Package className="w-8 h-8 text-white" />
+                                <div className="w-16 h-16 bg-black rounded-xl flex items-center justify-center group-hover:bg-primary transition-colors duration-300">
+                                    <Package className="w-8 h-8 text-white group-hover:text-white" />
                                 </div>
                                 <div>
                                     <h3 className="text-2xl font-bold">{t('businessModels.tradeTerms.cif.title')}</h3>
@@ -96,8 +96,8 @@ export default function BusinessModelsPage() {
 
                     <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
                         {Object.entries(t('businessModels.partnership') || {}).map(([key, type]) => (
-                            <div key={key} className="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm">
-                                <div className="w-12 h-12 bg-black rounded-lg flex items-center justify-center mb-4">
+                            <div key={key} className="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                                <div className="w-12 h-12 bg-black rounded-lg flex items-center justify-center mb-4 hover:bg-primary transition-colors duration-300">
                                     {key === 'distributors' && <Building2 className="w-6 h-6 text-white" />}
                                     {key === 'retailers' && <Store className="w-6 h-6 text-white" />}
                                     {key === 'contractors' && <HardHat className="w-6 h-6 text-white" />}
@@ -127,23 +127,23 @@ export default function BusinessModelsPage() {
                     </h2>
 
                     <div className="grid md:grid-cols-3 gap-6">
-                        <div className="bg-gray-50 p-8 rounded-2xl border border-gray-100">
-                            <div className="w-14 h-14 bg-white rounded-xl shadow-sm flex items-center justify-center mb-6">
-                                <DollarSign className="w-7 h-7 text-black" />
+                        <div className="bg-gray-50 p-8 rounded-2xl border border-gray-100 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group">
+                            <div className="w-14 h-14 bg-white rounded-xl shadow-sm flex items-center justify-center mb-6 group-hover:bg-primary transition-colors duration-300">
+                                <DollarSign className="w-7 h-7 text-black group-hover:text-white" />
                             </div>
                             <h3 className="text-xl font-bold mb-3">{t('businessModels.benefits.items.flexibility.title')}</h3>
                             <p className="text-gray-600 leading-relaxed">{t('businessModels.benefits.items.flexibility.desc')}</p>
                         </div>
-                        <div className="bg-gray-50 p-8 rounded-2xl border border-gray-100">
-                            <div className="w-14 h-14 bg-white rounded-xl shadow-sm flex items-center justify-center mb-6">
-                                <Handshake className="w-7 h-7 text-black" />
+                        <div className="bg-gray-50 p-8 rounded-2xl border border-gray-100 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group">
+                            <div className="w-14 h-14 bg-white rounded-xl shadow-sm flex items-center justify-center mb-6 group-hover:bg-primary transition-colors duration-300">
+                                <Handshake className="w-7 h-7 text-black group-hover:text-white" />
                             </div>
                             <h3 className="text-xl font-bold mb-3">{t('businessModels.benefits.items.transparency.title')}</h3>
                             <p className="text-gray-600 leading-relaxed">{t('businessModels.benefits.items.transparency.desc')}</p>
                         </div>
-                        <div className="bg-gray-50 p-8 rounded-2xl border border-gray-100">
-                            <div className="w-14 h-14 bg-white rounded-xl shadow-sm flex items-center justify-center mb-6">
-                                <Briefcase className="w-7 h-7 text-black" />
+                        <div className="bg-gray-50 p-8 rounded-2xl border border-gray-100 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group">
+                            <div className="w-14 h-14 bg-white rounded-xl shadow-sm flex items-center justify-center mb-6 group-hover:bg-primary transition-colors duration-300">
+                                <Briefcase className="w-7 h-7 text-black group-hover:text-white" />
                             </div>
                             <h3 className="text-xl font-bold mb-3">{t('businessModels.benefits.items.tailored.title')}</h3>
                             <p className="text-gray-600 leading-relaxed">{t('businessModels.benefits.items.tailored.desc')}</p>
