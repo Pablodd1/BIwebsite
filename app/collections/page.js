@@ -19,7 +19,7 @@ export async function generateMetadata(_, parent) {
             url: `${process.env.BASE_URL}/collections`,
             images: [
                 {
-                    url: `/raster/collection-banner.webp` || process.env.DEFAULT_IMAGE,
+                    url: `/raster/interior.webp` || process.env.DEFAULT_IMAGE,
                     width: 1200,
                     height: 630,
                     alt: "Unitec USA Design – Innovative PVC & WPC Building Materials",
@@ -31,7 +31,7 @@ export async function generateMetadata(_, parent) {
             title: "All Product Collections – Unitec USA Design",
             description:
                 "Discover the full range of Unitec USA Design PVC & WPC building materials.",
-            images: [`/raster/collection-banner.webp` || process.env.DEFAULT_IMAGE],
+            images: [`/raster/interior.webp` || process.env.DEFAULT_IMAGE],
         },
     };
 }
@@ -45,7 +45,7 @@ export default async function Collections({ searchParams }) {
             h1={"Our Product Collections"}
             description={"Explore Unitec USA Design’s complete range of PVC and WPC building materials. From interior finishes to exterior-grade solutions, our collections are engineered for durability, zero maintenance, and modern design flexibility. Whether you’re sourcing for residential, commercial, or large-scale projects, find everything in one place."}
             cover={{
-                src: '/raster/collection-banner.webp',
+                src: '/raster/interior.webp',
                 alt: 'collection banner'
             }}
             productURL="/API/collections?"
