@@ -6,6 +6,7 @@ const Logo = ({ size = 250, className }) => {
     const { brand } = useBrand();
     return (
         <Image
+            key={brand.id}
             src={brand.logoImage}
             priority
             alt={`${brand.name} logo`}
