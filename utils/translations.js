@@ -153,6 +153,143 @@ const translations = {
             },
             rights: "All rights reserved."
         },
+        about: {
+            title: "About Us",
+            hero: {
+                title: "Built for Scale.",
+                subtitle: "Designed for Containers.",
+                description: "We help businesses move products in bulk using a structured, container-centric approach — reducing waste, optimizing space, and simplifying logistics from order to shipment."
+            },
+            story: {
+                title: "Why We Exist",
+                p1: "Bulk shipping is broken when treated like regular e-commerce. Products aren't individual units — they're volumes, dimensions, and constraints within a container.",
+                p2: "We built our platform around a simple belief: containers first, products second. This mindset enables businesses to plan realistic shipments, avoid overbooking, and get full visibility into capacity.",
+                stats: {
+                    bulk: "Bulk Logic",
+                    dimension: "Dimension Aware",
+                    logistics: "Logistics Ready",
+                    safe: "Operationally Safe"
+                }
+            },
+            mission: {
+                title: "Our Mission",
+                p1: "At Unitec USA Design, our mission is to redefine modern construction by delivering innovative, sustainable, and high-quality PVC and WPC building materials that elevate everyday spaces.",
+                p2: "We believe building materials should do more than function — they should inspire creativity, simplify installation, and contribute to a more sustainable built environment.",
+                items: [
+                    "Future-proof product development",
+                    "Eco-conscious materials and manufacturing",
+                    "Premium quality without compromise",
+                    "Solutions that empower professionals and homeowners",
+                    "Accessible materials for projects of any scale"
+                ]
+            },
+            vision: {
+                title: "Our Vision",
+                p1: "Our vision is to become the leading provider of PVC and WPC construction solutions across North America — transforming how professionals and homeowners approach building and design.",
+                p2: "We're building toward a future where sustainable construction, design freedom, and maintenance-free living are the standard, not the exception.",
+                stats: {
+                    reach: "National Reach",
+                    sustainable: "Sustainable Focus",
+                    design: "Design Freedom",
+                    professionals: "Built for Professionals"
+                }
+            },
+            howItWorks: {
+                title: "How Our System Works",
+                subtitle: "Our workflow mirrors real container planning — not traditional carts.",
+                steps: {
+                    create: {
+                        title: "Create Containers",
+                        desc: "Every order starts with a physical container definition including internal dimensions."
+                    },
+                    fill: {
+                        title: "Fill with Products",
+                        desc: "Products are added based on size and quantity, not just price."
+                    },
+                    ship: {
+                        title: "Ship with Confidence",
+                        desc: "Know exactly how full each container is before shipping."
+                    }
+                }
+            },
+            whyChoose: {
+                title: "Why Choose Unitec",
+                description: "Our products are designed to outperform traditional building materials while simplifying installation and long-term ownership.",
+                features: {
+                    warranty: { title: "15–25 Year Warranties", desc: "Industry-leading durability backed by trust." },
+                    waterproof: { title: "100% Waterproof", desc: "No rot, rust, or moisture damage — ever." },
+                    maintenance: { title: "Zero Maintenance", desc: "No painting, sealing, or refinishing." },
+                    fire: { title: "Fire Resistant", desc: "Self-extinguishing with low flame spread." },
+                    eco: { title: "Eco-Friendly", desc: "Recyclable materials with recycled content." },
+                    install: { title: "Quick Installation", desc: "Save time and labor on every project." }
+                }
+            },
+            productRange: {
+                title: "Our Product Range",
+                description: "With over 100 product lines across 22 categories, Unitec delivers complete solutions for residential and commercial construction.",
+                categories: {
+                    walls: "Wall Panels & Cladding",
+                    ceilings: "Roofing & Ceilings",
+                    flooring: "Floor Systems",
+                    facades: "Facade Solutions",
+                    acoustic: "Acoustic Treatments",
+                    decorative: "Decorative Finishes"
+                }
+            },
+            trust: {
+                title: "Built for Real Business",
+                description: "Our platform is designed for manufacturers, exporters, distributors, and logistics-driven businesses moving serious volume — not casual buyers.",
+                partners: [
+                    "Exporters & Wholesalers",
+                    "Bulk-shipping manufacturers",
+                    "B2B e-commerce operations",
+                    "Optimized freight supply chains"
+                ],
+                different: {
+                    title: "What Makes Us Different",
+                    items: {
+                        container: { title: "Container-Centric UX", desc: "We don't fake physical reality — volume rules." },
+                        global: { title: "Global-Ready", desc: "Designed for international shipping logic." },
+                        b2b: { title: "B2B Focused", desc: "Every feature serves operational teams." }
+                    }
+                }
+            },
+            sustainability: {
+                title: "Integrated Sustainability",
+                items: [
+                    "Recycled PVC content in all products",
+                    "Fully recyclable at end of life",
+                    "Low VOC emissions for indoor safety",
+                    "Long lifespan reduces replacement waste",
+                    "Energy-efficient manufacturing processes"
+                ],
+                quality: {
+                    title: "Quality Assurance",
+                    items: [
+                        "ISO-certified manufacturing facilities",
+                        "Third-party lab testing",
+                        "Strict production-stage inspections",
+                        "Real-world performance validation",
+                        "Continuous improvement protocols"
+                    ]
+                }
+            },
+            innovation: {
+                title: "Innovation Leadership",
+                description: "We continuously invest in research and development to deliver advanced materials, modern finishes, and smarter installation systems.",
+                items: [
+                    "Advanced manufacturing technologies",
+                    "Expanded product applications",
+                    "Enhanced durability and performance",
+                    "Modern color and texture trends"
+                ]
+            },
+            cta: {
+                title: "Ready to Ship Smarter?",
+                description: "Let's plan containers, not guesses.",
+                button: "Contact Our Team"
+            }
+        },
         businessModels: {
             title: "Business Models",
             intro: "At Building Innovation, we operate under leading international trade terms to offer flexibility, transparency, and security for our partners worldwide.",
@@ -222,6 +359,27 @@ const translations = {
             cta: {
                 title: "Ready to Explore a Partnership?",
                 desc: "Contact our sales team to discuss which business model works best for your needs. We're here to help you succeed."
+            }
+        },
+        negotiation: {
+            title: "Business Terms",
+            intro: "At Building Innovation, we operate under leading international trade terms to offer flexibility and security.",
+            options: {
+                title: "These options allow us to offer our partners:",
+                items: {
+                    flexibility: {
+                        title: "Flexibility in logistics and costs",
+                        desc: "Adaptable solutions to fit your specific budget and timeline."
+                    },
+                    transparency: {
+                        title: "Transparency throughout the supply chain",
+                        desc: "Clear visibility and communication from production to delivery."
+                    },
+                    solutions: {
+                        title: "Solutions tailored to each client's needs",
+                        desc: "We customize our service to ensure secure and efficient operations with full control from origin to destination."
+                    }
+                }
             }
         }
     },

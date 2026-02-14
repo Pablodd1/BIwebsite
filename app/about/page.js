@@ -31,8 +31,11 @@ export default function AboutPage() {
     return (
         <main className="w-full">
             {/* ================= HERO ================= */}
-            <section className="bg-linear-to-br from-black to-gray-900 py-24 text-white">
-                <div className="mx-auto max-w-6xl px-4">
+            <section 
+                className="bg-cover bg-center bg-no-repeat relative py-24 text-white"
+                style={{ backgroundImage: 'linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(/raster/containers.webp)' }}
+            >
+                <div className="mx-auto max-w-6xl px-4 relative z-10">
                     <motion.h1
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
