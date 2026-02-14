@@ -11,21 +11,22 @@ import {
     RefreshCcw,
     Mail,
 } from "lucide-react"
+import { useLanguage } from "lib/LanguageContext";
 
 export default function PoliciesPage() {
+    const { t } = useLanguage();
+    
     return (
         <main className="w-full">
             {/* ================= HERO ================= */}
             <section className="bg-gray-100 py-20">
                 <div className="mx-auto max-w-5xl px-4">
                     <motion.h1 className="text-3xl font-bold">
-                        Privacy Policy
+                        {t('policies.title')}
                     </motion.h1>
 
                     <p className="mt-4 max-w-3xl text-sm text-gray-600">
-                        This Privacy Policy explains how Unitec USA Design collects, uses, and protects
-                        your information when you visit our website or engage with our products
-                        and services.
+                        {t('policies.description')}
                     </p>
 
                 </div>
@@ -34,92 +35,59 @@ export default function PoliciesPage() {
             {/* ================= CONTENT ================= */}
             <section className="py-20">
                 <div className="mx-auto max-w-5xl px-4 space-y-14">
-                    <Policy icon={Shield} title="1. Introduction">
+                    <Policy icon={Shield} title={t('policies.sections.introduction.title')}>
                         <p>
-                            Unitec USA Design (“we,” “our,” or “us”) is committed to protecting your
-                            privacy. This policy explains how we collect, use, disclose, and safeguard
-                            your information when you visit www.unitecusadesign.com.
-                        </p>
-                        <p>
-                            By using our website or services, you agree to the practices described
-                            in this Privacy Policy.
+                            {t('policies.sections.introduction.text')}
                         </p>
                     </Policy>
 
-                    <Policy icon={FileText} title="2. Information We Collect">
+                    <Policy icon={FileText} title={t('policies.sections.collect.title')}>
                         <p>
-                            We may collect personal information such as your name, email address,
-                            phone number, mailing address, company details, billing information,
-                            and project specifications.
-                        </p>
-                        <p>
-                            We also automatically collect technical data including IP address,
-                            browser type, pages viewed, and usage behavior through cookies
-                            and similar technologies.
+                            {t('policies.sections.collect.text')}
                         </p>
                     </Policy>
 
-                    <Policy icon={Scale} title="3. How We Use Your Information">
+                    <Policy icon={Scale} title={t('policies.sections.use.title')}>
                         <ul className="list-disc pl-5 space-y-2">
-                            <li>Process orders and deliver products</li>
-                            <li>Respond to inquiries and provide customer support</li>
-                            <li>Improve our website, products, and services</li>
-                            <li>Send updates or marketing communications (with consent)</li>
-                            <li>Prevent fraud and comply with legal obligations</li>
+                            {t('policies.sections.use.items') && t('policies.sections.use.items').map((item, i) => (
+                                <li key={i}>{item}</li>
+                            ))}
                         </ul>
                     </Policy>
 
-                    <Policy icon={AlertTriangle} title="4. Information Sharing">
+                    <Policy icon={AlertTriangle} title={t('policies.sections.sharing.title')}>
                         <p>
-                            We do not sell your personal information. We may share data with trusted
-                            service providers, authorized partners (with consent), or when required
-                            by law.
-                        </p>
-                        <p>
-                            Information may also be disclosed in connection with business transfers
-                            such as mergers or acquisitions.
+                            {t('policies.sections.sharing.text')}
                         </p>
                     </Policy>
 
-                    <Policy icon={Lock} title="5. Data Security">
+                    <Policy icon={Lock} title={t('policies.sections.security.title')}>
                         <p>
-                            We use industry-standard safeguards including encryption, secure servers,
-                            access controls, and regular security reviews to protect your data.
-                        </p>
-                        <p>
-                            While we take reasonable measures, no online system can be guaranteed
-                            to be 100% secure.
+                            {t('policies.sections.security.text')}
                         </p>
                     </Policy>
 
-                    <Policy icon={RefreshCcw} title="6. Cookies & Tracking">
+                    <Policy icon={RefreshCcw} title={t('policies.sections.cookies.title')}>
                         <p>
-                            Cookies help us remember preferences, analyze traffic, personalize content,
-                            and improve site functionality.
-                        </p>
-                        <p>
-                            You may manage cookie settings through your browser. Disabling cookies
-                            may affect certain features.
+                            {t('policies.sections.cookies.text')}
                         </p>
                     </Policy>
 
-                    <Policy icon={Shield} title="7. Your Privacy Rights">
+                    <Policy icon={Shield} title={t('policies.sections.rights.title')}>
                         <p>
-                            You may request access, correction, or deletion of your personal data,
-                            opt out of marketing communications, or withdraw consent at any time.
+                            {t('policies.sections.rights.text')}
                         </p>
                         <p className="font-medium">
-                            📧 privacy@unitecusadesign.com
+                            📧 {t('policies.email')}
                         </p>
                     </Policy>
 
-                    <Policy icon={Mail} title="8. Contact">
+                    <Policy icon={Mail} title={t('policies.sections.contact.title')}>
                         <p>
-                            For questions about this Privacy Policy or our data practices, please
-                            contact our Privacy Department.
+                            {t('policies.sections.contact.text')}
                         </p>
                         <p className="font-medium">
-                            📧 privacy@unitecusadesign.com
+                            📧 {t('policies.email')}
                         </p>
                     </Policy>
 

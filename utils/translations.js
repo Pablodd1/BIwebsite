@@ -382,57 +382,121 @@ const translations = {
                 }
             }
         },
-        whoWeAre: {
-            title: "Who We Are",
-            company: "Building Innovation",
-            tagline: "\"We design the future!\"",
-            intro: [
-                "We are an international company dedicated to the development and supply of innovative solutions for construction and architectural design.",
-                "We stand out for combining quality, technology, and functionality in every product, transforming spaces and enhancing the value of every project.",
-                "Our philosophy is built on excellence, continuous improvement, and personalized service, strengthening long-term alliances with our distributors and strategic partners across the Americas and around the world.",
-                "We believe in innovation as the driving force of growth, and we work every day to anticipate market trends.",
-                "We are Building Innovation: design, quality, and the future in every detail."
-            ],
-            mission: {
-                title: "Mission",
-                text: "At BUILDING INNOVATION, we simplify the world of construction through innovative, sustainable, and high-design solutions, offering a comprehensive portfolio of architectural materials that create value, foster strategic alliances, and improve the construction experience and quality of life."
+        contact: {
+            hero: {
+                title: "Let's Move Your Products —",
+                subtitle: "At Scale",
+                description: "We specialize in bulk product handling, container-based shipping, and optimized logistics workflows. Reach out to discuss volumes, containers, and delivery timelines.",
+                bulkOrders: "Bulk Orders",
+                logistics: "Logistics",
+                responseTime: "Response Time",
+                handling: "Handling",
+                containerBased: "Container-based",
+                optimizedPacking: "Optimized Packing",
+                within24h: "Within 24h",
+                secureTracked: "Secure & Tracked"
             },
-            vision: {
-                title: "Vision",
-                text: "To become a leading brand in construction innovation in Latin America, recognized for simplifying construction processes, setting trends in design and sustainability, and delivering high-value architectural solutions. We aspire to build a scalable and collaborative business model, strengthening strategic alliances and creating a positive impact on the industry, people, and the environment."
-            },
-            headquarters: {
-                title: "Global Headquarters",
-                address: "6120 NW 74th Ave",
-                city: "Doral, Miami, FL 33166",
-                country: "United States",
-                phone: "+1 (786) 968-5783"
-            }
+            talkTeam: "Talk to Our Logistics Team",
+            whether: "Whether you're planning a full container load or evaluating capacity, our team helps you choose the right shipping structure.",
+            headquarters: "Headquarters",
+            generalInquiries: "General Inquiries",
+            activeStaff: "Active Staff",
+            requestQuote: "Request a Bulk Shipping Quote",
+            provideDetails: "Provide details about your products and container requirements.",
+            fullName: "Full Name",
+            companyName: "Company Name",
+            email: "Email",
+            phone: "Phone",
+            estimatedVolume: "Estimated Volume / Containers",
+            projectDetails: "Project Details",
+            sendInquiry: "Send Inquiry",
+            responseTimeText: "Our team usually responds within 24 business hours."
         },
-        quality: {
-            title: "Committed to Quality",
-            quote: "\"At Building Innovation, quality is not a standard—it's a promise.\"",
-            intro: "Every product goes through certified technical control processes and material selection, ensuring durability, precision, and high-end finishes.",
-            commitment: "Our commitment to excellence is reflected in:",
-            pillars: {
-                audits: {
-                    title: "Quality Audits at Origin",
-                    desc: "Rigorous inspections in China and LATAM to ensure compliance with our high standards."
+        terms: {
+            title: "Terms & Conditions",
+            description: "These Terms govern your access to and use of the Unitec USA Design website, products, and services.",
+            sections: {
+                acceptance: {
+                    title: "1. Acceptance of Terms",
+                    text: "By accessing or using www.unitecusadesign.com, you agree to be bound by these Terms & Conditions. If you do not agree, please discontinue use of the website."
                 },
-                supervision: {
-                    title: "Continuous Supervision",
-                    desc: "Monitoring at every production stage to guarantee consistency and precision."
+                use: {
+                    title: "2. Use of Website",
+                    text: "You may use this website for lawful business and informational purposes only, including browsing products, requesting quotes, and placing orders. Unauthorized access, scraping, misuse, or interference with website functionality is strictly prohibited."
                 },
-                partnerships: {
-                    title: "Certified Partnerships",
-                    desc: "Collaboration with internationally certified manufacturers aligned with our quality objectives."
+                product: {
+                    title: "3. Product Information",
+                    text: "We strive for accuracy, but product descriptions, specifications, colors, and availability are not guaranteed to be error-free. We reserve the right to modify or discontinue products and correct inaccuracies without notice."
                 },
-                innovation: {
-                    title: "Continuous Innovation",
-                    desc: "Constant evolution to exceed market expectations and set industry benchmarks."
+                pricing: {
+                    title: "4. Pricing & Payment",
+                    text: "Prices are listed in USD and may change without notice. Shipping, taxes, and duties are not included unless stated. Payment is due at order placement unless credit terms are approved. Orders may be canceled for non-payment."
+                },
+                orders: {
+                    title: "5. Orders & Delivery",
+                    text: "Orders are subject to acceptance and availability. Delivery dates are estimates and not guaranteed. Risk of loss transfers to the carrier upon shipment. Customers must inspect deliveries and report damage promptly."
+                },
+                returns: {
+                    title: "6. Returns & Warranty",
+                    text: "Standard products may be eligible for return within 30 days, subject to condition and restocking fees. Custom orders are non-refundable. Products are covered by limited warranties as specified. Warranty claims are limited to repair, replacement, or refund."
+                },
+                liability: {
+                    title: "7. Limitation of Liability",
+                    text: "To the maximum extent permitted by law, our liability is limited to the purchase price of the product. We are not responsible for indirect, incidental, or consequential damages, installation errors, or delays beyond our control."
+                },
+                intellectual: {
+                    title: "8. Intellectual Property",
+                    text: "All website content, trademarks, and materials are owned by Unitec USA Design or its licensors. You may not reproduce, distribute, or use our content without prior written permission."
+                },
+                changes: {
+                    title: "9. Changes to These Terms",
+                    text: "We may update these Terms at any time. Changes become effective upon posting to the website. Continued use of the website constitutes acceptance of the revised Terms."
+                },
+                contact: {
+                    title: "10. Contact",
+                    text: "For questions regarding these Terms & Conditions, please contact our Legal Department."
                 }
             },
-            closing: "Quality you can see, feel, and trust over time"
+            email: "legal@unitecusadesign.com"
+        },
+        policies: {
+            title: "Privacy Policy",
+            description: "This Privacy Policy explains how Unitec USA Design collects, uses, and protects your information when you visit our website or engage with our products and services.",
+            sections: {
+                introduction: {
+                    title: "1. Introduction",
+                    text: "Unitec USA Design (\"we,\" \"our,\" or \"us\") is committed to protecting your privacy. This policy explains how we collect, use, disclose, and safeguard your information when you visit www.unitecusadesign.com. By using our website or services, you agree to the practices described in this Privacy Policy."
+                },
+                collect: {
+                    title: "2. Information We Collect",
+                    text: "We may collect personal information such as your name, email address, phone number, mailing address, company details, billing information, and project specifications. We also automatically collect technical data including IP address, browser type, pages viewed, and usage behavior through cookies and similar technologies."
+                },
+                use: {
+                    title: "3. How We Use Your Information",
+                    items: ["Process orders and deliver products", "Respond to inquiries and provide customer support", "Improve our website, products, and services", "Send updates or marketing communications (with consent)", "Prevent fraud and comply with legal obligations"]
+                },
+                sharing: {
+                    title: "4. Information Sharing",
+                    text: "We do not sell your personal information. We may share data with trusted service providers, authorized partners (with consent), or when required by law. Information may also be disclosed in connection with business transfers such as mergers or acquisitions."
+                },
+                security: {
+                    title: "5. Data Security",
+                    text: "We use industry-standard safeguards including encryption, secure servers, access controls, and regular security reviews to protect your data. While we take reasonable measures, no online system can be guaranteed to be 100% secure."
+                },
+                cookies: {
+                    title: "6. Cookies & Tracking",
+                    text: "Cookies help us remember preferences, analyze traffic, personalize content, and improve site functionality. You may manage cookie settings through your browser. Disabling cookies may affect certain features."
+                },
+                rights: {
+                    title: "7. Your Privacy Rights",
+                    text: "You may request access, correction, or deletion of your personal data, opt out of marketing communications, or withdraw consent at any time."
+                },
+                contact: {
+                    title: "8. Contact",
+                    text: "For questions about this Privacy Policy or our data practices, please contact our Privacy Department."
+                }
+            },
+            email: "privacy@unitecusadesign.com"
         }
     },
     es: {
@@ -875,6 +939,122 @@ const translations = {
                     }
                 }
             }
+        },
+        contact: {
+            hero: {
+                title: "Movamos Sus Productos —",
+                subtitle: "A Escala",
+                description: "Nos especializamos en manejo de productos a granel, envío basado en contenedores y flujos de trabajo logísticos optimizados. Contáctenos para discutir volúmenes, contenedores y plazos de entrega.",
+                bulkOrders: "Pedidos a Granel",
+                logistics: "Logística",
+                responseTime: "Tiempo de Respuesta",
+                handling: "Manejo",
+                containerBased: "Basado en Contenedores",
+                optimizedPacking: "Empaque Optimizado",
+                within24h: "En 24h",
+                secureTracked: "Seguro y Rastreado"
+            },
+            talkTeam: "Hable con Nuestro Equipo Logístico",
+            whether: "Ya sea que esté planeando una carga completa de contenedores o evaluando capacidad, nuestro equipo le ayuda a elegir la estructura de envío adecuada.",
+            headquarters: "Sede Central",
+            generalInquiries: "Consultas Generales",
+            activeStaff: "Personal Activo",
+            requestQuote: "Solicitar Cotización de Envío a Granel",
+            provideDetails: "Proporcione detalles sobre sus productos y requisitos de contenedores.",
+            fullName: "Nombre Completo",
+            companyName: "Nombre de la Empresa",
+            email: "Correo Electrónico",
+            phone: "Teléfono",
+            estimatedVolume: "Volumen / Contenedores Estimados",
+            projectDetails: "Detalles del Proyecto",
+            sendInquiry: "Enviar Consulta",
+            responseTimeText: "Nuestro equipo generalmente responde dentro de 24 horas hábiles."
+        },
+        terms: {
+            title: "Términos y Condiciones",
+            description: "Estos Términos rigen su acceso y uso del sitio web, productos y servicios de Unitec USA Design.",
+            sections: {
+                acceptance: {
+                    title: "1. Aceptación de Términos",
+                    text: "Al acceder o usar www.unitecusadesign.com, usted acepta estar obligado por estos Términos y Condiciones. Si no está de acuerdo, por favor discontinúe el uso del sitio web."
+                },
+                use: {
+                    title: "2. Uso del Sitio Web",
+                    text: "Puede usar este sitio web solo para fines comerciales y de información legales, incluyendo explorar productos, solicitar cotizaciones y realizar pedidos. Acceso no autorizado, raspado, mal uso o interferencia con la funcionalidad del sitio web está estrictamente prohibido."
+                },
+                product: {
+                    title: "3. Información del Producto",
+                    text: "Nos esforzamos por la precisión, pero las descripciones de productos, especificaciones, colores y disponibilidad no están garantizadas para estar libres de errores. Nos reservamos el derecho de modificar o discontinuar productos y corregir inexactitudes sin previo aviso."
+                },
+                pricing: {
+                    title: "4. Precios y Pago",
+                    text: "Los precios están en USD y pueden cambiar sin previo aviso. Envío, impuestos y aranceles no están incluidos a menos que se indique. El pago se vence al momento del pedido a menos que se aprueben términos de crédito. Los pedidos pueden cancelarse por falta de pago."
+                },
+                orders: {
+                    title: "5. Pedidos y Entrega",
+                    text: "Los pedidos están sujetos a aceptación y disponibilidad. Las fechas de entrega son estimaciones y no garantizadas. El riesgo de pérdida se transfiere al transportista al momento del envío. Los clientes deben inspeccionar las entregas y reportar daños promptly."
+                },
+                returns: {
+                    title: "6. Devoluciones y Garantía",
+                    text: "Los productos estándar pueden ser elegibles para devolución dentro de 30 días, sujetos a condición y tarifas de restock. Los pedidos personalizados no son reembolsables. Los productos están cubiertos por garantías limitadas según especificado. Las reclamaciones de garantía se limitan a reparación, reemplazo o reembolso."
+                },
+                liability: {
+                    title: "7. Limitación de Responsabilidad",
+                    text: "En la máxima medida permitida por ley, nuestra responsabilidad está limitada al precio de compra del producto. No somos responsables por daños indirectos, incidentales o consecuenciales, errores de instalación o retrasos fuera de nuestro control."
+                },
+                intellectual: {
+                    title: "8. Propiedad Intelectual",
+                    text: "Todo el contenido del sitio web, marcas comerciales y materiales son propiedad de Unitec USA Design o sus licenciantes. No puede reproducir, distribuir o usar nuestro contenido sin permiso escrito previo."
+                },
+                changes: {
+                    title: "9. Cambios a Estos Términos",
+                    text: "Podemos actualizar estos Términos en cualquier momento. Los cambios entran en vigencia al publicarse en el sitio web. El uso continuo del sitio web constituye aceptación de los Términos revisados."
+                },
+                contact: {
+                    title: "10. Contacto",
+                    text: "Para preguntas sobre estos Términos y Condiciones, por favor contacte a nuestro Departamento Legal."
+                }
+            },
+            email: "legal@unitecusadesign.com"
+        },
+        policies: {
+            title: "Política de Privacidad",
+            description: "Esta Política de Privacidad explica cómo Unitec USA Design recopila, usa y protege su información cuando visita nuestro sitio web o interactúa con nuestros productos y servicios.",
+            sections: {
+                introduction: {
+                    title: "1. Introducción",
+                    text: "Unitec USA Design (\"nosotros,\" \"nuestro,\" o \"nos\") está comprometido a proteger su privacidad. Esta política explica cómo recopilamos, usamos, divulgamos y protegemos su información cuando visita www.unitecusadesign.com. Al usar nuestro sitio web o servicios, acepta las prácticas descritas en esta Política de Privacidad."
+                },
+                collect: {
+                    title: "2. Información que Recopilamos",
+                    text: "Podemos recopilar información personal como su nombre, dirección de correo electrónico, número de teléfono, dirección postal, detalles de la empresa, información de facturación y especificaciones del proyecto. También recopilamos automáticamente datos técnicos incluyendo dirección IP, tipo de navegador, páginas vistas y comportamiento de uso a través de cookies y tecnologías similares."
+                },
+                use: {
+                    title: "3. Cómo Usamos Su Información",
+                    items: ["Procesar pedidos y entregar productos", "Responder consultas y proporcionar soporte al cliente", "Mejorar nuestro sitio web, productos y servicios", "Enviar actualizaciones o comunicaciones de marketing (con consentimiento)", "Prevenir fraude y cumplir obligaciones legales"]
+                },
+                sharing: {
+                    title: "4. Compartir Información",
+                    text: "No vendemos su información personal. Podemos compartir datos con proveedores de servicios confiables, socios autorizados (con consentimiento), o cuando lo requiera la información. La información también puede divulgarse en conexión con transferencias de negocios como fusiones o adquisiciones."
+                },
+                security: {
+                    title: "5. Seguridad de Datos",
+                    text: "Usamos garantías estándar de la industria incluyendo encriptación, servidores seguros, controles de acceso y revisiones de seguridad regulares para proteger sus datos. Aunque tomamos medidas razonables, ningún sistema en línea puede garantizarse 100% seguro."
+                },
+                cookies: {
+                    title: "6. Cookies y Rastreo",
+                    text: "Las cookies nos ayudan a recordar preferencias, analizar tráfico, personalizar contenido y mejorar la funcionalidad del sitio. Puede administrar la configuración de cookies a través de su navegador. Deshabilitar cookies puede afectar ciertas funciones."
+                },
+                rights: {
+                    title: "7. Sus Derechos de Privacidad",
+                    text: "Puede solicitar acceso, corrección o eliminación de sus datos personales, optar por no recibir comunicaciones de marketing o retirar su consentimiento en cualquier momento."
+                },
+                contact: {
+                    title: "8. Contacto",
+                    text: "Para preguntas sobre esta Política de Privacidad o nuestras prácticas de datos, por favor contacte a nuestro Departamento de Privacidad."
+                }
+            },
+            email: "privacy@unitecusadesign.com"
         }
     }
 };

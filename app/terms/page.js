@@ -11,19 +11,22 @@ import {
     RefreshCcw,
     Mail,
 } from "lucide-react"
+import { useLanguage } from "lib/LanguageContext";
+
 export default function PoliciesPage() {
+    const { t } = useLanguage();
+    
     return (
         <main className="w-full">
             {/* ================= HERO ================= */}
             <section className="bg-gray-100 py-20">
                 <div className="mx-auto max-w-5xl px-4">
                     <motion.h1 className="text-3xl font-bold">
-                        Terms & Conditions
+                        {t('terms.title')}
                     </motion.h1>
 
                     <p className="mt-4 max-w-3xl text-sm text-gray-600">
-                        These Terms govern your access to and use of the Unitec USA Design website,
-                        products, and services.
+                        {t('terms.description')}
                     </p>
                 </div>
             </section>
@@ -31,108 +34,66 @@ export default function PoliciesPage() {
             {/* ================= CONTENT ================= */}
             <section className="py-20">
                 <div className="mx-auto max-w-5xl px-4 space-y-14">
-                    <Policy icon={FileText} title="1. Acceptance of Terms">
+                    <Policy icon={FileText} title={t('terms.sections.acceptance.title')}>
                         <p>
-                            By accessing or using www.unitecusadesign.com, you agree to be bound by
-                            these Terms & Conditions. If you do not agree, please discontinue use
-                            of the website.
+                            {t('terms.sections.acceptance.text')}
                         </p>
                     </Policy>
 
-                    <Policy icon={Shield} title="2. Use of Website">
+                    <Policy icon={Shield} title={t('terms.sections.use.title')}>
                         <p>
-                            You may use this website for lawful business and informational purposes
-                            only, including browsing products, requesting quotes, and placing orders.
-                        </p>
-                        <p>
-                            Unauthorized access, scraping, misuse, or interference with website
-                            functionality is strictly prohibited.
+                            {t('terms.sections.use.text')}
                         </p>
                     </Policy>
 
-                    <Policy icon={AlertTriangle} title="3. Product Information">
+                    <Policy icon={AlertTriangle} title={t('terms.sections.product.title')}>
                         <p>
-                            We strive for accuracy, but product descriptions, specifications, colors,
-                            and availability are not guaranteed to be error-free.
-                        </p>
-                        <p>
-                            We reserve the right to modify or discontinue products and correct
-                            inaccuracies without notice.
+                            {t('terms.sections.product.text')}
                         </p>
                     </Policy>
 
-                    <Policy icon={Scale} title="4. Pricing & Payment">
+                    <Policy icon={Scale} title={t('terms.sections.pricing.title')}>
                         <p>
-                            Prices are listed in USD and may change without notice. Shipping, taxes,
-                            and duties are not included unless stated.
-                        </p>
-                        <p>
-                            Payment is due at order placement unless credit terms are approved.
-                            Orders may be canceled for non-payment.
+                            {t('terms.sections.pricing.text')}
                         </p>
                     </Policy>
 
-                    <Policy icon={Truck} title="5. Orders & Delivery">
+                    <Policy icon={Truck} title={t('terms.sections.orders.title')}>
                         <p>
-                            Orders are subject to acceptance and availability. Delivery dates are
-                            estimates and not guaranteed.
-                        </p>
-                        <p>
-                            Risk of loss transfers to the carrier upon shipment. Customers must
-                            inspect deliveries and report damage promptly.
+                            {t('terms.sections.orders.text')}
                         </p>
                     </Policy>
 
-                    <Policy icon={RefreshCcw} title="6. Returns & Warranty">
+                    <Policy icon={RefreshCcw} title={t('terms.sections.returns.title')}>
                         <p>
-                            Standard products may be eligible for return within 30 days, subject to
-                            condition and restocking fees. Custom orders are non-refundable.
-                        </p>
-                        <p>
-                            Products are covered by limited warranties as specified. Warranty claims
-                            are limited to repair, replacement, or refund.
+                            {t('terms.sections.returns.text')}
                         </p>
                     </Policy>
 
-                    <Policy icon={Lock} title="7. Limitation of Liability">
+                    <Policy icon={Lock} title={t('terms.sections.liability.title')}>
                         <p>
-                            To the maximum extent permitted by law, our liability is limited to the
-                            purchase price of the product.
-                        </p>
-                        <p>
-                            We are not responsible for indirect, incidental, or consequential damages,
-                            installation errors, or delays beyond our control.
+                            {t('terms.sections.liability.text')}
                         </p>
                     </Policy>
 
-                    <Policy icon={Scale} title="8. Intellectual Property">
+                    <Policy icon={Scale} title={t('terms.sections.intellectual.title')}>
                         <p>
-                            All website content, trademarks, and materials are owned by Unitec USA
-                            Design or its licensors.
-                        </p>
-                        <p>
-                            You may not reproduce, distribute, or use our content without prior
-                            written permission.
+                            {t('terms.sections.intellectual.text')}
                         </p>
                     </Policy>
 
-                    <Policy icon={RefreshCcw} title="9. Changes to These Terms">
+                    <Policy icon={RefreshCcw} title={t('terms.sections.changes.title')}>
                         <p>
-                            We may update these Terms at any time. Changes become effective upon
-                            posting to the website.
-                        </p>
-                        <p>
-                            Continued use of the website constitutes acceptance of the revised Terms.
+                            {t('terms.sections.changes.text')}
                         </p>
                     </Policy>
 
-                    <Policy icon={Mail} title="10. Contact">
+                    <Policy icon={Mail} title={t('terms.sections.contact.title')}>
                         <p>
-                            For questions regarding these Terms & Conditions, please contact our
-                            Legal Department.
+                            {t('terms.sections.contact.text')}
                         </p>
                         <p className="font-medium">
-                            📧 legal@unitecusadesign.com
+                            📧 {t('terms.email')}
                         </p>
                     </Policy>
 
