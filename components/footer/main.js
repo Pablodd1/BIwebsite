@@ -21,8 +21,8 @@ const Footer = () => {
 
     const navData = {
         logo: {
-            text: "Building Innovation",
-            tagline: "We design the future!"
+            text: t("footer.brandName"),
+            tagline: t("footer.logo.tagline")
         },
         contact: {
             phone: "+1 (786) 968-5783",
@@ -120,7 +120,7 @@ const Footer = () => {
                     ))}
                     {/* Bottom Copyright */}
                     <div className="text-center font-serif text-sm absolute right-0">
-                        <p>All rights reserved &copy; - 2026 Building Innovation.</p>
+                        <p>{t('footer.rights')} &copy; - 2026 {t('footer.brandName')}.</p>
                     </div>
                 </div>
 
