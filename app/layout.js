@@ -128,6 +128,18 @@ export default async function RootLayout({ children }) {
   return (
     <html lang={lang} suppressHydrationWarning>
       <head>
+        {/* Google tag (gtag.js) */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18156507743" />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'AW-18156507743');
+            `,
+          }}
+        />
         {/* Google Analytics */}
         {GA_ID && (
           <>
