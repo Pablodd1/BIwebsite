@@ -13,7 +13,7 @@ import SearchForm from "components/navbar/search";
 const TikTokIcon = ({ className, strokeWidth }) => (
     <svg 
         viewBox="0 0 24 24" 
-        fill sizes="100vw"="currentColor" 
+        fill="currentColor" 
         className={className}
         strokeWidth={strokeWidth}
     >
