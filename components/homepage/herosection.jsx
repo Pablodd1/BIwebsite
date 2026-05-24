@@ -13,7 +13,7 @@ import SearchForm from "components/navbar/search";
 const TikTokIcon = ({ className, strokeWidth }) => (
     <svg 
         viewBox="0 0 24 24" 
-        fill="currentColor" 
+        fill sizes="100vw"="currentColor" 
         className={className}
         strokeWidth={strokeWidth}
     >
@@ -52,14 +52,14 @@ export default function HeroSec() {
                     loop
                     playsInline
                     poster="/raster/containes.avif"
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover relative"
                 >
                     <source src="/videos/hero-video.mp4" type="video/mp4" />
                     {/* Fallback for browsers that don't support video */}
                     <Image
                         src="/raster/containes.avif"
                         alt="Hero background"
-                        fill
+                        fill sizes="100vw"
                         priority
                         className="object-cover"
                     />
@@ -147,7 +147,7 @@ export default function HeroSec() {
                             whileHover={{ scale: 1.2, rotate: 5 }}
                             whileTap={{ scale: 0.9 }}
                         >
-                            <Icon strokeWidth={1} className="fill-white/80 text-white w-full min-h-fit h-auto max-w-12 hover:fill-primary hover:text-primary transition-all duration-300" />
+                            <Icon strokeWidth={1} className="fill sizes="100vw"-white/80 text-white w-full min-h-fit h-auto max-w-12 hover:fill sizes="100vw"-primary hover:text-primary transition-all duration-300" />
                         </motion.a>
                     ))}
                 </motion.div>

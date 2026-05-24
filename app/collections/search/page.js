@@ -63,7 +63,7 @@ export default async function SearchPage({ searchParams }) {
             {
                 query
                         ? <SearchBody query={query} />
-                        : <div className="z-10 w-full"><RecommendationsSection title={dict.search.noQueryTitle || (lang === 'es' ? 'Productos Destacados' : 'Featured Products')} /></div>
+                        : <div className="z-10 w-full"><RecommendationsSection title={dict?.search?.noQueryTitle || (lang === 'es' ? 'Productos Destacados' : 'Featured Products')} /></div>
             }
         </section>
 

@@ -14,7 +14,7 @@ export default function ProductItem({ item, isSlides = false, index = 0 }) {
     const router = useRouter();
 
     return (
-        <motion.li
+        <motion.div
             onClick={() => router.push(`/products/${item.id}`)}
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -31,7 +31,7 @@ export default function ProductItem({ item, isSlides = false, index = 0 }) {
                     className="relative h-full w-full"
                 >
                     <Image
-                        fill
+                        fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                         aria-label={`Go To product with ID ${item.id}`}
                         src={item.image || '/raster/product.jpg'}
                         alt={item.name || 'Product image'}
@@ -75,6 +75,6 @@ export default function ProductItem({ item, isSlides = false, index = 0 }) {
                     }}
                 />
             </div>
-        </motion.li>
+        </motion.div>
     )
 }

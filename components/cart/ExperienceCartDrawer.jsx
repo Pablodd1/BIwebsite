@@ -223,3 +223,22 @@ export default function ExperienceCartDrawer() {
                     }`}
                   >
        
+                    {ready ? t.checkout : t.selectContainer}
+                  </Link>
+                ) : (
+                  <button 
+                    onClick={() => setShowContainerModal(true)}
+                    className="block w-full text-center py-3 rounded-lg font-semibold transition-all bg-black text-white hover:bg-gray-800"
+                  >
+                    {t.selectContainer}
+                  </button>
+                )}
+              </footer>
+            </motion.aside>
+          </>
+        )}
+      </AnimatePresence>
+      {showContainerModal && <ContainerSelectionModal isOpen={showContainerModal} onClose={() => setShowContainerModal(false)} />}
+    </>
+  )
+}
