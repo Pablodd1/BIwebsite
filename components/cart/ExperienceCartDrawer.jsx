@@ -22,10 +22,12 @@ import {
 import ContainerSelectionModal from "./ContainerSelectionModal"
 import ContainerVisual from "./ContainerVisual"
 import ContainerHUD from "./ContainerHUD"
+import ContainerVideoModal from "./ContainerVideoModal"
 
 export default function ExperienceCartDrawer() {
   const [open, setOpen] = useState(false)
   const [showContainerModal, setShowContainerModal] = useState(false)
+  const [showVideoModal, setShowVideoModal] = useState(false)
   const [cart, setCart] = useState(null)
   const [reload, setReload] = useState(0)
   const { language } = useLanguage()
@@ -239,6 +241,24 @@ export default function ExperienceCartDrawer() {
         )}
       </AnimatePresence>
       {showContainerModal && <ContainerSelectionModal isOpen={showContainerModal} onClose={() => setShowContainerModal(false)} />}
+
+      {/* Floating View My Container Button */}
+      {cart?.items?.length > 0 && !showVideoModal && (
+        <button 
+          onClick={() => setShowVideoModal(true)}
+          className="fixed bottom-24 right-4 z-[60] bg-blue-600 text-white px-5 py-3 rounded-full shadow-2xl hover:bg-blue-700 hover:-translate-y-1 hover:shadow-blue-500/30 transition-all font-black uppercase tracking-widest text-[10px] flex items-center gap-2 border border-blue-400 group"
+        >
+          <span className="text-sm group-hover:scale-125 transition-transform">??</span> 
+          View My Container
+        </button>
+      )}
+
+      {showVideoModal && (
+        <ContainerVideoModal 
+          open={showVideoModal} 
+          onClose={() => setShowVideoModal(false)} 
+        />
+      )}
     </>
   )
 }
