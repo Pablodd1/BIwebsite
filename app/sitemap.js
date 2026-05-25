@@ -1,4 +1,4 @@
-import products from '../../static_data/products_full.json';
+import products from '../static_data/products_full.json';
 
 export default function sitemap() {
   const baseUrl = 'https://unitecusadesign.com';
