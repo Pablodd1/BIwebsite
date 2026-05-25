@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import { MessageCircle, X } from 'lucide-react';
 
-const BASE_CHATBOT_URL = 'https://chat.buildinginnovation.us';
+const BASE_CHATBOT_URL = 'https://chat.unitecusadesign.com';
 
 export default function VirtualFrontDesk() {
     const [isOpen, setIsOpen] = useState(false);
