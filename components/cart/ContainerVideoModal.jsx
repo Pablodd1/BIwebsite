@@ -73,7 +73,7 @@ export default function ContainerVideoModal({ open, onClose }) {
                 {stats.percent.toFixed(1)}% Full
               </p>
               <p className="text-xs font-bold text-slate-500 tracking-widest uppercase mt-2">
-                {stats.totalVolume.toFixed(2)} m³ Vol
+                {stats.totalVolume.toFixed(2)} m3 Vol
               </p>
             </div>
             
@@ -110,7 +110,7 @@ export default function ContainerVideoModal({ open, onClose }) {
                     <div className="flex-1 pr-4">
                       <h3 className="text-xs font-black uppercase tracking-tight text-slate-800 leading-tight mb-1">{item.name}</h3>
                       <p className="text-[10px] text-slate-400 font-bold uppercase">
-                        {(item.volume || 0).toFixed(4)} m³ / unit
+                        {(item.volume || 0).toFixed(4)} m3 / unit
                       </p>
                     </div>
                     

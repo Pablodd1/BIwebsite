@@ -7,6 +7,8 @@ let experienceCart = {
   items: []
 }
 
+export { EFFICIENCY_THRESHOLD };
+
 export function initExperienceCart() {
   if (typeof window === "undefined") return
 
