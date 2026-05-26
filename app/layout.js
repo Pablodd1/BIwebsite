@@ -140,6 +140,18 @@ export default async function RootLayout({ children }) {
             `,
           }}
         />
+        {/* Google tag (gtag.js) - G-XXXXXXXXXX */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX" />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-XXXXXXXXXX');
+            `,
+          }}
+        />
         {/* Google Analytics */}
         {GA_ID && (
           <>
