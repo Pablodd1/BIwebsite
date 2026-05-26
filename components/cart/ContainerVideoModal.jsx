@@ -81,7 +81,7 @@ export default function ContainerVideoModal({ open, onClose }) {
             <div className="h-1.5 w-full bg-slate-100 rounded-full overflow-hidden mt-4">
               <div 
                 className="h-full bg-blue-500 transition-all duration-300"
-                style={{ width: \\%\ }}
+                style={{ width: `${stats.percent}%` }}
               />
             </div>
           </div>
@@ -150,7 +150,7 @@ export default function ContainerVideoModal({ open, onClose }) {
                   window.location.href = '/checkout'
                 }}
                 disabled={stats.percent < 99}
-                className={w-full py-4 rounded-xl font-black uppercase tracking-widest transition-all \}
+                className={`w-full py-4 rounded-xl font-black uppercase tracking-widest transition-all ${stats.percent >= 99 ? "bg-blue-600 hover:bg-blue-700 text-white shadow-lg" : "bg-slate-100 text-slate-400 cursor-not-allowed"}`}
              >
                 {stats.percent >= 99 ? 'Proceed to Checkout' : 'Fill container to 99%'}
              </button>
