@@ -25,6 +25,7 @@ export default function RootLayoutClient({ children, lang, dict }) {
       <Footer lang={lang} dict={dict} />
       <CartInit />
       <CartDrawer />
+      <ExperienceCartDrawer />
       <VirtualFrontDesk />
       <div id="modal-root" />
       <div id="notify-container" />
