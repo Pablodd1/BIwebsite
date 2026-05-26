@@ -11,6 +11,7 @@ import Link from "next/link"
 import Image from "next/image"
 
 export default function CheckoutPage() {
+    const [manualShippingCost, setManualShippingCost] = useState("")
     const { t } = useLanguage()
     const { language } = useLanguage()
     const lang = language || 'es'
@@ -73,7 +74,7 @@ export default function CheckoutPage() {
         return { cost: costPerContainer, time }
     }, [cart.length, formData.country, formData.state])
 
-    const shippingCost = shippingData.cost
+    const shippingCost = manualShippingCost !== "" ? (parseFloat(manualShippingCost) || 0) : shippingData.cost
     const shippingTime = shippingData.time
 
     const calculateTotal = () => {
@@ -155,7 +156,7 @@ export default function CheckoutPage() {
                             id: item.id,
                             name: item.name,
                             price: item.basePrice || 0,
-                            qty: item.quantity || 1,
+                            qty: item.qty || 1,
                             containerId: container.id,
                             containerName: container.name
                         })
@@ -684,3 +685,4 @@ export default function CheckoutPage() {
         </main>
     )
 }
+
