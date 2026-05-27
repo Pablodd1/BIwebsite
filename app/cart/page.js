@@ -7,7 +7,7 @@ import { getCart, removeContainer, removeOne, addOne, setQty } from "utils/cart/
 import { containerFillPercent, calculateRemainingCapacity } from "utils/cart/cart.utils"
 import Link from "next/link"
 import Image from "next/image"
-import Container3DView from "components/cart/Container3DView"
+import ThreeCartEngine from "components/cart/ThreeCartEngine"
 import ContainerProgressHUD from "components/cart/ContainerProgressHUD"
 import { useLanguage } from "lib/LanguageContext"
 import confetti from "canvas-confetti"
@@ -295,7 +295,7 @@ export default function CartPage() {
                         </div>
 
                         {/* Right Column: Real-Time 3D Packing Experience (Second Screen View - 5 columns) */}
-                        <div className="lg:col-span-5 lg:sticky lg:top-[90px] space-y-6">
+                        <div className="lg:col-span-5 lg:sticky lg:top-[90px] space-y-6 pb-40">
                             <div className="bg-[#080c14] rounded-3xl overflow-hidden shadow-2xl border border-white/10 p-6 flex flex-col gap-6">
                                 
                                 {/* Progress HUD */}
@@ -317,15 +317,13 @@ export default function CartPage() {
                                             {language === 'es' ? 'Simulador en Tiempo Real' : 'Real-Time Load Simulator'}
                                         </span>
                                     </div>
-                                    <Container3DView 
-                                        size={container.name && container.name.includes('40') ? '40ft' : '20ft'}
-                                        width={container.dimension?.width || 2.35}
-                                        height={container.dimension?.height || 2.39}
-                                        length={container.dimension?.length || 12.03}
-                                        items={container.items || []}
-                                        fillPercent={fill.filledTotal || 0}
-                                        isInteractive={true}
-                                        scale={1.4}
+                                    <video 
+                                        src="/video/cart-video.mp4" 
+                                        autoPlay 
+                                        loop 
+                                        muted 
+                                        playsInline 
+                                        className="w-full h-full object-cover opacity-90 mix-blend-screen"
                                     />
                                 </div>
                                 
