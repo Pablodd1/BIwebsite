@@ -139,14 +139,31 @@ const MegaMenu = () => {
                                     "ZOCALOS"
                                 ])
                                 const interiorEntriesFiltered = interiorEntriesMerged.filter(([category]) => allowedInterior.has(category))
-                                const labelMap = {
-                                    "CIELO RASO PVC": "Cielo raso PVC",
-                                    "ILUMINACION": "Iluminaci\u00f3n",
+                                const labelMap = language === 'es' ? {
+                                    "CIELO RASO PVC": "Cielo Raso PVC",
+                                    "ILUMINACION": "Iluminación",
                                     "JARDINES ARTIFICIALES": "Jardines Artificiales",
-                                    "LAMINAS": "L\u00e1minas",
+                                    "LAMINAS": "Láminas",
                                     "LISTONES": "Listones",
-                                    "PANELES WPC Y ANGULOS": "Paneles \u00c1ngulos"
-                                }
+                                    "PANELES WPC Y ANGULOS": "Paneles y Ángulos WPC",
+                                    "PAREDES": "Paredes",
+                                    "CINTAS": "Cintas",
+                                    "PEGANTES": "Adhesivos / Pegantes",
+                                    "PISOS": "Pisos",
+                                    "ZOCALOS": "Zócalos"
+                                } : {
+                                    "CIELO RASO PVC": "PVC Ceiling",
+                                    "ILUMINACION": "Lighting",
+                                    "JARDINES ARTIFICIALES": "Artificial Gardens",
+                                    "LAMINAS": "Sheets / Boards",
+                                    "LISTONES": "Slats / Battens",
+                                    "PANELES WPC Y ANGULOS": "WPC Panels & Angles",
+                                    "PAREDES": "Walls",
+                                    "CINTAS": "Adhesive Tapes",
+                                    "PEGANTES": "Mounting Adhesives",
+                                    "PISOS": "Flooring",
+                                    "ZOCALOS": "Skirting / Plinths"
+                                };
                                 return interiorEntriesFiltered.map(([category, data]) => {
                                     const subParam = (data.subcategories && data.subcategories.length) ? `&subcategories=${data.subcategories.join(',')}` : ''
                                     const href = `${data.page}?category=${category}&collection=${data.collection}${subParam}`
@@ -182,14 +199,21 @@ const MegaMenu = () => {
                                 const exteriorEntriesMerged = Array.from(new Map([...dynExt, ...staticExt]))
                                 const allowedExterior = new Set(["CUBIERTAS UPVC","JARDINES ARTIFICIALES","PAREDES","LISTONES","PANELES WPC Y ANGULOS","PISOS"])
                                 const exteriorEntriesFiltered = exteriorEntriesMerged.filter(([category]) => allowedExterior.has(category))
-                                const labelMapExt = {
+                                const labelMapExt = language === 'es' ? {
                                     "CUBIERTAS UPVC": "Cubiertas UPVC",
                                     "JARDINES ARTIFICIALES": "Jardines Artificiales",
                                     "PAREDES": "Paredes",
                                     "LISTONES": "Listones",
-                                    "PANELES WPC Y ANGULOS": "Paneles \u00c1ngulos",
-                                    "PISOS": "Pisos"
-                                }
+                                    "PANELES WPC Y ANGULOS": "Paneles y Ángulos WPC",
+                                    "PISOS": "Pisos / Deck"
+                                } : {
+                                    "CUBIERTAS UPVC": "UPVC Roofing",
+                                    "JARDINES ARTIFICIALES": "Artificial Gardens",
+                                    "PAREDES": "Walls",
+                                    "LISTONES": "Slats / Battens",
+                                    "PANELES WPC Y ANGULOS": "WPC Panels & Angles",
+                                    "PISOS": "Deck Flooring"
+                                };
                                 return exteriorEntriesFiltered.map(([category, data]) => {
                                     const subParam = (data.subcategories && data.subcategories.length) ? `&subcategories=${data.subcategories.join(',')}` : ''
                                     const href = `${data.page}?category=${category}&collection=${data.collection}${subParam}`

@@ -231,6 +231,22 @@ export default async function RootLayout({ children }) {
             })
           }}
         />
+        {/* Cookiehub */}
+        <script src="https://cdn.cookiehub.eu/c2/c2fa7641.js" />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              var cpm = {};
+              if (window.cookiehub) {
+                window.cookiehub.load(cpm);
+              } else {
+                window.addEventListener("load", function() {
+                  window.cookiehub.load(cpm);
+                });
+              }
+            `,
+          }}
+        />
       </head>
       <body className={`${montserrat.className} font-medium`}>
         <RootLayoutClient lang={lang} dict={dict}>

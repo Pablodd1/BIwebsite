@@ -17,6 +17,19 @@ const FIELDS = [
   "category",
 ];
 
+// Asynchronous non-blocking image validation
+async function normalizeImage(img) {
+  if (!img || typeof img !== 'string') return img;
+  const rel = img.startsWith('/') ? img.slice(1) : img;
+  const abs = path.resolve(process.cwd(), 'public', rel);
+  try {
+    await fs.promises.access(abs, fs.constants.F_OK);
+    return img;
+  } catch {
+    // fallback to a generic placeholder image
+    return '/raster/product.jpg';
+  }
+}
 
 export async function GET(request) {
   const { searchParams } = new URL(request.url);
@@ -32,15 +45,6 @@ export async function GET(request) {
   const nopaginate = searchParams.get("nopaginate") === "true";
 
   const ITEMS_PER_PAGE = 15;
-
-  const normalizeImage = (img) => {
-    if (!img || typeof img !== 'string') return img;
-    const rel = img.startsWith('/') ? img.slice(1) : img;
-    const abs = path.resolve(process.cwd(), 'public', rel);
-    if (fs.existsSync(abs)) return img;
-    // fallback to a generic placeholder image
-    return '/raster/product.jpg';
-  };
 
   // Filter pipeline (order matters)
   const filteredProducts = productData
@@ -61,12 +65,15 @@ export async function GET(request) {
   const totalItems = filteredProducts.length;
 
   if (nopaginate) {
-    const allItems = filteredProducts.map((item) =>
+    const rawItems = filteredProducts.map((item) =>
       FIELDS.reduce((acc, field) => {
         acc[field] = item[field];
         return acc;
       }, {})
-    ).map((it) => ({ ...it, image: normalizeImage(it.image) }))
+    );
+    const allItems = await Promise.all(
+      rawItems.map(async (it) => ({ ...it, image: await normalizeImage(it.image) }))
+    );
     return Response.json({
       currentPage: 1,
       totalItems,
@@ -86,7 +93,10 @@ export async function GET(request) {
       }, {})
     );
 
-  const safePaginated = paginatedItems.map((it) => ({ ...it, image: normalizeImage(it.image) }))
+  const safePaginated = await Promise.all(
+    paginatedItems.map(async (it) => ({ ...it, image: await normalizeImage(it.image) }))
+  );
+  
   return Response.json({
     currentPage,
     totalItems,

@@ -7,7 +7,6 @@ import Footer from "My_UI/footer/main";
 import NavBar from "My_UI/navbar/main";
 import CartInit from "lib/cart/initCart";
 import CartDrawer from "My_UI/cart/CartDrawer.client";
-import ExperienceCartDrawer from "My_UI/cart/ExperienceCartDrawer";
 import SplashScreen from "My_UI/ui/SplashScreen";
 import VirtualFrontDesk from "My_UI/ui/VirtualFrontDesk";
 import Providers from "./providers";
@@ -26,7 +25,6 @@ export default function RootLayoutClient({ children, lang, dict }) {
       <Footer lang={lang} dict={dict} />
       <CartInit />
       <CartDrawer />
-      <ExperienceCartDrawer />
       <VirtualFrontDesk />
       <div id="modal-root" />
       <div id="notify-container" />
