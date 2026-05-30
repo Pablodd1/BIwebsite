@@ -55,6 +55,7 @@ export default function CartPage() {
     const [flyingProducts, setFlyingProducts] = useState([])
     const [showCelebration, setShowCelebration] = useState(false)
     const wasFull = useRef(false)
+    const videoRef = useRef(null)
 
     useEffect(() => {
         const initializeCart = () => {
@@ -83,6 +84,24 @@ export default function CartPage() {
             if (fill.filledTotal < 99) wasFull.current = false
         }
     }, [cart, mounted])
+
+    // Video scrubbing effect based on fill percent
+    useEffect(() => {
+        if (mounted && videoRef.current && videoRef.current.duration) {
+            const currentFill = cart.length > 0 ? containerFillPercent(cart[0]).filledTotal : 0;
+            const clampedPercent = Math.min(Math.max(currentFill, 0), 100);
+            const targetTime = (clampedPercent / 100) * videoRef.current.duration;
+            videoRef.current.currentTime = targetTime;
+        }
+    }, [cart, mounted])
+
+    const handleLoadedMetadata = () => {
+        if (videoRef.current) {
+            const currentFill = cart.length > 0 ? containerFillPercent(cart[0]).filledTotal : 0;
+            const clampedPercent = Math.min(Math.max(currentFill, 0), 100);
+            videoRef.current.currentTime = (clampedPercent / 100) * videoRef.current.duration;
+        }
+    }
 
     const updateCart = () => {
         setCart([...getCart()])
