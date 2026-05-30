@@ -14,7 +14,7 @@ export default function LanguageToggle() {
     return (
         <button
             onClick={handleLanguageSwitch}
-            className="flex items-center gap-2 px-3 py-1.5 rounded-full border border-gray-300 hover:bg-gray-100 transition-colors ml-4 text-sm font-medium"
+            className="flex items-center gap-2 px-3 py-1.5 rounded-full border border-gray-300 bg-white hover:bg-gray-100 transition-colors ml-4 text-sm font-medium text-black"
             aria-label="Toggle Language"
         >
             <Globe size={16} />

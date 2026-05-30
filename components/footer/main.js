@@ -75,7 +75,7 @@ const Footer = () => {
 
                         {/* Contact Section */}
                         <div className="text-center mb-8 flex flex-col gap-1">
-                            <p className="text-lg text-accent1 uppercase tracking-widest font-semibold">{t("footer.contact.title")}</p>
+                            <p className="text-lg text-primary uppercase tracking-widest font-semibold">{t("footer.contact.title")}</p>
                             
                             {activeBrand === 'unitec' && (
                                 <p className="text-sm font-bold text-gray-400 mt-2">{t("footer.contact.moreInfo")}</p>
@@ -94,7 +94,7 @@ const Footer = () => {
 
                     {/* Information Section */}
                     <div className="mb-8">
-                        <h3 className="text-xl mb-4 text-accent1 ">{t("footer.information.title")}</h3>
+                        <h3 className="text-xl mb-4 text-primary ">{t("footer.information.title")}</h3>
                         <ul className="space-y-2 px-2" >
                             {navData.information.map((item, index) => (
                                 <li key={index}>
@@ -106,7 +106,7 @@ const Footer = () => {
 
                     {/* Helpful Links Section */}
                     <div className="mb-8 ">
-                        <h3 className="text-xl mb-4 text-accent1">{t("footer.helpful.title")}</h3>
+                        <h3 className="text-xl mb-4 text-primary">{t("footer.helpful.title")}</h3>
                         <ul className="space-y-2 px-2">
                             {navData.helpfulLinks.map((item, index) => (
                                 <li key={index}>
@@ -117,7 +117,7 @@ const Footer = () => {
                     </div>
                     {/* Brand Presence Section */}
                     <div className="text-center md:text-left mb-8 flex flex-col items-center md:items-start">
-                        <h3 className="text-lg font-bold text-accent1 mb-4 uppercase tracking-widest">
+                        <h3 className="text-lg font-bold text-primary mb-4 uppercase tracking-widest">
                             {isSpanish ? "Sede Miami" : "Miami Headquarters"}
                         </h3>
                         <div 
