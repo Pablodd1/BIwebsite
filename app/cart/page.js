@@ -319,14 +319,7 @@ export default function CartPage() {
                                             {language === 'es' ? 'Simulador en Tiempo Real' : 'Real-Time Load Simulator'}
                                         </span>
                                     </div>
-                                    <video 
-                                        src="/video/cart-video.mp4" 
-                                        autoPlay 
-                                        loop 
-                                        muted 
-                                        playsInline 
-                                        className="w-full h-full object-cover opacity-90 mix-blend-screen"
-                                    />
+                                    <VideoSequencePlayer fillPercent={fill.filledTotal || 0} />
                                 </div>
                                 
                                 {/* Live Details Card */}
