@@ -111,10 +111,15 @@ export default function CartPage() {
     }, [])
 
     const handleSetQuantity = (containerId, product, qty) => {
-        const val = parseInt(qty)
-        if (isNaN(val) || val < 0) return
-        setQty(containerId, product, val)
-        updateCart()
+        if (qty === '') {
+            setQty(containerId, product, 0);
+            updateCart();
+            return;
+        }
+        const val = parseInt(qty);
+        if (isNaN(val) || val < 0) return;
+        setQty(containerId, product, val);
+        updateCart();
     }
 
 
@@ -258,8 +263,12 @@ export default function CartPage() {
                                                         <p className="text-[10px] text-gray-500 uppercase tracking-wider">{item.category}</p>
                                                     </div>
                                                 </div>
-                                                <div className="flex items-center justify-end gap-2">
-                                                    <button onClick={() => handleRemoveItem(cart[0].id, item.id)} className="w-8 h-8 bg-white rounded-lg hover:bg-red-50 text-red-500 flex items-center justify-center border border-gray-100 transition-colors">
+                                                <div className="flex items-center justify-end gap-1 sm:gap-2">
+                                                    <button onClick={() => handleSetQuantity(cart[0].id, item, 0)} className="w-8 h-8 bg-white rounded-lg hover:bg-red-100 text-red-600 flex items-center justify-center border border-gray-100 transition-colors" title="Remove item">
+                                                        <Trash2 size={14} />
+                                                    </button>
+                                                    <div className="w-px h-6 bg-gray-200 mx-1 hidden sm:block"></div>
+                                                    <button onClick={() => handleRemoveItem(cart[0].id, item.id)} className="w-8 h-8 bg-white rounded-lg hover:bg-gray-50 text-gray-500 flex items-center justify-center border border-gray-100 transition-colors">
                                                         <Minus size={14} />
                                                     </button>
                                                     <input 
@@ -269,7 +278,7 @@ export default function CartPage() {
                                                         onChange={(e) => handleSetQuantity(cart[0].id, item, e.target.value)}
                                                         className="w-12 text-center border-gray-200 bg-white rounded-lg py-1 px-1 text-xs font-bold focus:ring-2 focus:ring-primary outline-none"
                                                     />
-                                                    <button onClick={() => handleAddItem(cart[0].id, item)} className="w-8 h-8 bg-white rounded-lg hover:bg-blue-50 text-blue-500 flex items-center justify-center border border-gray-100 transition-colors">
+                                                    <button onClick={() => handleAddItem(cart[0].id, item)} className="w-8 h-8 bg-white rounded-lg hover:bg-gray-50 text-gray-500 flex items-center justify-center border border-gray-100 transition-colors">
                                                         <Plus size={14} />
                                                     </button>
                                                 </div>
