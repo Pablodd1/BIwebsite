@@ -118,7 +118,7 @@ const NavBar = ({ searchParams }) => {
                                 <div className="absolute left-5 top-full pt-2 w-max opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 ease-in-out">
                                     <div className="bg-white/95 backdrop-blur-sm shadow-lg rounded-md border border-gray-100 overflow-hidden flex flex-col min-w-[200px]">
                                         {/* Dropdown Header if needed */}
-                                        {/* <div className="px-4 py-2 bg-gray-50 text-xs font-bold text-gray-500 uppercase tracking-wider border-b border-gray-100">
+                                        {/* <div className="px-4 py-2 bg-gray-50 text-xs font-bold text-gray-700 uppercase tracking-wider border-b border-gray-100">
                                             {item.label}
                                         </div> */}
                                         {item.submenu.map((subItem) => (

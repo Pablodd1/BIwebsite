@@ -42,7 +42,7 @@ const CatalogDropdown = () => {
                                                  rel="noopener noreferrer"
                                                  className="flex items-center gap-1.5 px-2 py-1 rounded hover:bg-gray-50 transition-colors group/sheet"
                                              >
-                                                 <ChevronRight className="w-3 h-3 text-gray-400 group-hover/sheet:text-emerald-600 flex-shrink-0" />
+                                                 <ChevronRight className="w-3 h-3 text-gray-600 group-hover/sheet:text-emerald-600 flex-shrink-0" />
                                                  <span className="text-[9px] font-bold text-gray-600 group-hover/sheet:text-gray-900 truncate uppercase transition-all">
                                                      {sheet.subcategory}
                                                  </span>

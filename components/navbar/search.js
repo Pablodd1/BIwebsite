@@ -28,7 +28,7 @@ export default function SearchForm({ full = false, query: q, className = "" }) {
                 onChange={(e) => setQuery(e.target.value)}
                 onKeyDown={handleKeyDown}
                 placeholder={t("search.placeholder") || "Search products..."}
-                className={`w-full ${full ? 'bg-white/95' : 'bg-accent1/75'} border border-transparent focus:border-primary rounded-full py-3 pl-11 pr-5 text-sm text-black placeholder:text-gray-500 focus:outline-none shadow-sm transition-all`}
+                className={`w-full ${full ? 'bg-white/95' : 'bg-accent1/75'} border border-transparent focus:border-primary rounded-full py-3 pl-11 pr-5 text-sm text-black placeholder:text-gray-700 focus:outline-none shadow-sm transition-all`}
             />
         </div>
     );

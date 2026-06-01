@@ -10,9 +10,9 @@ const Logo = ({ size = 250, className }) => {
             src={brand.logoImage}
             priority
             alt={`${brand.name} logo`}
-            className={className} style={{ width: 'auto', height: 'auto' }}
+            className={className} style={{ width: 'auto', height: 'auto', objectFit: 'contain', maxWidth: size, maxHeight: size }}
             width={size}
-            height={Number(size) * 250 / 163}
+            height={size}
         />
     );
 };

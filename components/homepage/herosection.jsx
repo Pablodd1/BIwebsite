@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import styles from "./herosection.module.css";
 import MyButton from "My_UI/btn/main";
@@ -28,6 +29,12 @@ const socials = [
 ];
 
 export default function HeroSec() {
+    const [isVideoLoaded, setIsVideoLoaded] = useState(false);
+    useEffect(() => {
+        setIsVideoLoaded(true);
+    }, []);
+
+
     const { t, getCompanyText } = useLanguage();
     const { activeBrand } = useBrand();
 
@@ -46,7 +53,15 @@ export default function HeroSec() {
         <main className="overflow-hidden min-h-screen relative">
             {/* Video Background */}
             <div className="absolute inset-0 w-full h-full z-0">
-                <video
+                <Image
+                        src="/raster/containes.avif"
+                        alt="Hero background"
+                        fill sizes="100vw"
+                        priority
+                        className="object-cover"
+                    />
+                {isVideoLoaded ? (
+                <video preload="none"
                     autoPlay
                     muted
                     loop
@@ -56,14 +71,9 @@ export default function HeroSec() {
                 >
                     <source src="/videos/hero-video.mp4" type="video/mp4" />
                     {/* Fallback for browsers that don't support video */}
-                    <Image
-                        src="/raster/containes.avif"
-                        alt="Hero background"
-                        fill sizes="100vw"
-                        priority
-                        className="object-cover"
-                    />
+                    
                 </video>
+                ) : null}
                 {/* Overlay to ensure text readability */}
                 <div className="absolute inset-0 bg-black/30 z-10"></div>
             </div>

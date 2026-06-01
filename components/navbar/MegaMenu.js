@@ -117,7 +117,7 @@ const MegaMenu = () => {
                             </div>
                             <div>
                                 <h3 className="text-lg font-black text-gray-900 uppercase tracking-tighter leading-none">{t('nav.interiors')}</h3>
-                                <span className="text-[8px] text-gray-400 font-bold uppercase tracking-widest">{language === 'es' ? 'Soluciones Internas' : 'Indoor Solutions'}</span>
+                                <span className="text-[8px] text-gray-600 font-bold uppercase tracking-widest">{language === 'es' ? 'Soluciones Internas' : 'Indoor Solutions'}</span>
                             </div>
                         </Link>
                         <div className="grid grid-cols-2 gap-x-6 gap-y-4">
@@ -189,7 +189,7 @@ const MegaMenu = () => {
                             </div>
                             <div>
                                 <h3 className="text-lg font-black text-gray-900 uppercase tracking-tighter leading-none">{t('nav.exteriors')}</h3>
-                                <span className="text-[8px] text-gray-400 font-bold uppercase tracking-widest">{language === 'es' ? 'Resistencia Clim\u00e1tica' : 'Climate Resistant'}</span>
+                                <span className="text-[8px] text-gray-600 font-bold uppercase tracking-widest">{language === 'es' ? 'Resistencia Clim\u00e1tica' : 'Climate Resistant'}</span>
                             </div>
                         </Link>
                         <div className="grid grid-cols-2 gap-x-6 gap-y-4">

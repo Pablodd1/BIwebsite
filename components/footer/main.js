@@ -75,15 +75,15 @@ const Footer = () => {
 
                         {/* Contact Section */}
                         <div className="text-center mb-8 flex flex-col gap-1">
-                            <p className="text-lg text-primary uppercase tracking-widest font-semibold">{t("footer.contact.title")}</p>
+                            <p className="text-lg text-orange-400 uppercase tracking-widest font-semibold">{t("footer.contact.title")}</p>
                             
                             {activeBrand === 'unitec' && (
-                                <p className="text-sm font-bold text-gray-400 mt-2">{t("footer.contact.moreInfo")}</p>
+                                <p className="text-sm font-bold text-gray-300 mt-2">{t("footer.contact.moreInfo")}</p>
                             )}
                             <p className="text-sm font-medium">{navData.contact.phone} {navData.contact.phone2 ? `/ ${navData.contact.phone2}` : ""}</p>
                             
                             {activeBrand === 'unitec' && (
-                                <p className="text-sm font-bold text-gray-400 mt-2">{t("footer.contact.visitShowroom")}</p>
+                                <p className="text-sm font-bold text-gray-300 mt-2">{t("footer.contact.visitShowroom")}</p>
                             )}
                             {navData.contact.address.map((line, i) => (
                                 <p key={i} className="text-sm font-medium">{line}</p>
@@ -94,7 +94,7 @@ const Footer = () => {
 
                     {/* Information Section */}
                     <div className="mb-8">
-                        <h3 className="text-xl mb-4 text-primary ">{t("footer.information.title")}</h3>
+                        <h3 className="text-xl mb-4 text-orange-400 ">{t("footer.information.title")}</h3>
                         <ul className="space-y-2 px-2" >
                             {navData.information.map((item, index) => (
                                 <li key={index}>
@@ -106,7 +106,7 @@ const Footer = () => {
 
                     {/* Helpful Links Section */}
                     <div className="mb-8 ">
-                        <h3 className="text-xl mb-4 text-primary">{t("footer.helpful.title")}</h3>
+                        <h3 className="text-xl mb-4 text-orange-400">{t("footer.helpful.title")}</h3>
                         <ul className="space-y-2 px-2">
                             {navData.helpfulLinks.map((item, index) => (
                                 <li key={index}>
@@ -117,7 +117,7 @@ const Footer = () => {
                     </div>
                     {/* Brand Presence Section */}
                     <div className="text-center md:text-left mb-8 flex flex-col items-center md:items-start">
-                        <h3 className="text-lg font-bold text-primary mb-4 uppercase tracking-widest">
+                        <h3 className="text-lg font-bold text-orange-400 mb-4 uppercase tracking-widest">
                             {isSpanish ? "Sede Miami" : "Miami Headquarters"}
                         </h3>
                         <div 
@@ -128,7 +128,7 @@ const Footer = () => {
                             </div>
                             <div className="text-left">
                                 <p className="text-sm font-bold text-white transition-colors">UNITEC USA Design</p>
-                                <p className="text-[10px] text-gray-400 uppercase tracking-tighter leading-tight">
+                                <p className="text-[10px] text-gray-300 uppercase tracking-tighter leading-tight">
                                     {isSpanish 
                                         ? "Doral, Miami, FL 33166" 
                                         : "Doral, Miami, FL 33166"}

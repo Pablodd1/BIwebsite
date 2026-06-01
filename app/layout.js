@@ -1,5 +1,6 @@
 import { Montserrat } from 'next/font/google'
 import "./globals.css";
+import Script from "next/script";
 import { getDictionary } from "lib/i18n/getDictionary";
 import RootLayoutClient from "./layout-client";
 
@@ -129,8 +130,7 @@ export default async function RootLayout({ children }) {
     <html lang={lang} suppressHydrationWarning>
       <head>
         {/* Google Tag Manager */}
-        <script
-          dangerouslySetInnerHTML={{
+        <Script id="inline-script-1" strategy="afterInteractive" dangerouslySetInnerHTML={{
             __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
             new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
             j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
@@ -139,9 +139,8 @@ export default async function RootLayout({ children }) {
           }}
         />
         {/* Google tag (gtag.js) */}
-        <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18156507743" />
-        <script
-          dangerouslySetInnerHTML={{
+        <Script strategy="lazyOnload" src="https://www.googletagmanager.com/gtag/js?id=AW-18156507743" />
+        <Script id="inline-script-2" strategy="afterInteractive" dangerouslySetInnerHTML={{
             __html: `
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
@@ -151,9 +150,8 @@ export default async function RootLayout({ children }) {
           }}
         />
         {/* Google tag (gtag.js) - G-NN981YWDYK */}
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-NN981YWDYK" />
-        <script
-          dangerouslySetInnerHTML={{
+        <Script strategy="lazyOnload" src="https://www.googletagmanager.com/gtag/js?id=G-NN981YWDYK" />
+        <Script id="inline-script-3" strategy="afterInteractive" dangerouslySetInnerHTML={{
             __html: `
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
@@ -165,9 +163,8 @@ export default async function RootLayout({ children }) {
         {/* Google Analytics */}
         {GA_ID && (
           <>
-            <script async src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`} />
-            <script
-              dangerouslySetInnerHTML={{
+            <Script async src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`} />
+            <Script id="inline-script-4" strategy="afterInteractive" dangerouslySetInnerHTML={{
                 __html: `
                   window.dataLayer = window.dataLayer || [];
                   function gtag(){dataLayer.push(arguments);}
@@ -182,8 +179,7 @@ export default async function RootLayout({ children }) {
         )}
         {/* Structured Data / JSON-LD */}
 
-        <script
-          type="application/ld+json"
+        <Script id="schema-script" type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
@@ -242,9 +238,8 @@ export default async function RootLayout({ children }) {
           }}
         />
         {/* Cookiehub */}
-        <script src="https://cdn.cookiehub.eu/c2/c2fa7641.js" />
-        <script
-          dangerouslySetInnerHTML={{
+        <Script strategy="lazyOnload" src="https://cdn.cookiehub.eu/c2/c2fa7641.js" />
+        <Script id="inline-script-5" strategy="afterInteractive" dangerouslySetInnerHTML={{
             __html: `
               var cpm = {};
               if (window.cookiehub) {
