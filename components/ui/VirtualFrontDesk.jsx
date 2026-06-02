@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import { MessageCircle, X } from 'lucide-react';
 
-const BASE_CHATBOT_URL = 'https://chatbuildinginnovation.us';
+const BASE_CHATBOT_URL = 'https://unitec-front-desk.vercel.app';
 
 export default function VirtualFrontDesk() {
     const [isOpen, setIsOpen] = useState(false);
@@ -29,3 +29,4 @@ export default function VirtualFrontDesk() {
         </>
     );
 }
+
