@@ -7,7 +7,6 @@ import Footer from "My_UI/footer/main";
 import NavBar from "My_UI/navbar/main";
 import CartInit from "lib/cart/initCart";
 import CartDrawer from "My_UI/cart/CartDrawer.client";
-import SplashScreen from "My_UI/ui/SplashScreen";
 import VirtualFrontDesk from "My_UI/ui/VirtualFrontDesk";
 import Providers from "./providers";
 
@@ -19,8 +18,7 @@ const NotifyPortal = dynamic(() => import("lib/notify"), {
 export default function RootLayoutClient({ children, lang, dict }) {
   return (
     <Providers lang={lang}>
-      <SplashScreen />
-      <NavBar lang={lang} dict={dict} />
+            <NavBar lang={lang} dict={dict} />
       {children}
       <Footer lang={lang} dict={dict} />
       <CartInit />
