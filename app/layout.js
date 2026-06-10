@@ -223,10 +223,10 @@ export default async function RootLayout({ children }) {
                   "@type": "WebSite",
                   "@id": "https://unitecusadesign.com/#website",
                   "url": "https://unitecusadesign.com",
-                  "name": "Unitec USA Design",
-                  "description": "Premium Miami-based supplier of PVC, WPC, and SPC architectural materials at wholesale prices.",
+                  "name": dict.meta.siteName,
+                  "description": dict.meta.siteDescription,
                   "publisher": { "@id": "https://unitecusadesign.com/#organization" },
-                  "inLanguage": ["en", "es"],
+                  "inLanguage": ["es", "en"],
                   "potentialAction": {
                     "@type": "SearchAction",
                     "target": "https://unitecusadesign.com/collections/search?q={search_term_string}",
