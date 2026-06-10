@@ -1,4 +1,4 @@
-import { Montserrat } from 'next/font/google'
+﻿import { Montserrat } from 'next/font/google'
 import "./globals.css";
 import Script from "next/script";
 import { getDictionary } from "lib/i18n/getDictionary";
@@ -91,7 +91,7 @@ export async function generateMetadata() {
           url: defaults.image,
           width: 1200,
           height: 630,
-          alt: lang === 'es' ? "UNITEC USA Design - Materiales Arquitectónicos" : "UNITEC USA Design - Architectural Materials",
+          alt: lang === 'es' ? "UNITEC USA Design - Materiales ArquitectÃ³nicos" : "UNITEC USA Design - Architectural Materials",
         }
       ],
     },
@@ -201,7 +201,7 @@ export default async function RootLayout({ children }) {
                   "address": {
                     "@type": "PostalAddress",
                     "streetAddress": "Carrera 42, Auto. S #75-83 C.C. IDEO Local 274",
-                    "addressLocality": "Itagüí",
+                    "addressLocality": "ItagÃ¼Ã­",
                     "addressRegion": "Antioquia",
                     "postalCode": "055413",
                     "addressCountry": "CO"
@@ -250,6 +250,14 @@ export default async function RootLayout({ children }) {
                 });
               }
             `,
+          }}
+        />
+        {/* Metricool Analytics Tracker */}
+        <Script
+          id="metricool-tracker"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `function loadScript(a){var b=document.getElementsByTagName("head")[0],c=document.createElement("script");c.type="text/javascript",c.src="https://tracker.metricool.com/resources/be.js",c.onreadystatechange=a,c.onload=a,b.appendChild(c)}loadScript(function(){beTracker.t({hash:"5ce44b552f857fc4a5b60d701c3e17cf"})});`
           }}
         />
       </head>
