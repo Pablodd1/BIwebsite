@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import React from 'react';
 import { Briefcase, Handshake, TrendingUp, Globe, Ship, Package, DollarSign, Users, CheckCircle2, ArrowRight, Building2, Store, HardHat } from 'lucide-react';
@@ -167,7 +167,7 @@ export default function BusinessModelsPage() {
                         href="/contact" 
                         className="inline-flex items-center justify-center gap-2 rounded-xl bg-white px-8 py-4 text-sm font-semibold text-black transition hover:bg-gray-200"
                     >
-                        Contact Sales Team
+                        Contactar al equipo de ventas
                         <ArrowRight size={18} />
                     </a>
                 </div>
@@ -175,3 +175,4 @@ export default function BusinessModelsPage() {
         </main>
     );
 }
+

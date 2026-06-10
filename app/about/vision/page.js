@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import React from 'react';
 import { Eye, Rocket, Globe2, Users, Award, TrendingUp, Building2, MapPin } from 'lucide-react';
@@ -7,23 +7,23 @@ import { useBrand } from 'lib/BrandContext';
 
 const visionText = {
     es: {
-        futureVision: "Nuestra Visión de Futuro",
-        strategicPillars: "Pilares Estratégicos",
-        innovationLeadership: "Liderazgo en Innovación",
-        innovationDesc: "Pioneros en el futuro de la construcción",
+        futureVision: "Nuestra VisiÃ³n de Futuro",
+        strategicPillars: "Pilares EstratÃ©gicos",
+        innovationLeadership: "Liderazgo en InnovaciÃ³n",
+        innovationDesc: "Pioneros en el futuro de la construcciÃ³n",
         nationalReach_unitec: "Alcance Nacional",
-        nationalReach_binw: "Expansión Regional",
+        nationalReach_binw: "ExpansiÃ³n Regional",
         nationalReachDesc_unitec: "En toda Colombia",
         nationalReachDesc_binw: "En mercados latinoamericanos",
-        simplification: "Simplificación",
-        simplificationDesc: "Haciendo la construcción más fácil",
-        designExcellence: "Excelencia en Diseño",
+        simplification: "SimplificaciÃ³n",
+        simplificationDesc: "Haciendo la construcciÃ³n mÃ¡s fÃ¡cil",
+        designExcellence: "Excelencia en DiseÃ±o",
         designExcellenceDesc: "Marcando tendencias en la industria",
         sustainability: "Sostenibilidad",
         sustainabilityDesc: "Responsabilidad ambiental",
         partnership: "Alianzas",
         partnershipDesc: "Ecosistema colaborativo",
-        whereHeading: "Hacia Dónde Vamos",
+        whereHeading: "Hacia DÃ³nde Vamos",
     },
     en: {
         futureVision: "Our Future Vision",
@@ -178,7 +178,7 @@ export default function VisionPage() {
                                 src={
                                     activeBrand === 'binw'
                                         ? "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3591.7221458267713!2d-80.32240568497836!3d25.83166598355336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9b9c2ffffffff%3A0x0!2s6120%20NW%2074th%20Ave%2C%20Doral%2C%20FL%2033166!5e0!3m2!1sen!2sus!4v1700000000000"
-                                        : "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.1234567890!2d-75.5812345!3d6.2312345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sAutopista+Sur%2C+Medell%C3%ADn%2C+Colombia!5e0!3m2!1ses!2sco!4v1700000000001"
+                                        : "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.610895586514!2d-75.59048539999999!3d6.182801200000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e468350f650a9dd%3A0xb228a6687f4d86a1!2sIdeo%20Centro%20Comercial!5e0!3m2!1sen!2sus!4v1775932365388!5m2!1sen!2sus"
                                 }
                                 width="100%"
                                 height="100%"
@@ -196,3 +196,5 @@ export default function VisionPage() {
         </main>
     );
 }
+
+
