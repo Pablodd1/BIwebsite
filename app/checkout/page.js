@@ -2,7 +2,7 @@
 
 import { useEffect, useState, useRef, useMemo } from "react"
 import { motion } from "framer-motion"
-import { Printer, Check, ArrowLeft, Building2, User, Mail, Phone, MapPin, FileText, Package, DollarSign, Send, Box as BoxIcon } from "lucide-react"
+import { Printer, Check, ArrowLeft, Building2, User, Mail, Phone, MapPin, FileText, Package, DollarSign, Send, Box as BoxIcon, Loader2 } from "lucide-react"
 
 import { useLanguage } from "lib/LanguageContext"
 import { useBrand } from "lib/BrandContext"
@@ -11,8 +11,11 @@ import Link from "next/link"
 import Image from "next/image"
 
 export default function CheckoutPage() {
-    const [manualShippingCost, setManualShippingCost] = useState("")
     const { t } = useLanguage()
+    const [isCalculatingShipping, setIsCalculatingShipping] = useState(false)
+    const [shippingQuote, setShippingQuote] = useState(null)
+    const [shippingError, setShippingError] = useState(null)
+    const [isCheckingOut, setIsCheckingOut] = useState(false)
     const { language } = useLanguage()
     const lang = language || 'es'
     const [cart, setCart] = useState([])
@@ -43,39 +46,56 @@ export default function CheckoutPage() {
         initializeCheckout()
     }, [])
 
-    const shippingData = useMemo(() => {
-        if (cart.length === 0 || !formData.country || !formData.state) {
-            return { cost: 0, time: "" }
+    const handleCalculateShipping = async () => {
+        if (!formData.country || !formData.city) {
+            setShippingError("Please enter city and country first")
+            return
         }
-
-        let costPerContainer = 0
-        let time = ""
-        const state = formData.state.toUpperCase()
         
-        if (formData.country === "US") {
-            if (["FL", "FLORIDA"].includes(state)) {
-                costPerContainer = 450
-                time = "3-5 Business Days"
-            } else if (["CA", "CALIFORNIA", "NY", "NEW YORK"].includes(state)) {
-                costPerContainer = 1200
-                time = "7-10 Business Days"
-            } else {
-                costPerContainer = 850
-                time = "5-8 Business Days"
-            }
-        } else if (formData.country === "CA") {
-            costPerContainer = 1800
-            time = "10-14 Business Days"
-        } else if (formData.country === "MX") {
-            costPerContainer = 1500
-            time = "7-10 Business Days"
+        setIsCalculatingShipping(true)
+        setShippingError(null)
+        
+        try {
+            const totalWeight = cart.reduce((acc, container) => acc + (container.items.reduce((sum, item) => sum + (item.weight || 0) * item.qty, 0)), 0)
+            const totalVolume = cart.reduce((acc, container) => acc + (container.items.reduce((sum, item) => sum + (item.volume || 0) * item.qty, 0)), 0)
+            
+            const response = await fetch('/api/shipping/quote', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    destination: {
+                        country: formData.country,
+                        city: formData.city,
+                        zip: formData.zip,
+                        state: formData.state
+                    },
+                    origin: {
+                        country: 'CN'
+                    },
+                    equipmentType: '40HC',
+                    weight: totalWeight || 1000,
+                    volume: totalVolume || 10
+                })
+            })
+            
+            if (!response.ok) throw new Error('Failed to calculate shipping')
+            
+            const data = await response.json()
+            setShippingQuote({
+                cost: data.totalPrice || 1500,
+                time: data.transitTime || "14-21 Business Days",
+                raw: data
+            })
+        } catch (error) {
+            console.error('Shipping calc error:', error)
+            setShippingError("Failed to get shipping quote. Please try again.")
+        } finally {
+            setIsCalculatingShipping(false)
         }
+    }
 
-        return { cost: costPerContainer, time }
-    }, [cart.length, formData.country, formData.state])
-
-    const shippingCost = manualShippingCost !== "" ? (parseFloat(manualShippingCost) || 0) : shippingData.cost
-    const shippingTime = shippingData.time
+    const shippingCost = shippingQuote?.cost || 0
+    const shippingTime = shippingQuote?.time || ""
 
     const calculateTotal = () => {
         const itemTotal = cart.reduce((total, container) => {
@@ -556,6 +576,24 @@ export default function CheckoutPage() {
                                             </select>
                                         </div>
                                     </div>
+
+                                    <div className="pt-4 border-t border-gray-100 flex flex-col items-end">
+                                        {shippingError && <p className="text-red-500 text-sm mb-2">{shippingError}</p>}
+                                        <button
+                                            type="button"
+                                            onClick={handleCalculateShipping}
+                                            disabled={isCalculatingShipping || !formData.country || !formData.city}
+                                            className="px-6 py-3 bg-black text-white rounded-xl font-bold text-sm hover:bg-primary transition-all disabled:opacity-50 disabled:cursor-not-allowed flex items-center gap-2"
+                                        >
+                                            {isCalculatingShipping ? <Loader2 className="w-4 h-4 animate-spin" /> : <Package className="w-4 h-4" />}
+                                            Calculate Shipping
+                                        </button>
+                                        {shippingQuote && (
+                                            <p className="text-green-600 text-sm mt-2 font-bold flex items-center gap-1">
+                                                <Check className="w-4 h-4" /> Shipping Calculated: ${shippingQuote.cost.toFixed(2)}
+                                            </p>
+                                        )}
+                                    </div>
                                 </section>
 
                                 <section>
@@ -600,10 +638,15 @@ export default function CheckoutPage() {
 
                                 <button
                                     type="submit"
-                                    className="w-full group flex items-center justify-center gap-3 py-6 bg-black text-white rounded-3xl font-black text-xl hover:bg-primary transition-all shadow-2xl hover:scale-[1.02]"
+                                    disabled={isCheckingOut || shippingCost === 0}
+                                    className="w-full group flex items-center justify-center gap-3 py-6 bg-black text-white rounded-3xl font-black text-xl hover:bg-primary transition-all shadow-2xl hover:scale-[1.02] disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100"
                                 >
-                                    <Send size={24} className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
-                                    {t("checkout.submit")}
+                                    {isCheckingOut ? (
+                                        <Loader2 size={24} className="animate-spin" />
+                                    ) : (
+                                        <Send size={24} className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
+                                    )}
+                                    {isCheckingOut ? "Processing..." : t("checkout.submit")}
                                 </button>
                             </form>
                         </div>
