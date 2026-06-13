@@ -57,7 +57,9 @@ const Footer = () => {
             { title: t("footer.helpful.links.supports"), link: "/contact" },
             { title: t("footer.helpful.links.faqs"), link: "/faq" },
             { title: t("nav.blog"), link: "/blog" },
-            { title: t("footer.helpful.links.search"), link: "/collections/search" }
+            { title: t("footer.helpful.links.search"), link: "/collections/search" },
+            { title: t("footer.helpful.links.terms") || "Terms & Conditions", link: "/terms" },
+            { title: t("footer.helpful.links.policies") || "Privacy Policy", link: "/policies" }
         ]
     };
 
