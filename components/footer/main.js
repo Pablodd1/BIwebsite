@@ -59,7 +59,7 @@ const Footer = () => {
             { title: t("nav.blog"), link: "/blog" },
             { title: t("footer.helpful.links.search"), link: "/collections/search" },
             { title: t("footer.helpful.links.terms") || "Terms & Conditions", link: "/terms" },
-            { title: t("footer.helpful.links.policies") || "Privacy Policy", link: "/policies" }
+            { title: t("footer.helpful.links.privacy") || "Privacy Policy", link: "/policies" }
         ]
     };
 
@@ -183,3 +183,4 @@ const Footer = () => {
 };
 
 export default Footer;
+
