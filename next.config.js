@@ -114,6 +114,15 @@ const nextConfig = {
   experimental: {
     optimizePackageImports: ['lucide-react', 'framer-motion'],
     scrollRestoration: true,
+    outputFileTracingExcludes: {
+      '*': [
+        'public/fichas/**/*',
+        'public/videos/**/*',
+        'public/media/**/*',
+        'public/video/**/*',
+        'public/raster/**/*'
+      ],
+    },
   },
 
   // Webpack configuration
