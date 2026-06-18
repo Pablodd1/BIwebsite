@@ -73,7 +73,7 @@ const CatalogDropdown = () => {
                                              >
                                                  <ChevronRight className="w-3 h-3 text-gray-600 group-hover/sheet:text-emerald-600 flex-shrink-0" />
                                                  <span className="text-[9px] font-bold text-gray-600 group-hover/sheet:text-gray-900 truncate uppercase transition-all">
-                                                     {sheet.subcategory}
+                                                     {sheet.name.replace(/^[\d\.]+_FT_/, '').replace(/_/g, ' ')}
                                                  </span>
                                              </a>
                                          ))}
