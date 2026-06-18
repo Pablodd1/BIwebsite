@@ -50,7 +50,7 @@ const productCategories = {
 };
 
 // Optional: dynamic categories fetched from API for a fully populated MegaMenu
-const dynamicCategoriesEndpoint = '/API/collections?nopaginate=true';
+const dynamicCategoriesEndpoint = '/api/collections?nopaginate=true';
 
 const MegaMenu = () => {
     const { language, t } = useLanguage();

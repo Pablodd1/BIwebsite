@@ -18,7 +18,7 @@ export default async function Page({ searchParams }) {
             h1={"FACHADA EXTERIOR PVC"}
             description={"Durable and weather-resistant PVC facade panels for building exteriors."}
             cover={{ src: '/raster/exterior.webp', alt: 'FACHADA EXTERIOR PVC' }}
-            productURL="/API/collections?"
+            productURL="/api/collections?"
             prefilters={{
     "collection": "Exterior",
     "category": "PAREDES",

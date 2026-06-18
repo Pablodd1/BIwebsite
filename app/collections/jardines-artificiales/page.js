@@ -49,7 +49,7 @@ export default async function JardinesArtificiales({ searchParams }) {
                 src: '/raster/exterior.webp',
                 alt: 'Jardines Artificiales Collection'
             }}
-            productURL="/API/collections?"
+            productURL="/api/collections?"
             prefilters={{
                 collection: "All",
                 subcategories: ["JARDINES ARTIFICIALES"],

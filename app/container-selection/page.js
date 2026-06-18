@@ -67,7 +67,7 @@ function ContainerSelectionContent() {
           setLoading(true);
           const containerId = existingCart[0].id; // Always add to current open container
           try {
-            const res = await fetch(`/API/products/${productId}`);
+            const res = await fetch(`/api/products/${productId}`);
             if (res.ok) {
               const productData = await res.json();
               addOne(containerId, productData);
@@ -99,7 +99,7 @@ function ContainerSelectionContent() {
     // If there's a product, fetch its full data before adding
     if (productId) {
       try {
-        const res = await fetch(`/API/products/${productId}`);
+        const res = await fetch(`/api/products/${productId}`);
         if (res.ok) {
           const productData = await res.json();
           addOne(containerId, productData);

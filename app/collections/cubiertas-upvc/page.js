@@ -18,7 +18,7 @@ export default async function CubiertasUpvcPage({ searchParams }) {
             h1={"CUBIERTAS UPVC - Roofing"}
             description={"Protect your property with our premium UPVC roofing solutions. The CUBIERTAS UPVC collection offers weatherproof, UV-resistant, and durable roofing materials including tiles and sheets. Perfect for residential, commercial, and industrial applications."}
             cover={{ src: '/raster/exterior.webp', alt: 'UPVC Roofing' }}
-            productURL="/API/collections?"
+            productURL="/api/collections?"
             prefilters={{
                 collection: "Exterior",
                 category: "CUBIERTAS UPVC",

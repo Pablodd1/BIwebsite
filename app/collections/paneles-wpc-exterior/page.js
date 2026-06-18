@@ -18,7 +18,7 @@ export default async function Page({ searchParams }) {
             h1={"PANELES WPC EXTERIOR"}
             description={"Premium durable outdoor WPC panels for architectural projects and exterior cladding."}
             cover={{ src: '/raster/exterior.webp', alt: 'Outdoor WPC Panels' }}
-            productURL="/API/collections?"
+            productURL="/api/collections?"
             prefilters={{
                 collection: "Exterior",
                 category: "PANELES WPC Y ANGULOS",

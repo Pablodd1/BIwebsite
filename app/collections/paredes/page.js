@@ -17,7 +17,7 @@ export default async function ParedesPage({ searchParams }) {
             h1={"PAREDES - Wall Panels"}
             description={"Discover our premium range of PVC wall panels designed to transform any interior space. Our PAREDES collection offers waterproof, antimicrobial, and easy-to-install panels perfect for residential and commercial applications. Available in marble, acoustic, and various textured finishes."}
             cover={{ src: '/raster/interior.webp', alt: 'PAREDES Wall Panels' }}
-            productURL="/API/collections?"
+            productURL="/api/collections?"
             prefilters={{
                 collection: "Interior",
                 category: "PAREDES",

@@ -48,7 +48,7 @@ export default async function Collections({ searchParams }) {
                 src: '/raster/interior.webp',
                 alt: 'collection banner'
             }}
-            productURL="/API/collections?"
+            productURL="/api/collections?"
             prefilters={{
                 collection: "All",
                 subcategories: [],

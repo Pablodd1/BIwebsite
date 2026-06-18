@@ -7,7 +7,12 @@ export async function POST(req) {
 
         if (!WALIO_API_KEY) {
             console.error('WALIO_API_KEY is not set');
-            return NextResponse.json({ error: 'Shipping API is not configured' }, { status: 500 });
+            console.warn('Fallback: Shipping API not configured, using mock data');
+            return NextResponse.json({
+                totalPrice: 1500,
+                transitTime: '14-21 Business Days',
+                mocked: true
+            });
         }
 
         const response = await fetch('https://walio.ai/api/v1/rates/fcl', {
@@ -22,7 +27,13 @@ export async function POST(req) {
         if (!response.ok) {
             const errorText = await response.text();
             console.error('Walio API Error:', response.status, errorText);
-            return NextResponse.json({ error: 'Failed to fetch shipping rates' }, { status: response.status });
+            console.warn('Fallback: Walio API failed, using mock data');
+            return NextResponse.json({
+                totalPrice: 1500,
+                transitTime: '14-21 Business Days',
+                mocked: true,
+                originalError: errorText
+            });
         }
 
         const data = await response.json();

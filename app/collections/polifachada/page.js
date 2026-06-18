@@ -18,7 +18,7 @@ export default async function Page({ searchParams }) {
             h1={"POLIFACHADA"}
             description={"Advanced architectural facade solutions with modern finishes."}
             cover={{ src: '/raster/exterior.webp', alt: 'POLIFACHADA' }}
-            productURL="/API/collections?"
+            productURL="/api/collections?"
             prefilters={{
     "collection": "Exterior",
     "category": "PAREDES",

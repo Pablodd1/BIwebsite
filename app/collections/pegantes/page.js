@@ -18,7 +18,7 @@ export default async function Page({ searchParams }) {
             h1={"PEGANTES - Adhesives"}
             description={"Professional building adhesives and bonding solutions for architectural projects."}
             cover={{ src: '/raster/interior.webp', alt: 'PEGANTES - Adhesives' }}
-            productURL="/API/collections?"
+            productURL="/api/collections?"
             prefilters={{
     "collection": "Interior",
     "category": "PEGANTES",
