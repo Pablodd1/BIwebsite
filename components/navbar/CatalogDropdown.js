@@ -53,7 +53,6 @@ const CatalogDropdown = () => {
                          ))}
                          </div>
                      </div>
-                 </div>
 
                  {/* Technical Sheets Section */}
                  <div className="flex-1 p-5 bg-white">

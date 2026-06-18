@@ -46,3 +46,5 @@ downloads/
 
 # Unignore policies.pdf
 !public/policies.pdf
+
+!public/fichas/*.pdf
