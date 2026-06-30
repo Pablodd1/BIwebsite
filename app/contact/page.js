@@ -1,4 +1,4 @@
-"use client"
+﻿"use client"
 
 import { useState } from 'react';
 import { motion, AnimatePresence } from "framer-motion"
@@ -38,7 +38,7 @@ import SeoHead from "components/SeoHead"
 
 const contactMetadata = {
     title: "Contacto | UNITEC USA Design",
-    description: "Ponte en contacto con nuestro equipo de UNITEC USA para consultas, soporte o para agendar una reunión sobre sus proyectos."
+    description: "Ponte en contacto con nuestro equipo de UNITEC USA para consultas, soporte o para agendar una reuniÃ³n sobre sus proyectos."
 };
 
 export default function ContactPage() {
@@ -78,27 +78,27 @@ export default function ContactPage() {
     const faqs = [
         {
             q: 'What are your shipping times?',
-            q_es: '¿Cuáles son los tiempos de envío?',
+            q_es: 'Â¿CuÃ¡les son los tiempos de envÃ­o?',
             a: 'Standard shipping takes 15-25 business days for international orders. Express options available upon request.',
-            a_es: 'El envío estándar toma 15-25 días hábiles para pedidos internacionales. Opciones exprés disponibles bajo solicitud.'
+            a_es: 'El envÃ­o estÃ¡ndar toma 15-25 dÃ­as hÃ¡biles para pedidos internacionales. Opciones exprÃ©s disponibles bajo solicitud.'
         },
         {
             q: 'Do you offer samples?',
-            q_es: '¿Ofrecen muestras?',
+            q_es: 'Â¿Ofrecen muestras?',
             a: 'Yes! Contact our team to request product samples for your project evaluation. We provide samples for qualified projects.',
-            a_es: '¡Sí! Contacta a nuestro equipo para solicitar muestras de productos para evaluación de tu proyecto.'
+            a_es: 'Â¡SÃ­! Contacta a nuestro equipo para solicitar muestras de productos para evaluaciÃ³n de tu proyecto.'
         },
         {
             q: 'What is the minimum order?',
-            q_es: '¿Cuál es el pedido mínimo?',
+            q_es: 'Â¿CuÃ¡l es el pedido mÃ­nimo?',
             a: 'Our minimum order is one full container (20ft or 40ft). We offer volume discounts for larger orders.',
-            a_es: 'Nuestro pedido mínimo es un contenedor completo (20ft o 40ft). Ofrecemos descuentos por volumen.'
+            a_es: 'Nuestro pedido mÃ­nimo es un contenedor completo (20ft o 40ft). Ofrecemos descuentos por volumen.'
         },
         {
             q: 'Do you provide installation?',
-            q_es: '¿Brindan instalación?',
+            q_es: 'Â¿Brindan instalaciÃ³n?',
             a: 'We work with certified installers across the US. Contact us for recommendations in your area.',
-            a_es: 'Trabajamos con instaladores certificados en EE.UU. Contáctanos para recomendaciones en tu área.'
+            a_es: 'Trabajamos con instaladores certificados en EE.UU. ContÃ¡ctanos para recomendaciones en tu Ã¡rea.'
         }
     ];
 
@@ -174,130 +174,21 @@ export default function ContactPage() {
             {/* ================= MAP ================= */}
             <Map />
 
-            {/* ================= TEAM SECTION ================= */}
-            <section className="py-12 md:py-16 bg-gray-50">
-                <div className="mx-auto max-w-6xl px-4">
-                    <motion.div
-                        initial={{ opacity: 0, y: 20 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true }}
-                        className="text-center mb-10"
-                    >
-                        <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-3">
-                            {isSpanish ? 'Nuestro Equipo de Ventas' : 'Our Sales Team'}
-                        </h2>
-                        <p className="text-gray-600 max-w-2xl mx-auto">
-                            {isSpanish
-                                ? 'Conoce a nuestro equipo especializado. Estamos aquí para ayudarte con tus proyectos.'
-                                : 'Meet our specialized team. We are here to help with your projects.'}
-                        </p>
-                    </motion.div>
-
-                    <div className="contact-cards-grid min-h-[400px]">
-                        {team.map((member, idx) => (
-                            <motion.div
-                                key={member.id}
-                                initial={{ opacity: 0, y: 20 }}
-                                whileInView={{ opacity: 1, y: 0 }}
-                                viewport={{ once: true }}
-                                transition={{ delay: idx * 0.1 }}
-                                className="bg-white rounded-2xl p-5 shadow-md hover:shadow-xl transition-shadow"
-                            >
-                                <div className="text-center">
-                                    <div 
-                                        aria-label={`Initials of ${member.name}`}
-                                        className="w-20 h-20 mx-auto rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center text-white text-2xl font-bold mb-3"
-                                    >
-                                        {member.name.charAt(0)}
-                                    </div>
-                                    <h3 className="font-bold text-gray-900">{member.name}</h3>
-                                    <p className="text-xs text-primary font-medium">
-                                        {isSpanish ? member.role_es : member.role}
-                                    </p>
-                                    <p className="text-xs text-gray-500 mt-1">
-                                        {member.specialty}
-                                    </p>
-                                </div>
-
-                                <div className="mt-4 space-y-2">
-                                    <a
-                                        href={`https://wa.me/${member.whatsapp}`}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className="flex items-center justify-center gap-2 w-full py-2 px-3 rounded-lg bg-green-500 text-white text-sm font-medium hover:bg-green-600 transition-colors"
-                                    >
-                                        <MessageCircle size={16} fill="white" />
-                                        WhatsApp
-                                    </a>
-                                    <a
-                                        href={`tel:${member.phone}`}
-                                        className="flex items-center justify-center gap-2 w-full py-2 px-3 rounded-lg bg-blue-500 text-white text-sm font-medium hover:bg-blue-600 transition-colors"
-                                    >
-                                        <Phone size={16} />
-                                        {isSpanish ? 'Llamar' : 'Call'}
-                                    </a>
-                                </div>
-                            </motion.div>
-                        ))}
-                    </div>
-                </div>
-            </section>
-
             {/* ================= QUICK CONTACT ================= */}
             <section className="py-12 md:py-16">
                 <div className="mx-auto max-w-6xl px-4">
-                    <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
-                        {/* WhatsApp */}
+                    <div className="flex justify-center items-center gap-4">
                         <motion.a
-                            href={`https://wa.me/${contact.whatsapp}`}
+                            href="https://wa.me/573142332147"
                             target="_blank"
                             rel="noopener noreferrer"
                             whileHover={{ scale: 1.02 }}
-                            className="flex items-center gap-4 p-4 rounded-xl bg-green-500 text-white shadow-lg hover:shadow-xl transition-shadow"
+                            className="flex items-center gap-4 p-4 px-8 rounded-xl bg-green-500 text-white shadow-lg hover:shadow-xl transition-shadow w-full md:w-auto min-w-[300px] justify-center"
                         >
                             <MessageCircle size={32} fill="white" />
                             <div>
-                                <p className="font-bold">WhatsApp</p>
-                                <p className="text-sm opacity-90">{contact.phone}</p>
-                            </div>
-                        </motion.a>
-
-                        {/* Phone 2 (if exists) or Phone */}
-                        <motion.a
-                            href={`tel:${(contact.phone2 || contact.phone)?.replace(/[^+\d]/g, '')}`}
-                            whileHover={{ scale: 1.02 }}
-                            className="flex items-center gap-4 p-4 rounded-xl bg-blue-500 text-white shadow-lg hover:shadow-xl transition-shadow"
-                        >
-                            <Phone size={32} />
-                            <div>
-                                <p className="font-bold">{isSpanish ? 'Teléfono' : 'Phone'}</p>
-                                <p className="text-sm opacity-90">{contact.phone2 || contact.phone}</p>
-                            </div>
-                        </motion.a>
-
-                        {/* Phone (main) */}
-                        <motion.a
-                            href={`tel:${contact.phone?.replace(/[^+\d]/g, '')}`}
-                            whileHover={{ scale: 1.02 }}
-                            className="flex items-center gap-4 p-4 rounded-xl bg-blue-600 text-white shadow-lg hover:shadow-xl transition-shadow"
-                        >
-                            <Phone size={32} />
-                            <div>
-                                <p className="font-bold">{isSpanish ? 'Línea Principal' : 'Main Line'}</p>
-                                <p className="text-sm opacity-90">{contact.phone}</p>
-                            </div>
-                        </motion.a>
-
-                        {/* Email */}
-                        <motion.a
-                            href={`mailto:${contact.email}`}
-                            whileHover={{ scale: 1.02 }}
-                            className="flex items-center gap-4 p-4 rounded-xl bg-gray-800 text-white shadow-lg hover:shadow-xl transition-shadow break-anywhere"
-                        >
-                            <Mail size={32} />
-                            <div>
-                                <p className="font-bold">Email</p>
-                                <p className="text-sm opacity-90">{contact.email}</p>
+                                <p className="font-bold text-lg">WhatsApp</p>
+                                <p className="text-sm opacity-90">+57 314 233 2147</p>
                             </div>
                         </motion.a>
                     </div>
@@ -313,7 +204,7 @@ export default function ContactPage() {
                     <div className="lg:col-span-2 space-y-6">
                         <div>
                             <h2 className="text-2xl font-bold text-gray-900 mb-4">
-                                {isSpanish ? '¿Tienes preguntas?' : 'Have Questions?'}
+                                {isSpanish ? 'Â¿Tienes preguntas?' : 'Have Questions?'}
                             </h2>
                             <p className="text-sm text-gray-600">
                                 {t('contact.whether')}
@@ -332,7 +223,7 @@ export default function ContactPage() {
                             />
                             <InfoCard
                                 icon={Clock}
-                                title={isSpanish ? 'Horario de Atención' : 'Business Hours'}
+                                title={isSpanish ? 'Horario de AtenciÃ³n' : 'Business Hours'}
                                 value={isSpanish ? contact.hours_es : contact.hours}
                                 hint={isSpanish ? 'Respondemos en 24 horas' : 'We respond within 24 hours'}
                             />
@@ -341,7 +232,7 @@ export default function ContactPage() {
                         {/* Social Media */}
                         <div className="pt-4">
                             <h3 className="font-semibold text-gray-900 mb-3">
-                                {isSpanish ? 'Síguenos' : 'Follow Us'}
+                                {isSpanish ? 'SÃ­guenos' : 'Follow Us'}
                             </h3>
                             <div className="flex gap-3">
                                 {social.facebook && (
@@ -368,7 +259,7 @@ export default function ContactPage() {
                             className="w-full flex items-center justify-center gap-3 py-4 px-6 rounded-xl bg-gradient-to-r from-primary to-secondary text-white font-bold hover:opacity-90 transition-opacity"
                         >
                             <Calendar size={24} />
-                            {isSpanish ? 'Agendar Una Reunión' : 'Book a Meeting'}
+                            {isSpanish ? 'Agendar Una ReuniÃ³n' : 'Book a Meeting'}
                         </button>
 
                         {/* Meeting Scheduler */}
@@ -404,7 +295,7 @@ export default function ContactPage() {
                                         </div>
                                         <input
                                             type="tel"
-                                            placeholder={isSpanish ? 'Tu teléfono' : 'Your Phone'}
+                                            placeholder={isSpanish ? 'Tu telÃ©fono' : 'Your Phone'}
                                             value={meetingData.phone}
                                             onChange={(e) => setMeetingData({ ...meetingData, phone: e.target.value })}
                                             className="w-full rounded-lg border px-3 py-2 text-sm"
@@ -446,7 +337,7 @@ export default function ContactPage() {
                                             type="submit"
                                             className="w-full py-3 px-6 rounded-xl bg-black text-white font-bold hover:bg-gray-900 transition-colors"
                                         >
-                                            {isSpanish ? 'Solicitar Reunión' : 'Request Meeting'}
+                                            {isSpanish ? 'Solicitar ReuniÃ³n' : 'Request Meeting'}
                                         </button>
                                     </form>
                                 </motion.div>
@@ -480,7 +371,7 @@ export default function ContactPage() {
                                     onChange={(e) => setQuoteData({ ...quoteData, companyName: e.target.value })}
                                 />
                                 <Input 
-                                    label={isSpanish ? "Correo Electrónico" : t('contact.email')} 
+                                    label={isSpanish ? "Correo ElectrÃ³nico" : t('contact.email')} 
                                     type="email"
                                     placeholder="su-nombre@ejemplo.com"
                                     value={quoteData.email}
@@ -488,7 +379,7 @@ export default function ContactPage() {
                                     required
                                 />
                                 <Input 
-                                    label={isSpanish ? "Teléfono" : t('contact.phone')} 
+                                    label={isSpanish ? "TelÃ©fono" : t('contact.phone')} 
                                     placeholder="+57 300 000 0000"
                                     value={quoteData.phone}
                                     onChange={(e) => setQuoteData({ ...quoteData, phone: e.target.value })}
@@ -524,7 +415,7 @@ export default function ContactPage() {
                             </form>
 
                             <p className="mt-4 text-xs text-gray-500">
-                                {isSpanish ? "Nuestro equipo generalmente responde dentro de 24 horas hábiles." : t('contact.responseTimeText')}
+                                {isSpanish ? "Nuestro equipo generalmente responde dentro de 24 horas hÃ¡biles." : t('contact.responseTimeText')}
                             </p>
                         </div>
                     </div>
@@ -629,3 +520,4 @@ function Textarea({ label, ...props }) {
         </div>
     )
 }
+

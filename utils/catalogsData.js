@@ -1,4 +1,4 @@
-export const catalogs = [
+﻿export const catalogs = [
     {
         id: 1,
         name: "Catálogo 2026 UNITEC USA DESIGN (Español)",
@@ -12,20 +12,6 @@ export const catalogs = [
         language: "English",
         company: "UNITEC USA DESIGN",
         url: "https://drive.google.com/file/d/14ZZe6FWDNPE34w_z1z6PpiPuUjYYJ_mj/view?usp=drive_link"
-    },
-    {
-        id: 3,
-        name: "001. Catálogo Building LATAM (español)",
-        language: "Español",
-        company: "UNITEC USA Design",
-        url: "https://drive.google.com/file/d/1NqJSJ2l4jzSLEE_WfL-bA3_gjasLjyTp/view?usp=drive_link"
-    },
-    {
-        id: 4,
-        name: "002. Product Catalog USA (English) UNITEC USA Design",
-        language: "English",
-        company: "UNITEC USA Design",
-        url: "https://drive.google.com/file/d/1_CeSXJdX_uqHcsq6b2aNu_fNco4I8E1G/view?usp=drive_link"
     }
 ];
 
@@ -44,20 +30,7 @@ export const technicalSheets = [
         subcategory: "PISOS SPC",
         url: "/fichas/Pisos_SPC.pdf"
     },
-    {
-        id: 3,
-        name: "03_FT_Lamina Marmol PVC",
-        category: "LAMINAS",
-        subcategory: "LAMINAS MARMOL PVC",
-        url: "/fichas/Laminas_Marmol_PVC.pdf"
-    },
-    {
-        id: 4,
-        name: "04_FT_Pared PU ArqUnitec",
-        category: "PAREDES",
-        subcategory: "PAREDES PU ARQUNITEC",
-        url: "/fichas/Paredes_PU_ArqUnitec.pdf"
-    },
+    ,
     {
         id: 5,
         name: "05_FT_Paredes Muroflex",
@@ -123,7 +96,7 @@ export const technicalSheets = [
     },
     {
         id: 14,
-        name: "13_FT_Rollo Adhesivo Mármol",
+        name: "13_FT_Rollo Adhesivo MÃ¡rmol",
         category: "PAREDES",
         subcategory: "ROLLOS ADHESIVOS DE MARMOL",
         url: "/fichas/Rollos_Adhesivos_de_Marmol.pdf"
@@ -158,70 +131,70 @@ export const technicalSheets = [
     },
     {
         id: 19,
-        name: "18.1_FT_Panel Acústico Tipo 1",
+        name: "18.1_FT_Panel AcÃºstico Tipo 1",
         category: "PAREDES",
         subcategory: "PANELES ACUSTICOS",
         url: "/fichas/Paneles_Acusticos.pdf"
     },
     {
         id: 20,
-        name: "18.2_FT_Panel Acústico Tipo 2",
+        name: "18.2_FT_Panel AcÃºstico Tipo 2",
         category: "PAREDES",
         subcategory: "PANELES ACUSTICOS",
         url: "/fichas/Paneles_Acusticos.pdf"
     },
     {
         id: 21,
-        name: "18.3_FT_Panel Acústico Tipo 3",
+        name: "18.3_FT_Panel AcÃºstico Tipo 3",
         category: "PAREDES",
         subcategory: "PANELES ACUSTICOS",
         url: "/fichas/Paneles_Acusticos.pdf"
     },
     {
         id: 22,
-        name: "18.4_FT_Panel Acústico Tipo 4",
+        name: "18.4_FT_Panel AcÃºstico Tipo 4",
         category: "PAREDES",
         subcategory: "PANELES ACUSTICOS",
         url: "/fichas/Paneles_Acusticos.pdf"
     },
     {
         id: 23,
-        name: "18.5_FT_Panel Acústico Tipo 5",
+        name: "18.5_FT_Panel AcÃºstico Tipo 5",
         category: "PAREDES",
         subcategory: "PANELES ACUSTICOS",
         url: "/fichas/Paneles_Acusticos.pdf"
     },
     {
         id: 24,
-        name: "18.6_FT_Panel Acústico Tipo 6",
+        name: "18.6_FT_Panel AcÃºstico Tipo 6",
         category: "PAREDES",
         subcategory: "PANELES ACUSTICOS",
         url: "/fichas/Paneles_Acusticos.pdf"
     },
     {
         id: 25,
-        name: "19_FT_Panel_Acrilico Mármol",
+        name: "19_FT_Panel_Acrilico MÃ¡rmol",
         category: "PAREDES",
         subcategory: "PANELES ACRILICOS MARMOL",
         url: "/fichas/Paneles_Acrilicos_Marmol.pdf"
     },
     {
         id: 26,
-        name: "20_FT_Listón WPC Exterior",
+        name: "20_FT_ListÃ³n WPC Exterior",
         category: "LISTONES",
         subcategory: "LISTONES WPC EXTERIOR",
         url: "/fichas/Listones_PVC_y_WPC.pdf"
     },
     {
         id: 27,
-        name: "21_FT_Listón PVC Interior",
+        name: "21_FT_ListÃ³n PVC Interior",
         category: "LISTONES",
         subcategory: "LISTONES PVC INTERIOR ESTRUCTURAL",
         url: "/fichas/Listones_PVC_y_WPC.pdf"
     },
     {
         id: 28,
-        name: "22_FT_Listón PVC Cielo Raso",
+        name: "22_FT_ListÃ³n PVC Cielo Raso",
         category: "LISTONES",
         subcategory: "LISTONES PVC CIELO RASO",
         url: "/fichas/Listones_PVC_y_WPC.pdf"
@@ -298,22 +271,22 @@ export const technicalSheets = [
     },
     {
         id: 39,
-        name: "28.1_FT_Iluminación Perfil Led",
-        category: "ILUMINACIÓN",
+        name: "28.1_FT_IluminaciÃ³n Perfil Led",
+        category: "ILUMINACIÃ“N",
         subcategory: "ILUMINACION",
         url: "/fichas/Iluminacion.pdf"
     },
     {
         id: 40,
-        name: "28.2_FT_Iluminación Transformador Perfil Led",
-        category: "ILUMINACIÓN",
+        name: "28.2_FT_IluminaciÃ³n Transformador Perfil Led",
+        category: "ILUMINACIÃ“N",
         subcategory: "ILUMINACION",
         url: "/fichas/Iluminacion.pdf"
     },
     {
         id: 41,
-        name: "28.3_FT_Iluminación Control Led",
-        category: "ILUMINACIÓN",
+        name: "28.3_FT_IluminaciÃ³n Control Led",
+        category: "ILUMINACIÃ“N",
         subcategory: "ILUMINACION",
         url: "/fichas/Iluminacion.pdf"
     },
@@ -326,14 +299,14 @@ export const technicalSheets = [
     },
     {
         id: 43,
-        name: "29.2_FT_Jardín Artificial Interior",
+        name: "29.2_FT_JardÃ­n Artificial Interior",
         category: "JARDINES ARTIFICIALES",
         subcategory: "JARDINES INTERIOR",
         url: "/fichas/Jardines_Artificiales.pdf"
     },
     {
         id: 44,
-        name: "29.3_FT_Jardín Artificial Linea Moss",
+        name: "29.3_FT_JardÃ­n Artificial Linea Moss",
         category: "JARDINES ARTIFICIALES",
         subcategory: "JARDINES MOSS",
         url: "/fichas/Jardines_Artificiales.pdf"
@@ -393,3 +366,4 @@ export const getGroupedTechnicalSheets = () => {
     });
     return grouped;
 };
+

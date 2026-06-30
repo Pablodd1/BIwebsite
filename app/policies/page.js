@@ -80,8 +80,18 @@ export default function PoliciesPage() {
             </p>
           </section>
 
+          <section>
+            <h2 className="text-xl font-bold text-slate-900 mb-3 border-b pb-2">Vigencia</h2>
+            <p>
+              La presente política rige a partir de su publicación y estará vigente mientras se mantenga la finalidad del tratamiento de los datos.
+            </p>
+          </section>
+
           <div className="pt-8 mt-8 border-t border-gray-200 text-sm text-gray-500 text-center">
-            <p>Elaborado por: <strong>Marta Nancy Mesa</strong></p>
+            <p>Atentamente,</p>
+            <p className="mt-2 text-base font-bold text-gray-900">ADRIANA RESTREPO</p>
+            <p>Gerente General</p>
+            <p>UNITEC USA DESIGN</p>
           </div>
           
         </div>

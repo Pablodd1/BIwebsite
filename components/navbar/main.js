@@ -57,7 +57,7 @@ const NavBar = ({ searchParams }) => {
     }
 
     return (
-        <header className="sticky top-0 z-30 bg-primary/95 shadow-accent2 border-b border-gray-300 shadow-sm backdrop-blur-md text-black pr-8 pl-5 py-2.5">
+        <header className="sticky top-0 z-30 bg-slate-900/95 shadow-accent2 border-b border-slate-800 shadow-md backdrop-blur-md text-white pr-8 pl-5 py-2.5">
             <div className="max-w-[1400px] mx-auto flex items-center justify-between relative">
 
                 {/* Mobile Menu Button */}
@@ -81,7 +81,7 @@ const NavBar = ({ searchParams }) => {
                             {item.catalogDropdown ? (
                                 <button
                                     aria-label="Catalogs"
-                                    className="text-sm uppercase tracking-widest font-semibold flex items-center transition-all whitespace-nowrap cursor-pointer hover:text-primary"
+                                    className="text-sm uppercase tracking-widest font-semibold flex items-center transition-all whitespace-nowrap cursor-pointer text-slate-100 hover:text-primary"
                                 >
                                     {
                                         item.icon ?
@@ -95,7 +95,7 @@ const NavBar = ({ searchParams }) => {
                                     href={item.href}
                                     onClick={item.id === 'contact' ? handleContactClick : undefined}
                                     aria-label={`Go To ${item.href}`}
-                                    className="text-sm uppercase tracking-widest font-semibold flex items-center transition-all whitespace-nowrap cursor-pointer hover:text-primary"
+                                    className="text-sm uppercase tracking-widest font-semibold flex items-center transition-all whitespace-nowrap cursor-pointer text-slate-100 hover:text-primary"
                                 >
                                     {
                                         item.onlyIcon
@@ -116,7 +116,7 @@ const NavBar = ({ searchParams }) => {
                             {/* Dropdown Menu */}
                             {item.submenu && (
                                 <div className="absolute left-5 top-full pt-2 w-max opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 ease-in-out">
-                                    <div className="bg-white/95 backdrop-blur-sm shadow-lg rounded-md border border-gray-100 overflow-hidden flex flex-col min-w-[200px]">
+                                    <div className="bg-slate-900/95 backdrop-blur-sm shadow-lg rounded-md border border-slate-800 overflow-hidden flex flex-col min-w-[200px]">
                                         {/* Dropdown Header if needed */}
                                         {/* <div className="px-4 py-2 bg-gray-50 text-xs font-bold text-gray-700 uppercase tracking-wider border-b border-gray-100">
                                             {item.label}
@@ -125,7 +125,7 @@ const NavBar = ({ searchParams }) => {
                                             <Link
                                                 key={subItem.href}
                                                 href={subItem.href}
-                                                className="px-4 py-3 text-sm hover:bg-gray-50 transition-colors border-b last:border-0 border-gray-50 text-gray-700 hover:text-black"
+                                                className="px-4 py-3 text-sm hover:bg-slate-800 transition-colors border-b last:border-0 border-slate-800 text-slate-300 hover:text-white"
                                             >
                                                 {t(`nav.${subItem.label}`)}
                                             </Link>

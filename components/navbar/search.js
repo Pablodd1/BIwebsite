@@ -18,7 +18,7 @@ export default function SearchForm({ full = false, query: q, className = "" }) {
 
     return (
         <div className={`relative w-full ${className} ${full ? 'max-w-xl' : 'hidden sm:block max-w-xs'}`}>
-            <Search className={`absolute text-secondary w-5 h-5 left-3 top-1/2 -translate-y-1/2`} />
+            <Search className={`absolute ${full ? 'text-secondary' : 'text-slate-400'} w-5 h-5 left-3 top-1/2 -translate-y-1/2`} />
             <input
                 type="search"
                 inputMode="search"
@@ -28,7 +28,7 @@ export default function SearchForm({ full = false, query: q, className = "" }) {
                 onChange={(e) => setQuery(e.target.value)}
                 onKeyDown={handleKeyDown}
                 placeholder={t("search.placeholder") || "Search products..."}
-                className={`w-full ${full ? 'bg-white/95' : 'bg-accent1/75'} border border-transparent focus:border-primary rounded-full py-3 pl-11 pr-5 text-sm text-black placeholder:text-gray-700 focus:outline-none shadow-sm transition-all`}
+                className={`w-full ${full ? 'bg-white/95 text-black placeholder:text-gray-500' : 'bg-slate-800/80 text-white !text-white placeholder:text-white'} border border-slate-700/50 focus:border-primary rounded-full py-3 pl-11 pr-5 text-sm focus:outline-none shadow-sm transition-all`}
             />
         </div>
     );
