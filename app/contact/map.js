@@ -8,7 +8,7 @@ const MAP_URLS = {
 
 export default function Map() {
     const { activeBrand } = useBrand();
-    const src = MAP_URLS[activeBrand] || MAP_URLS.binw;
+    const src = "https://maps.google.com/maps?q=Cra%2042,%20Auto.%20S%20%2375-83,%20Itag%C3%BC%C3%AD,%20Medell%C3%ADn,%20Antioquia,%20Colombia&t=&z=15&ie=UTF8&iwloc=&output=embed";
 
     return (
         <div className="map-container overflow-hidden">
