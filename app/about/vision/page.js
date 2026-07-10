@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import React from 'react';
 import { Eye, Rocket, Globe2, Users, Award, TrendingUp, Building2, MapPin } from 'lucide-react';
@@ -158,7 +158,12 @@ export default function VisionPage() {
             <section className="py-20">
                 <div className="mx-auto max-w-6xl px-4">
                     <div className="grid md:grid-cols-2 gap-8">
-                        <div className="bg-black text-white p-8 md:p-10 rounded-2xl shadow-xl relative overflow-hidden">
+                        <a 
+                            href="https://maps.app.goo.gl/pzs9z3d1VLJ6udsU6" 
+                            target="_blank" 
+                            rel="noopener noreferrer" 
+                            className="bg-black text-white p-8 md:p-10 rounded-2xl shadow-xl relative overflow-hidden block hover:bg-gray-950 transition-all duration-300 text-center border border-gray-800 hover:border-gray-700"
+                        >
                             <div className="absolute top-0 left-0 w-32 h-32 bg-primary/10 rounded-full -ml-16 -mt-16 blur-2xl" />
                             <div className="flex justify-center mb-6">
                                 <MapPin className="w-12 h-12 text-yellow-400" />
@@ -171,15 +176,12 @@ export default function VisionPage() {
                             </address>
                             <div className="mt-8 text-center bg-white/5 py-4 rounded-xl backdrop-blur-sm">
                                 <p className="text-white font-bold text-xl tracking-wider">{t('whoWeAre.headquarters.phone', activeBrand)}</p>
+                                <p className="text-xs text-yellow-400 mt-4 hover:underline">{activeBrand === 'unitec' || language === 'es' ? 'Ver en Google Maps' : 'View on Google Maps'}</p>
                             </div>
-                        </div>
+                        </a>
                         <div className="rounded-2xl overflow-hidden h-64 md:h-auto min-h-[300px] shadow-lg border border-gray-100">
                             <iframe
-                                src={
-                                    activeBrand === 'binw'
-                                        ? "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3591.7221458267713!2d-80.32240568497836!3d25.83166598355336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9b9c2ffffffff%3A0x0!2s6120%20NW%2074th%20Ave%2C%20Doral%2C%20FL%2033166!5e0!3m2!1sen!2sus!4v1700000000000"
-                                        : "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.610895586514!2d-75.59048539999999!3d6.182801200000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e468350f650a9dd%3A0xb228a6687f4d86a1!2sIdeo%20Centro%20Comercial!5e0!3m2!1sen!2sus!4v1775932365388!5m2!1sen!2sus"
-                                }
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3591.7221458267713!2d-80.32240568497836!3d25.83166598355336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9b9c2ffffffff%3A0x0!2s6120%20NW%2074th%20Ave%2C%20Doral%2C%20FL%2033166!5e0!3m2!1sen!2sus!4v1700000000000"
                                 width="100%"
                                 height="100%"
                                 style={{ border: 0 }}

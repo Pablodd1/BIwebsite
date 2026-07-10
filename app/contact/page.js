@@ -1,4 +1,4 @@
-﻿"use client"
+"use client"
 
 import { useState } from 'react';
 import { motion, AnimatePresence } from "framer-motion"
@@ -175,7 +175,7 @@ export default function ContactPage() {
             <Map />
 
             {/* ================= QUICK CONTACT ================= */}
-            <section className="py-12 md:py-16">
+            <section className="py-12 md:py-16 relative" style={{ backgroundImage: 'url("/marble-bg.png")', backgroundSize: 'cover', backgroundRepeat: 'no-repeat' }}>
                 <div className="mx-auto max-w-6xl px-4">
                     <div className="flex justify-center items-center gap-4">
                         <motion.a
@@ -196,7 +196,7 @@ export default function ContactPage() {
             </section>
 
             {/* ================= CONTACT CONTENT ================= */}
-            <section className="py-12 md:py-20 bg-gray-50">
+            <section className="py-12 md:py-20 relative" style={{ backgroundImage: 'url("/marble-bg.png")', backgroundSize: 'cover', backgroundRepeat: 'no-repeat' }}>
                 <div className="mx-auto grid max-w-6xl gap-8 md:gap-12 px-4 lg:grid-cols-5">
                     <Stylish_H2 h2={t('contact.talkTeam')} className="col-span-full tracking-widest uppercase text-xs md:text-sm lg:text-lg" />
 
