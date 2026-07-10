@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import React from 'react';
 import { MapPin } from 'lucide-react';
@@ -6,9 +6,8 @@ import { useLanguage } from 'lib/LanguageContext';
 import { useBrand } from 'lib/BrandContext';
 
 export default function WhoWeArePage() {
-    const { language, t, getCompanyText } = useLanguage();
+    const { t, getCompanyText } = useLanguage();
     const { activeBrand } = useBrand();
-    const isSpanish = language === 'es';
     
     const companyKey = activeBrand === 'unitec' ? 'unitec' : 'binw';
     const companyName = getCompanyText(companyKey, 'name');
@@ -26,13 +25,13 @@ export default function WhoWeArePage() {
                     <h1 className="text-4xl font-bold mb-10 text-center uppercase tracking-wider">{t('whoWeAre.title', activeBrand)}</h1>
                 </div>
             </section>
- 
+
             <div className="container mx-auto px-6 py-20 max-w-4xl">
- 
+
             <section className="mb-16">
                 <div className="bg-gray-50 p-8 rounded-2xl border border-gray-100">
                     <h2 className="text-3xl font-bold mb-2">{companyName}</h2>
- 
+
                     <div className="text-lg text-gray-700 leading-relaxed text-justify space-y-4">
                         {intro && Array.isArray(intro) ? intro.map((paragraph, idx) => (
                             <p key={idx}>{paragraph}</p>
@@ -40,7 +39,7 @@ export default function WhoWeArePage() {
                     </div>
                 </div>
             </section>
- 
+
             <section className="grid md:grid-cols-2 gap-10 mb-16">
                 <div>
                     <h3 className="text-2xl font-bold mb-4 uppercase tracking-wide border-b-2 border-primary w-fit pb-1">{t('whoWeAre.mission.title', activeBrand)}</h3>
@@ -55,15 +54,10 @@ export default function WhoWeArePage() {
                     </p>
                 </div>
             </section>
- 
+
             {/* Headquarters with Google Maps */}
             <section className="grid md:grid-cols-2 gap-8 mb-16">
-                <a 
-                    href="https://maps.app.goo.gl/pzs9z3d1VLJ6udsU6" 
-                    target="_blank" 
-                    rel="noopener noreferrer" 
-                    className="bg-black text-white p-8 md:p-10 rounded-2xl block hover:bg-gray-950 transition-all duration-300 text-center border border-gray-800 hover:border-gray-700"
-                >
+                <div className="bg-black text-white p-8 md:p-10 rounded-2xl">
                     <div className="flex justify-center mb-6">
                         <MapPin className="w-12 h-12 text-yellow-400" />
                     </div>
@@ -75,12 +69,11 @@ export default function WhoWeArePage() {
                     </address>
                     <div className="mt-6 text-center">
                         <p className="text-white font-semibold">{getCompanyText(companyKey, 'headquarters.phone')}</p>
-                        <p className="text-xs text-yellow-400 mt-4 hover:underline">{isSpanish ? 'Ver en Google Maps' : 'View on Google Maps'}</p>
                     </div>
-                </a>
+                </div>
                 <div className="rounded-2xl overflow-hidden h-64 md:h-auto min-h-[300px]">
                     <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3591.7221458267713!2d-80.32240568497836!3d25.83166598355336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9b9c2ffffffff%3A0x0!2s6120%20NW%2074th%20Ave%2C%20Doral%2C%20FL%2033166!5e0!3m2!1sen!2sus!4v1700000000000"
+                        src="https://maps.google.com/maps?q=Cra%2042,%20Auto.%20S%20%2375-83,%20Itag%C3%BC%C3%AD,%20Medell%C3%ADn,%20Antioquia,%20Colombia&t=&z=15&ie=UTF8&iwloc=&output=embed"
                         width="100%"
                         height="100%"
                         style={{ border: 0 }}

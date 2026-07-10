@@ -8,7 +8,7 @@ const MAP_URLS = {
 
 export default function Map() {
     const { activeBrand } = useBrand();
-    const src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3591.7221458267713!2d-80.32240568497836!3d25.83166598355336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9b9c2ffffffff%3A0x0!2s6120%20NW%2074th%20Ave%2C%20Doral%2C%20FL%2033166!5e0!3m2!1sen!2sus!4v1700000000000";
+    const src = "https://maps.google.com/maps?q=Cra%2042,%20Auto.%20S%20%2375-83,%20Itag%C3%BC%C3%AD,%20Medell%C3%ADn,%20Antioquia,%20Colombia&t=&z=15&ie=UTF8&iwloc=&output=embed";
 
     return (
         <div className="map-container overflow-hidden">
