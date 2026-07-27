@@ -1,7 +1,7 @@
-"use client"
+﻿"use client"
 
 import { motion } from "framer-motion"
-import { Warehouse, Truck, Factory } from "lucide-react"
+import { Warehouse, HardHat, Ship } from "lucide-react"
 import MyButton from "My_UI/btn/main"
 import { useLanguage } from "lib/LanguageContext"
 import { useBrand } from "lib/BrandContext"
@@ -17,12 +17,12 @@ export default function WhoItsFor() {
             desc: t("whom.users.wholesalers.desc", activeBrand),
         },
         {
-            icon: Truck,
+            icon: HardHat,
             title: t("whom.users.importers.title", activeBrand),
             desc: t("whom.users.importers.desc", activeBrand),
         },
         {
-            icon: Factory,
+            icon: Ship,
             title: t("whom.users.manufacturers.title", activeBrand),
             desc: t("whom.users.manufacturers.desc", activeBrand),
         },
@@ -82,3 +82,4 @@ export default function WhoItsFor() {
         </section>
     )
 }
+

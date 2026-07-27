@@ -1,4 +1,4 @@
-const translations = {
+﻿const translations = {
     en: {
         company: {
             unitec: {
@@ -956,13 +956,14 @@ const translations = {
                 name: "UNITEC USA Design",
                 shortName: "UNITEC",
                 tagline: "",
-                heroTitle: "Soluciones en PVC y WPC para cada proyecto.",
-                heroSubtitle: "Calidad, diseño y logística internacional en un solo lugar.",
-                heroCta: "Conoce nuestros productos",
-                metaTitle: "Unitec USA Design | Logística de Contenedores para Materiales de Construcción",
-                metaDescription: "Especialistas en envío de contenedores con materiales de construcción PVC, WPC, SPC desde Miami a toda Latinoamérica. Soluciones arquitectónicas de alta calidad.",
-                whyTitle: "Por Qué UNITEC USA",
-                whyDescription: "Unitec USA Design es la misma empresa que Building Innovation, pero registrada y operando legalmente en los Estados Unidos para servir al mercado norteamericano y latinoamericano. Creemos que los materiales de construcción deben ser innovadores, duraderos y ambientalmente responsables.",
+                heroTitle: "PVC, WPC y más materiales constructivos listos para instalar en cada proyecto.",
+                heroSubtitle: "Más de 500 referencias con acabados de lujo y respaldo de fábrica. Fáciles de cotizar, fáciles de recibir.",
+                heroCta: "Explorar el catálogo",
+                heroCta2: "Hablar con un asesor",
+                metaTitle: "Unitec USA Design | Materiales Constructivos PVC y WPC — Colombia y Latam",
+                metaDescription: "Filial de Building Innovation en Colombia y Latinoamérica. Más de 500 referencias en PVC, WPC y SPC con logística de contenedor, asesoría y garantía certificada.",
+                whyTitle: "NUESTRO ORIGEN",
+                whyDescription: "Unitec es la filial de Building Innovation en Colombia y Latinoamérica. Desde hace 10 años somos el aliado logístico y constructivo de diseñadores, arquitectos, constructores, distribuidores e importadores que impulsan la evolución de la construcción tradicional hacia sistemas más eficientes, mediante materiales que aportan diseño, confort y estilo.",
                 aboutHero: {
                     title: "Construido para Escala.",
                     subtitle: "Diseñado para Contenedores.",
@@ -1112,7 +1113,7 @@ const translations = {
             collections: "Colecciones",
             productList: "Lista de Productos",
             catalogs: "Catálogos",
-            institutional: "Institucional",
+            institutional: "Nosotros",
             interiors: "Interiores",
             exteriors: "Exteriores",
             sale: "Venta",
@@ -1290,69 +1291,71 @@ const translations = {
             }
         },
         bulk: {
-            title: "Construido para volumen. Diseñado para control.",
-            subtitle: "Los carritos tradicionales no fueron hechos para el envío de contenedores. Construimos un sistema que piensa en volumen, no en conjeturas.",
+            title: "COMERCIALIZAMOS POR VOLUMEN CON SEGURIDAD Y TRAZABILIDAD",
+            subtitle: "Un carrito de compras tradicional no sirve para importar por contenedor. Por eso construimos una plataforma que piensa en metros cúbicos, no en unidades sueltas.",
             features: {
                 container: {
-                    title: "Comercio centrado en contenedores",
-                    desc: "Los productos se agrupan por contenedores, no en carritos dispersos. Esto garantiza una planificación de volumen precisa y eficiencia en el envío."
+                    title: "Compra por contenedor",
+                    desc: "Sus productos se organizan por contenedor desde el primer clic. Usted planifica el volumen real de su importación antes de invertir su dinero."
                 },
                 volume: {
-                    title: "Embalaje consciente del volumen",
-                    desc: "Cada producto contribuye a la capacidad del contenedor para que siempre sepa cuán lleno está su envío antes de pagar."
+                    title: "Capacidad visible en tiempo real",
+                    desc: "Cada referencia muestra el espacio que ocupa dentro del contenedor. Usted sabe qué tan llena va su carga antes de pagar y no cuando ya está en el puerto."
                 },
                 multi: {
-                    title: "Optimización multiproducto",
-                    desc: "Mezcla y combina múltiples productos de manera inteligente dentro de un solo contenedor para reducir el costo por unidad."
+                    title: "Combine referencias, baje el costo por unidad",
+                    desc: "Mezcle pisos, paneles, perfiles y acabados en un mismo contenedor. Cada metro cúbico aprovechado reduce el costo unitario de todo lo que viaja adentro."
                 },
                 logistics: {
-                    title: "Logística predecible",
-                    desc: "Sin sorpresas ocultas de envío. Lo que ves en el contenedor es exactamente lo que se envía."
+                    title: "Sin sorpresas en el flete",
+                    desc: "Lo que usted arma en el contenedor es exactamente lo que se despacha. Ni recargos ocultos, ni ajustes posteriores: el costo que ve en la cotización es el costo final."
                 }
             }
         },
         steps: {
-            title: "Cómo Funciona",
-            subtitle: "Simple, transparente y optimizado para una entrega segura",
+            title: "ASÍ PUEDE IMPORTAR NUESTROS PRODUCTOS",
+            subtitle: "TRANSFORMAMOS LA INDUSTRIA DE LA CONSTRUCCIÓN EN LATAM",
             items: {
                 select: {
-                    title: "Seleccionar Productos",
-                    desc: "Elija uno o múltiples productos"
+                    title: "01 Verifique y seleccione sus productos",
+                    desc: "Elija una o varias referencias del catálogo. Podrá apoyar su decisión con la ficha técnica que está al lado de cada artículo."
                 },
                 fill: {
-                    title: "Llenar el Contenedor",
-                    desc: "Los productos se empacan en un contenedor"
+                    title: "02 Póngalos en el carrito y en el contenedor",
+                    desc: "Vea en tiempo real cuánto espacio ocupa cada producto y cuánta capacidad le queda (un contenedor de 20 pies carga ≈ 33 m³)."
                 },
                 ship: {
-                    title: "Hazlo Enviar",
-                    desc: "El contenedor se envía de forma segura a usted"
+                    title: "03 Reciba los productos",
+                    desc: "Recójalos en nuestro showroom de Medellín, o impórtelos vía marítima con trazabilidad, bajo el Incoterm que usted elija (FOB o CIF)."
                 }
             },
-            footer: "Mantiene el control — los contenedores se actualizan automáticamente a medida que agrega o quita productos."
+            footer: "Usted mantiene el control — los contenedores se actualizan automáticamente a medida que agrega o quita productos."
         },
         whom: {
-            title: "Diseñado para compradores mayoristas serios",
-            description: "Si su negocio envía productos por contenedor — no por paquetes — esta plataforma le da la claridad y el control que el comercio electrónico tradicional nunca podría.",
-            btn: "Sobre Nosotros",
+            title: "UNITEC, UNA MARCA QUE PIENSA EN TODO EL SECTOR DE LA CONSTRUCCIÓN",
+            description: "Si su negocio construye, distribuye materiales o importa por volumen, Unitec es su aliado estratégico. Contamos con un amplio portafolio de productos, calidad y garantía certificada, y una plataforma que le entrega el control que un e-commerce tradicional no puede darle.",
+            btn: "Conozca cómo trabajamos",
             users: {
                 wholesalers: {
-                    title: "Mayoristas",
-                    desc: "Compre en volumen, consolide envíos y controle el costo por unidad con precisión."
+                    title: "Distribuidores y mayoristas",
+                    desc: "Compre en volumen, consolide despachos y controle el costo por unidad de cada referencia."
                 },
                 importers: {
-                    title: "Importadores y exportadores",
-                    desc: "Planifique cargas de contenedores con anticipación y elimine ineficiencias de envío."
+                    title: "Constructores y arquitectos",
+                    desc: "Especifique con ficha técnica, pida muestras y programe la llegada del material según el cronograma de su obra."
                 },
                 manufacturers: {
-                    title: "Fabricantes",
-                    desc: "Envíe productos a granel directamente a socios sin logística fragmentada."
+                    title: "Importadores",
+                    desc: "Planifique sus cargas con anticipación, elija su Incoterm (FOB o CIF) y elimine ineficiencias de flete."
                 }
             }
         },
         cta: {
-            title: "Empiece a llenar su primer contenedor",
-            text: "Explore productos, vea cómo caben dentro de los contenedores y envíe con total confianza — antes de pagar.",
-            btn: "Explorar Productos"
+            title: "Su próximo proyecto empieza aquí.",
+            text: "Explore aquí más de 500 referencias y escoja los productos con los que quiere darle un ambiente diferente a cada proyecto.",
+            btn: "Explorar productos",
+            btnSecondary: "Cotizar con un asesor por WhatsApp",
+            btnSecondaryHref: "https://wa.me/13054233147"
         },
         recommendations: {
             title: "Productos Más Vendidos",
@@ -1450,248 +1453,44 @@ const translations = {
             howItWorks: {
                 title: "Cómo Funciona Nuestro Sistema",
                 subtitle: "Nuestro flujo de trabajo refleja la planificación real de contenedores — no carritos tradicionales.",
-                steps: {
-                    create: {
-                        title: "Crear Contenedores",
-                        desc: "Cada pedido comienza con una definición física de contenedor incluyendo dimensiones internas."
-                    },
-                    fill: {
-                        title: "Llenar con Productos",
-                        desc: "Los productos se agregan basados en tamaño y cantidad, no solo precio."
-                    },
-                    ship: {
-                        title: "Enviar con Confianza",
-                        desc: "Sepa exactamente qué tan lleno está cada contenedor antes del envío."
-                    }
+        steps: {
+            title: "ASÍ PUEDE IMPORTAR NUESTROS PRODUCTOS",
+            subtitle: "TRANSFORMAMOS LA INDUSTRIA DE LA CONSTRUCCIÓN EN LATAM",
+            items: {
+                select: {
+                    title: "01 Verifique y seleccione sus productos",
+                    desc: "Elija una o varias referencias del catálogo. Podrá apoyar su decisión con la ficha técnica que está al lado de cada artículo."
+                },
+                fill: {
+                    title: "02 Póngalos en el carrito y en el contenedor",
+                    desc: "Vea en tiempo real cuánto espacio ocupa cada producto y cuánta capacidad le queda (un contenedor de 20 pies carga ≈ 33 m³)."
+                },
+                ship: {
+                    title: "03 Reciba los productos",
+                    desc: "Recójalos en nuestro showroom de Medellín, o impórtelos vía marítima con trazabilidad, bajo el Incoterm que usted elija (FOB o CIF)."
                 }
             },
-            whyChoose: {
-                title: "Por Qué Elegir Unitec",
-                description: "Nuestros productos están diseñados para superar a los materiales de construcción tradicionales mientras simplifican la instalación y la propiedad a largo plazo.",
-                features: {
-                    warranty: { title: "Garantías de 15–25 Años", desc: "Durabilidad líder en la industria respaldada por confianza." },
-                    waterproof: { title: "100% Impermeable", desc: "Sin pudrición, óxido o daño por humedad — nunca." },
-                    maintenance: { title: "Cero Mantenimiento", desc: "No requiere pintura, sellado o reacabado." },
-                    fire: { title: "Resistente al Fuego", desc: "Autoextinguible con baja propagación de llama." },
-                    eco: { title: "Ecológico", desc: "Materiales reciclables con contenido reciclado." },
-                    install: { title: "Instalación Rápida", desc: "Ahorre tiempo y mano de obra en cada proyecto." }
+            footer: "Usted mantiene el control — los contenedores se actualizan automáticamente a medida que agrega o quita productos."
+        },
+        whom: {
+            title: "UNITEC, UNA MARCA QUE PIENSA EN TODO EL SECTOR DE LA CONSTRUCCIÓN",
+            description: "Si su negocio construye, distribuye materiales o importa por volumen, Unitec es su aliado estratégico. Contamos con un amplio portafolio de productos, calidad y garantía certificada, y una plataforma que le entrega el control que un e-commerce tradicional no puede darle.",
+            btn: "Conozca cómo trabajamos",
+            users: {
+                wholesalers: {
+                    title: "Distribuidores y mayoristas",
+                    desc: "Compre en volumen, consolide despachos y controle el costo por unidad de cada referencia."
+                },
+                importers: {
+                    title: "Constructores y arquitectos",
+                    desc: "Especifique con ficha técnica, pida muestras y programe la llegada del material según el cronograma de su obra."
+                },
+                manufacturers: {
+                    title: "Importadores",
+                    desc: "Planifique sus cargas con anticipación, elija su Incoterm (FOB o CIF) y elimine ineficiencias de flete."
                 }
-            },
-            productRange: {
-                title: "Nuestra Gama de Productos",
-                description: "Con más de 100 líneas de productos en 22 categorías, Unitec entrega soluciones completas para construcción residencial y comercial.",
-                categories: {
-                    walls: "Paneles de Pared y Revestimiento",
-                    ceilings: "Techos y Cubiertas",
-                    flooring: "Sistemas de Piso",
-                    facades: "Soluciones de Fachada",
-                    acoustic: "Tratamientos Acústicos",
-                    decorative: "Acabados Decorativos"
-                }
-            },
-            trust: {
-                title: "Construido para Negocios Reales",
-                description: "Nuestra plataforma está diseñada para fabricantes, exportadores, distribuidores y empresas impulsadas por logística que mueven volumen serio — no compradores casuales.",
-                partners: [
-                    "Exportadores y Mayoristas",
-                    "Fabricantes que envían a granel",
-                    "Operaciones de comercio electrónico B2B",
-                    "Cadenas de suministro optimizadas para carga"
-                ],
-                different: {
-                    title: "Lo Que Nos Hace Diferentes",
-                    items: {
-                        container: { title: "UX Centrado en Contenedores", desc: "No fingimos la realidad física — el volumen se impone." },
-                        global: { title: "Listo para Global", desc: "Diseñado para lógica de envío internacional." },
-                        b2b: { title: "Enfocado en B2B", desc: "Cada característica sirve a equipos operacionales." }
-                    }
-                }
-            },
-            sustainability: {
-                title: "Sostenibilidad Integrada",
-                items: [
-                    "Contenido de PVC reciclado en todos los productos",
-                    "Totalmente reciclable al final de su vida útil",
-                    "Bajas emisiones de VOC para seguridad interior",
-                    "Larga vida útil reduce desperdicio de reemplazo",
-                    "Procesos de manufactura energéticamente eficientes"
-                ],
-                quality: {
-                    title: "Aseguramiento de Calidad",
-                    items: [
-                        "Instalaciones de manufactura certificadas ISO",
-                        "Pruebas de laboratorio de terceros",
-                        "Inspecciones estrictas en etapa de producción",
-                        "Validación de rendimiento en el mundo real",
-                        "Protocolos de mejora continua"
-                    ]
-                }
-            },
-            innovation: {
-                title: "Liderazgo en Innovación",
-                description: "Invertimos continuamente en investigación y desarrollo para entregar materiales avanzados, acabados modernos y sistemas de instalación más inteligentes.",
-                items: [
-                    "Tecnologías de manufactura avanzadas",
-                    "Aplicaciones de productos expandidas",
-                    "Durabilidad y rendimiento mejorados",
-                    "Tendencias modernas de colores y texturas"
-                ]
-            },
-            cta: {
-                title: "¿Listo para Enviar Más Inteligente?",
-                description: "Planifiquemos contenedores, no conjeturas.",
-                button: "Contacte a Nuestro Equipo"
             }
         },
-        whoWeAre: {
-            title: "Quiénes Somos",
-            company: "UNITEC USA Design",
-            tagline: "\"¡Diseñamos el futuro!\"",
-            intro: [
-                "Somos una empresa internacional dedicada al desarrollo y suministro de soluciones innovadoras para construcción y diseño arquitectónico.",
-                "Nos destacamos por combinar calidad, tecnología y funcionalidad en cada producto, transformando espacios y mejorando el valor de cada proyecto.",
-                "Nuestra filosofía se construye sobre excelencia, mejora continua y servicio personalizado, fortaleciendo alianzas a largo plazo con nuestros distribuidores y socios estratégicos en las Américas y alrededor del mundo.",
-                "Creemos en la innovación como fuerza motriz del crecimiento, y trabajamos todos los días para anticipar las tendencias del mercado.",
-                "Somos UNITEC USA Design: diseño, calidad y el futuro en cada detalle."
-            ],
-            mission: {
-                title: "Misión",
-                text: "En UNITEC USA Design, simplificamos el mundo de la construcción a través de soluciones innovadoras, sostenibles y de alto diseño, ofreciendo un portafolio integral de materiales arquitectónicos que crean valor, fomentan alianzas estratégicas y mejoran la experiencia de construcción y calidad de vida."
-            },
-            vision: {
-                title: "Visión",
-                text: "Convertirnos en una marca líder en innovación de construcción en América Latina, reconocida por simplificar procesos de construcción, marcar tendencias en diseño y sostenibilidad, y entregar soluciones arquitectónicas de alto valor. Aspiramos a construir un modelo de negocio escalable y colaborativo, fortaleciendo alianzas estratégicas y creando un impacto positivo en la industria, las personas y el medio ambiente."
-            },
-            headquarters: {
-                title: "Sede Global USA",
-                address: "6120 NW 74th Ave",
-                city: "Doral, Miami, FL 33166",
-                country: "Estados Unidos",
-                phone: "+57 314 233 2147"
-            },
-            bulk: {
-                title: "Construido para Volumen. Diseñado para el Control.",
-                subtitle: "Los carritos tradicionales no fueron hechos para el envío de contenedores. Construimos un sistema que piensa en volumen, no en conjeturas.",
-                features: {
-                    container: { title: "Comercio Centrado en Contenedores", desc: "Los productos se agrupan por contenedores, no en carritos dispersos. Esto garantiza una planificación de volumen precisa y eficiencia en el envío." },
-                    volume: { title: "Embalaje Consciente del Volumen", desc: "Cada producto contribuye a la capacidad del contenedor, así siempre sabrá qué tan lleno está su envío antes de pagar." },
-                    multi: { title: "Optimización Multiproducto", desc: "Combine múltiples productos de manera inteligente dentro de un solo contenedor para reducir el costo por unidad." },
-                    logistics: { title: "Logística Predecible", desc: "Sin sorpresas de envío ocultas. Lo que ve en el contenedor es exactamente lo que se envía." }
-                }
-            },
-            whom: {
-                title: "Diseñado para compradores mayoristas serios",
-                description: "Si su negocio envía productos por contenedor, no por paquetes, esta plataforma le brinda la claridad y el control que el comercio electrónico tradicional nunca podría ofrecer.",
-                btn: "Sobre Nosotros",
-                users: {
-                    wholesalers: { title: "Mayoristas", desc: "Compre en volumen, consolide envíos y controle el costo por unidad con precisión." },
-                    importers: { title: "Importadores y Exportadores", desc: "Planifique cargas de contenedores con anticipación y elimine ineficiencias de envío." },
-                    manufacturers: { title: "Fabricantes", desc: "Envíe productos a granel directamente a socios sin logística fragmentada." }
-                }
-            },
-            cta: {
-                title: "Comience a llenar su primer contenedor",
-                text: "Explore productos, vea cómo caben en los contenedores y envíe con total confianza, antes de finalizar la compra.",
-                btn: "Explorar Productos"
-            }
-        },
-        quality: {
-            title: "Comprometidos con la Calidad",
-            quote: "\"En UNITEC USA Design, la calidad no es un estándar—es una promesa.\"",
-            intro: "Cada producto pasa por procesos de control técnico y selección de materiales certificados, asegurando durabilidad, precisión y acabados de alta gama.",
-            commitment: "Nuestro compromiso con la excelencia se refleja en:",
-            pillars: {
-                audits: {
-                    title: "Auditorías de Calidad en Origen",
-                    desc: "Inspecciones rigurosas en China y LATAM para asegurar cumplimiento con nuestros altos estándares."
-                },
-                supervision: {
-                    title: "Supervisión Continua",
-                    desc: "Monitoreo en cada etapa de producción para garantizar consistencia y precisión."
-                },
-                partnerships: {
-                    title: "Alianzas Certificadas",
-                    desc: "Colaboración con fabricantes internacionalmente certificados alineados con nuestros objetivos de calidad."
-                },
-                innovation: {
-                    title: "Innovación Continua",
-                    desc: "Evolución constante para superar expectativas del mercado y establecer referencias de la industria."
-                }
-            },
-            closing: "Calidad que puede ver, sentir y confiar a través del tiempo"
-        },
-        businessModels: {
-            title: "Modelos de Negocio",
-            intro: "En UNITEC USA Design, operamos bajo los principales términos de comercio internacional para ofrecer flexibilidad, transparencia y seguridad para nuestros socios en todo el mundo.",
-            tradeTerms: {
-                title: "Términos de Comercio Internacional",
-                subtitle: "Ofrecemos Incoterms flexibles para acomodar diferentes necesidades de negocio y preferencias logísticas",
-                fob: {
-                    title: "FOB (Free on Board)",
-                    desc: "Manejamos la mercancía hasta que se carga a bordo de la embarcación en el puerto de embarque. Usted retiene el control sobre la logística de flete y seguro desde ese punto.",
-                    benefits: [
-                        "Gestionamos la logística previa al embarque",
-                        "El cliente controla flete marítimo y seguro",
-                        "Ideal para importadores experimentados"
-                    ]
-                },
-                cif: {
-                    title: "CIF (Cost, Insurance, and Freight)",
-                    desc: "Gestionamos costos, seguro y flete hasta su puerto de destino, proporcionando una experiencia de servicio completo sin complicaciones desde nuestra puerta hasta la suya.",
-                    benefits: [
-                        "Solución de envío todo-en-uno",
-                        "Manejamos seguro y flete",
-                        "Perfecto para operaciones optimizadas"
-                    ]
-                }
-            },
-            partnership: {
-                title: "Oportunidades de Alianza",
-                subtitle: "Trabajamos con varios tipos de socios para expandir nuestro alcance y servir mejor a los clientes",
-                types: {
-                    distributors: {
-                        title: "Distribuidores",
-                        desc: "Acuerdos de distribución exclusivos y no exclusivos para mercados regionales",
-                        benefits: ["Precios mayoristas competitivos", "Soporte de marketing", "Opciones de territorio exclusivo", "Acceso prioritario a productos"]
-                    },
-                    retailers: {
-                        title: "Minoristas",
-                        desc: "Asóciese con nosotros para ofrecer materiales de construcción premium a sus clientes",
-                        benefits: ["Protección de margen minorista", "Materiales de punto de venta", "Capacitación de productos", "Soporte de inventario"]
-                    },
-                    contractors: {
-                        title: "Contratistas",
-                        desc: "Precios por volumen y soporte de proyecto para profesionales de construcción",
-                        benefits: ["Precios basados en proyecto", "Consulta técnica", "Entrega prioritaria", "Descuentos por volumen"]
-                    },
-                    international: {
-                        title: "Internacional",
-                        desc: "Alianzas de exportación para distribución y representación global",
-                        benefits: ["Soporte de documentación de exportación", "Asistencia de aduanas", "Precios en múltiples monedas", "Coordinación logística global"]
-                    }
-                }
-            },
-            benefits: {
-                title: "Beneficios para Socios",
-                items: {
-                    flexibility: {
-                        title: "Flexibilidad en Logística y Costos",
-                        desc: "Soluciones adaptables para ajustarse a su presupuesto específico, cronograma y preferencias operacionales. Elija el modelo que funcione mejor para su negocio."
-                    },
-                    transparency: {
-                        title: "Transparencia Durante Todo el Proceso",
-                        desc: "Visibilidad y comunicación claras desde la producción hasta la entrega. Sin tarifas ocultas ni sorpresas en ninguna etapa del proceso."
-                    },
-                    tailored: {
-                        title: "Soluciones a Medida",
-                        desc: "Personalizamos nuestro servicio para asegurar operaciones seguras y eficientes con control total desde el origen hasta el destino, cumpliendo sus requisitos específicos."
-                    }
-                }
-            },
-            process: {
-                title: "Cómo Convertirse en Socio",
-                steps: ["Consulta", "Evaluación", "Acuerdo", "Lanzamiento"]
-            },
             cta: {
                 title: "¿Listo para Explorar una Alianza?",
                 desc: "Contacte a nuestro equipo de ventas para discutir qué modelo de negocio funciona mejor para sus necesidades. Estamos aquí para ayudarle a tener éxito."
@@ -1747,6 +1546,7 @@ const translations = {
             projectDetails: "Detalles del Proyecto",
             sendInquiry: "Enviar Consulta",
             responseTimeText: "Nuestro equipo generalmente responde dentro de 24 horas hábiles."
+        },
         },
         terms: {
             title: "Términos y Condiciones",
@@ -1880,3 +1680,10 @@ const translations = {
 };
 
 export default translations;
+
+
+
+
+
+
+

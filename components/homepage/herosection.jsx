@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import Image from "next/image";
 import { useState, useEffect } from "react";
@@ -50,6 +50,7 @@ export default function HeroSec() {
     const heroTitle = getCompanyText(companyKey, 'heroTitle');
     const heroSubtitle = getCompanyText(companyKey, 'heroSubtitle');
     const heroCta = getCompanyText(companyKey, 'heroCta');
+    const heroCta2 = getCompanyText(companyKey, 'heroCta2');
 
 
 
@@ -152,3 +153,4 @@ export default function HeroSec() {
         </main>
     );
 }
+
