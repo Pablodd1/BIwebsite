@@ -78,7 +78,7 @@ const Footer = () => {
         <footer
             className="relative text-gray-300 pt-16 overflow-hidden border-t border-slate-800"
             style={{
-                backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/raster/black_acrylic_marble.jpg')",
+                backgroundImage: "linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.65)), url('/raster/black_acrylic_marble.jpg')",
                 backgroundSize: "cover",
                 backgroundPosition: "center"
             }}
@@ -88,7 +88,7 @@ const Footer = () => {
                     <article className='lg:w-2/3 sm:col-span-2 md:col-span-3 lg:col-span-1' >
                         {/* Logo Section */}
                         <div className="text-center mb-0 w-fit mx-auto ">
-                            <Logo size={150} className="mx-auto bg-slate-900 p-1 mb-3 rounded-md border border-slate-800" />
+                            <Logo size={150} className="mx-auto bg-white p-3 mb-4 rounded-xl shadow-xl border border-slate-200 object-contain hover:scale-105 transition-transform duration-300" />
                         </div>
 
                         {/* Contact Section */}
@@ -205,6 +205,7 @@ const Footer = () => {
 };
 
 export default Footer;
+
 
 
 
