@@ -1,4 +1,4 @@
-
+﻿
 'use client';
 import { useState, useEffect } from "react";
 import { useSearchParams } from "next/navigation";
@@ -113,3 +113,4 @@ export default function Collections_UI({ searchParams, h1, description, productU
         </div>
     );
 }
+

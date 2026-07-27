@@ -1,4 +1,4 @@
-import productData from "StaticData/products_full.json";
+﻿import productData from "StaticData/products_full.json";
 import matchesSearchQuery from "./handleSearch";
 import { matchesSubcategoryFilter } from "lib/applyFilters";
 import fs from 'fs';
@@ -103,3 +103,4 @@ export async function GET(request) {
     items: safePaginated,
   });
 }
+

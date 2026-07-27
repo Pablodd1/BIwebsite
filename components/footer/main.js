@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import Link from 'next/link';
 import { motion } from "framer-motion";
@@ -75,8 +75,15 @@ const Footer = () => {
 
 
     return (
-        <footer className="bg-slate-950 text-gray-300 pt-16">
-            <div className="container mx-auto px-6">
+        <footer
+            className="relative text-gray-300 pt-16 overflow-hidden border-t border-slate-800"
+            style={{
+                backgroundImage: "linear-gradient(rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.85)), url('/raster/black_acrylic_marble.jpg')",
+                backgroundSize: "cover",
+                backgroundPosition: "center"
+            }}
+        >
+            <div className="container mx-auto px-6 relative z-10">
                 <section className=' grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-y-16 lg:gap-y-2' >
                     <article className='lg:w-2/3 sm:col-span-2 md:col-span-3 lg:col-span-1' >
                         {/* Logo Section */}
@@ -198,4 +205,5 @@ const Footer = () => {
 };
 
 export default Footer;
+
 
