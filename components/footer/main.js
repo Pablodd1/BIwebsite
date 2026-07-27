@@ -78,7 +78,7 @@ const Footer = () => {
         <footer
             className="relative text-gray-300 pt-16 overflow-hidden border-t border-slate-800"
             style={{
-                backgroundImage: "linear-gradient(rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.85)), url('/raster/black_acrylic_marble.jpg')",
+                backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/raster/black_acrylic_marble.jpg')",
                 backgroundSize: "cover",
                 backgroundPosition: "center"
             }}
@@ -205,5 +205,6 @@ const Footer = () => {
 };
 
 export default Footer;
+
 
 
