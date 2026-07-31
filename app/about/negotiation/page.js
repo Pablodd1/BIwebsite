@@ -3,9 +3,11 @@
 import React from 'react';
 import { Ship, Package, DollarSign, Handshake } from 'lucide-react';
 import { useLanguage } from 'lib/LanguageContext';
+import { useBrand } from 'lib/BrandContext';
 
 export default function NegotiationPage() {
     const { t } = useLanguage();
+    const { activeBrand } = useBrand();
     
     return (
         <main className="w-full">
@@ -15,9 +17,9 @@ export default function NegotiationPage() {
                 style={{ backgroundImage: 'linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(/raster/containers.webp)' }}
             >
                 <div className="mx-auto max-w-6xl px-4 text-center">
-                    <h1 className="text-4xl font-bold mb-4 uppercase tracking-wider">{t('negotiation.title')}</h1>
+                    <h1 className="text-4xl font-bold mb-4 uppercase tracking-wider">{t('negotiation.title', activeBrand)}</h1>
                     <p className="text-center text-gray-300 max-w-2xl mx-auto">
-                        {t('negotiation.intro')}
+                        {t('negotiation.intro', activeBrand)}
                     </p>
                 </div>
             </section>
@@ -33,7 +35,7 @@ export default function NegotiationPage() {
                     <div>
                         <h3 className="text-2xl font-bold mb-2">FOB</h3>
                         <p className="text-gray-600 leading-relaxed">
-                            {t('businessModels.tradeTerms.fob.desc')}
+                            {t('businessModels.tradeTerms.fob.desc', activeBrand)}
                         </p>
                     </div>
                 </div>
@@ -46,38 +48,38 @@ export default function NegotiationPage() {
                     <div>
                         <h3 className="text-2xl font-bold mb-2">CIF</h3>
                         <p className="text-gray-600 leading-relaxed">
-                            {t('businessModels.tradeTerms.cif.desc')}
+                            {t('businessModels.tradeTerms.cif.desc', activeBrand)}
                         </p>
                     </div>
                 </div>
             </div>
 
             <h2 className="text-2xl font-bold text-center mb-10 text-gray-900 border-b border-gray-200 pb-4 w-fit mx-auto">
-                {t('negotiation.options.title')}
+                {t('negotiation.options.title', activeBrand)}
             </h2>
 
             <div className="space-y-6">
                 <div className="flex items-start gap-4 p-6 bg-white rounded-xl border border-gray-100 hover:shadow-md transition-shadow">
                     <DollarSign className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
                     <div>
-                        <h3 className="text-xl font-bold mb-1">{t('negotiation.options.items.flexibility.title')}</h3>
-                        <p className="text-gray-600">{t('negotiation.options.items.flexibility.desc')}</p>
+                        <h3 className="text-xl font-bold mb-1">{t('negotiation.options.items.flexibility.title', activeBrand)}</h3>
+                        <p className="text-gray-600">{t('negotiation.options.items.flexibility.desc', activeBrand)}</p>
                     </div>
                 </div>
 
                 <div className="flex items-start gap-4 p-6 bg-white rounded-xl border border-gray-100 hover:shadow-md transition-shadow">
                     <Handshake className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
                     <div>
-                        <h3 className="text-xl font-bold mb-1">{t('negotiation.options.items.transparency.title')}</h3>
-                        <p className="text-gray-600">{t('negotiation.options.items.transparency.desc')}</p>
+                        <h3 className="text-xl font-bold mb-1">{t('negotiation.options.items.transparency.title', activeBrand)}</h3>
+                        <p className="text-gray-600">{t('negotiation.options.items.transparency.desc', activeBrand)}</p>
                     </div>
                 </div>
 
                 <div className="flex items-start gap-4 p-6 bg-white rounded-xl border border-gray-100 hover:shadow-md transition-shadow">
                     <Package className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
                     <div>
-                        <h3 className="text-xl font-bold mb-1">{t('negotiation.options.items.solutions.title')}</h3>
-                        <p className="text-gray-600">{t('negotiation.options.items.solutions.desc')}</p>
+                        <h3 className="text-xl font-bold mb-1">{t('negotiation.options.items.solutions.title', activeBrand)}</h3>
+                        <p className="text-gray-600">{t('negotiation.options.items.solutions.desc', activeBrand)}</p>
                     </div>
                 </div>
             </div>
