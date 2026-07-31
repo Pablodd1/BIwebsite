@@ -301,6 +301,31 @@
                 title: "Product Overview",
                 text: "Unitec USA Design PVC and WPC materials combine durability, aesthetics, and eco-conscious manufacturing. Engineered for long-lasting performance, our products are 100% waterproof, maintenance-free, and ideal for both residential and commercial projects.",
                 features: {
+        quality: {
+            title: "Comprometidos con la Calidad",
+            quote: "\"En UNITEC USA Design, la calidad no es un estándar—es una promesa.\"",
+            intro: "Cada producto pasa por procesos de control técnico y selección de materiales certificados, asegurando durabilidad, precisión y acabados de alta gama.",
+            closing: "Calidad que puede ver, sentir y confiar a través del tiempo",
+            commitment: "Nuestros Pilares de Calidad",
+            pillars: {
+                audits: {
+                    title: "Auditorías Técnicas de Fábrica",
+                    desc: "Inspeccionamos directamente las instalaciones de fabricación para verificar la consistencia del material, la precisión dimensional y la resistencia estructural."
+                },
+                supervision: {
+                    title: "Supervisión de Carga de Contenedores",
+                    desc: "Cada contenedor se empaca y asegura bajo estricta supervisión para evitar daños durante el tránsito marítimo y terrestre."
+                },
+                partnerships: {
+                    title: "Alianzas de Manufactura Certificada",
+                    desc: "Trabajamos exclusivamente con fabricantes certificados que cumplen con estándares internacionales de calidad y sostenibilidad ISO."
+                },
+                innovation: {
+                    title: "Innovación Continua en Materiales",
+                    desc: "Evaluamos y mejoramos constantemente las formulaciones de PVC, WPC y SPC para ofrecer la máxima resistencia térmica, acústica e hidrófuga."
+                }
+            }
+        },
                     installation: "Quick and efficient installation",
                     precision: "Precision-engineered dimensions for uniformity",
                     quality: "Architectural-grade material quality",
@@ -984,7 +1009,26 @@
                     title: "Comprometidos con la Calidad",
                     quote: "\"En UNITEC USA, la calidad no es un estándar—es una promesa.\"",
                     intro: "Cada producto pasa por procesos de control técnico y selección de materiales certificados, asegurando durabilidad, precisión y acabados de alta gama.",
-                    closing: "Calidad que puede ver, sentir y confiar a través del tiempo"
+                    closing: "Calidad que puede ver, sentir y confiar a través del tiempo",
+                    commitment: "Nuestros Pilares de Calidad",
+                    pillars: {
+                        audits: {
+                            title: "Auditorías Técnicas de Fábrica",
+                            desc: "Inspeccionamos directamente las instalaciones de fabricación para verificar la consistencia del material, la precisión dimensional y la resistencia estructural."
+                        },
+                        supervision: {
+                            title: "Supervisión de Carga de Contenedores",
+                            desc: "Cada contenedor se empaca y asegura bajo estricta supervisión para evitar daños durante el tránsito marítimo y terrestre."
+                        },
+                        partnerships: {
+                            title: "Alianzas de Manufactura Certificada",
+                            desc: "Trabajamos exclusivamente con fabricantes certificados que cumplen con estándares internacionales de calidad y sostenibilidad ISO."
+                        },
+                        innovation: {
+                            title: "Innovación Continua en Materiales",
+                            desc: "Evaluamos y mejoramos constantemente las formulaciones de PVC, WPC y SPC para ofrecer la máxima resistencia térmica, acústica e hidrófuga."
+                        }
+                    }
                 },
                 whoWeAre: {
                     title: "Quiénes Somos",
@@ -1062,7 +1106,26 @@
                     title: "Comprometidos con la Calidad",
                     quote: "\"En UNITEC USA Design, la calidad no es un estándar—es una promesa.\"",
                     intro: "Cada producto pasa por procesos de control técnico y selección de materiales certificados, asegurando durabilidad, precisión y acabados de alta gama.",
-                    closing: "Calidad que puede ver, sentir y confiar a través del tiempo"
+                    closing: "Calidad que puede ver, sentir y confiar a través del tiempo",
+                    commitment: "Nuestros Pilares de Calidad",
+                    pillars: {
+                        audits: {
+                            title: "Auditorías Técnicas de Fábrica",
+                            desc: "Inspeccionamos directamente las instalaciones de fabricación para verificar la consistencia del material, la precisión dimensional y la resistencia estructural."
+                        },
+                        supervision: {
+                            title: "Supervisión de Carga de Contenedores",
+                            desc: "Cada contenedor se empaca y asegura bajo estricta supervisión para evitar daños durante el tránsito marítimo y terrestre."
+                        },
+                        partnerships: {
+                            title: "Alianzas de Manufactura Certificada",
+                            desc: "Trabajamos exclusivamente con fabricantes certificados que cumplen con estándares internacionales de calidad y sostenibilidad ISO."
+                        },
+                        innovation: {
+                            title: "Innovación Continua en Materiales",
+                            desc: "Evaluamos y mejoramos constantemente las formulaciones de PVC, WPC y SPC para ofrecer la máxima resistencia térmica, acústica e hidrófuga."
+                        }
+                    }
                 },
                 whoWeAre: {
                     title: "Quiénes Somos",

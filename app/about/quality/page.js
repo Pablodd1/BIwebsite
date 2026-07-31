@@ -41,7 +41,7 @@ export default function QualityPage() {
             </div>
 
             <h2 className="text-2xl font-bold text-center mb-10 text-gray-900 border-b border-gray-200 pb-4 w-fit mx-auto">
-                {t('quality.commitment')}
+                {t('quality.commitment', activeBrand)}
             </h2>
 
             <div className="grid md:grid-cols-2 gap-6 mb-16">
@@ -49,32 +49,32 @@ export default function QualityPage() {
                     <div className="w-12 h-12 bg-gray-100 rounded-lg flex items-center justify-center mb-4">
                         <ShieldCheck className="w-6 h-6 text-black" />
                     </div>
-                    <h3 className="text-xl font-bold mb-3">{t('quality.pillars.audits.title')}</h3>
-                    <p className="text-gray-600">{t('quality.pillars.audits.desc')}</p>
+                    <h3 className="text-xl font-bold mb-3">{t('quality.pillars.audits.title', activeBrand)}</h3>
+                    <p className="text-gray-600">{t('quality.pillars.audits.desc', activeBrand)}</p>
                 </div>
 
                 <div className="bg-white p-8 rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
                     <div className="w-12 h-12 bg-gray-100 rounded-lg flex items-center justify-center mb-4">
                         <Eye className="w-6 h-6 text-black" />
                     </div>
-                    <h3 className="text-xl font-bold mb-3">{t('quality.pillars.supervision.title')}</h3>
-                    <p className="text-gray-600">{t('quality.pillars.supervision.desc')}</p>
+                    <h3 className="text-xl font-bold mb-3">{t('quality.pillars.supervision.title', activeBrand)}</h3>
+                    <p className="text-gray-600">{t('quality.pillars.supervision.desc', activeBrand)}</p>
                 </div>
 
                 <div className="bg-white p-8 rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
                     <div className="w-12 h-12 bg-gray-100 rounded-lg flex items-center justify-center mb-4">
                         <Award className="w-6 h-6 text-black" />
                     </div>
-                    <h3 className="text-xl font-bold mb-3">{t('quality.pillars.partnerships.title')}</h3>
-                    <p className="text-gray-600">{t('quality.pillars.partnerships.desc')}</p>
+                    <h3 className="text-xl font-bold mb-3">{t('quality.pillars.partnerships.title', activeBrand)}</h3>
+                    <p className="text-gray-600">{t('quality.pillars.partnerships.desc', activeBrand)}</p>
                 </div>
 
                 <div className="bg-white p-8 rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
                     <div className="w-12 h-12 bg-gray-100 rounded-lg flex items-center justify-center mb-4">
                         <TrendingUp className="w-6 h-6 text-black" />
                     </div>
-                    <h3 className="text-xl font-bold mb-3">{t('quality.pillars.innovation.title')}</h3>
-                    <p className="text-gray-600">{t('quality.pillars.innovation.desc')}</p>
+                    <h3 className="text-xl font-bold mb-3">{t('quality.pillars.innovation.title', activeBrand)}</h3>
+                    <p className="text-gray-600">{t('quality.pillars.innovation.desc', activeBrand)}</p>
                 </div>
             </div>
 
