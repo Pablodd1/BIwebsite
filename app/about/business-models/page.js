@@ -3,9 +3,11 @@
 import React from 'react';
 import { Briefcase, Handshake, TrendingUp, Globe, Ship, Package, DollarSign, Users, CheckCircle2, ArrowRight, Building2, Store, HardHat } from 'lucide-react';
 import { useLanguage } from 'lib/LanguageContext';
+import { useBrand } from 'lib/BrandContext';
 
 export default function BusinessModelsPage() {
     const { t } = useLanguage();
+    const { activeBrand } = useBrand();
     
     return (
         <main className="w-full">
@@ -16,10 +18,10 @@ export default function BusinessModelsPage() {
             >
                 <div className="mx-auto max-w-6xl px-4 text-center">
                     <h1 className="text-4xl md:text-5xl font-bold mb-6 uppercase tracking-wider">
-                        {t('businessModels.title')}
+                        {t('businessModels.title', activeBrand)}
                     </h1>
                     <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
-                        {t('businessModels.intro')}
+                        {t('businessModels.intro', activeBrand)}
                     </p>
                 </div>
             </section>
@@ -28,10 +30,10 @@ export default function BusinessModelsPage() {
             <section className="py-20">
                 <div className="mx-auto max-w-6xl px-4">
                     <h2 className="text-3xl font-bold text-center mb-4 uppercase tracking-wide">
-                        {t('businessModels.tradeTerms.title')}
+                        {t('businessModels.tradeTerms.title', activeBrand)}
                     </h2>
                     <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
-                        {t('businessModels.tradeTerms.subtitle')}
+                        {t('businessModels.tradeTerms.subtitle', activeBrand)}
                     </p>
 
                     <div className="grid md:grid-cols-2 gap-8">
@@ -42,14 +44,14 @@ export default function BusinessModelsPage() {
                                     <Ship className="w-8 h-8 text-white group-hover:text-white" />
                                 </div>
                                 <div>
-                                    <h3 className="text-2xl font-bold">{t('businessModels.tradeTerms.fob.title')}</h3>
+                                    <h3 className="text-2xl font-bold">{t('businessModels.tradeTerms.fob.title', activeBrand)}</h3>
                                 </div>
                             </div>
                             <p className="text-gray-600 leading-relaxed mb-6">
-                                {t('businessModels.tradeTerms.fob.desc')}
+                                {t('businessModels.tradeTerms.fob.desc', activeBrand)}
                             </p>
                             <ul className="space-y-3">
-                                {t('businessModels.tradeTerms.fob.benefits') && Array.isArray(t('businessModels.tradeTerms.fob.benefits')) ? t('businessModels.tradeTerms.fob.benefits').map((benefit, idx) => (
+                                {t('businessModels.tradeTerms.fob.benefits', activeBrand) && Array.isArray(t('businessModels.tradeTerms.fob.benefits', activeBrand)) ? t('businessModels.tradeTerms.fob.benefits', activeBrand).map((benefit, idx) => (
                                     <li key={idx} className="flex items-start gap-3 text-sm text-gray-700">
                                         <CheckCircle2 className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
                                         <span>{benefit}</span>
@@ -65,14 +67,14 @@ export default function BusinessModelsPage() {
                                     <Package className="w-8 h-8 text-white group-hover:text-white" />
                                 </div>
                                 <div>
-                                    <h3 className="text-2xl font-bold">{t('businessModels.tradeTerms.cif.title')}</h3>
+                                    <h3 className="text-2xl font-bold">{t('businessModels.tradeTerms.cif.title', activeBrand)}</h3>
                                 </div>
                             </div>
                             <p className="text-gray-600 leading-relaxed mb-6">
-                                {t('businessModels.tradeTerms.cif.desc')}
+                                {t('businessModels.tradeTerms.cif.desc', activeBrand)}
                             </p>
                             <ul className="space-y-3">
-                                {t('businessModels.tradeTerms.cif.benefits') && Array.isArray(t('businessModels.tradeTerms.cif.benefits')) ? t('businessModels.tradeTerms.cif.benefits').map((benefit, idx) => (
+                                {t('businessModels.tradeTerms.cif.benefits', activeBrand) && Array.isArray(t('businessModels.tradeTerms.cif.benefits', activeBrand)) ? t('businessModels.tradeTerms.cif.benefits', activeBrand).map((benefit, idx) => (
                                     <li key={idx} className="flex items-start gap-3 text-sm text-gray-700">
                                         <CheckCircle2 className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
                                         <span>{benefit}</span>
@@ -88,14 +90,14 @@ export default function BusinessModelsPage() {
             <section className="bg-gray-50 py-20">
                 <div className="mx-auto max-w-6xl px-4">
                     <h2 className="text-3xl font-bold text-center mb-4 uppercase tracking-wide">
-                        {t('businessModels.partnership.title')}
+                        {t('businessModels.partnership.title', activeBrand)}
                     </h2>
                     <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
-                        {t('businessModels.partnership.subtitle')}
+                        {t('businessModels.partnership.subtitle', activeBrand)}
                     </p>
 
                     <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-                        {Object.entries(t('businessModels.partnership') || {})
+                        {Object.entries(t('businessModels.partnership', activeBrand) || {})
                             .filter(([key]) => ['distributors', 'retailers', 'contractors', 'international'].includes(key))
                             .map(([key, type]) => (
                             <div key={key} className="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
@@ -125,7 +127,7 @@ export default function BusinessModelsPage() {
             <section className="py-20">
                 <div className="mx-auto max-w-6xl px-4">
                     <h2 className="text-3xl font-bold text-center mb-12 uppercase tracking-wide">
-                        {t('businessModels.benefits.title')}
+                        {t('businessModels.benefits.title', activeBrand)}
                     </h2>
 
                     <div className="grid md:grid-cols-3 gap-6">
@@ -133,22 +135,22 @@ export default function BusinessModelsPage() {
                             <div className="w-14 h-14 bg-white rounded-xl shadow-sm flex items-center justify-center mb-6 group-hover:bg-primary transition-colors duration-300">
                                 <DollarSign className="w-7 h-7 text-black group-hover:text-white" />
                             </div>
-                            <h3 className="text-xl font-bold mb-3">{t('businessModels.benefits.items.flexibility.title')}</h3>
-                            <p className="text-gray-600 leading-relaxed">{t('businessModels.benefits.items.flexibility.desc')}</p>
+                            <h3 className="text-xl font-bold mb-3">{t('businessModels.benefits.items.flexibility.title', activeBrand)}</h3>
+                            <p className="text-gray-600 leading-relaxed">{t('businessModels.benefits.items.flexibility.desc', activeBrand)}</p>
                         </div>
                         <div className="bg-gray-50 p-8 rounded-2xl border border-gray-100 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group">
                             <div className="w-14 h-14 bg-white rounded-xl shadow-sm flex items-center justify-center mb-6 group-hover:bg-primary transition-colors duration-300">
                                 <Handshake className="w-7 h-7 text-black group-hover:text-white" />
                             </div>
-                            <h3 className="text-xl font-bold mb-3">{t('businessModels.benefits.items.transparency.title')}</h3>
-                            <p className="text-gray-600 leading-relaxed">{t('businessModels.benefits.items.transparency.desc')}</p>
+                            <h3 className="text-xl font-bold mb-3">{t('businessModels.benefits.items.transparency.title', activeBrand)}</h3>
+                            <p className="text-gray-600 leading-relaxed">{t('businessModels.benefits.items.transparency.desc', activeBrand)}</p>
                         </div>
                         <div className="bg-gray-50 p-8 rounded-2xl border border-gray-100 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group">
                             <div className="w-14 h-14 bg-white rounded-xl shadow-sm flex items-center justify-center mb-6 group-hover:bg-primary transition-colors duration-300">
                                 <Briefcase className="w-7 h-7 text-black group-hover:text-white" />
                             </div>
-                            <h3 className="text-xl font-bold mb-3">{t('businessModels.benefits.items.tailored.title')}</h3>
-                            <p className="text-gray-600 leading-relaxed">{t('businessModels.benefits.items.tailored.desc')}</p>
+                            <h3 className="text-xl font-bold mb-3">{t('businessModels.benefits.items.tailored.title', activeBrand)}</h3>
+                            <p className="text-gray-600 leading-relaxed">{t('businessModels.benefits.items.tailored.desc', activeBrand)}</p>
                         </div>
                     </div>
                 </div>
@@ -158,10 +160,10 @@ export default function BusinessModelsPage() {
             <section className="bg-black py-20 text-white">
                 <div className="mx-auto max-w-4xl px-4 text-center">
                     <h2 className="text-3xl font-bold mb-6">
-                        {t('businessModels.cta.title')}
+                        {t('businessModels.cta.title', activeBrand)}
                     </h2>
                     <p className="text-gray-300 mb-8 max-w-2xl mx-auto">
-                        {t('businessModels.cta.desc')}
+                        {t('businessModels.cta.desc', activeBrand)}
                     </p>
                     <a 
                         href="/contact" 

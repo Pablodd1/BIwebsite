@@ -2,6 +2,77 @@
     en: {
         company: {
             unitec: {
+        businessModels: {
+            title: "Modelos de Negocio",
+            intro: "En UNITEC USA Design, operamos bajo los principales términos de comercio internacional para ofrecer flexibilidad, transparencia y seguridad a nuestros socios en todo el mundo.",
+            tradeTerms: {
+                title: "Términos de Comercio Internacional",
+                subtitle: "Ofrecemos Incoterms flexibles para adaptarnos a diferentes necesidades comerciales y preferencias logísticas",
+                fob: {
+                    title: "FOB (Free on Board - Libre a Bordo)",
+                    desc: "Manejamos la mercancía hasta que es cargada a bordo del buque en el puerto de embarque. Usted mantiene el control del flete marítimo y el seguro desde ese punto.",
+                    benefits: [
+                        "Gestionamos la logística previa al embarque",
+                        "El cliente controla el flete marítimo y el seguro",
+                        "Ideal para importadores experimentados"
+                    ]
+                },
+                cif: {
+                    title: "CIF (Cost, Insurance, and Freight - Costo, Seguro y Flete)",
+                    desc: "Gestionamos los costos, el seguro y el flete hasta su puerto de destino, ofreciendo una experiencia de servicio completa y sin complicaciones.",
+                    benefits: [
+                        "Solución de envío todo incluido",
+                        "Nos encargamos del seguro y flete marítimo",
+                        "Perfecto para operaciones optimizadas"
+                    ]
+                }
+            },
+            partnership: {
+                title: "Oportunidades de Alianza Comercial",
+                subtitle: "Trabajamos con diversos tipos de socios para expandir nuestro alcance y brindar el mejor servicio",
+                distributors: {
+                    title: "Distribuidores",
+                    desc: "Acuerdos de distribución exclusiva y no exclusiva para mercados regionales",
+                    benefits: ["Precios mayoristas competitivos", "Soporte de marketing", "Opción de territorio exclusivo", "Acceso prioritario a productos"]
+                },
+                retailers: {
+                    title: "Comercializadores",
+                    desc: "Asóciese con nosotros para ofrecer materiales constructivos premium a sus clientes",
+                    benefits: ["Protección de margen comercial", "Material de punto de venta", "Capacitación de producto", "Soporte de inventario"]
+                },
+                contractors: {
+                    title: "Constructores y Arquitectos",
+                    desc: "Precios por volumen y soporte de proyecto para profesionales de la construcción",
+                    benefits: ["Precios basados en proyectos", "Asesoría técnica especializada", "Entrega prioritaria", "Descuentos por volumen"]
+                },
+                international: {
+                    title: "Socios Internacionales",
+                    desc: "Alianzas de exportación para distribución y representación global",
+                    benefits: ["Soporte en documentación de exportación", "Asistencia aduanera", "Precios en múltiples monedas", "Coordinación logística global"]
+                }
+            },
+            benefits: {
+                title: "Beneficios para Nuestros Socios",
+                items: {
+                    flexibility: {
+                        title: "Flexibilidad en Logística y Costos",
+                        desc: "Soluciones adaptables para ajustarse a su presupuesto, cronograma y preferencias operativas específicas. Elija el modelo que mejor funcione para su negocio."
+                    },
+                    transparency: {
+                        title: "Transparencia en Todo el Proceso",
+                        desc: "Visibilidad y comunicación claras desde la producción hasta la entrega. Sin tarifas ocultas ni sorpresas en ninguna etapa."
+                    },
+                    tailored: {
+                        title: "Soluciones a la Medida",
+                        desc: "Personalizamos nuestro servicio para asegurar operaciones seguras y eficientes con control total desde el origen hasta el destino."
+                    }
+                }
+            },
+            cta: {
+                title: "¿Listo para Explorar una Alianza?",
+                desc: "Contacte a nuestro equipo de ventas para discutir qué modelo de negocio funciona mejor para sus necesidades. Estamos aquí para ayudarle a tener éxito."
+            }
+        },
                 name: "UNITEC USA Design",
                 shortName: "UNITEC",
                 tagline: "",
@@ -80,6 +151,77 @@
                 }
             },
             binw: {
+        businessModels: {
+            title: "Modelos de Negocio",
+            intro: "En UNITEC USA Design, operamos bajo los principales términos de comercio internacional para ofrecer flexibilidad, transparencia y seguridad a nuestros socios en todo el mundo.",
+            tradeTerms: {
+                title: "Términos de Comercio Internacional",
+                subtitle: "Ofrecemos Incoterms flexibles para adaptarnos a diferentes necesidades comerciales y preferencias logísticas",
+                fob: {
+                    title: "FOB (Free on Board - Libre a Bordo)",
+                    desc: "Manejamos la mercancía hasta que es cargada a bordo del buque en el puerto de embarque. Usted mantiene el control del flete marítimo y el seguro desde ese punto.",
+                    benefits: [
+                        "Gestionamos la logística previa al embarque",
+                        "El cliente controla el flete marítimo y el seguro",
+                        "Ideal para importadores experimentados"
+                    ]
+                },
+                cif: {
+                    title: "CIF (Cost, Insurance, and Freight - Costo, Seguro y Flete)",
+                    desc: "Gestionamos los costos, el seguro y el flete hasta su puerto de destino, ofreciendo una experiencia de servicio completa y sin complicaciones.",
+                    benefits: [
+                        "Solución de envío todo incluido",
+                        "Nos encargamos del seguro y flete marítimo",
+                        "Perfecto para operaciones optimizadas"
+                    ]
+                }
+            },
+            partnership: {
+                title: "Oportunidades de Alianza Comercial",
+                subtitle: "Trabajamos con diversos tipos de socios para expandir nuestro alcance y brindar el mejor servicio",
+                distributors: {
+                    title: "Distribuidores",
+                    desc: "Acuerdos de distribución exclusiva y no exclusiva para mercados regionales",
+                    benefits: ["Precios mayoristas competitivos", "Soporte de marketing", "Opción de territorio exclusivo", "Acceso prioritario a productos"]
+                },
+                retailers: {
+                    title: "Comercializadores",
+                    desc: "Asóciese con nosotros para ofrecer materiales constructivos premium a sus clientes",
+                    benefits: ["Protección de margen comercial", "Material de punto de venta", "Capacitación de producto", "Soporte de inventario"]
+                },
+                contractors: {
+                    title: "Constructores y Arquitectos",
+                    desc: "Precios por volumen y soporte de proyecto para profesionales de la construcción",
+                    benefits: ["Precios basados en proyectos", "Asesoría técnica especializada", "Entrega prioritaria", "Descuentos por volumen"]
+                },
+                international: {
+                    title: "Socios Internacionales",
+                    desc: "Alianzas de exportación para distribución y representación global",
+                    benefits: ["Soporte en documentación de exportación", "Asistencia aduanera", "Precios en múltiples monedas", "Coordinación logística global"]
+                }
+            },
+            benefits: {
+                title: "Beneficios para Nuestros Socios",
+                items: {
+                    flexibility: {
+                        title: "Flexibilidad en Logística y Costos",
+                        desc: "Soluciones adaptables para ajustarse a su presupuesto, cronograma y preferencias operativas específicas. Elija el modelo que mejor funcione para su negocio."
+                    },
+                    transparency: {
+                        title: "Transparencia en Todo el Proceso",
+                        desc: "Visibilidad y comunicación claras desde la producción hasta la entrega. Sin tarifas ocultas ni sorpresas en ninguna etapa."
+                    },
+                    tailored: {
+                        title: "Soluciones a la Medida",
+                        desc: "Personalizamos nuestro servicio para asegurar operaciones seguras y eficientes con control total desde el origen hasta el destino."
+                    }
+                }
+            },
+            cta: {
+                title: "¿Listo para Explorar una Alianza?",
+                desc: "Contacte a nuestro equipo de ventas para discutir qué modelo de negocio funciona mejor para sus necesidades. Estamos aquí para ayudarle a tener éxito."
+            }
+        },
                 name: "UNITEC USA Design",
                 shortName: "BINW",
                 tagline: "We Design the Future!",
@@ -301,6 +443,77 @@
                 title: "Product Overview",
                 text: "Unitec USA Design PVC and WPC materials combine durability, aesthetics, and eco-conscious manufacturing. Engineered for long-lasting performance, our products are 100% waterproof, maintenance-free, and ideal for both residential and commercial projects.",
                 features: {
+        businessModels: {
+            title: "Modelos de Negocio",
+            intro: "En UNITEC USA Design, operamos bajo los principales términos de comercio internacional para ofrecer flexibilidad, transparencia y seguridad a nuestros socios en todo el mundo.",
+            tradeTerms: {
+                title: "Términos de Comercio Internacional",
+                subtitle: "Ofrecemos Incoterms flexibles para adaptarnos a diferentes necesidades comerciales y preferencias logísticas",
+                fob: {
+                    title: "FOB (Free on Board - Libre a Bordo)",
+                    desc: "Manejamos la mercancía hasta que es cargada a bordo del buque en el puerto de embarque. Usted mantiene el control del flete marítimo y el seguro desde ese punto.",
+                    benefits: [
+                        "Gestionamos la logística previa al embarque",
+                        "El cliente controla el flete marítimo y el seguro",
+                        "Ideal para importadores experimentados"
+                    ]
+                },
+                cif: {
+                    title: "CIF (Cost, Insurance, and Freight - Costo, Seguro y Flete)",
+                    desc: "Gestionamos los costos, el seguro y el flete hasta su puerto de destino, ofreciendo una experiencia de servicio completa y sin complicaciones.",
+                    benefits: [
+                        "Solución de envío todo incluido",
+                        "Nos encargamos del seguro y flete marítimo",
+                        "Perfecto para operaciones optimizadas"
+                    ]
+                }
+            },
+            partnership: {
+                title: "Oportunidades de Alianza Comercial",
+                subtitle: "Trabajamos con diversos tipos de socios para expandir nuestro alcance y brindar el mejor servicio",
+                distributors: {
+                    title: "Distribuidores",
+                    desc: "Acuerdos de distribución exclusiva y no exclusiva para mercados regionales",
+                    benefits: ["Precios mayoristas competitivos", "Soporte de marketing", "Opción de territorio exclusivo", "Acceso prioritario a productos"]
+                },
+                retailers: {
+                    title: "Comercializadores",
+                    desc: "Asóciese con nosotros para ofrecer materiales constructivos premium a sus clientes",
+                    benefits: ["Protección de margen comercial", "Material de punto de venta", "Capacitación de producto", "Soporte de inventario"]
+                },
+                contractors: {
+                    title: "Constructores y Arquitectos",
+                    desc: "Precios por volumen y soporte de proyecto para profesionales de la construcción",
+                    benefits: ["Precios basados en proyectos", "Asesoría técnica especializada", "Entrega prioritaria", "Descuentos por volumen"]
+                },
+                international: {
+                    title: "Socios Internacionales",
+                    desc: "Alianzas de exportación para distribución y representación global",
+                    benefits: ["Soporte en documentación de exportación", "Asistencia aduanera", "Precios en múltiples monedas", "Coordinación logística global"]
+                }
+            },
+            benefits: {
+                title: "Beneficios para Nuestros Socios",
+                items: {
+                    flexibility: {
+                        title: "Flexibilidad en Logística y Costos",
+                        desc: "Soluciones adaptables para ajustarse a su presupuesto, cronograma y preferencias operativas específicas. Elija el modelo que mejor funcione para su negocio."
+                    },
+                    transparency: {
+                        title: "Transparencia en Todo el Proceso",
+                        desc: "Visibilidad y comunicación claras desde la producción hasta la entrega. Sin tarifas ocultas ni sorpresas en ninguna etapa."
+                    },
+                    tailored: {
+                        title: "Soluciones a la Medida",
+                        desc: "Personalizamos nuestro servicio para asegurar operaciones seguras y eficientes con control total desde el origen hasta el destino."
+                    }
+                }
+            },
+            cta: {
+                title: "¿Listo para Explorar una Alianza?",
+                desc: "Contacte a nuestro equipo de ventas para discutir qué modelo de negocio funciona mejor para sus necesidades. Estamos aquí para ayudarle a tener éxito."
+            }
+        },
         quality: {
             title: "Comprometidos con la Calidad",
             quote: "\"En UNITEC USA Design, la calidad no es un estándar—es una promesa.\"",
@@ -976,6 +1189,77 @@
         }
     },
     es: {
+        businessModels: {
+            title: "Modelos de Negocio",
+            intro: "En UNITEC USA Design, operamos bajo los principales términos de comercio internacional para ofrecer flexibilidad, transparencia y seguridad a nuestros socios en todo el mundo.",
+            tradeTerms: {
+                title: "Términos de Comercio Internacional",
+                subtitle: "Ofrecemos Incoterms flexibles para adaptarnos a diferentes necesidades comerciales y preferencias logísticas",
+                fob: {
+                    title: "FOB (Free on Board - Libre a Bordo)",
+                    desc: "Manejamos la mercancía hasta que es cargada a bordo del buque en el puerto de embarque. Usted mantiene el control del flete marítimo y el seguro desde ese punto.",
+                    benefits: [
+                        "Gestionamos la logística previa al embarque",
+                        "El cliente controla el flete marítimo y el seguro",
+                        "Ideal para importadores experimentados"
+                    ]
+                },
+                cif: {
+                    title: "CIF (Cost, Insurance, and Freight - Costo, Seguro y Flete)",
+                    desc: "Gestionamos los costos, el seguro y el flete hasta su puerto de destino, ofreciendo una experiencia de servicio completa y sin complicaciones.",
+                    benefits: [
+                        "Solución de envío todo incluido",
+                        "Nos encargamos del seguro y flete marítimo",
+                        "Perfecto para operaciones optimizadas"
+                    ]
+                }
+            },
+            partnership: {
+                title: "Oportunidades de Alianza Comercial",
+                subtitle: "Trabajamos con diversos tipos de socios para expandir nuestro alcance y brindar el mejor servicio",
+                distributors: {
+                    title: "Distribuidores",
+                    desc: "Acuerdos de distribución exclusiva y no exclusiva para mercados regionales",
+                    benefits: ["Precios mayoristas competitivos", "Soporte de marketing", "Opción de territorio exclusivo", "Acceso prioritario a productos"]
+                },
+                retailers: {
+                    title: "Comercializadores",
+                    desc: "Asóciese con nosotros para ofrecer materiales constructivos premium a sus clientes",
+                    benefits: ["Protección de margen comercial", "Material de punto de venta", "Capacitación de producto", "Soporte de inventario"]
+                },
+                contractors: {
+                    title: "Constructores y Arquitectos",
+                    desc: "Precios por volumen y soporte de proyecto para profesionales de la construcción",
+                    benefits: ["Precios basados en proyectos", "Asesoría técnica especializada", "Entrega prioritaria", "Descuentos por volumen"]
+                },
+                international: {
+                    title: "Socios Internacionales",
+                    desc: "Alianzas de exportación para distribución y representación global",
+                    benefits: ["Soporte en documentación de exportación", "Asistencia aduanera", "Precios en múltiples monedas", "Coordinación logística global"]
+                }
+            },
+            benefits: {
+                title: "Beneficios para Nuestros Socios",
+                items: {
+                    flexibility: {
+                        title: "Flexibilidad en Logística y Costos",
+                        desc: "Soluciones adaptables para ajustarse a su presupuesto, cronograma y preferencias operativas específicas. Elija el modelo que mejor funcione para su negocio."
+                    },
+                    transparency: {
+                        title: "Transparencia en Todo el Proceso",
+                        desc: "Visibilidad y comunicación claras desde la producción hasta la entrega. Sin tarifas ocultas ni sorpresas en ninguna etapa."
+                    },
+                    tailored: {
+                        title: "Soluciones a la Medida",
+                        desc: "Personalizamos nuestro servicio para asegurar operaciones seguras y eficientes con control total desde el origen hasta el destino."
+                    }
+                }
+            },
+            cta: {
+                title: "¿Listo para Explorar una Alianza?",
+                desc: "Contacte a nuestro equipo de ventas para discutir qué modelo de negocio funciona mejor para sus necesidades. Estamos aquí para ayudarle a tener éxito."
+            }
+        },
         company: {
             unitec: {
                 name: "UNITEC USA Design",
