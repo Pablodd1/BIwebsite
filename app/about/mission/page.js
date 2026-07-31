@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import React from 'react';
 import { Target, Lightbulb, Heart, Globe, CheckCircle } from 'lucide-react';
@@ -42,8 +42,11 @@ export default function MissionPage() {
                             {isSpanish ? 'Nuestro Propósito' : 'Our Purpose'}
                         </h2>
                         
-                        <p className="text-lg text-gray-700 leading-relaxed text-center mb-8">
+                        <p className="text-lg text-gray-700 leading-relaxed text-center mb-4">
                             {t('about.mission.p1', activeBrand)}
+                        </p>
+                        <p className="text-base text-gray-600 leading-relaxed text-center mb-8">
+                            {t('about.mission.p2', activeBrand)}
                         </p>
 
                         <div className="grid md:grid-cols-3 gap-6 mt-12">
@@ -93,3 +96,4 @@ export default function MissionPage() {
         </main>
     );
 }
+

@@ -82,8 +82,11 @@ export default function VisionPage() {
                             {activeBrand === 'unitec' ? v.futureVision : v.whereHeading}
                         </h2>
                         
-                        <p className="text-xl text-gray-700 leading-relaxed text-center mb-12">
+                        <p className="text-xl text-gray-700 leading-relaxed text-center mb-4">
                             {t('about.vision.p1', activeBrand)}
+                        </p>
+                        <p className="text-base text-gray-600 leading-relaxed text-center mb-12">
+                            {t('about.vision.p2', activeBrand)}
                         </p>
 
                         <div className="grid md:grid-cols-2 gap-8">
@@ -196,5 +199,6 @@ export default function VisionPage() {
         </main>
     );
 }
+
 
 

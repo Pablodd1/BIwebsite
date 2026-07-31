@@ -30,7 +30,7 @@ export default function WhoWeArePage() {
 
             <section className="mb-16">
                 <div className="bg-gray-50 p-8 rounded-2xl border border-gray-100">
-                    <h2 className="text-3xl font-bold mb-2">{companyName}</h2>
+                    
 
                     <div className="text-lg text-gray-700 leading-relaxed text-justify space-y-4">
                         {intro && Array.isArray(intro) ? intro.map((paragraph, idx) => (
@@ -89,4 +89,5 @@ export default function WhoWeArePage() {
         </main>
     );
 }
+
 

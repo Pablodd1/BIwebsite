@@ -1036,7 +1036,7 @@
                 tagline: "¡Diseñamos el Futuro!",
                 heroTitle: "Diseñamos el Futuro",
                 heroSubtitle: "Materiales Arquitectónicos Sostenibles para la Construcción Moderna. Soluciones premium de PVC, WPC y SPC para paredes, techos, pisos y fachadas.",
-                heroCta: "Explorar Productos",
+                heroCta: "Explorar el catálogo",
                 metaTitle: "UNITEC USA Design | Materiales de Construcción Premium de PVC y WPC",
                 metaDescription: "Soluciones premium de PVC, WPC y SPC para paredes, techos, pisos y fachadas. Materiales de alto diseño, impermeables y ecológicos.",
                 whyTitle: "¿Por Qué Elegir UNITEC USA Design?",
@@ -1286,7 +1286,7 @@
                 },
                 sustainability: {
                     title: "Sostenibilidad",
-                    text: "La responsabilidad ambiental está integrada en todo lo que hacemos. Nuestros materiales contienen contenido reciclado, son totalmente reciclables, no requieren mantenimiento y reducen los residuos a largo plazo—apoyando la construcción sostenible sin concesiones."
+                    text: "La responsabilidad ambiental está integrada en todo lo que hacemos. Nuestros materiales están hechos de materiales recuperados, 100% reciclables y no requieren mantenimiento con químicos, pinturas y solventes que afecten los ecosistemas. Somos sostenibles en la elaboración y en la implementación de nuestras alternativas constructivas."
                 }
             }
         },
