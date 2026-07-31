@@ -38,7 +38,7 @@ import SeoHead from "components/SeoHead"
 
 const contactMetadata = {
     title: "Contacto | UNITEC USA Design",
-    description: "Ponte en contacto con nuestro equipo de UNITEC USA para consultas, soporte o para agendar una reuniÃ³n sobre sus proyectos."
+    description: "Ponte en contacto con nuestro equipo de UNITEC USA para consultas, soporte o para agendar una reunión sobre sus proyectos."
 };
 
 export default function ContactPage() {
@@ -78,27 +78,27 @@ export default function ContactPage() {
     const faqs = [
         {
             q: 'What are your shipping times?',
-            q_es: 'Â¿CuÃ¡les son los tiempos de envÃ­o?',
+            q_es: '¿Cuáles son los tiempos de envío?',
             a: 'Standard shipping takes 15-25 business days for international orders. Express options available upon request.',
-            a_es: 'El envÃ­o estÃ¡ndar toma 15-25 dÃ­as hÃ¡biles para pedidos internacionales. Opciones exprÃ©s disponibles bajo solicitud.'
+            a_es: 'El envío estándar toma 15-25 días hábiles para pedidos internacionales. Opciones exprés disponibles bajo solicitud.'
         },
         {
             q: 'Do you offer samples?',
-            q_es: 'Â¿Ofrecen muestras?',
+            q_es: '¿Ofrecen muestras?',
             a: 'Yes! Contact our team to request product samples for your project evaluation. We provide samples for qualified projects.',
-            a_es: 'Â¡SÃ­! Contacta a nuestro equipo para solicitar muestras de productos para evaluaciÃ³n de tu proyecto.'
+            a_es: '¡Sí! Contacta a nuestro equipo para solicitar muestras de productos para evaluación de tu proyecto.'
         },
         {
             q: 'What is the minimum order?',
-            q_es: 'Â¿CuÃ¡l es el pedido mÃ­nimo?',
+            q_es: '¿Cuál es el pedido mínimo?',
             a: 'Our minimum order is one full container (20ft or 40ft). We offer volume discounts for larger orders.',
-            a_es: 'Nuestro pedido mÃ­nimo es un contenedor completo (20ft o 40ft). Ofrecemos descuentos por volumen.'
+            a_es: 'Nuestro pedido mínimo es un contenedor completo (20ft o 40ft). Ofrecemos descuentos por volumen.'
         },
         {
             q: 'Do you provide installation?',
-            q_es: 'Â¿Brindan instalaciÃ³n?',
+            q_es: '¿Brindan instalación?',
             a: 'We work with certified installers across the US. Contact us for recommendations in your area.',
-            a_es: 'Trabajamos con instaladores certificados en EE.UU. ContÃ¡ctanos para recomendaciones en tu Ã¡rea.'
+            a_es: 'Trabajamos con instaladores certificados en EE.UU. Contáctanos para recomendaciones en tu área.'
         }
     ];
 
@@ -226,7 +226,7 @@ export default function ContactPage() {
                                     onChange={(e) => setQuoteData({ ...quoteData, companyName: e.target.value })}
                                 />
                                 <Input 
-                                    label={isSpanish ? "Correo ElectrÃ³nico" : t('contact.email')} 
+                                    label={isSpanish ? "Correo Electrónico" : t('contact.email')} 
                                     type="email"
                                     placeholder="su-nombre@ejemplo.com"
                                     value={quoteData.email}
@@ -234,7 +234,7 @@ export default function ContactPage() {
                                     required
                                 />
                                 <Input 
-                                    label={isSpanish ? "TelÃ©fono" : t('contact.phone')} 
+                                    label={isSpanish ? "Teléfono" : t('contact.phone')} 
                                     placeholder="+57 300 000 0000"
                                     value={quoteData.phone}
                                     onChange={(e) => setQuoteData({ ...quoteData, phone: e.target.value })}
@@ -270,7 +270,7 @@ export default function ContactPage() {
                             </form>
 
                             <p className="mt-4 text-xs text-gray-500">
-                                {isSpanish ? "Nuestro equipo generalmente responde dentro de 24 horas hÃ¡biles." : t('contact.responseTimeText')}
+                                {isSpanish ? "Nuestro equipo generalmente responde dentro de 24 horas hábiles." : t('contact.responseTimeText')}
                             </p>
                         </div>
                     </div>

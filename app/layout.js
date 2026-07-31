@@ -91,7 +91,7 @@ export async function generateMetadata() {
           url: defaults.image,
           width: 1200,
           height: 630,
-          alt: lang === 'es' ? "UNITEC USA Design - Materiales ArquitectÃ³nicos" : "UNITEC USA Design - Architectural Materials",
+          alt: lang === 'es' ? "UNITEC USA Design - Materiales Arquitectónicos" : "UNITEC USA Design - Architectural Materials",
         }
       ],
     },
@@ -201,7 +201,7 @@ export default async function RootLayout({ children }) {
                   "address": {
                     "@type": "PostalAddress",
                     "streetAddress": "Carrera 42, Auto. S #75-83 C.C. IDEO Local 274",
-                    "addressLocality": "ItagÃ¼Ã­",
+                    "addressLocality": "Itagüí",
                     "addressRegion": "Antioquia",
                     "postalCode": "055413",
                     "addressCountry": "CO"
