@@ -1001,7 +1001,7 @@
                     },
                     vision: {
                         title: "Nuestra Visión",
-                        text: "Nuestra visión es convertirnos en el proveedor líder de soluciones de construcción de PVC y WPC en toda América del Norte — transformando cómo profesionales y propietarios abordan la construcción y el diseño."
+                        text: "Nuestra visión es convertirnos en el proveedor líder de soluciones de construcción de PVC y WPC en América Latina y Norteamérica — transformando cómo profesionales y propietarios abordan la construcción y el diseño."
                     },
                     headquarters: {
                         title: "Sede Colombia",
@@ -1026,7 +1026,7 @@
                     },
                     vision: {
                         title: "Nuestra Visión",
-                        p1: "Nuestra visión es convertirnos en el proveedor líder de soluciones de construcción de PVC y WPC en toda América del Norte — transformando cómo profesionales y propietarios abordan la construcción y el diseño.",
+                        p1: "Nuestra visión es convertirnos en el proveedor líder de soluciones de construcción de PVC y WPC en América Latina y Norteamérica — transformando cómo profesionales y propietarios abordan la construcción y el diseño.",
                         p2: "Estamos construyendo hacia un futuro donde la construcción sostenible, la libertad de diseño y la vida libre de mantenimiento sean el estándar, no la excepción."
                     }
                 }
@@ -1442,7 +1442,7 @@
             },
             vision: {
                 title: "Nuestra Visión",
-                p1: "Nuestra visión es convertirnos en el proveedor líder de soluciones de construcción de PVC y WPC en toda América del Norte — transformando cómo profesionales y propietarios abordan la construcción y el diseño.",
+                p1: "Nuestra visión es convertirnos en el proveedor líder de soluciones de construcción de PVC y WPC en América Latina y Norteamérica — transformando cómo profesionales y propietarios abordan la construcción y el diseño.",
                 p2: "Estamos construyendo hacia un futuro donde la construcción sostenible, la libertad de diseño y la vida libre de mantenimiento sean el estándar, no la excepción.",
                 stats: {
                     reach: "Alcance Nacional",
