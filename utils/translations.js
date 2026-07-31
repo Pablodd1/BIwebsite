@@ -990,7 +990,8 @@
                     title: "Quiénes Somos",
                     tagline: "",
                     intro: [
-                        "Unitec USA Design es una empresa registrada y operando legalmente en los Estados Unidos para servir al mercado norteamericano y latinoamericano.",
+                        "Unitec USA Design es la empresa responsable de la operación internacional de Building Innovation en Latinoamérica. Una compañía de materiales arquitectónicos en PVC y WPC con sede principal en Doral (Miami) y showroom en Medellín, que abastece, asesora y acompaña a distribuidores, constructores y arquitectos en la implementación de nuevas técnicas constructivas, eficientes y sofisticadas.",
+                        "Con más de 10 años de trayectoria en el mercado y presencia en más de 5 países del continente, Unitec se ha consolidado como una organización promotora de estas alternativas constructivas en el mercado, ofreciendo un portafolio integrado por más 500 productos con acabados y estilos diferentes, fáciles de instalar y de implementar en cualquier proyecto.",
                         "El envío a granel está roto cuando se trata como el comercio electrónico normal. Los productos no son unidades individuales — son volúmenes, dimensiones y restricciones dentro de un contenedor.",
                         "Construimos nuestra plataforma alrededor de una creencia simple: los contenedores van primero, los productos van segundo. Esta mentalidad permite a las empresas planificar envíos realistas, evitar sobre reservas y obtener total visibilidad de la capacidad."
                     ],
