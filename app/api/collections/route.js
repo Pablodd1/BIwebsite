@@ -18,17 +18,8 @@ const FIELDS = [
 ];
 
 // Asynchronous non-blocking image validation
-async function normalizeImage(img) {
-  if (!img || typeof img !== 'string') return img;
-  const rel = img.startsWith('/') ? img.slice(1) : img;
-  const abs = path.resolve(process.cwd(), 'public', rel);
-  try {
-    await fs.promises.access(abs, fs.constants.F_OK);
-    return img;
-  } catch {
-    // fallback to a generic placeholder image
-    return '/raster/product.jpg';
-  }
+function normalizeImage(img) {
+  return img || '/raster/product.jpg';
 }
 
 export async function GET(request) {
@@ -72,7 +63,7 @@ export async function GET(request) {
       }, {})
     );
     const allItems = await Promise.all(
-      rawItems.map(async (it) => ({ ...it, image: await normalizeImage(it.image) }))
+      rawItems.map(async (it) => ({ ...it, image: normalizeImage(it.image) }))
     );
     return Response.json({
       currentPage: 1,
@@ -94,7 +85,7 @@ export async function GET(request) {
     );
 
   const safePaginated = await Promise.all(
-    paginatedItems.map(async (it) => ({ ...it, image: await normalizeImage(it.image) }))
+    paginatedItems.map(async (it) => ({ ...it, image: normalizeImage(it.image) }))
   );
   
   return Response.json({
