@@ -1,4 +1,4 @@
-﻿import productData from "StaticData/products_full.json";
+﻿import productData from "static_data/products_full.json";
 import matchesSearchQuery from "../collections/handleSearch";
 import { matchesSubcategoryFilter } from "lib/applyFilters";
 import fs from 'fs';

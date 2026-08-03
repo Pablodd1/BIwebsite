@@ -26,7 +26,7 @@ import Stylish_H2 from "My_UI/stylish_h2"
 import Map from "./map";
 import { useLanguage } from "lib/LanguageContext";
 import { useBrand } from 'lib/BrandContext';
-import teamData from 'StaticData/team.json';
+import teamData from 'static_data/team.json';
 
 const TikTokIcon = ({ className }) => (
     <svg viewBox="0 0 24 24" fill="currentColor" className={className}>

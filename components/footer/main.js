@@ -6,7 +6,7 @@ import { Instagram, Linkedin, Youtube } from "lucide-react";
 import Logo from 'My_UI/logo';
 import { useLanguage } from 'lib/LanguageContext';
 import { useBrand } from 'lib/BrandContext';
-import teamData from 'StaticData/team.json';
+import teamData from 'static_data/team.json';
 import { useState } from 'react';
 
 const WhatsAppIcon = () => (

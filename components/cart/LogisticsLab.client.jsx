@@ -13,7 +13,7 @@ import {
 import ThreeCartEngine from "components/cart/ThreeCartEngine"
 import { Box, Trash2, Plus, Minus, Info, ChevronLeft, LayoutPanelLeft, FileSpreadsheet } from "lucide-react"
 import Link from "next/link"
-import productsData from "StaticData/products_full.json"
+import productsData from "static_data/products_full.json"
 
 export default function LogisticsLab() {
   const [cart, setCart] = useState(null)

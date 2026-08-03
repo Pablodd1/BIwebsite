@@ -4,8 +4,8 @@ import { ChevronDown, ChevronUp, Calculator, Scale, Ruler, MessageCircle } from 
 import Stylish_H2 from 'My_UI/stylish_h2';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useLanguage } from 'lib/LanguageContext';
-import faqsEn from 'StaticData/faqs.json';
-import faqsEs from 'StaticData/faqs_es.json';
+import faqsEn from 'static_data/faqs.json';
+import faqsEs from 'static_data/faqs_es.json';
 
 function FAQItem({ item, isOpen, onClick }) {
     return (

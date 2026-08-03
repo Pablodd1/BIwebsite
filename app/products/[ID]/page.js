@@ -77,7 +77,7 @@ export async function generateMetadata({ params }, parent) {
   };
 }
 
-import productData from "StaticData/products_full.json";
+import productData from "static_data/products_full.json";
 
 async function fetchProduct(id) {
   // Bypass fetch to avoid domain/env issues in Server Component
