@@ -58,13 +58,15 @@ export default function HeroSec() {
         <main className="overflow-hidden min-h-screen relative">
             {/* Video Background */}
             <div className="absolute inset-0 w-full h-full z-0">
-                <Image
-                        src="/raster/modern_hero_bg.png"
-                        alt="Hero background"
-                        fill sizes="100vw"
-                        priority
-                        className="object-cover"
-                    />
+                <video
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    className="w-full h-full object-cover"
+                >
+                    <source src="/videos/hero-video.mp4" type="video/mp4" />
+                </video>
                 {/* Overlay to ensure text readability */}
                 <div className="absolute inset-0 bg-black/40 z-10"></div>
             </div>
