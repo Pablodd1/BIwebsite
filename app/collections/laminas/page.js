@@ -17,7 +17,7 @@ export default async function LaminasPage({ searchParams }) {
             h1={"LAMINAS - PVC Sheets"}
             description={"Explore our premium collection of PVC laminates and sheet materials. The LAMINAS collection includes foam boards, marble finishes, and PVC boards perfect for walls, ceilings, and decorative applications. Easy to cut, install, and maintain."}
             cover={{ src: '/raster/interior.webp', alt: 'LAMINAS PVC Sheets' }}
-            productURL="/api/collections?"
+            productURL="/api/collections/?"
             prefilters={{
                 collection: "Interior",
                 subcategories: ["FOAM BOARD", "LAMINAS MARMOL PVC", "LAMINAS PVC BOARD", "LAMINAS SINTETICAS"],

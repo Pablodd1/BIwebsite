@@ -18,7 +18,7 @@ export default async function PanelesWpcPage({ searchParams }) {
             h1={"PANELES WPC Y ANGULOS"}
             description={"Our WPC (Wood Plastic Composite) panels combine the natural beauty of wood with the durability of plastic. Perfect for interior applications, our WPC panels are eco-friendly, moisture-resistant, and available in various wood-like finishes. Includes angles and trim pieces for complete installations."}
             cover={{ src: '/raster/interior.webp', alt: 'WPC Panels' }}
-            productURL="/api/collections?"
+            productURL="/api/collections/?"
             prefilters={{
                 collection: "Interior",
                 subcategories: ["WPC Interior"],

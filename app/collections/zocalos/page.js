@@ -18,7 +18,7 @@ export default async function ZocalosPage({ searchParams }) {
             h1={"ZOCALOS - Baseboards"}
             description={"Complete your flooring installation with our premium SPC baseboards and trims. The ZOCALOS collection offers the perfect finishing touches for any room, available in various colors and styles to match your SPC flooring."}
             cover={{ src: '/raster/interior.webp', alt: 'Baseboards' }}
-            productURL="/api/collections?"
+            productURL="/api/collections/?"
             prefilters={{
                 collection: "Interior",
                 subcategories: ["SPC"],

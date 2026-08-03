@@ -20,7 +20,7 @@ export default function RecommendationsSection({ itemID, title }) {
         const fetchRecommendations = () => {
             setLoading(true);
             setError(false);
-            fetch(`/api/products/recommended?current=${itemID || ''}`)
+            fetch(`/api/products/recommended/?current=${itemID || ''}`)
                 .then(res => {
                     if (!res.ok) throw new Error('Failed to fetch');
                     return res.json();

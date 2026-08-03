@@ -47,7 +47,7 @@ export default async function Collections({ searchParams }) {
                 src: '/raster/sale.webp' || '/raster/exterior.webp',
                 alt: 'Unitec USA Sale & Clearance Products'
             }}
-            productURL="/api/collections?onlyDiscounted=true&"
+            productURL="/api/collections/?onlyDiscounted=true&"
             prefilters={{
                 collection: "All",
                 subcategories: [],

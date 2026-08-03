@@ -18,7 +18,7 @@ export default async function Page({ searchParams }) {
             h1={"PAREDES UNIFLEX"}
             description={"Flexible and modern wall cladding solutions for diverse architectural needs."}
             cover={{ src: '/raster/exterior.webp', alt: 'PAREDES UNIFLEX' }}
-            productURL="/api/collections?"
+            productURL="/api/collections/?"
             prefilters={{
     "collection": "Exterior",
     "category": "PAREDES",

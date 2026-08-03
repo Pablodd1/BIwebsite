@@ -59,7 +59,7 @@ export default function CheckoutPage() {
             const totalWeight = cart.reduce((acc, container) => acc + (container.items.reduce((sum, item) => sum + (item.weight || 0) * item.qty, 0)), 0)
             const totalVolume = cart.reduce((acc, container) => acc + (container.items.reduce((sum, item) => sum + (item.volume || 0) * item.qty, 0)), 0)
             
-            const response = await fetch('/api/shipping/quote', {
+            const response = await fetch('/api/shipping/quote/', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({
@@ -184,7 +184,7 @@ export default function CheckoutPage() {
                 }
             })
 
-            const res = await fetch('/api/invoices', {
+            const res = await fetch('/api/invoices/', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ 

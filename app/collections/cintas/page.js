@@ -18,7 +18,7 @@ export default async function Page({ searchParams }) {
             h1={"CINTAS - Industrial Tapes"}
             description={"High-performance adhesive tapes for construction and industrial applications."}
             cover={{ src: '/raster/interior.webp', alt: 'CINTAS - Industrial Tapes' }}
-            productURL="/api/collections?"
+            productURL="/api/collections/?"
             prefilters={{
     "collection": "Interior",
     "category": "CINTAS",

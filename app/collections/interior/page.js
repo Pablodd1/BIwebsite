@@ -48,7 +48,7 @@ export default async function Collections({ searchParams }) {
                 src: '/raster/interior.webp',
                 alt: '/raster/collection-interior'
             }}
-            productURL="/api/collections?"
+            productURL="/api/collections/?"
             prefilters={{
                 collection: "Interior",
                 ...(sp.subcategories ? { subcategories: [sp.subcategories] } : {}),

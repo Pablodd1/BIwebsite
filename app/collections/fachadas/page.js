@@ -18,7 +18,7 @@ export default async function FachadasPage({ searchParams }) {
             h1={"FACHADA - Exterior Walls"}
             description={"Transform building exteriors with our premium wall cladding solutions. The FACHADA collection offers weatherproof, UV-resistant, and aesthetically pleasing panels for facades and exterior walls. Includes traditional FACHADA and modern POLIFACHADA options."}
             cover={{ src: '/raster/exterior.webp', alt: 'Exterior Wall Cladding' }}
-            productURL="/api/collections?"
+            productURL="/api/collections/?"
             prefilters={{
                 collection: "Exterior",
                 subcategories: ["FACHADA", "POLIFACHADA"],

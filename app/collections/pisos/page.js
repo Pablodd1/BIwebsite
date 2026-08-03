@@ -18,7 +18,7 @@ export default async function PisosInteriorPage({ searchParams }) {
             h1={"PISOS - SPC Flooring"}
             description={"Upgrade your space with our premium SPC (Stone Plastic Composite) flooring. Our PISOS collection offers 100% waterproof, durable, and easy-to-install flooring solutions. Perfect for residential and commercial spaces, with a wide variety of wood and stone finishes."}
             cover={{ src: '/raster/interior.webp', alt: 'SPC Flooring' }}
-            productURL="/api/collections?"
+            productURL="/api/collections/?"
             prefilters={{
                 collection: "Interior",
                 category: "PISOS",
