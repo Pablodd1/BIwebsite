@@ -90,7 +90,8 @@ const translations = {
                     },
                     "cta": {
                         "title": "Ready to Explore a Partnership?",
-                        "desc": "Contact our sales team to discuss which business model works best for your needs. We're here to help you succeed."
+                        "desc": "Contact our sales team to discuss which business model works best for your needs. We're here to help you succeed.",
+                        "button": "Contact Sales Team"
                     }
                 },
                 "name": "UNITEC USA Design",
@@ -1440,7 +1441,8 @@ const translations = {
             },
             "cta": {
                 "title": "Ready to Explore a Partnership?",
-                "desc": "Contact our sales team to discuss which business model works best for your needs. We're here to help you succeed."
+                "desc": "Contact our sales team to discuss which business model works best for your needs. We're here to help you succeed.",
+                "button": "Contact Sales Team"
             }
         },
         "negotiation": {
@@ -1774,7 +1776,8 @@ const translations = {
             },
             "cta": {
                 "title": "¿Listo para Explorar una Alianza?",
-                "desc": "Contacte a nuestro equipo de ventas para discutir qué modelo de negocio funciona mejor para sus necesidades. Estamos aquí para ayudarle a tener éxito."
+                "desc": "Contacte a nuestro equipo de ventas para discutir qué modelo de negocio funciona mejor para sus necesidades. Estamos aquí para ayudarle a tener éxito.",
+                "button": "Contactar al equipo de ventas"
             }
         },
         "company": {

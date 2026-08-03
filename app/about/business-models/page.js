@@ -169,7 +169,7 @@ export default function BusinessModelsPage() {
                         href="/contact" 
                         className="inline-flex items-center justify-center gap-2 rounded-xl bg-white px-8 py-4 text-sm font-semibold text-black transition hover:bg-gray-200"
                     >
-                        Contactar al equipo de ventas
+                        {t('businessModels.cta.button', activeBrand)}
                         <ArrowRight size={18} />
                     </a>
                 </div>
