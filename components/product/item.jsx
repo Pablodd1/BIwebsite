@@ -17,7 +17,7 @@ export default function ProductItem({ item, isSlides = false, index = 0 }) {
         <motion.div
             onClick={() => router.push(`/products/${item.id}`)}
             initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
+            animate={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: index * 0.05 }}
             whileHover={{ y: -8 }}
