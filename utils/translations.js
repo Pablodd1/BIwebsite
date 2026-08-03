@@ -3,94 +3,94 @@ const translations = {
         "company": {
             "unitec": {
                 "businessModels": {
-                    "title": "Modelos de Negocio",
-                    "intro": "En UNITEC USA Design, operamos bajo los principales términos de comercio internacional para ofrecer flexibilidad, transparencia y seguridad a nuestros socios en todo el mundo.",
+                    "title": "Business Models",
+                    "intro": "At UNITEC USA Design, we operate under leading international trade terms to offer flexibility, transparency, and security for our partners worldwide.",
                     "tradeTerms": {
-                        "title": "Términos de Comercio Internacional",
-                        "subtitle": "Ofrecemos Incoterms flexibles para adaptarnos a diferentes necesidades comerciales y preferencias logísticas",
+                        "title": "International Trade Terms",
+                        "subtitle": "We offer flexible Incoterms to accommodate different business needs and logistics preferences",
                         "fob": {
-                            "title": "FOB (Free on Board - Libre a Bordo)",
-                            "desc": "Manejamos la mercancía hasta que es cargada a bordo del buque en el puerto de embarque. Usted mantiene el control del flete marítimo y el seguro desde ese punto.",
+                            "title": "FOB (Free on Board)",
+                            "desc": "We handle the merchandise until it's loaded onto the vessel at the port of shipment. You retain control over freight and insurance logistics from that point.",
                             "benefits": [
-                                "Gestionamos la logística previa al embarque",
-                                "El cliente controla el flete marítimo y el seguro",
-                                "Ideal para importadores experimentados"
+                                "We manage pre-shipment logistics",
+                                "Client controls ocean freight and insurance",
+                                "Ideal for experienced importers"
                             ]
                         },
                         "cif": {
-                            "title": "CIF (Cost, Insurance, and Freight - Costo, Seguro y Flete)",
-                            "desc": "Gestionamos los costos, el seguro y el flete hasta su puerto de destino, ofreciendo una experiencia de servicio completa y sin complicaciones.",
+                            "title": "CIF (Cost, Insurance, and Freight)",
+                            "desc": "We manage costs, insurance, and freight to your destination port, providing a complete hassle-free service experience from our door to yours.",
                             "benefits": [
-                                "Solución de envío todo incluido",
-                                "Nos encargamos del seguro y flete marítimo",
-                                "Perfecto para operaciones optimizadas"
+                                "All-in-one shipping solution",
+                                "We handle insurance and ocean freight",
+                                "Perfect for optimized operations"
                             ]
                         }
                     },
                     "partnership": {
-                        "title": "Oportunidades de Alianza Comercial",
-                        "subtitle": "Trabajamos con diversos tipos de socios para expandir nuestro alcance y brindar el mejor servicio",
+                        "title": "Partnership Opportunities",
+                        "subtitle": "We work with various partner types to expand our reach and better serve customers",
                         "distributors": {
-                            "title": "Distribuidores",
-                            "desc": "Acuerdos de distribución exclusiva y no exclusiva para mercados regionales",
+                            "title": "Distributors",
+                            "desc": "Exclusive and non-exclusive distribution agreements for regional markets",
                             "benefits": [
-                                "Precios mayoristas competitivos",
-                                "Soporte de marketing",
-                                "Opción de territorio exclusivo",
-                                "Acceso prioritario a productos"
+                                "Competitive wholesale prices",
+                                "Marketing support",
+                                "Exclusive territory options",
+                                "Priority product access"
                             ]
                         },
                         "retailers": {
-                            "title": "Comercializadores",
-                            "desc": "Asóciese con nosotros para ofrecer materiales constructivos premium a sus clientes",
+                            "title": "Retailers",
+                            "desc": "Partner with us to offer premium building materials to your customers",
                             "benefits": [
-                                "Protección de margen comercial",
-                                "Material de punto de venta",
-                                "Capacitación de producto",
-                                "Soporte de inventario"
+                                "Retail margin protection",
+                                "Point-of-sale materials",
+                                "Product training",
+                                "Inventory support"
                             ]
                         },
                         "contractors": {
-                            "title": "Constructores y Arquitectos",
-                            "desc": "Precios por volumen y soporte de proyecto para profesionales de la construcción",
+                            "title": "Contractors & Architects",
+                            "desc": "Volume pricing and project support for construction professionals",
                             "benefits": [
-                                "Precios basados en proyectos",
-                                "Asesoría técnica especializada",
-                                "Entrega prioritaria",
-                                "Descuentos por volumen"
+                                "Project-based pricing",
+                                "Technical consultation",
+                                "Priority delivery",
+                                "Volume discounts"
                             ]
                         },
                         "international": {
-                            "title": "Socios Internacionales",
-                            "desc": "Alianzas de exportación para distribución y representación global",
+                            "title": "International Partners",
+                            "desc": "Export partnerships for distribution and global representation",
                             "benefits": [
-                                "Soporte en documentación de exportación",
-                                "Asistencia aduanera",
-                                "Precios en múltiples monedas",
-                                "Coordinación logística global"
+                                "Export documentation support",
+                                "Customs assistance",
+                                "Multi-currency pricing",
+                                "Global logistics coordination"
                             ]
                         }
                     },
                     "benefits": {
-                        "title": "Beneficios para Nuestros Socios",
+                        "title": "Partner Benefits",
                         "items": {
                             "flexibility": {
-                                "title": "Flexibilidad en Logística y Costos",
-                                "desc": "Soluciones adaptables para ajustarse a su presupuesto, cronograma y preferencias operativas específicas. Elija el modelo que mejor funcione para su negocio."
+                                "title": "Flexibility in Logistics and Costs",
+                                "desc": "Adaptable solutions to fit your specific budget, timeline, and operational preferences. Choose the model that works best for your business."
                             },
                             "transparency": {
-                                "title": "Transparencia en Todo el Proceso",
-                                "desc": "Visibilidad y comunicación claras desde la producción hasta la entrega. Sin tarifas ocultas ni sorpresas en ninguna etapa."
+                                "title": "Transparency Throughout the Process",
+                                "desc": "Clear visibility and communication from production to delivery. No hidden fees or surprises at any stage."
                             },
                             "tailored": {
-                                "title": "Soluciones a la Medida",
-                                "desc": "Personalizamos nuestro servicio para asegurar operaciones seguras y eficientes con control total desde el origen hasta el destino."
+                                "title": "Tailored Solutions",
+                                "desc": "We customize our service to ensure safe and efficient operations with full control from origin to destination."
                             }
                         }
                     },
                     "cta": {
-                        "title": "¿Listo para Explorar una Alianza?",
-                        "desc": "Contacte a nuestro equipo de ventas para discutir qué modelo de negocio funciona mejor para sus necesidades. Estamos aquí para ayudarle a tener éxito."
+                        "title": "Ready to Explore a Partnership?",
+                        "desc": "Contact our sales team to discuss which business model works best for your needs. We're here to help you succeed."
                     }
                 },
                 "name": "UNITEC USA Design",
@@ -111,7 +111,35 @@ const translations = {
                 "contact": {
                     "title": "Let's Move Your Products —",
                     "subtitle": "At Scale",
-                    "description": "We specialize in bulk product handling, container-based shipping, and optimized logistics workflows. Reach out to discuss volumes, containers, and delivery timelines."
+                    "description": "We specialize in bulk product handling, container-based shipping, and optimized logistics workflows. Reach out to discuss volumes, containers, and delivery timelines.",
+                    "hero": {
+                        "title": "Let's Move Your Products —",
+                        "subtitle": "At Scale",
+                        "description": "We specialize in bulk product handling, container-based shipping, and optimized logistics workflows. Reach out to discuss volumes, containers, and delivery timelines.",
+                        "bulkOrders": "Bulk Orders",
+                        "logistics": "Logistics",
+                        "responseTime": "Response Time",
+                        "handling": "Handling",
+                        "containerBased": "Container-based",
+                        "optimizedPacking": "Optimized Packing",
+                        "within24h": "Within 24h",
+                        "secureTracked": "Secure & Tracked"
+                    },
+                    "talkTeam": "Talk to Our Logistics Team",
+                    "whether": "Whether you're planning a full container load or evaluating capacity, our team helps you choose the right shipping structure.",
+                    "headquarters": "Headquarters",
+                    "generalInquiries": "General Inquiries",
+                    "activeStaff": "Active Staff",
+                    "requestQuote": "Request a Bulk Shipping Quote",
+                    "provideDetails": "Provide details about your products and container requirements.",
+                    "fullName": "Full Name",
+                    "companyName": "Company Name",
+                    "email": "Email",
+                    "phone": "Phone",
+                    "estimatedVolume": "Estimated Volume / Containers",
+                    "projectDetails": "Project Details",
+                    "sendInquiry": "Send Inquiry",
+                    "responseTimeText": "Our team usually responds within 24 business hours."
                 },
                 "headquarters": {
                     "title": "Colombia Headquarters",
@@ -155,6 +183,14 @@ const translations = {
                         "title": "Our Mission",
                         "p1": "At Unitec USA Design, our mission is to redefine modern construction by delivering innovative, sustainable, and high-quality PVC and WPC building materials that elevate everyday spaces.",
                         "p2": "We believe building materials should do more than function — they should inspire creativity, simplify installation, and contribute to a more sustainable built environment.",
+                        "purpose": "Our Purpose",
+                        "innovation": "Innovation",
+                        "innovationDesc": "Developing new materials and architectural solutions",
+                        "partnership": "Partnerships",
+                        "partnershipDesc": "Building long-term collaborative relationships",
+                        "globalImpact": "Global Impact",
+                        "globalImpactDesc": "Improving quality of life and construction standards",
+                        "commitments": "Our Commitments",
                         "items": [
                             "Innovative, future-ready product development",
                             "Eco-conscious materials and manufacturing",
@@ -165,101 +201,267 @@ const translations = {
                     },
                     "vision": {
                         "title": "Our Vision",
-                        "p1": "Our vision is to become the leading provider of PVC and WPC construction solutions across North America — transforming how professionals and homeowners approach building and design.",
-                        "p2": "We're building toward a future where sustainable construction, design freedom, and maintenance-free living are the standard, not the exception."
+                        "p1": "Our vision is to become the leading provider of PVC and WPC construction solutions across North America and Latin America — transforming how professionals and homeowners approach building and design.",
+                        "p2": "We're building toward a future where sustainable construction, design freedom, and maintenance-free living are the standard, not the exception.",
+                        "stats": {
+                            "reach": "International Reach",
+                            "sustainable": "Sustainable Focus",
+                            "design": "Design Freedom",
+                            "professionals": "Built for Professionals"
+                        }
+                    },
+                    "title": "About Us",
+                    "hero": {
+                        "title": "Built for Scale.",
+                        "subtitle": "Designed for Containers.",
+                        "description": "We help businesses move products in bulk using a structured, container-centric approach — reducing waste, optimizing space, and simplifying logistics from order to shipment."
+                    },
+                    "story": {
+                        "title": "Why We Exist",
+                        "p1": "Bulk shipping is broken when treated like regular e-commerce. Products aren't individual units — they're volumes, dimensions, and constraints within a container.",
+                        "p2": "We built our platform around a simple belief: containers first, products second. This mindset enables businesses to plan realistic shipments, avoid overbooking, and get full visibility into capacity.",
+                        "stats": {
+                            "bulk": "Bulk Logic",
+                            "dimension": "Dimension Aware",
+                            "logistics": "Logistics Ready",
+                            "safe": "Operationally Safe"
+                        }
+                    },
+                    "howItWorks": {
+                        "title": "How Our System Works",
+                        "subtitle": "Our workflow mirrors real container planning — not traditional carts.",
+                        "steps": {
+                            "create": {
+                                "title": "Create Containers",
+                                "desc": "Every order starts with a physical container definition including internal dimensions."
+                            },
+                            "fill": {
+                                "title": "Fill with Products",
+                                "desc": "Products are added based on size and quantity, not just price."
+                            },
+                            "ship": {
+                                "title": "Ship with Confidence",
+                                "desc": "Know exactly how full each container is before shipping."
+                            }
+                        }
+                    },
+                    "whyChoose": {
+                        "title": "Why Choose Unitec",
+                        "description": "Our products are designed to outperform traditional building materials while simplifying installation and long-term ownership.",
+                        "features": {
+                            "warranty": {
+                                "title": "15–25 Year Warranties",
+                                "desc": "Industry-leading durability backed by trust."
+                            },
+                            "waterproof": {
+                                "title": "100% Waterproof",
+                                "desc": "No rot, rust, or moisture damage — ever."
+                            },
+                            "maintenance": {
+                                "title": "Zero Maintenance",
+                                "desc": "No painting, sealing, or refinishing required."
+                            },
+                            "fire": {
+                                "title": "Fire Resistant",
+                                "desc": "Self-extinguishing with low flame spread."
+                            },
+                            "eco": {
+                                "title": "Eco-Friendly",
+                                "desc": "Recyclable materials with reclaimed polymer content."
+                            },
+                            "install": {
+                                "title": "Quick Installation",
+                                "desc": "Save time and labor costs on every project."
+                            }
+                        }
+                    },
+                    "productRange": {
+                        "title": "Our Product Range",
+                        "description": "With over 500 product lines across multiple categories, Unitec delivers complete solutions for residential and commercial construction.",
+                        "categories": {
+                            "walls": "Wall Panels & Cladding",
+                            "ceilings": "Roofing & Ceilings",
+                            "flooring": "Floor Systems",
+                            "facades": "Facade Solutions",
+                            "acoustic": "Acoustic Treatments",
+                            "decorative": "Decorative Finishes"
+                        }
+                    },
+                    "trust": {
+                        "title": "Built for Real Business",
+                        "description": "Our platform is designed for manufacturers, exporters, distributors, and logistics-driven businesses moving serious volume — not casual buyers.",
+                        "partners": [
+                            "Exporters & Wholesalers",
+                            "Bulk-shipping manufacturers",
+                            "B2B e-commerce operations",
+                            "Optimized freight supply chains"
+                        ],
+                        "different": {
+                            "title": "What Makes Us Different",
+                            "items": {
+                                "container": {
+                                    "title": "Container-Centric UX",
+                                    "desc": "We don't fake physical reality — volume rules."
+                                },
+                                "global": {
+                                    "title": "Global-Ready",
+                                    "desc": "Designed for international shipping logic."
+                                },
+                                "b2b": {
+                                    "title": "B2B Focused",
+                                    "desc": "Every feature serves operational teams."
+                                }
+                            }
+                        }
+                    },
+                    "sustainability": {
+                        "title": "Integrated Sustainability",
+                        "items": [
+                            "Recycled PVC content in all products",
+                            "Fully recyclable at end of life",
+                            "Low VOC emissions for indoor safety",
+                            "Long lifespan reduces replacement waste",
+                            "Energy-efficient manufacturing processes"
+                        ],
+                        "quality": {
+                            "title": "Quality Assurance",
+                            "items": [
+                                "ISO-certified manufacturing facilities",
+                                "Third-party lab testing",
+                                "Strict production-stage inspections",
+                                "Real-world performance validation",
+                                "Continuous improvement protocols"
+                            ]
+                        }
+                    },
+                    "innovation": {
+                        "title": "Innovation Leadership",
+                        "description": "We continuously invest in research and development to deliver advanced materials, modern finishes, and smarter installation systems.",
+                        "items": [
+                            "Advanced manufacturing technologies",
+                            "Expanded product applications",
+                            "Enhanced durability and performance",
+                            "Modern color and texture trends"
+                        ]
+                    },
+                    "cta": {
+                        "title": "Ready to Ship Smarter?",
+                        "description": "Let's plan containers, not guesses.",
+                        "button": "Contact Our Team"
+                    }
+                },
+                "negotiation": {
+                    "title": "Business Terms",
+                    "intro": "At UNITEC USA Design, we operate under leading international trade terms to offer flexibility and security.",
+                    "options": {
+                        "title": "These options allow us to offer our partners:",
+                        "items": {
+                            "flexibility": {
+                                "title": "Flexibility in logistics and costs",
+                                "desc": "Adaptable solutions to fit your specific budget and timeline."
+                            },
+                            "transparency": {
+                                "title": "Transparency across the entire supply chain",
+                                "desc": "Clear visibility and communication from production to delivery."
+                            },
+                            "solutions": {
+                                "title": "Solutions tailored to each client's needs",
+                                "desc": "We customize our service to ensure safe and efficient operations with total control from origin to destination."
+                            }
+                        }
                     }
                 }
             },
             "binw": {
                 "businessModels": {
-                    "title": "Modelos de Negocio",
-                    "intro": "En UNITEC USA Design, operamos bajo los principales términos de comercio internacional para ofrecer flexibilidad, transparencia y seguridad a nuestros socios en todo el mundo.",
+                    "title": "Business Models",
+                    "intro": "At UNITEC USA Design, we operate under leading international trade terms to offer flexibility, transparency, and security for our partners worldwide.",
                     "tradeTerms": {
-                        "title": "Términos de Comercio Internacional",
-                        "subtitle": "Ofrecemos Incoterms flexibles para adaptarnos a diferentes necesidades comerciales y preferencias logísticas",
+                        "title": "International Trade Terms",
+                        "subtitle": "We offer flexible Incoterms to accommodate different business needs and logistics preferences",
                         "fob": {
-                            "title": "FOB (Free on Board - Libre a Bordo)",
-                            "desc": "Manejamos la mercancía hasta que es cargada a bordo del buque en el puerto de embarque. Usted mantiene el control del flete marítimo y el seguro desde ese punto.",
+                            "title": "FOB (Free on Board)",
+                            "desc": "We handle the merchandise until it's loaded onto the vessel at the port of shipment. You retain control over freight and insurance logistics from that point.",
                             "benefits": [
-                                "Gestionamos la logística previa al embarque",
-                                "El cliente controla el flete marítimo y el seguro",
-                                "Ideal para importadores experimentados"
+                                "We manage pre-shipment logistics",
+                                "Client controls ocean freight and insurance",
+                                "Ideal for experienced importers"
                             ]
                         },
                         "cif": {
-                            "title": "CIF (Cost, Insurance, and Freight - Costo, Seguro y Flete)",
-                            "desc": "Gestionamos los costos, el seguro y el flete hasta su puerto de destino, ofreciendo una experiencia de servicio completa y sin complicaciones.",
+                            "title": "CIF (Cost, Insurance, and Freight)",
+                            "desc": "We manage costs, insurance, and freight to your destination port, providing a complete hassle-free service experience from our door to yours.",
                             "benefits": [
-                                "Solución de envío todo incluido",
-                                "Nos encargamos del seguro y flete marítimo",
-                                "Perfecto para operaciones optimizadas"
+                                "All-in-one shipping solution",
+                                "We handle insurance and ocean freight",
+                                "Perfect for optimized operations"
                             ]
                         }
                     },
                     "partnership": {
-                        "title": "Oportunidades de Alianza Comercial",
-                        "subtitle": "Trabajamos con diversos tipos de socios para expandir nuestro alcance y brindar el mejor servicio",
+                        "title": "Partnership Opportunities",
+                        "subtitle": "We work with various partner types to expand our reach and better serve customers",
                         "distributors": {
-                            "title": "Distribuidores",
-                            "desc": "Acuerdos de distribución exclusiva y no exclusiva para mercados regionales",
+                            "title": "Distributors",
+                            "desc": "Exclusive and non-exclusive distribution agreements for regional markets",
                             "benefits": [
-                                "Precios mayoristas competitivos",
-                                "Soporte de marketing",
-                                "Opción de territorio exclusivo",
-                                "Acceso prioritario a productos"
+                                "Competitive wholesale prices",
+                                "Marketing support",
+                                "Exclusive territory options",
+                                "Priority product access"
                             ]
                         },
                         "retailers": {
-                            "title": "Comercializadores",
-                            "desc": "Asóciese con nosotros para ofrecer materiales constructivos premium a sus clientes",
+                            "title": "Retailers",
+                            "desc": "Partner with us to offer premium building materials to your customers",
                             "benefits": [
-                                "Protección de margen comercial",
-                                "Material de punto de venta",
-                                "Capacitación de producto",
-                                "Soporte de inventario"
+                                "Retail margin protection",
+                                "Point-of-sale materials",
+                                "Product training",
+                                "Inventory support"
                             ]
                         },
                         "contractors": {
-                            "title": "Constructores y Arquitectos",
-                            "desc": "Precios por volumen y soporte de proyecto para profesionales de la construcción",
+                            "title": "Contractors & Architects",
+                            "desc": "Volume pricing and project support for construction professionals",
                             "benefits": [
-                                "Precios basados en proyectos",
-                                "Asesoría técnica especializada",
-                                "Entrega prioritaria",
-                                "Descuentos por volumen"
+                                "Project-based pricing",
+                                "Technical consultation",
+                                "Priority delivery",
+                                "Volume discounts"
                             ]
                         },
                         "international": {
-                            "title": "Socios Internacionales",
-                            "desc": "Alianzas de exportación para distribución y representación global",
+                            "title": "International Partners",
+                            "desc": "Export partnerships for distribution and global representation",
                             "benefits": [
-                                "Soporte en documentación de exportación",
-                                "Asistencia aduanera",
-                                "Precios en múltiples monedas",
-                                "Coordinación logística global"
+                                "Export documentation support",
+                                "Customs assistance",
+                                "Multi-currency pricing",
+                                "Global logistics coordination"
                             ]
                         }
                     },
                     "benefits": {
-                        "title": "Beneficios para Nuestros Socios",
+                        "title": "Partner Benefits",
                         "items": {
                             "flexibility": {
-                                "title": "Flexibilidad en Logística y Costos",
-                                "desc": "Soluciones adaptables para ajustarse a su presupuesto, cronograma y preferencias operativas específicas. Elija el modelo que mejor funcione para su negocio."
+                                "title": "Flexibility in Logistics and Costs",
+                                "desc": "Adaptable solutions to fit your specific budget, timeline, and operational preferences. Choose the model that works best for your business."
                             },
                             "transparency": {
-                                "title": "Transparencia en Todo el Proceso",
-                                "desc": "Visibilidad y comunicación claras desde la producción hasta la entrega. Sin tarifas ocultas ni sorpresas en ninguna etapa."
+                                "title": "Transparency Throughout the Process",
+                                "desc": "Clear visibility and communication from production to delivery. No hidden fees or surprises at any stage."
                             },
                             "tailored": {
-                                "title": "Soluciones a la Medida",
-                                "desc": "Personalizamos nuestro servicio para asegurar operaciones seguras y eficientes con control total desde el origen hasta el destino."
+                                "title": "Tailored Solutions",
+                                "desc": "We customize our service to ensure safe and efficient operations with full control from origin to destination."
                             }
                         }
                     },
                     "cta": {
-                        "title": "¿Listo para Explorar una Alianza?",
-                        "desc": "Contacte a nuestro equipo de ventas para discutir qué modelo de negocio funciona mejor para sus necesidades. Estamos aquí para ayudarle a tener éxito."
+                        "title": "Ready to Explore a Partnership?",
+                        "desc": "Contact our sales team to discuss which business model works best for your needs. We're here to help you succeed."
                     }
                 },
                 "name": "UNITEC USA Design",
@@ -280,7 +482,35 @@ const translations = {
                 "contact": {
                     "title": "Contact Us",
                     "subtitle": "We're Here to Help",
-                    "description": "We specialize in providing premium building materials for construction projects of all sizes. Reach out to discuss your needs."
+                    "description": "We specialize in providing premium building materials for construction projects of all sizes. Reach out to discuss your needs.",
+                    "hero": {
+                        "title": "Let's Move Your Products —",
+                        "subtitle": "At Scale",
+                        "description": "We specialize in bulk product handling, container-based shipping, and optimized logistics workflows. Reach out to discuss volumes, containers, and delivery timelines.",
+                        "bulkOrders": "Bulk Orders",
+                        "logistics": "Logistics",
+                        "responseTime": "Response Time",
+                        "handling": "Handling",
+                        "containerBased": "Container-based",
+                        "optimizedPacking": "Optimized Packing",
+                        "within24h": "Within 24h",
+                        "secureTracked": "Secure & Tracked"
+                    },
+                    "talkTeam": "Talk to Our Logistics Team",
+                    "whether": "Whether you're planning a full container load or evaluating capacity, our team helps you choose the right shipping structure.",
+                    "headquarters": "Headquarters",
+                    "generalInquiries": "General Inquiries",
+                    "activeStaff": "Active Staff",
+                    "requestQuote": "Request a Bulk Shipping Quote",
+                    "provideDetails": "Provide details about your products and container requirements.",
+                    "fullName": "Full Name",
+                    "companyName": "Company Name",
+                    "email": "Email",
+                    "phone": "Phone",
+                    "estimatedVolume": "Estimated Volume / Containers",
+                    "projectDetails": "Project Details",
+                    "sendInquiry": "Send Inquiry",
+                    "responseTimeText": "Our team usually responds within 24 business hours."
                 },
                 "headquarters": {
                     "title": "USA Headquarters",
@@ -324,18 +554,195 @@ const translations = {
                 },
                 "about": {
                     "mission": {
-                        "title": "Mission",
-                        "p1": "At UNITEC USA Design, we simplify the world of construction through innovative, sustainable, and high-design solutions.",
+                        "title": "Our Mission",
+                        "p1": "At Unitec USA Design, our mission is to redefine modern construction by delivering innovative, sustainable, and high-quality PVC and WPC building materials that elevate everyday spaces.",
+                        "p2": "We believe building materials should do more than function — they should inspire creativity, simplify installation, and contribute to a more sustainable built environment.",
+                        "purpose": "Our Purpose",
+                        "innovation": "Innovation",
+                        "innovationDesc": "Developing new materials and architectural solutions",
+                        "partnership": "Partnerships",
+                        "partnershipDesc": "Building long-term collaborative relationships",
+                        "globalImpact": "Global Impact",
+                        "globalImpactDesc": "Improving quality of life and construction standards",
+                        "commitments": "Our Commitments",
                         "items": [
-                            "Innovative building development",
-                            "Sustainable materials",
-                            "Premium structural quality",
-                            "Global architectural solutions"
+                            "Innovative, future-ready product development",
+                            "Eco-conscious materials and manufacturing",
+                            "Premium quality without compromise",
+                            "Solutions that empower professionals and homeowners",
+                            "Accessible materials for projects of any scale"
                         ]
                     },
                     "vision": {
-                        "title": "Vision",
-                        "p1": "To become a leading brand in construction innovation in Latin America, recognized for simplifying construction processes and setting trends in design."
+                        "title": "Our Vision",
+                        "p1": "Our vision is to become the leading provider of PVC and WPC construction solutions across North America and Latin America — transforming how professionals and homeowners approach building and design.",
+                        "p2": "We're building toward a future where sustainable construction, design freedom, and maintenance-free living are the standard, not the exception.",
+                        "stats": {
+                            "reach": "International Reach",
+                            "sustainable": "Sustainable Focus",
+                            "design": "Design Freedom",
+                            "professionals": "Built for Professionals"
+                        }
+                    },
+                    "title": "About Us",
+                    "hero": {
+                        "title": "Built for Scale.",
+                        "subtitle": "Designed for Containers.",
+                        "description": "We help businesses move products in bulk using a structured, container-centric approach — reducing waste, optimizing space, and simplifying logistics from order to shipment."
+                    },
+                    "story": {
+                        "title": "Why We Exist",
+                        "p1": "Bulk shipping is broken when treated like regular e-commerce. Products aren't individual units — they're volumes, dimensions, and constraints within a container.",
+                        "p2": "We built our platform around a simple belief: containers first, products second. This mindset enables businesses to plan realistic shipments, avoid overbooking, and get full visibility into capacity.",
+                        "stats": {
+                            "bulk": "Bulk Logic",
+                            "dimension": "Dimension Aware",
+                            "logistics": "Logistics Ready",
+                            "safe": "Operationally Safe"
+                        }
+                    },
+                    "howItWorks": {
+                        "title": "How Our System Works",
+                        "subtitle": "Our workflow mirrors real container planning — not traditional carts.",
+                        "steps": {
+                            "create": {
+                                "title": "Create Containers",
+                                "desc": "Every order starts with a physical container definition including internal dimensions."
+                            },
+                            "fill": {
+                                "title": "Fill with Products",
+                                "desc": "Products are added based on size and quantity, not just price."
+                            },
+                            "ship": {
+                                "title": "Ship with Confidence",
+                                "desc": "Know exactly how full each container is before shipping."
+                            }
+                        }
+                    },
+                    "whyChoose": {
+                        "title": "Why Choose Unitec",
+                        "description": "Our products are designed to outperform traditional building materials while simplifying installation and long-term ownership.",
+                        "features": {
+                            "warranty": {
+                                "title": "15–25 Year Warranties",
+                                "desc": "Industry-leading durability backed by trust."
+                            },
+                            "waterproof": {
+                                "title": "100% Waterproof",
+                                "desc": "No rot, rust, or moisture damage — ever."
+                            },
+                            "maintenance": {
+                                "title": "Zero Maintenance",
+                                "desc": "No painting, sealing, or refinishing required."
+                            },
+                            "fire": {
+                                "title": "Fire Resistant",
+                                "desc": "Self-extinguishing with low flame spread."
+                            },
+                            "eco": {
+                                "title": "Eco-Friendly",
+                                "desc": "Recyclable materials with reclaimed polymer content."
+                            },
+                            "install": {
+                                "title": "Quick Installation",
+                                "desc": "Save time and labor costs on every project."
+                            }
+                        }
+                    },
+                    "productRange": {
+                        "title": "Our Product Range",
+                        "description": "With over 500 product lines across multiple categories, Unitec delivers complete solutions for residential and commercial construction.",
+                        "categories": {
+                            "walls": "Wall Panels & Cladding",
+                            "ceilings": "Roofing & Ceilings",
+                            "flooring": "Floor Systems",
+                            "facades": "Facade Solutions",
+                            "acoustic": "Acoustic Treatments",
+                            "decorative": "Decorative Finishes"
+                        }
+                    },
+                    "trust": {
+                        "title": "Built for Real Business",
+                        "description": "Our platform is designed for manufacturers, exporters, distributors, and logistics-driven businesses moving serious volume — not casual buyers.",
+                        "partners": [
+                            "Exporters & Wholesalers",
+                            "Bulk-shipping manufacturers",
+                            "B2B e-commerce operations",
+                            "Optimized freight supply chains"
+                        ],
+                        "different": {
+                            "title": "What Makes Us Different",
+                            "items": {
+                                "container": {
+                                    "title": "Container-Centric UX",
+                                    "desc": "We don't fake physical reality — volume rules."
+                                },
+                                "global": {
+                                    "title": "Global-Ready",
+                                    "desc": "Designed for international shipping logic."
+                                },
+                                "b2b": {
+                                    "title": "B2B Focused",
+                                    "desc": "Every feature serves operational teams."
+                                }
+                            }
+                        }
+                    },
+                    "sustainability": {
+                        "title": "Integrated Sustainability",
+                        "items": [
+                            "Recycled PVC content in all products",
+                            "Fully recyclable at end of life",
+                            "Low VOC emissions for indoor safety",
+                            "Long lifespan reduces replacement waste",
+                            "Energy-efficient manufacturing processes"
+                        ],
+                        "quality": {
+                            "title": "Quality Assurance",
+                            "items": [
+                                "ISO-certified manufacturing facilities",
+                                "Third-party lab testing",
+                                "Strict production-stage inspections",
+                                "Real-world performance validation",
+                                "Continuous improvement protocols"
+                            ]
+                        }
+                    },
+                    "innovation": {
+                        "title": "Innovation Leadership",
+                        "description": "We continuously invest in research and development to deliver advanced materials, modern finishes, and smarter installation systems.",
+                        "items": [
+                            "Advanced manufacturing technologies",
+                            "Expanded product applications",
+                            "Enhanced durability and performance",
+                            "Modern color and texture trends"
+                        ]
+                    },
+                    "cta": {
+                        "title": "Ready to Ship Smarter?",
+                        "description": "Let's plan containers, not guesses.",
+                        "button": "Contact Our Team"
+                    }
+                },
+                "negotiation": {
+                    "title": "Business Terms",
+                    "intro": "At UNITEC USA Design, we operate under leading international trade terms to offer flexibility and security.",
+                    "options": {
+                        "title": "These options allow us to offer our partners:",
+                        "items": {
+                            "flexibility": {
+                                "title": "Flexibility in logistics and costs",
+                                "desc": "Adaptable solutions to fit your specific budget and timeline."
+                            },
+                            "transparency": {
+                                "title": "Transparency across the entire supply chain",
+                                "desc": "Clear visibility and communication from production to delivery."
+                            },
+                            "solutions": {
+                                "title": "Solutions tailored to each client's needs",
+                                "desc": "We customize our service to ensure safe and efficient operations with total control from origin to destination."
+                            }
+                        }
                     }
                 }
             }
@@ -478,94 +885,94 @@ const translations = {
                 "text": "Unitec USA Design PVC and WPC materials combine durability, aesthetics, and eco-conscious manufacturing. Engineered for long-lasting performance, our products are 100% waterproof, maintenance-free, and ideal for both residential and commercial projects.",
                 "features": {
                     "businessModels": {
-                        "title": "Modelos de Negocio",
-                        "intro": "En UNITEC USA Design, operamos bajo los principales términos de comercio internacional para ofrecer flexibilidad, transparencia y seguridad a nuestros socios en todo el mundo.",
+                        "title": "Business Models",
+                        "intro": "At UNITEC USA Design, we operate under leading international trade terms to offer flexibility, transparency, and security for our partners worldwide.",
                         "tradeTerms": {
-                            "title": "Términos de Comercio Internacional",
-                            "subtitle": "Ofrecemos Incoterms flexibles para adaptarnos a diferentes necesidades comerciales y preferencias logísticas",
+                            "title": "International Trade Terms",
+                            "subtitle": "We offer flexible Incoterms to accommodate different business needs and logistics preferences",
                             "fob": {
-                                "title": "FOB (Free on Board - Libre a Bordo)",
-                                "desc": "Manejamos la mercancía hasta que es cargada a bordo del buque en el puerto de embarque. Usted mantiene el control del flete marítimo y el seguro desde ese punto.",
+                                "title": "FOB (Free on Board)",
+                                "desc": "We handle the merchandise until it's loaded onto the vessel at the port of shipment. You retain control over freight and insurance logistics from that point.",
                                 "benefits": [
-                                    "Gestionamos la logística previa al embarque",
-                                    "El cliente controla el flete marítimo y el seguro",
-                                    "Ideal para importadores experimentados"
+                                    "We manage pre-shipment logistics",
+                                    "Client controls ocean freight and insurance",
+                                    "Ideal for experienced importers"
                                 ]
                             },
                             "cif": {
-                                "title": "CIF (Cost, Insurance, and Freight - Costo, Seguro y Flete)",
-                                "desc": "Gestionamos los costos, el seguro y el flete hasta su puerto de destino, ofreciendo una experiencia de servicio completa y sin complicaciones.",
+                                "title": "CIF (Cost, Insurance, and Freight)",
+                                "desc": "We manage costs, insurance, and freight to your destination port, providing a complete hassle-free service experience from our door to yours.",
                                 "benefits": [
-                                    "Solución de envío todo incluido",
-                                    "Nos encargamos del seguro y flete marítimo",
-                                    "Perfecto para operaciones optimizadas"
+                                    "All-in-one shipping solution",
+                                    "We handle insurance and ocean freight",
+                                    "Perfect for optimized operations"
                                 ]
                             }
                         },
                         "partnership": {
-                            "title": "Oportunidades de Alianza Comercial",
-                            "subtitle": "Trabajamos con diversos tipos de socios para expandir nuestro alcance y brindar el mejor servicio",
+                            "title": "Partnership Opportunities",
+                            "subtitle": "We work with various partner types to expand our reach and better serve customers",
                             "distributors": {
-                                "title": "Distribuidores",
-                                "desc": "Acuerdos de distribución exclusiva y no exclusiva para mercados regionales",
+                                "title": "Distributors",
+                                "desc": "Exclusive and non-exclusive distribution agreements for regional markets",
                                 "benefits": [
-                                    "Precios mayoristas competitivos",
-                                    "Soporte de marketing",
-                                    "Opción de territorio exclusivo",
-                                    "Acceso prioritario a productos"
+                                    "Competitive wholesale prices",
+                                    "Marketing support",
+                                    "Exclusive territory options",
+                                    "Priority product access"
                                 ]
                             },
                             "retailers": {
-                                "title": "Comercializadores",
-                                "desc": "Asóciese con nosotros para ofrecer materiales constructivos premium a sus clientes",
+                                "title": "Retailers",
+                                "desc": "Partner with us to offer premium building materials to your customers",
                                 "benefits": [
-                                    "Protección de margen comercial",
-                                    "Material de punto de venta",
-                                    "Capacitación de producto",
-                                    "Soporte de inventario"
+                                    "Retail margin protection",
+                                    "Point-of-sale materials",
+                                    "Product training",
+                                    "Inventory support"
                                 ]
                             },
                             "contractors": {
-                                "title": "Constructores y Arquitectos",
-                                "desc": "Precios por volumen y soporte de proyecto para profesionales de la construcción",
+                                "title": "Contractors & Architects",
+                                "desc": "Volume pricing and project support for construction professionals",
                                 "benefits": [
-                                    "Precios basados en proyectos",
-                                    "Asesoría técnica especializada",
-                                    "Entrega prioritaria",
-                                    "Descuentos por volumen"
+                                    "Project-based pricing",
+                                    "Technical consultation",
+                                    "Priority delivery",
+                                    "Volume discounts"
                                 ]
                             },
                             "international": {
-                                "title": "Socios Internacionales",
-                                "desc": "Alianzas de exportación para distribución y representación global",
+                                "title": "International Partners",
+                                "desc": "Export partnerships for distribution and global representation",
                                 "benefits": [
-                                    "Soporte en documentación de exportación",
-                                    "Asistencia aduanera",
-                                    "Precios en múltiples monedas",
-                                    "Coordinación logística global"
+                                    "Export documentation support",
+                                    "Customs assistance",
+                                    "Multi-currency pricing",
+                                    "Global logistics coordination"
                                 ]
                             }
                         },
                         "benefits": {
-                            "title": "Beneficios para Nuestros Socios",
+                            "title": "Partner Benefits",
                             "items": {
                                 "flexibility": {
-                                    "title": "Flexibilidad en Logística y Costos",
-                                    "desc": "Soluciones adaptables para ajustarse a su presupuesto, cronograma y preferencias operativas específicas. Elija el modelo que mejor funcione para su negocio."
+                                    "title": "Flexibility in Logistics and Costs",
+                                    "desc": "Adaptable solutions to fit your specific budget, timeline, and operational preferences. Choose the model that works best for your business."
                                 },
                                 "transparency": {
-                                    "title": "Transparencia en Todo el Proceso",
-                                    "desc": "Visibilidad y comunicación claras desde la producción hasta la entrega. Sin tarifas ocultas ni sorpresas en ninguna etapa."
+                                    "title": "Transparency Throughout the Process",
+                                    "desc": "Clear visibility and communication from production to delivery. No hidden fees or surprises at any stage."
                                 },
                                 "tailored": {
-                                    "title": "Soluciones a la Medida",
-                                    "desc": "Personalizamos nuestro servicio para asegurar operaciones seguras y eficientes con control total desde el origen hasta el destino."
+                                    "title": "Tailored Solutions",
+                                    "desc": "We customize our service to ensure safe and efficient operations with full control from origin to destination."
                                 }
                             }
                         },
                         "cta": {
-                            "title": "¿Listo para Explorar una Alianza?",
-                            "desc": "Contacte a nuestro equipo de ventas para discutir qué modelo de negocio funciona mejor para sus necesidades. Estamos aquí para ayudarle a tener éxito."
+                            "title": "Ready to Explore a Partnership?",
+                            "desc": "Contact our sales team to discuss which business model works best for your needs. We're here to help you succeed."
                         }
                     },
                     "quality": "Architectural-grade material quality",
@@ -792,17 +1199,17 @@ const translations = {
                 }
             },
             "mission": {
-                "title": "Nuestra Misión",
-                "p1": "En Unitec USA Design, nuestra misión es redefinir la construcción moderna delivering innovative, sustainable, and high-quality PVC and WPC building materials that elevate everyday spaces.",
+                "title": "Our Mission",
+                "p1": "At Unitec USA Design, our mission is to redefine modern construction by delivering innovative, sustainable, and high-quality PVC and WPC building materials that elevate everyday spaces.",
                 "p2": "We believe building materials should do more than function — they should inspire creativity, simplify installation, and contribute to a more sustainable built environment.",
-                "purpose": "Nuestro Propósito",
-                "innovation": "Innovación",
-                "innovationDesc": "Desarrollando nuevos materiales y soluciones",
-                "partnership": "Alianzas",
-                "partnershipDesc": "Construyendo relaciones a largo plazo",
-                "globalImpact": "Impacto Global",
-                "globalImpactDesc": "Mejorando la calidad de vida",
-                "commitments": "Nuestros Compromisos",
+                "purpose": "Our Purpose",
+                "innovation": "Innovation",
+                "innovationDesc": "Developing new materials and architectural solutions",
+                "partnership": "Partnerships",
+                "partnershipDesc": "Building long-term collaborative relationships",
+                "globalImpact": "Global Impact",
+                "globalImpactDesc": "Improving quality of life and construction standards",
+                "commitments": "Our Commitments",
                 "items": [
                     "Innovative, future-ready product development",
                     "Eco-conscious materials and manufacturing",
@@ -813,10 +1220,10 @@ const translations = {
             },
             "vision": {
                 "title": "Our Vision",
-                "p1": "Our vision is to become the leading provider of PVC and WPC construction solutions across North America — transforming how professionals and homeowners approach building and design.",
+                "p1": "Our vision is to become the leading provider of PVC and WPC construction solutions across North America and Latin America — transforming how professionals and homeowners approach building and design.",
                 "p2": "We're building toward a future where sustainable construction, design freedom, and maintenance-free living are the standard, not the exception.",
                 "stats": {
-                    "reach": "National Reach",
+                    "reach": "International Reach",
                     "sustainable": "Sustainable Focus",
                     "design": "Design Freedom",
                     "professionals": "Built for Professionals"
@@ -854,7 +1261,7 @@ const translations = {
                     },
                     "maintenance": {
                         "title": "Zero Maintenance",
-                        "desc": "No painting, sealing, or refinishing."
+                        "desc": "No painting, sealing, or refinishing required."
                     },
                     "fire": {
                         "title": "Fire Resistant",
@@ -862,17 +1269,17 @@ const translations = {
                     },
                     "eco": {
                         "title": "Eco-Friendly",
-                        "desc": "Recyclable materials with recycled content."
+                        "desc": "Recyclable materials with reclaimed polymer content."
                     },
                     "install": {
                         "title": "Quick Installation",
-                        "desc": "Save time and labor on every project."
+                        "desc": "Save time and labor costs on every project."
                     }
                 }
             },
             "productRange": {
                 "title": "Our Product Range",
-                "description": "With over 100 product lines across 22 categories, Unitec delivers complete solutions for residential and commercial construction.",
+                "description": "With over 500 product lines across multiple categories, Unitec delivers complete solutions for residential and commercial construction.",
                 "categories": {
                     "walls": "Wall Panels & Cladding",
                     "ceilings": "Roofing & Ceilings",
@@ -965,7 +1372,7 @@ const translations = {
                     "desc": "We manage costs, insurance, and freight to your destination port, providing a complete hassle-free service experience from our door to yours.",
                     "benefits": [
                         "All-in-one shipping solution",
-                        "We handle insurance and freight",
+                        "We handle insurance and ocean freight",
                         "Perfect for optimized operations"
                     ]
                 }
@@ -994,7 +1401,7 @@ const translations = {
                     ]
                 },
                 "contractors": {
-                    "title": "Contractors",
+                    "title": "Contractors & Architects",
                     "desc": "Volume pricing and project support for construction professionals",
                     "benefits": [
                         "Project-based pricing",
@@ -1004,7 +1411,7 @@ const translations = {
                     ]
                 },
                 "international": {
-                    "title": "International",
+                    "title": "International Partners",
                     "desc": "Export partnerships for distribution and global representation",
                     "benefits": [
                         "Export documentation support",
@@ -1027,7 +1434,7 @@ const translations = {
                     },
                     "tailored": {
                         "title": "Tailored Solutions",
-                        "desc": "We customize our service to ensure secure and efficient operations with full control from origin to destination, meeting your specific requirements."
+                        "desc": "We customize our service to ensure safe and efficient operations with full control from origin to destination."
                     }
                 }
             },
@@ -1047,12 +1454,12 @@ const translations = {
                         "desc": "Adaptable solutions to fit your specific budget and timeline."
                     },
                     "transparency": {
-                        "title": "Transparency throughout the supply chain",
+                        "title": "Transparency across the entire supply chain",
                         "desc": "Clear visibility and communication from production to delivery."
                     },
                     "solutions": {
                         "title": "Solutions tailored to each client's needs",
-                        "desc": "We customize our service to ensure secure and efficient operations with full control from origin to destination."
+                        "desc": "We customize our service to ensure safe and efficient operations with total control from origin to destination."
                     }
                 }
             }
