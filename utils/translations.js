@@ -2596,20 +2596,20 @@ const translations = {
             }
         },
         "steps": {
-            "title": "ASÍ PUEDE IMPORTAR NUESTROS PRODUCTOS",
-            "subtitle": "TRANSFORMAMOS LA INDUSTRIA DE LA CONSTRUCCIÓN EN LATAM",
+            "title": "TRANSFORMAMOS LA INDUSTRIA DE LA CONSTRUCCIÓN EN LATAM",
+            "subtitle": "Así puede importar todos nuestros productos.",
             "items": {
                 "select": {
-                    "title": "01 Verifique y seleccione sus productos",
-                    "desc": "Elija una o varias referencias del catálogo. Podrá apoyar su decisión con la ficha técnica que está al lado de cada artículo."
+                    "title": "VERIFIQUE Y SELECCIONE SUS PRODUCTOS",
+                    "desc": "Elija una o varias referencias del catálogo.\n\nPodrá apoyar su decisión con la ficha técnica que está al lado de cada artículo."
                 },
                 "fill": {
-                    "title": "02 Póngalos en el carrito y en el contenedor",
-                    "desc": "Vea en tiempo real cuánto espacio ocupa cada producto y cuánta capacidad le queda (un contenedor de 20 pies carga ≈ 33 m³)."
+                    "title": "PÓNGALOS EN EL CARRITO Y EN EL CONTENEDOR",
+                    "desc": "Vea en tiempo real cuánto espacio ocupa cada producto y cuánta capacidad le queda.\n\n**(Un contenedor de 20 pies carga ≈ 33 m³).**"
                 },
                 "ship": {
-                    "title": "03 Reciba los productos",
-                    "desc": "Recójalos en nuestro showroom de Medellín, o impórtelos vía marítima con trazabilidad, bajo el Incoterm que usted elija (FOB o CIF)."
+                    "title": "RECIBA LOS PRODUCTOS",
+                    "desc": "Recójalos en nuestro showroom de Medellín, si su contacto fue directo con un asesor o impórtelos vía marítima con trazabilidad, bajo el Incoterm que usted elija (FOB o CIF)."
                 }
             },
             "footer": "Usted mantiene el control — los contenedores se actualizan automáticamente a medida que agrega o quita productos."
