@@ -11,25 +11,25 @@ export default function sitemap() {
       priority: 1.0,
     },
     {
-      url: `${baseUrl}/about`,
+      url: `${baseUrl}/nosotros`,
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 0.8,
     },
     {
-      url: `${baseUrl}/contact`,
+      url: `${baseUrl}/contacto`,
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 0.8,
     },
     {
-      url: `${baseUrl}/cart`,
+      url: `${baseUrl}/carrito`,
       lastModified: new Date(),
       changeFrequency: 'weekly',
       priority: 0.5,
     },
     {
-      url: `${baseUrl}/collections`,
+      url: `${baseUrl}/colecciones`,
       lastModified: new Date(),
       changeFrequency: 'weekly',
       priority: 0.9,
@@ -37,7 +37,7 @@ export default function sitemap() {
   ];
 
   const productRoutes = products.map((product) => ({
-    url: `${baseUrl}/products/${product.id}`,
+    url: `${baseUrl}/productos/${product.id}`,
     lastModified: new Date(),
     changeFrequency: 'weekly',
     priority: 0.8,

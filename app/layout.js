@@ -229,7 +229,7 @@ export default async function RootLayout({ children }) {
                   "inLanguage": ["es", "en"],
                   "potentialAction": {
                     "@type": "SearchAction",
-                    "target": "https://unitecusadesign.com/collections/search?q={search_term_string}",
+                    "target": "https://unitecusadesign.com/colecciones/search?q={search_term_string}",
                     "query-input": "required name=search_term_string"
                   }
                 }
