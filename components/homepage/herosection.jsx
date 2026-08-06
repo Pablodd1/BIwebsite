@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import Image from "next/image";
 import { useState, useEffect } from "react";
@@ -51,6 +51,7 @@ export default function HeroSec() {
     const heroSubtitle = getCompanyText(companyKey, 'heroSubtitle');
     const heroCta = getCompanyText(companyKey, 'heroCta');
     const heroCta2 = getCompanyText(companyKey, 'heroCta2');
+    const whatsappLink = activeBrand === 'unitec' ? "https://wa.me/573142332147" : "https://wa.me/13054233147";
 
 
 
@@ -96,32 +97,36 @@ export default function HeroSec() {
                             {heroTitle}
                         </motion.h1>
 
-                        <motion.p
+                        <motion.h3
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.6, delay: 0.4 }}
                             className="text-sm sm:text-base font-normal text-white/90 w-full md:w-8/12 drop-shadow-md"
                         >
                             {heroSubtitle}
-                        </motion.p>
+                        </motion.h3>
                         <motion.div
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.6, delay: 0.6 }}
-                            className="mt-4 flex flex-col sm:flex-row items-start sm:items-center gap-4"
+                            className="mt-4 flex flex-col sm:flex-row items-start sm:items-center gap-4 w-full md:w-11/12"
                         >
                             <MyButton
                                 label={heroCta}
                                 href="/colecciones"
                                 className={{
-                                    btn: "bg-[#F37B24] px-6 py-2.5 h-12 hover:bg-[#E06A1A] transition-all duration-300 hover:scale-105 text-sm md:text-base shadow-lg",
+                                    btn: "bg-[#F37B24] px-6 py-2.5 h-12 hover:bg-[#E06A1A] transition-all duration-300 hover:scale-105 text-sm md:text-base shadow-lg border-none",
                                     label: "font-bold uppercase text-white"
                                 }}
                             />
-                            
-                            <div className="w-full max-w-sm">
-                                <SearchForm full={true} />
-                            </div>
+                            <MyButton
+                                label={heroCta2}
+                                href={whatsappLink}
+                                className={{
+                                    btn: "bg-white/10 backdrop-blur-md border border-white/20 px-6 py-2.5 h-12 hover:bg-white/20 transition-all duration-300 hover:scale-105 text-sm md:text-base shadow-lg",
+                                    label: "font-semibold text-white"
+                                }}
+                            />
                         </motion.div>
                     </motion.div>
                 </div>
