@@ -1070,8 +1070,9 @@ const translations = {
         },
         "whom": {
             "title": "Designed for serious bulk buyers",
-            "description": "If your business ships products by container — not parcels — this platform gives you the clarity and control traditional ecommerce never could.",
-            "btn": "About Us",
+            "description1": "If your business ships products by container — not parcels —",
+            "description2": "this platform gives you the clarity and control traditional ecommerce never could.",
+            "btn": "ABOUT US",
             "users": {
                 "wholesalers": {
                     "title": "Wholesalers",
@@ -2615,8 +2616,9 @@ const translations = {
         },
         "whom": {
             "title": "UNITEC, UNA MARCA QUE PIENSA EN TODO EL SECTOR DE LA CONSTRUCCIÓN",
-            "description": "Si su negocio construye, distribuye materiales o importa por volumen, Unitec es su aliado estratégico. Contamos con un amplio portafolio de productos, calidad y garantía certificada, y una plataforma que le entrega el control que un e-commerce tradicional no puede darle.",
-            "btn": "Conozca cómo trabajamos",
+            "description1": "Si su negocio construye, distribuye materiales o importa por volumen, Unitec es su aliado estratégico.",
+            "description2": "Contamos con un amplio portafolio de productos, calidad y garantía certificada, y una plataforma segura que le entrega el control que un e-commerce tradicional no puede darle.",
+            "btn": "CONOZCA CÓMO TRABAJAMOS",
             "users": {
                 "wholesalers": {
                     "title": "Distribuidores y mayoristas",
