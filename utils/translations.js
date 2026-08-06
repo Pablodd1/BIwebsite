@@ -2574,8 +2574,8 @@ const translations = {
             }
         },
         "bulk": {
-            "title": "COMERCIALIZAMOS POR VOLUMEN CON SEGURIDAD Y TRAZABILIDAD",
-            "subtitle": "Un carrito de compras tradicional no sirve para importar por contenedor. Por eso construimos una plataforma que piensa en metros cúbicos, no en unidades sueltas.",
+            "title": "TRANSFORMAMOS LA INDUSTRIA DE LA CONSTRUCCIÓN EN LATAM",
+            "subtitle": "Un carrito de compras tradicional no sirve para importar por contenedor. Por eso construimos una plataforma que piensa en metros cúbicos, no en unidades sueltas. Queremos que la facilidad y la practicidad no solo esté en la construcción, sino en todo el proceso de compra.",
             "features": {
                 "container": {
                     "title": "Compra por contenedor",
