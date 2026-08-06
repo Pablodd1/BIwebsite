@@ -2635,10 +2635,10 @@ const translations = {
             }
         },
         "cta": {
-            "title": "Su próximo proyecto empieza aquí.",
+            "title": "SU PRÓXIMO PROYECTO EMPIEZA AQUÍ",
             "text": "Explore aquí más de 500 referencias y escoja los productos con los que quiere darle un ambiente diferente a cada proyecto.",
-            "btn": "Explorar productos",
-            "btnSecondary": "Cotizar con un asesor por WhatsApp",
+            "btn": "EXPLORE NUESTROS PRODUCTOS",
+            "btnSecondary": "COTICE FÁCIL POR WHATSAPP",
             "btnSecondaryHref": "https://wa.me/13054233147"
         },
         "recommendations": {
