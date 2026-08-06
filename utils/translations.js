@@ -1791,8 +1791,8 @@ const translations = {
                 "heroCta2": "Hable y cotize sus proyectos con un asesor",
                 "metaTitle": "Unitec USA Design | Materiales Constructivos PVC y WPC — Colombia y Latam",
                 "metaDescription": "Filial de Building Innovation en Colombia y Latinoamérica. Más de 500 referencias en PVC, WPC y SPC con logística de contenedor, asesoría y garantía certificada.",
-                "whyTitle": "NUESTRO ORIGEN",
-                "whyDescription": "Unitec es la filial de Building Innovation en Colombia y Latinoamérica. Desde hace 10 años somos el aliado logístico y constructivo de diseñadores, arquitectos, constructores, distribuidores e importadores que impulsan la evolución de la construcción tradicional hacia sistemas más eficientes, mediante materiales que aportan diseño, confort y estilo.",
+                "whyTitle": "LO QUE SOMOS",
+                "whyDescription": "Unitec USA Design es la filial de Building Innovation en Colombia y Latinoamérica, que por más de 20 años se ha convertido en el aliado logístico y constructivo de diseñadores, arquitectos, constructores, distribuidores e importadores, que impulsan la evolución de la construcción tradicional hacia sistemas más eficientes mediante materiales que aportan diseño, confort y estilo.",
                 "aboutHero": {
                     "title": "Construido para Escala.",
                     "subtitle": "Diseñado para Contenedores.",
@@ -2559,16 +2559,16 @@ const translations = {
             "description": "Unitec USA Design se fundó sobre una idea simple: los materiales de construcción deben ser innovadores, duraderos y ambientalmente responsables, sin ser complicados ni costosos. Creamos soluciones modernas de PVC y WPC que ayudan a profesionales y propietarios a construir de manera más inteligente, rápida y con confianza.",
             "features": {
                 "innovation": {
-                    "title": "Innovación",
-                    "text": "Desafiamos los métodos de construcción tradicionales desarrollando materiales avanzados de PVC y WPC que combinan diseño moderno, rendimiento y facilidad de instalación. Nuestros productos están diseñados para simplificar proyectos sin sacrificar calidad ni estética."
+                    "title": "INNOVACIÓN",
+                    "text": "Desafiamos los métodos de construcción tradicionales **desarrollando materiales avanzados de PVC y WPC que combinan diseño moderno, rendimiento y facilidad de instalación, con sistemas de encaje y adhesivos que reducen oficios y tiempos de obra.**\n\nNuestros productos están pensados para simplificar proyectos sin sacrificar calidad ni estética."
                 },
                 "quality": {
-                    "title": "Calidad y Durabilidad",
-                    "text": "Cada producto Unitec está hecho para durar. Con un alto contenido de PVC puro, 100% impermeable, resistente al fuego y garantías líderes en la industria, entregamos materiales que superan a las alternativas convencionales en condiciones reales."
+                    "title": "CALIDAD Y DURABILIDAD",
+                    "text": "Cada producto está hecho para durar.\n\nCon un alto contenido de PVC puro, **100% impermeable, resistente al fuego y durabilidad de 15 a 25 años, líder en la industria.**\n\nEntregamos materiales que superan a las alternativas convencionales en condiciones reales."
                 },
                 "sustainability": {
-                    "title": "Sostenibilidad",
-                    "text": "La responsabilidad ambiental está integrada en todo lo que hacemos. Nuestros materiales están hechos de materiales recuperados, 100% reciclables y no requieren mantenimiento con químicos, pinturas y solventes que afecten los ecosistemas. Somos sostenibles en la elaboración y en la implementación de nuestras alternativas constructivas."
+                    "title": "SOSTENIBILIDAD",
+                    "text": "La responsabilidad ambiental está integrada en todo lo que hacemos.\n\nNuestros materiales están hechos de **materiales recuperados, 100% reciclables y no requieren mantenimiento con químicos, pinturas y solventes que afecten los ecosistemas.**\n\nSomos sostenibles en la elaboración y en la implementación de cada producto."
                 }
             }
         },
