@@ -27,25 +27,25 @@ import { useBrand } from 'utils/BrandContext';
 
 const productCategories = {
     Interior: {
-        "CIELO RASO PVC": { page: "/collections/interior", icon: PanelTop, collection: "INTERIOR", subcategories: ["CIELO RASO PVC"] },
-        "ILUMINACION": { page: "/collections/interior", icon: Zap, collection: "INTERIOR", subcategories: ["ILUMINACION"] },
-        "JARDINES ARTIFICIALES": { page: "/collections/jardines-artificiales", icon: Trees, collection: "INTERIOR", subcategories: ["JARDINES INTERIOR", "JARDINES MOSS"] },
-        "LAMINAS": { page: "/collections/laminas", icon: Grid3X3, collection: "INTERIOR", subcategories: ["FOAM BOARD", "LAMINAS MARMOL PVC", "LAMINAS PVC BOARD", "LAMINAS SINTETICAS"] },
-        "LISTONES": { page: "/collections/listones-wpc-exterior", icon: RectangleHorizontal, collection: "INTERIOR", subcategories: ["LISTONES PVC CIELO RASO", "LISTONES PVC INTERIOR ESTRUCTURAL"] },
-        "PANELES WPC Y ANGULOS": { page: "/collections/paneles-wpc", icon: Square, collection: "INTERIOR", subcategories: ["PANELES WPC INTERIOR", "PANELES WPC REDONDOS"] },
-        "PAREDES": { page: "/collections/paredes", icon: RectangleHorizontal, collection: "INTERIOR", subcategories: ["PANEL PS", "PANELES ACUSTICOS", "PANELES ACOLCHADOS", "PAREDES ACOLCHADAS", "PAREDES MUROFLEX", "PAREDES PU", "ROLLOS ADHESIVOS DE MARMOL", "PANELES ACRILICOS MARMOL", "PAREDES UNIFLEX"] },
-        "CINTAS": { page: "/collections/cintas", icon: Palette, collection: "INTERIOR", subcategories: ["CINTA ADHESIVA DE PAPEL", "CINTA ADHESIVA METALICA"] },
-        "PEGANTES": { page: "/collections/pegantes", icon: Droplets, collection: "INTERIOR", subcategories: ["PEGANTES"] },
-        "PISOS": { page: "/collections/pisos", icon: Home, collection: "INTERIOR", subcategories: ["PISOS SPC"] },
-        "ZOCALOS": { page: "/collections/zocalos", icon: Maximize, collection: "INTERIOR", subcategories: ["ZOCALOS SPC"] }
+        "CIELO RASO PVC": { page: "/colecciones/interior", icon: PanelTop, collection: "INTERIOR", subcategories: ["CIELO RASO PVC"] },
+        "ILUMINACION": { page: "/colecciones/interior", icon: Zap, collection: "INTERIOR", subcategories: ["ILUMINACION"] },
+        "JARDINES ARTIFICIALES": { page: "/colecciones/jardines-artificiales", icon: Trees, collection: "INTERIOR", subcategories: ["JARDINES INTERIOR", "JARDINES MOSS"] },
+        "LAMINAS": { page: "/colecciones/laminas", icon: Grid3X3, collection: "INTERIOR", subcategories: ["FOAM BOARD", "LAMINAS MARMOL PVC", "LAMINAS PVC BOARD", "LAMINAS SINTETICAS"] },
+        "LISTONES": { page: "/colecciones/listones-wpc-exterior", icon: RectangleHorizontal, collection: "INTERIOR", subcategories: ["LISTONES PVC CIELO RASO", "LISTONES PVC INTERIOR ESTRUCTURAL"] },
+        "PANELES WPC Y ANGULOS": { page: "/colecciones/paneles-wpc", icon: Square, collection: "INTERIOR", subcategories: ["PANELES WPC INTERIOR", "PANELES WPC REDONDOS"] },
+        "PAREDES": { page: "/colecciones/paredes", icon: RectangleHorizontal, collection: "INTERIOR", subcategories: ["PANEL PS", "PANELES ACUSTICOS", "PANELES ACOLCHADOS", "PAREDES ACOLCHADAS", "PAREDES MUROFLEX", "PAREDES PU", "ROLLOS ADHESIVOS DE MARMOL", "PANELES ACRILICOS MARMOL", "PAREDES UNIFLEX"] },
+        "CINTAS": { page: "/colecciones/cintas", icon: Palette, collection: "INTERIOR", subcategories: ["CINTA ADHESIVA DE PAPEL", "CINTA ADHESIVA METALICA"] },
+        "PEGANTES": { page: "/colecciones/pegantes", icon: Droplets, collection: "INTERIOR", subcategories: ["PEGANTES"] },
+        "PISOS": { page: "/colecciones/pisos", icon: Home, collection: "INTERIOR", subcategories: ["PISOS SPC"] },
+        "ZOCALOS": { page: "/colecciones/zocalos", icon: Maximize, collection: "INTERIOR", subcategories: ["ZOCALOS SPC"] }
     },
     Exterior: {
-        "CUBIERTAS UPVC": { page: "/collections/cubiertas-upvc", icon: Sun, collection: "EXTERIOR", subcategories: ["CUBIERTA ACANALADA UPVC BLANCA 11.80", "CUBIERTA ONDULADA ROMA", "CUBIERTA TERMOACUSTICA UPVC 2.0mm BLANCA ONDA BAJA", "CUBIERTA TERMOACUSTICA UPVC 2.5mm BLANCA ONDA ALTA", "CUBIERTA TRASLUCIDA ONDA ALTA OPAL", "LAMINA ALVEOLAR POLICARBONATO", "TEJA PVC TERRACOTA COLONIAL", "TEJA UPVC TIPO ZINC"] },
-        "JARDINES ARTIFICIALES": { page: "/collections/jardines-artificiales", icon: Trees, collection: "EXTERIOR", subcategories: ["JARDINES EXTERIOR"] },
-        "PAREDES": { page: "/collections/paredes", icon: Box, collection: "EXTERIOR", subcategories: ["FACHADA DECK", "FACHADA EXTERIOR PVC", "POLIFACHADA"] },
-        "LISTONES": { page: "/collections/listones-wpc-exterior", icon: Maximize, collection: "EXTERIOR", subcategories: ["LISTONES WPC EXTERIOR"] },
-        "PANELES WPC Y ANGULOS": { page: "/collections/paneles-wpc-exterior", icon: Square, collection: "EXTERIOR", subcategories: ["PANELES WPC EXTERIOR"] },
-        "PISOS": { page: "/collections/pisos-deck", icon: Waves, collection: "EXTERIOR", subcategories: ["PISOS DECK"] }
+        "CUBIERTAS UPVC": { page: "/colecciones/cubiertas-upvc", icon: Sun, collection: "EXTERIOR", subcategories: ["CUBIERTA ACANALADA UPVC BLANCA 11.80", "CUBIERTA ONDULADA ROMA", "CUBIERTA TERMOACUSTICA UPVC 2.0mm BLANCA ONDA BAJA", "CUBIERTA TERMOACUSTICA UPVC 2.5mm BLANCA ONDA ALTA", "CUBIERTA TRASLUCIDA ONDA ALTA OPAL", "LAMINA ALVEOLAR POLICARBONATO", "TEJA PVC TERRACOTA COLONIAL", "TEJA UPVC TIPO ZINC"] },
+        "JARDINES ARTIFICIALES": { page: "/colecciones/jardines-artificiales", icon: Trees, collection: "EXTERIOR", subcategories: ["JARDINES EXTERIOR"] },
+        "PAREDES": { page: "/colecciones/paredes", icon: Box, collection: "EXTERIOR", subcategories: ["FACHADA DECK", "FACHADA EXTERIOR PVC", "POLIFACHADA"] },
+        "LISTONES": { page: "/colecciones/listones-wpc-exterior", icon: Maximize, collection: "EXTERIOR", subcategories: ["LISTONES WPC EXTERIOR"] },
+        "PANELES WPC Y ANGULOS": { page: "/colecciones/paneles-wpc-exterior", icon: Square, collection: "EXTERIOR", subcategories: ["PANELES WPC EXTERIOR"] },
+        "PISOS": { page: "/colecciones/pisos-deck", icon: Waves, collection: "EXTERIOR", subcategories: ["PISOS DECK"] }
     }
 };
 
@@ -76,7 +76,7 @@ const MegaMenu = () => {
                     if (collection === 'Interior' || collection === 'Exterior') {
                         if (!grouped[collection][category]) {
                             grouped[collection][category] = {
-                                page: `/collections/${category.toLowerCase().replace(/ /g, '-')}`,
+                                page: `/colecciones/${category.toLowerCase().replace(/ /g, '-')}`,
                                 collection: collection.toUpperCase(),
                                 subcategories: []
                             };
@@ -111,7 +111,7 @@ const MegaMenu = () => {
 
                 <div className="flex divide-x divide-gray-100 h-full min-h-[320px]">
                     <div className="flex-1 p-5 bg-white hover:bg-gray-50/30 transition-colors">
-                        <Link href="/collections/interior?collection=interior" className="flex items-center gap-3 mb-5">
+                        <Link href="/colecciones/interior?collection=interior" className="flex items-center gap-3 mb-5">
                             <div className="w-10 h-10 bg-blue-50 rounded-xl flex items-center justify-center shadow-sm">
                                 <Home className="w-5 h-5 text-blue-600" />
                             </div>
@@ -183,7 +183,7 @@ const MegaMenu = () => {
                     </div>
 
                     <div className="flex-1 p-5 bg-gray-50/20 hover:bg-white transition-colors">
-                        <Link href="/collections/exterior?collection=exterior" className="flex items-center gap-3 mb-5">
+                        <Link href="/colecciones/exterior?collection=exterior" className="flex items-center gap-3 mb-5">
                             <div className="w-10 h-10 bg-emerald-50 rounded-xl flex items-center justify-center shadow-sm">
                                 <Building2 className="w-5 h-5 text-emerald-600" />
                             </div>

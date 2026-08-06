@@ -263,7 +263,7 @@ export default function CheckoutPage() {
                                 {t("checkout.print")}
                             </button>
                             <Link
-                                href="/collections"
+                                href="/colecciones"
                                 className="flex items-center justify-center gap-3 px-10 py-5 bg-green-800 text-white rounded-2xl font-bold text-lg hover:bg-green-900 transition-all hover:scale-105 shadow-xl"
                             >
                                 {t("checkout.continue")}
@@ -382,7 +382,7 @@ export default function CheckoutPage() {
             <section className="relative z-10 bg-gray-900/60 backdrop-blur-sm py-16 md:py-24 text-white">
                 <div className="mx-auto max-w-7xl px-4">
                     <Link 
-                        href="/cart"
+                        href="/carrito"
                         className="group inline-flex items-center gap-2 text-gray-400 hover:text-white mb-8 transition-colors font-bold uppercase tracking-widest text-xs"
                     >
                         <ArrowLeft size={16} className="group-hover:-translate-x-1 transition-transform" />

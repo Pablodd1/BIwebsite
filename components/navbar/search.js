@@ -12,7 +12,7 @@ export default function SearchForm({ full = false, query: q, className = "" }) {
 
     const handleKeyDown = (e) => {
         if (e.key === "Enter" && query.trim()) {
-            router.push(`/collections/search?q=${encodeURIComponent(query.trim())}`);
+            router.push(`/colecciones/search?q=${encodeURIComponent(query.trim())}`);
         }
     };
 

@@ -45,7 +45,7 @@ export default function WhoItsFor() {
                         </p>
                         <MyButton
                             label={t("whom.btn", activeBrand)}
-                            href="/about"
+                            href="/nosotros"
                             className={{
                                 btn: "bg-primary px-5 py-2 h-10 ",
                                 label: "text-white"

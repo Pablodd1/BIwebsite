@@ -112,7 +112,7 @@ export default function HeroSec() {
                         >
                             <MyButton
                                 label={heroCta}
-                                href="/collections"
+                                href="/colecciones"
                                 className={{
                                     btn: "bg-[#F37B24] px-6 py-2.5 h-12 hover:bg-[#E06A1A] transition-all duration-300 hover:scale-105 text-sm md:text-base shadow-lg",
                                     label: "font-bold uppercase text-white"

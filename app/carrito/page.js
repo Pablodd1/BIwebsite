@@ -163,7 +163,7 @@ export default function CartPage() {
                             {t("cart.emptyDescription")}
                         </p>
                         <Link 
-                            href="/collections"
+                            href="/colecciones"
                             className="inline-flex items-center gap-2 bg-white text-black px-8 py-4 rounded-xl font-semibold hover:bg-gray-200 transition-all hover:scale-105"
                         >
                             {t("cart.browseProducts")}
@@ -214,7 +214,7 @@ export default function CartPage() {
                     <div className="max-w-7xl mx-auto">
                         <div className="flex items-center justify-between mb-3">
                             <div className="flex items-center gap-4">
-                                <Link href="/collections" className="p-2 hover:bg-gray-100 rounded-lg">
+                                <Link href="/colecciones" className="p-2 hover:bg-gray-100 rounded-lg">
                                     <ArrowRight className="w-5 h-5 rotate-180" />
                                 </Link>
                                 <div>
@@ -297,7 +297,7 @@ export default function CartPage() {
                                         )
                                     })}
                                     
-                                    <Link href="/collections" className="flex items-center justify-center gap-2 p-5 border-2 border-dashed border-gray-200 rounded-2xl text-gray-400 hover:border-primary hover:text-primary transition-all group bg-white">
+                                    <Link href="/colecciones" className="flex items-center justify-center gap-2 p-5 border-2 border-dashed border-gray-200 rounded-2xl text-gray-400 hover:border-primary hover:text-primary transition-all group bg-white">
                                         <Plus size={20} className="group-hover:rotate-90 transition-transform" />
                                         <span className="font-bold text-sm">{t("cart.continueShopping")}</span>
                                     </Link>
@@ -364,7 +364,7 @@ export default function CartPage() {
                 <footer className="fixed bottom-0 left-0 right-0 bg-white/90 backdrop-blur-lg border-t border-gray-100 p-6 z-50 shadow-[0_-10px_40px_rgba(0,0,0,0.05)]">
                     <div className="max-w-4xl mx-auto">
                         <Link 
-                            href={isFull ? "/checkout" : "#"} 
+                            href={isFull ? "/pagar" : "#"} 
                             className={`group flex items-center justify-center gap-3 py-5 rounded-2xl font-bold text-lg transition-all ${isFull ? "bg-black text-white hover:bg-gray-900 hover:scale-[1.02] shadow-xl" : "bg-gray-100 text-gray-400 cursor-not-allowed"}`}
                         >
                             {isFull ? (

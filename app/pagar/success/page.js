@@ -30,7 +30,7 @@ export default function CheckoutSuccessPage() {
                             Print Receipt
                         </button>
                         <Link
-                            href="/collections"
+                            href="/colecciones"
                             className="flex items-center justify-center gap-3 px-10 py-5 bg-green-800 text-white rounded-2xl font-bold text-lg hover:bg-green-900 transition-all hover:scale-105 shadow-xl"
                         >
                             Continue Shopping

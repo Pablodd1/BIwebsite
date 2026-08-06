@@ -107,7 +107,7 @@ export default function ExperienceCartDrawer() {
                 <h2 className="text-lg font-bold">{t.cart}</h2>
                 <div className="flex items-center gap-2">
                   <Link 
-                    href="/logistics-lab"
+                    href="/laboratorio-logistico"
                     className="p-2 hover:bg-blue-600 hover:text-white rounded-full transition-all text-blue-500 border border-blue-500/20"
                     title="Enter 3D Logistics Lab"
                   >
@@ -216,7 +216,7 @@ export default function ExperienceCartDrawer() {
               <footer className="p-4 border-t">
                 {cart?.selectedContainer ? (
                   <Link 
-                    href={ready ? "/checkout" : "#"}
+                    href={ready ? "/pagar" : "#"}
                     onClick={(e) => !ready && e.preventDefault()}
                     className={`block w-full text-center py-3 rounded-lg font-semibold transition-all ${
                       ready 

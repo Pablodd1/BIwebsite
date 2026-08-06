@@ -38,7 +38,7 @@ export default function HomeCTA() {
                 >
                     <MyButton
                         label={t("cta.btn", activeBrand)}
-                        href="/collections"
+                        href="/colecciones"
                         className={{
                             btn: "bg-secondary px-5 py-2 h-10 hover:bg-primary transition-all duration-300",
                             label: " "

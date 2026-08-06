@@ -79,7 +79,7 @@ function ContainerSelectionContent() {
             addOne(containerId, { id: productId, name: "Product " + productId, price: 0 });
           }
         }
-        router.push('/cart');
+        router.push('/carrito');
       }
     }
     checkExistingAndAdd();
@@ -113,7 +113,7 @@ function ContainerSelectionContent() {
       }
     }
 
-    router.push('/cart');
+    router.push('/carrito');
   };
 
   return (

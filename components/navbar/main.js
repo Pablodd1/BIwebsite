@@ -20,7 +20,7 @@ const navItems = [
         label: 'Products List',
         id: 'productList',
         icon: <Library className=' text-inherit h-5' />,
-        href: '/collections',
+        href: '/colecciones',
         megaMenu: true
     },
     {
@@ -33,16 +33,16 @@ const navItems = [
     {
         label: 'Institutional',
         id: 'institutional',
-        href: '/about',
+        href: '/nosotros',
         submenu: [
-            { label: 'whoWeAre', href: '/about/who-we-are' },
-            { label: 'ourMission', href: '/about/mission' },
-            { label: 'ourVision', href: '/about/vision' },
-            { label: 'qualityCommitment', href: '/about/quality' },
-            { label: 'businessModels', href: '/about/business-models' },
+            { label: 'whoWeAre', href: '/nosotros/who-we-are' },
+            { label: 'ourMission', href: '/nosotros/mission' },
+            { label: 'ourVision', href: '/nosotros/vision' },
+            { label: 'qualityCommitment', href: '/nosotros/quality' },
+            { label: 'businessModels', href: '/nosotros/business-models' },
         ]
     },
-    { label: 'Contact', id: 'contact', href: '/contact' },
+    { label: 'Contact', id: 'contact', href: '/contacto' },
     { label: 'Blog', id: 'blog', href: '/blog' }
 ];
 

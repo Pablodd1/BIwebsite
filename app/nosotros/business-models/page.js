@@ -166,7 +166,7 @@ export default function BusinessModelsPage() {
                         {t('businessModels.cta.desc', activeBrand)}
                     </p>
                     <a 
-                        href="/contact" 
+                        href="/contacto" 
                         className="inline-flex items-center justify-center gap-2 rounded-xl bg-white px-8 py-4 text-sm font-semibold text-black transition hover:bg-gray-200"
                     >
                         {t('businessModels.cta.button', activeBrand)}
