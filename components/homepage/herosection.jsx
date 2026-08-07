@@ -92,7 +92,7 @@ export default function HeroSec() {
                             initial={{ opacity: 0, x: -50 }}
                             animate={{ opacity: 1, x: 0 }}
                             transition={{ duration: 0.8, delay: 0.2 }}
-                            className="text-2xl sm:text-3xl md:text-6xl md:leading-18 tracking-wide font-semibold w-full md:w-11/12 drop-shadow-lg"
+                            className="text-xl sm:text-2xl md:text-4xl md:leading-tight tracking-wide font-semibold w-full md:w-11/12 drop-shadow-lg"
                         >
                             {heroTitle}
                         </motion.h1>

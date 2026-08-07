@@ -15,7 +15,7 @@ import MegaMenu from './MegaMenu';
 import CatalogDropdown from './CatalogDropdown';
 
 const navItems = [
-    { label: 'Home', id: 'home', href: '/', icon: <Logo size={50} className={'min-w-10'} />, onlyIcon: true },
+    { label: 'Home', id: 'home', href: '/', icon: <Logo size={50} className={'min-w-10 brightness-0 invert'} />, onlyIcon: true },
     {
         label: 'Products List',
         id: 'productList',
