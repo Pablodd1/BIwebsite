@@ -1,443 +1,384 @@
-﻿"use client";
+"use client";
 
 import { motion } from "framer-motion"
 import {
     Boxes,
-    Truck,
     Ruler,
-    Layers,
+    Truck,
     ShieldCheck,
     Globe,
     Users,
     Target,
     ArrowRight,
     Droplets,
-    ToolCase,
     Flame,
     Leaf,
     Zap,
-    Home,
-    Grid,
-    Layout,
-    Volume2,
-    Palette,
+    Handshake,
+    Award,
+    ClipboardCheck,
+    BookOpen
 } from "lucide-react"
-import Stylish_H2 from "My_UI/stylish_h2"
+import MyButton from "My_UI/btn/main"
+import SeoHead from "components/SeoHead"
 import { useLanguage } from 'lib/LanguageContext';
 import { useBrand } from 'lib/BrandContext';
 
-import SeoHead from "components/SeoHead"
-
 export default function AboutPage() {
-    const { t, getCompanyText, language } = useLanguage();
+    const { language } = useLanguage();
     const { activeBrand } = useBrand();
     const isSpanish = language === 'es';
-    
-    const companyKey = activeBrand === 'unitec' ? 'unitec' : 'binw';
-    const aboutHeroTitle = getCompanyText(companyKey, 'aboutHero.title');
-    const aboutHeroSubtitle = getCompanyText(companyKey, 'aboutHero.subtitle');
-    const aboutHeroDescription = getCompanyText(companyKey, 'aboutHero.description');
+
+    const whatsappLink = activeBrand === 'unitec' ? "https://wa.me/573054233147" : "https://wa.me/13054233147";
 
     return (
         <>
             <SeoHead 
-                title={`About Us | Unitec USA Design`} 
+                title={isSpanish ? "Sobre Nosotros | Unitec USA Design" : "About Us | Unitec USA Design"} 
                 description={isSpanish 
-                    ? "Conoce más sobre nuestra visión, misión y el equipo experto de Unitec USA Design." 
-                    : "Learn more about our vision, mission, and the expert team at Unitec USA Design."}
-                canonical="https://unitecusadesign.com/about"
+                    ? "Conozca más sobre la operación de Unitec USA Design en Latinoamérica y nuestras alternativas constructivas." 
+                    : "Learn more about Unitec USA Design operations in Latam and our architectural alternatives."}
+                canonical="https://unitecusadesign.com/nosotros"
             />
-            <script
-                type="application/ld+json"
-                dangerouslySetInnerHTML={{
-                    __html: JSON.stringify({
-                        "@context": "https://schema.org",
-                        "@type": "HowTo",
-                        "name": "How to Import with Unitec's Container Configurator",
-                        "description": "Our specialized 3-step logistical workflow for bulk architectural material export.",
-                        "step": [
-                            {
-                                "@type": "HowToStep",
-                                "name": isSpanish ? "Crear Contenedor" : "Create Container",
-                                "text": isSpanish ? "Seleccione el tamaño del contenedor para definir su capacidad de envío." : "Select container size to define your shipping capacity."
-                            },
-                            {
-                                "@type": "HowToStep",
-                                "name": isSpanish ? "Agregar Productos" : "Add Products",
-                                "text": isSpanish ? "Agregue materiales y vea el peso volumétrico en tiempo real." : "Add materials and see real-time volumetric weight."
-                            },
-                            {
-                                "@type": "HowToStep",
-                                "name": isSpanish ? "Optimizar y Enviar" : "Optimize and Ship",
-                                "text": isSpanish ? "Alcance la capacidad máxima para eficiencia de costos y solicite su cotización." : "Reach maximum capacity for cost efficiency and request your quote."
-                            }
-                        ]
-                    })
-                }}
-            />
-            <main className="w-full">
-            {/* ================= HERO ================= */}
-            <section className="relative py-24 text-white overflow-hidden min-h-[50vh] flex items-center">
-                {/* Video Background */}
-                <video
-                    autoPlay
-                    loop
-                    muted
-                    playsInline
-                    className="absolute inset-0 w-full h-full object-cover z-0"
-                    poster="/raster/containers.webp"
-                >
-                    <source src="/videos/institutional-hero.mp4" type="video/mp4" />
-                </video>
-                {/* Dark overlay */}
-                <div className="absolute inset-0 bg-black/65 z-10" />
-
-                <div className="mx-auto max-w-6xl px-4 relative z-20">
-                    <motion.h1
-                        initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        className="max-w-4xl text-3xl font-bold leading-tight md:text-4xl"
+            
+            <main className="w-full bg-white overflow-hidden">
+                
+                {/* ================= SECTION 1: HERO ================= */}
+                <section className="relative py-28 text-white min-h-[60vh] flex items-center justify-center">
+                    <video
+                        autoPlay
+                        loop
+                        muted
+                        playsInline
+                        className="absolute inset-0 w-full h-full object-cover z-0"
+                        poster="/raster/containers.webp"
                     >
-                        {aboutHeroTitle}
-                        <span className="text-gray-300"> {aboutHeroSubtitle}</span>
-                    </motion.h1>
+                        <source src="/videos/institutional-hero.mp4" type="video/mp4" />
+                    </video>
+                    
+                    <div className="absolute inset-0 bg-black/65 z-10" />
 
-                    <p className="mt-5 max-w-3xl text-sm text-gray-300">
-                        {aboutHeroDescription}
-                    </p>
-                </div>
-            </section>
+                    <div className="mx-auto max-w-4xl px-6 relative z-20 text-center flex flex-col items-center gap-6">
+                        <motion.h1
+                            initial={{ opacity: 0, y: 25 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.8 }}
+                            className="text-3xl md:text-5xl font-black leading-tight uppercase tracking-wide drop-shadow-md"
+                        >
+                            Una marca que hace evolucionar al sector de la construcción en LATAM
+                        </motion.h1>
+
+                        <motion.div
+                            initial={{ opacity: 0, scale: 0.95 }}
+                            animate={{ opacity: 1, scale: 1 }}
+                            transition={{ duration: 0.6, delay: 0.3 }}
+                            className="mt-4"
+                        >
+                            <MyButton
+                                label="Creatividad, diseño y transformación real"
+                                href="#existimos"
+                                className={{
+                                    btn: "bg-[#F37B24] hover:bg-[#E06A1A] px-8 py-3 h-12 hover:scale-105 transition-all duration-300 text-sm shadow-lg border-none rounded-full text-white",
+                                    label: "font-bold text-white uppercase text-[12px] tracking-widest"
+                                }}
+                            />
+                        </motion.div>
+                    </div>
+                </section>
 
 
-
-            {/* ================= STORY ================= */}
-            <section className="py-20">
-                <div className="mx-auto max-w-6xl px-4 grid gap-12 lg:grid-cols-2">
-                    <div>
-                        <Stylish_H2 h2={t('about.story.title')} />
-
-                        <p className="mt-4 text-sm text-gray-600 leading-relaxed">
-                            {t('about.story.p1')}
-                        </p>
-
-                        <p className="mt-4 text-sm text-gray-600 leading-relaxed">
-                            {t('about.story.p2')}
-                        </p>
+                {/* ================= SECTION 2: POR QUÉ EXISTIMOS ================= */}
+                <section id="existimos" className="py-24 max-w-6xl mx-auto px-6 md:px-8">
+                    {/* Centered Separator Header */}
+                    <div className="flex items-center justify-center gap-4 mb-16">
+                        <div className="flex-1 h-[1px] bg-gray-250" />
+                        <h2 className="text-2xl md:text-3xl font-black text-slate-900 tracking-wider uppercase text-center shrink-0">
+                            POR QUÉ EXISTIMOS
+                        </h2>
+                        <div className="flex-1 h-[1px] bg-gray-250" />
                     </div>
 
-                    <div className="grid grid-cols-2 gap-4">
-                        <Stat icon={Boxes} label={t('about.story.stats.bulk')} />
-                        <Stat icon={Ruler} label={t('about.story.stats.dimension')} />
-                        <Stat icon={Truck} label={t('about.story.stats.logistics')} />
-                        <Stat icon={ShieldCheck} label={t('about.story.stats.safe')} />
-                    </div>
-                </div>
-            </section>
-
-
-            {/* ================= MISSION & VISION ================= */}
-            <section className="bg-gray-50 py-20">
-                <div className="mx-auto max-w-6xl px-4 grid gap-12 lg:grid-cols-2">
-
-                    {/* MISSION */}
-                    <motion.div
-                        initial={{ opacity: 0, y: 16 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true }}
-                    >
-                        <Stylish_H2 h2={t('about.mission.title')} />
-
-                        <p className="mt-4 text-sm text-gray-600 leading-relaxed">
-                            {t('about.mission.p1')}
-                        </p>
-
-                        <p className="mt-4 text-sm text-gray-600 leading-relaxed">
-                            {t('about.mission.p2')}
-                        </p>
-
-                        <ul className="mt-6 space-y-3 text-sm text-gray-700">
-                            {t('about.mission.items') && Array.isArray(t('about.mission.items')) ? t('about.mission.items').map((item, idx) => (
-                                <ListItem key={idx} text={item} />
-                            )) : null}
-                        </ul>
-                    </motion.div>
-
-                    {/* VISION */}
-                    <motion.div
-                        initial={{ opacity: 0, y: 16 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true }}
-                        className="rounded-2xl border bg-white p-6 shadow-sm"
-                    >
-                        <h3 className="text-lg font-semibold">{t('about.vision.title')}</h3>
-
-                        <p className="mt-4 text-sm text-gray-600 leading-relaxed">
-                            {t('about.vision.p1')}
-                        </p>
-
-                        <p className="mt-4 text-sm text-gray-600 leading-relaxed">
-                            {t('about.vision.p2')}
-                        </p>
-
-                        <div className="mt-6 grid gap-4 sm:grid-cols-2">
-                            <Stat icon={Globe} label={t('about.vision.stats.reach')} />
-                            <Stat icon={ShieldCheck} label={t('about.vision.stats.sustainable')} />
-                            <Stat icon={Target} label={t('about.vision.stats.design')} />
-                            <Stat icon={Users} label={t('about.vision.stats.professionals')} />
+                    <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+                        {/* Left Side (H3 Paragraphs) */}
+                        <div className="lg:col-span-5 flex flex-col gap-6 text-gray-700">
+                            <p className="text-base leading-relaxed text-slate-900 font-semibold">
+                                Unitec USA Design es la empresa responsable de la operación internacional de Building Innovation en Latinoamérica. Una compañía de materiales arquitectónicos en PVC y WPC con sede principal en Doral (Miami) y showroom en Medellín, que abastece, asesora y acompaña a distribuidores, constructores y arquitectos en la implementación de nuevas técnicas constructivas, eficientes y sofisticadas.
+                            </p>
+                            <p className="text-[14px] leading-relaxed text-gray-500 font-normal">
+                                Con más de 20 años de trayectoria en el mercado y presencia en más de 5 países del continente, Unitec se ha consolidado como una organización promotora de nuevas alternativas constructivas en el mercado, ofreciendo un portafolio integrado por más 500 productos con acabados y estilos diferentes, fáciles de instalar y de implementar en cualquier proyecto.
+                            </p>
                         </div>
-                    </motion.div>
 
-                </div>
-            </section>
-
-
-            {/* ================= HOW IT WORKS ================= */}
-            <section className="bg-gray-50 py-20">
-                <div className="mx-auto max-w-6xl px-4">
-                    <Stylish_H2 h2={t('about.howItWorks.title')} />
-
-                    <p className="mx-auto mt-3 max-w-2xl text-center text-sm text-gray-600">
-                        {t('about.howItWorks.subtitle')}
-                    </p>
-
-                    <div className="mt-12 grid gap-6 md:grid-cols-3">
-                        <Step
-                            icon={Layers}
-                            title={t('about.howItWorks.steps.create.title')}
-                            text={t('about.howItWorks.steps.create.desc')}
-                        />
-                        <Step
-                            icon={Boxes}
-                            title={t('about.howItWorks.steps.fill.title')}
-                            text={t('about.howItWorks.steps.fill.desc')}
-                        />
-                        <Step
-                            icon={Truck}
-                            title={t('about.howItWorks.steps.ship.title')}
-                            text={t('about.howItWorks.steps.ship.desc')}
-                        />
-                    </div>
-                </div>
-            </section>
-
-            {/* ================= WHY CHOOSE UNITEC ================= */}
-            <section className="py-20">
-                <div className="mx-auto max-w-6xl px-4">
-                    <Stylish_H2 h2={t('about.whyChoose.title')} />
-
-                    <p className="mt-4 max-w-2xl text-sm text-gray-600">
-                        {t('about.whyChoose.description')}
-                    </p>
-
-                    <div className="mt-10 grid gap-6 md:grid-cols-3">
-                        <Feature icon={ShieldCheck} title={t('about.whyChoose.features.warranty.title')} text={t('about.whyChoose.features.warranty.desc')} />
-                        <Feature icon={Droplets} title={t('about.whyChoose.features.waterproof.title')} text={t('about.whyChoose.features.waterproof.desc')} />
-                        <Feature icon={ToolCase} title={t('about.whyChoose.features.maintenance.title')} text={t('about.whyChoose.features.maintenance.desc')} />
-                        <Feature icon={Flame} title={t('about.whyChoose.features.fire.title')} text={t('about.whyChoose.features.fire.desc')} />
-                        <Feature icon={Leaf} title={t('about.whyChoose.features.eco.title')} text={t('about.whyChoose.features.eco.desc')} />
-                        <Feature icon={Zap} title={t('about.whyChoose.features.install.title')} text={t('about.whyChoose.features.install.desc')} />
-                    </div>
-                </div>
-            </section>
-
-            {/* ================= PRODUCT RANGE ================= */}
-            <section className="bg-gray-50 py-20">
-                <div className="mx-auto max-w-6xl px-4">
-                    <Stylish_H2 h2={t('about.productRange.title')} />
-
-                    <p className="mt-4 max-w-2xl text-sm text-gray-600">
-                        {t('about.productRange.description')}
-                    </p>
-
-                    <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-                        <Stat icon={Layers} label={t('about.productRange.categories.walls')} />
-                        <Stat icon={Home} label={t('about.productRange.categories.ceilings')} />
-                        <Stat icon={Grid} label={t('about.productRange.categories.flooring')} />
-                        <Stat icon={Layout} label={t('about.productRange.categories.facades')} />
-                        <Stat icon={Volume2} label={t('about.productRange.categories.acoustic')} />
-                        <Stat icon={Palette} label={t('about.productRange.categories.decorative')} />
-                    </div>
-                </div>
-            </section>
-
-            {/* ================= TRUST ================= */}
-            <section className="py-20">
-                <div className="mx-auto max-w-6xl px-4 grid gap-12 lg:grid-cols-2">
-                    <div>
-                        <Stylish_H2 h2={t('about.trust.title')} />
-
-                        <p className="mt-4 text-sm text-gray-600 leading-relaxed">
-                            {t('about.trust.description')}
-                        </p>
-
-                        <ul className="mt-6 space-y-3 text-sm text-gray-700">
-                            {t('about.trust.partners') && Array.isArray(t('about.trust.partners')) ? t('about.trust.partners').map((item, idx) => (
-                                <ListItem key={idx} text={item} />
-                            )) : null}
-                        </ul>
-                    </div>
-
-                    <div className="rounded-2xl border bg-white p-6 shadow-sm">
-                        <h3 className="text-lg font-semibold">
-                            {t('about.trust.different.title')}
-                        </h3>
-
-                        <div className="mt-4 space-y-4">
-                            <Difference
-                                icon={Target}
-                                title={t('about.trust.different.items.container.title')}
-                                text={t('about.trust.different.items.container.desc')}
-                            />
-                            <Difference
-                                icon={Globe}
-                                title={t('about.trust.different.items.global.title')}
-                                text={t('about.trust.different.items.global.desc')}
-                            />
-                            <Difference
-                                icon={Users}
-                                title={t('about.trust.different.items.b2b.title')}
-                                text={t('about.trust.different.items.b2b.desc')}
-                            />
+                        {/* Right Side (LO QUE NOS IDENTIFICA Cards) */}
+                        <div className="lg:col-span-7 flex flex-col gap-5">
+                            <div className="text-center lg:text-left mb-2">
+                                <h3 className="text-lg font-extrabold text-slate-800 uppercase tracking-widest pb-2 border-b border-gray-150 inline-block">
+                                    LO QUE NOS IDENTIFICA
+                                </h3>
+                            </div>
+                            
+                            {[
+                                { icon: BookOpen, title: "Conocimiento sectorial." },
+                                { icon: Globe, title: "Logística internacional" },
+                                { icon: Handshake, title: "Experiencia, asesoría y acompañamiento especializado." },
+                                { icon: Award, title: "Calidad comprobada y verificada." }
+                            ].map((item, idx) => (
+                                <motion.div
+                                    key={idx}
+                                    whileHover={{ scale: 1.01, x: 5, borderColor: "#132c3f" }}
+                                    className="flex gap-4 items-center rounded-2xl border border-gray-200 p-5 bg-white shadow-sm hover:shadow-md transition-all duration-300 cursor-default"
+                                >
+                                    <div className="text-slate-900 bg-slate-100 p-2.5 rounded-lg flex-shrink-0">
+                                        <item.icon className="w-5 h-5" />
+                                    </div>
+                                    <h4 className="font-extrabold text-[15px] text-slate-900 leading-snug">
+                                        {item.title}
+                                    </h4>
+                                </motion.div>
+                            ))}
                         </div>
                     </div>
-                </div>
-            </section>
+                </section>
 
-            {/* ================= SUSTAINABILITY & QUALITY ================= */}
-            <section className="py-20">
-                <div className="mx-auto max-w-6xl px-4 grid gap-12 lg:grid-cols-2">
 
-                    <div>
-                        <Stylish_H2 h2={t('about.sustainability.title')} />
-                        <ul className="mt-6 space-y-3 text-sm text-gray-700">
-                            {t('about.sustainability.items') && Array.isArray(t('about.sustainability.items')) ? t('about.sustainability.items').map((item, idx) => (
-                                <ListItem key={idx} text={item} />
-                            )) : null}
-                        </ul>
+                {/* ================= SECTION 3: PROPÓSITO ================= */}
+                <section className="py-24 bg-gray-50/50 border-y border-gray-100">
+                    <div className="max-w-6xl mx-auto px-6 md:px-8">
+                        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+                            
+                            {/* Left Side: Propósito Header & Intro */}
+                            <div className="lg:col-span-5 flex flex-col gap-5">
+                                <h2 className="text-2xl md:text-3xl font-black text-slate-900 tracking-wider uppercase">
+                                    PROPÓSITO
+                                </h2>
+                                <div className="w-12 h-1 bg-[#F37B24] rounded-full mb-2" />
+                                <p className="text-md leading-relaxed text-slate-900 font-extrabold">
+                                    Hacer que construir sea más eficiente, estético y versátil, reemplazando los sistemas tradicionales por materiales sostenibles y de calidad verificada en PVC y WPC.
+                                </p>
+                            </div>
+
+                            {/* Right Side: Cómo lo cumplimos big box */}
+                            <div className="lg:col-span-7 rounded-[2rem] border border-gray-200 bg-white p-8 md:p-10 shadow-sm">
+                                <h3 className="text-lg font-black text-slate-900 uppercase tracking-widest mb-4">
+                                    CÓMO LO CUMPLIMOS
+                                </h3>
+                                <p className="text-[15px] text-gray-600 leading-relaxed font-normal">
+                                    Facilitamos que distribuidores, constructores y arquitectos de Latinoamérica accedan a materiales arquitectónicos con calidad verificada en origen, precios de importación directa y una logística de contenedor que pueden planear y controlar.
+                                </p>
+                            </div>
+
+                        </div>
+
+                        {/* Workflow Compact Badges underneath */}
+                        <div className="mt-14 pt-10 border-t border-gray-150">
+                            <div className="text-center mb-8">
+                                <span className="text-[11px] font-extrabold text-[#132c3f] uppercase tracking-[0.25em]">
+                                    COMPROMISOS UNITEC
+                                </span>
+                            </div>
+                            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                                {[
+                                    "Calidad auditada en fábrica antes de cada despacho.",
+                                    "Asesoría técnica en la especificación y la instalación.",
+                                    "Ficha técnica y garantía documentada en cada referencia.",
+                                    "Tiempos y costos de importación claros desde la cotización."
+                                ].map((item, idx) => (
+                                    <div 
+                                        key={idx} 
+                                        className="bg-[#132c3f] text-white p-5 rounded-2xl text-center text-[13px] font-bold shadow-sm hover:scale-102 transition-transform cursor-default duration-300 flex items-center justify-center leading-relaxed"
+                                    >
+                                        {item}
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+
+                {/* ================= SECTION 4: POR QUÉ ELEGIRNOS ================= */}
+                <section className="py-24 max-w-6xl mx-auto px-6 md:px-8">
+                    {/* Centered Separator Header */}
+                    <div className="flex items-center justify-center gap-4 mb-10">
+                        <div className="flex-1 h-[1px] bg-gray-250" />
+                        <h2 className="text-2xl md:text-3xl font-black text-slate-900 tracking-wider uppercase text-center shrink-0">
+                            POR QUÉ ELEGIRNOS
+                        </h2>
+                        <div className="flex-1 h-[1px] bg-gray-250" />
                     </div>
 
-                    <div className="rounded-2xl border bg-white p-6 shadow-sm">
-                        <h3 className="text-lg font-semibold">{t('about.sustainability.quality.title')}</h3>
-
-                        <ul className="mt-4 space-y-3 text-sm text-gray-700">
-                            {t('about.sustainability.quality.items') && Array.isArray(t('about.sustainability.quality.items')) ? t('about.sustainability.quality.items').map((item, idx) => (
-                                <ListItem key={idx} text={item} />
-                            )) : null}
-                        </ul>
-                    </div>
-
-                </div>
-            </section>
-
-            {/* ================= INNOVATION & CUSTOMER SUCCESS ================= */}
-            <section className="bg-gray-50 py-20">
-                <div className="mx-auto max-w-6xl px-4 grid gap-12 lg:grid-cols-2">
-
-                    <div>
-                        <Stylish_H2 h2={t('about.innovation.title')} />
-                        <p className="mt-4 text-sm text-gray-600">
-                            {t('about.innovation.description')}
+                    <div className="text-center max-w-4xl mx-auto mb-16">
+                        <p className="text-base text-gray-600 leading-relaxed font-semibold">
+                            Somos más que una empresa de materiales constructivos. <span className="text-slate-900 font-extrabold">Somos rentabilidad, eficiencia, innovación y creatividad hecha producto.</span> Una marca que trabaja de la mano del sector constructivo para evolucionar las dinámicas tradicionales y proponer modelos prácticos, estéticos y de cero mantenimiento.
                         </p>
-
-                        <ul className="mt-6 space-y-3 text-sm text-gray-700">
-                            {t('about.innovation.items') && Array.isArray(t('about.innovation.items')) ? t('about.innovation.items').map((item, idx) => (
-                                <ListItem key={idx} text={item} />
-                            )) : null}
-                        </ul>
                     </div>
 
-                </div>
-            </section>
+                    {/* Features grid */}
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                        {[
+                            { icon: ShieldCheck, title: "Garantía de 15 a 25 Años", desc: "Durabilidad líder en la industria respaldada por confianza." },
+                            { icon: Droplets, title: "100% Impermeables", desc: "Sin humedad, pudrición ni corrosión — nunca." },
+                            { icon: ToolCase, title: "Cero Mantenimiento", desc: "Sin pintura, sellado ni barnizado." },
+                            { icon: Flame, title: "Resistente al Fuego", desc: "Autoextinguible con baja propagación de llama." },
+                            { icon: Leaf, title: "Ecológicos y Sostenibles", desc: "Materiales recuperados 100% reciclables." },
+                            { icon: Zap, title: "Instalación Rápida", desc: "Ahorre tiempo y mano de obra en cada proyecto." }
+                        ].map((feat, idx) => (
+                            <motion.div
+                                key={idx}
+                                whileHover={{ y: -4, borderColor: "#132c3f" }}
+                                className="rounded-3xl border border-gray-200 p-6 bg-white shadow-sm hover:shadow-md transition-all duration-300 cursor-default"
+                            >
+                                <div className="text-slate-900 bg-slate-100 p-2.5 rounded-xl w-fit mb-4">
+                                    <feat.icon className="w-5 h-5" />
+                                </div>
+                                <h3 className="font-extrabold text-[15px] text-slate-900 mb-1.5">{feat.title}</h3>
+                                <p className="text-[13px] text-gray-500 leading-relaxed font-normal">{feat.desc}</p>
+                            </motion.div>
+                        ))}
+                    </div>
+                </section>
 
 
-            {/* ================= CTA ================= */}
-            <section className="bg-black py-20 text-white">
-                <div className="mx-auto max-w-6xl px-4 text-center">
-                    <h2 className="text-2xl font-semibold">
-                        {t('about.cta.title')}
-                    </h2>
+                {/* ================= SECTION 5: SOSTENIBILIDAD Y CALIDAD ================= */}
+                <section className="py-24 bg-gray-50/50 border-y border-gray-100">
+                    <div className="max-w-6xl mx-auto px-6 md:px-8">
+                        {/* Centered Separator Header */}
+                        <div className="flex items-center justify-center gap-4 mb-16">
+                            <div className="flex-1 h-[1px] bg-gray-250" />
+                            <h2 className="text-2xl md:text-3xl font-black text-slate-900 tracking-wider uppercase text-center shrink-0">
+                                SOSTENIBILIDAD Y CALIDAD EN LOS PRODUCTOS
+                            </h2>
+                            <div className="flex-1 h-[1px] bg-gray-250" />
+                        </div>
 
-                    <p className="mx-auto mt-3 max-w-xl text-sm text-gray-300">
-                        {t('about.cta.description')}
-                    </p>
+                        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+                            {/* Left Column (H3 Text) */}
+                            <div className="lg:col-span-5">
+                                <p className="text-[15px] text-gray-700 leading-relaxed font-semibold">
+                                    Fabricamos nuestros productos bajo estándares de calidad y certificación ISO 9001, pruebas de laboratorio independientes y auditorías físicas en planta que permiten garantizar la durabilidad de cada artículo constructivo.
+                                </p>
+                            </div>
 
-                    <a
-                        href="/contacto"
-                        className="mx-auto mt-6 inline-flex items-center gap-2 rounded-xl bg-white px-6 py-3 text-sm font-semibold text-black transition hover:bg-gray-200"
-                    >
-                        {t('about.cta.button')}
-                        <ArrowRight size={16} />
-                    </a>
-                </div>
-            </section>
-        </main>
+                            {/* Right Column (Recuadro Responsables con el Medio Ambiente) */}
+                            <div className="lg:col-span-7 rounded-[2rem] border border-gray-200 bg-white p-8 md:p-10 shadow-sm flex flex-col gap-4">
+                                <h3 className="text-md font-extrabold text-[#132c3f] uppercase tracking-widest border-b border-gray-100 pb-3">
+                                    RESPONSABLES CON EL MEDIO AMBIENTE
+                                </h3>
+                                <p className="text-[14px] text-gray-600 leading-relaxed font-normal">
+                                    Contenido de PVC reciclado en todos los productos, 100% reciclables al final de su vida útil y bajas emisiones de VOC, hacen que cada referencia pueda ser utilizada en proyectos de diseño interior, sin afectaciones a la salud y al medio ambiente, con una vida útil prolongada que reduce la frecuencia de reemplazo.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+
+                {/* ================= SECTION 6: SOMOS EL ALIADO DE QUIENES VIVEN DE CONSTRUIR ================= */}
+                <section className="py-24 max-w-6xl mx-auto px-6 md:px-8">
+                    {/* Header */}
+                    <div className="text-center max-w-4xl mx-auto mb-16">
+                        <h2 className="text-2xl md:text-3xl lg:text-4xl font-black text-slate-900 tracking-wide uppercase leading-tight">
+                            SOMOS EL ALIADO DE QUIENES VIVEN DE CONSTRUIR Y COMERCIALIZAR
+                        </h2>
+                        <div className="w-16 h-1 bg-[#F37B24] mx-auto mt-4 rounded-full" />
+                    </div>
+
+                    {/* Two Big Cards Split Grid */}
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                        
+                        {/* Card Left */}
+                        <div className="rounded-[2.5rem] border border-gray-200 p-8 md:p-10 bg-white shadow-sm flex flex-col gap-8">
+                            {/* Block 1 */}
+                            <div className="flex flex-col gap-2">
+                                <h3 className="font-extrabold text-lg text-slate-900 border-l-4 border-[#F37B24] pl-3">
+                                    Calidad verificada en origen:
+                                </h3>
+                                <p className="text-sm text-gray-600 leading-relaxed font-normal">
+                                    Auditamos cada producto en fábrica antes del despacho y respaldamos cada referencia con ficha técnica y garantía documentada.
+                                </p>
+                            </div>
+                            
+                            {/* Block 2 */}
+                            <div className="flex flex-col gap-2">
+                                <h3 className="font-extrabold text-lg text-slate-900 border-l-4 border-[#F37B24] pl-3">
+                                    Control total de la importación:
+                                </h3>
+                                <p className="text-sm text-gray-600 leading-relaxed font-normal">
+                                    Usted arma su contenedor, ve cuánto espacio ocupa cada referencia y confirma su carga completa antes de pagar. Metros cúbicos visibles, costos sin sorpresas.
+                                </p>
+                            </div>
+                        </div>
+
+                        {/* Card Right */}
+                        <div className="rounded-[2.5rem] border border-gray-200 p-8 md:p-10 bg-white shadow-sm flex flex-col gap-8">
+                            {/* Block 1 */}
+                            <div className="flex flex-col gap-2">
+                                <h3 className="font-extrabold text-lg text-slate-900 border-l-4 border-[#F37B24] pl-3">
+                                    Acompañamiento de aliado:
+                                </h3>
+                                <p className="text-sm text-gray-600 leading-relaxed font-normal">
+                                    Detrás de cada relacionamiento comercial tenemos un asesor con nombre propio que ayuda a especificar, cotizar y resolver. En el contenedor no viaja solo carga: viaja la confianza que el cliente ha puesto en usted.
+                                </p>
+                            </div>
+                            
+                            {/* Block 2 */}
+                            <div className="flex flex-col gap-2">
+                                <h3 className="font-extrabold text-lg text-slate-900 border-l-4 border-[#F37B24] pl-3">
+                                    Puente entre dos mercados:
+                                </h3>
+                                <p className="text-sm text-gray-600 leading-relaxed font-normal">
+                                    Sede en Doral (Miami) y showroom en Medellín: una sola cadena de suministro que conecta la fábrica con la obra en más de 5 países.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+
+                {/* ================= FINAL CTA ================= */}
+                <section className="bg-[#132c3f] text-white py-16 px-6 text-center">
+                    <div className="max-w-4xl mx-auto flex flex-col items-center gap-4">
+                        <h2 className="text-2xl md:text-3xl font-extrabold uppercase tracking-wide">
+                            ¿Hablamos de su próximo proyecto?
+                        </h2>
+                        <p className="text-sm text-white/80 leading-relaxed max-w-xl">
+                            Consiga asesoría técnica experta en PVC y WPC de inmediato con un canal directo a nuestros asesores.
+                        </p>
+                        <MyButton
+                            label="Hable con un asesor por WhatsApp"
+                            href={whatsappLink}
+                            className={{
+                                btn: "bg-white hover:bg-gray-150 px-8 py-3 h-12 rounded-full text-slate-900 border-none transition-all duration-300 hover:scale-105 shadow-lg mt-2",
+                                label: "font-black text-slate-900 uppercase text-[12px] tracking-widest"
+                            }}
+                        />
+                    </div>
+                </section>
+
+            </main>
         </>
     )
 }
 
-/* ================= COMPONENTS ================= */
-
-function Stat({ icon: Icon, label }) {
+function ToolCase({ className, size }) {
     return (
-        <div className="flex items-center gap-3 rounded-xl border p-4">
-            <Icon size={20} />
-            <span className="text-sm font-medium">{label}</span>
-        </div>
+        <svg 
+            xmlns="http://www.w3.org/2000/svg" 
+            width={size || 24} 
+            height={size || 24} 
+            viewBox="0 0 24 24" 
+            fill="none" 
+            stroke="currentColor" 
+            strokeWidth="2" 
+            strokeLinecap="round" 
+            strokeLinejoin="round" 
+            className={className}
+        >
+            <rect width="20" height="14" x="2" y="7" rx="2" />
+            <path d="M16 21V7a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v14" />
+        </svg>
     )
 }
-
-function Step({ icon: Icon, title, text }) {
-    return (
-        <div className="rounded-2xl border bg-white p-6 text-center">
-            <Icon className="mx-auto mb-3" size={24} />
-            <h3 className="text-sm font-semibold">{title}</h3>
-            <p className="mt-2 text-sm text-gray-600">{text}</p>
-        </div>
-    )
-}
-
-function Difference({ icon: Icon, title, text }) {
-    return (
-        <div className="flex gap-3">
-            <Icon size={18} />
-            <div>
-                <p className="text-sm font-semibold">{title}</p>
-                <p className="text-sm text-gray-600">{text}</p>
-            </div>
-        </div>
-    )
-}
-
-function ListItem({ text }) {
-    return (
-        <li className="flex items-center gap-2">
-            <span className="h-1.5 w-1.5 rounded-full bg-black" />
-            {text}
-        </li>
-    )
-}
-function Feature({ icon: Icon, title, text }) {
-    return (
-        <div className="rounded-2xl border bg-white p-6 shadow-sm">
-            <Icon size={22} className="mb-3" />
-            <h3 className="text-sm font-semibold">{title}</h3>
-            <p className="mt-2 text-sm text-gray-600 leading-relaxed">
-                {text}
-            </p>
-        </div>
-    )
-}
-function IconStat({ icon: Icon, label, subtext }) {
-    return (
-        <div className="flex items-start gap-3 rounded-xl border p-4">
-            <Icon size={20} />
-            <div>
-                <p className="text-sm font-medium">{label}</p>
-                {subtext && (
-                    <p className="text-xs text-gray-600">{subtext}</p>
-                )}
-            </div>
-        </div>
-    )
-}
-
