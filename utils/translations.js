@@ -1134,6 +1134,7 @@ const translations = {
                     "supports": "Supports",
                     "faqs": "FAQs",
                     "search": "Search Products",
+                    "portfolio": "Product Portfolio",
                     "terms": "Terms & Condition",
                     "privacy": "Privacy Policy"
                 }
@@ -2686,7 +2687,8 @@ const translations = {
                     "about": "Sobre Nosotros",
                     "supports": "Soporte",
                     "faqs": "Preguntas Frecuentes",
-                    "search": "Buscar Productos",
+                    "search": "Buscar productos",
+                    "portfolio": "Portafolio de productos",
                     "terms": "Términos y Condiciones",
                     "privacy": "Política de Privacidad"
                 }

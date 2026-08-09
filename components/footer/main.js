@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import Link from 'next/link';
 import { motion } from "framer-motion";
@@ -58,17 +58,11 @@ const Footer = () => {
             { title: t("footer.information.links.sales"), link: "/colecciones/sales" }
         ],
         helpfulLinks: [
-            { title: t("footer.helpful.links.whoWeAre"), link: "/nosotros/who-we-are" },
-            { title: t("footer.helpful.links.ourMission"), link: "/nosotros/mission" },
-            { title: t("footer.helpful.links.ourVision"), link: "/nosotros/vision" },
-            { title: t("footer.helpful.links.quality"), link: "/nosotros/quality" },
-            { title: t("footer.helpful.links.business"), link: "/nosotros/business-models" },
-            { title: t("footer.helpful.links.supports"), link: "/contacto" },
-            { title: t("footer.helpful.links.faqs"), link: "/preguntas-frecuentes" },
-            { title: t("nav.blog"), link: "/blog" },
             { title: t("footer.helpful.links.search"), link: "/colecciones/search" },
-            { title: t("footer.helpful.links.terms") || "Terms & Conditions", link: "/terminos" },
-            { title: t("footer.helpful.links.privacy") || "Privacy Policy", link: "/politicas" }
+            { title: t("footer.helpful.links.about"), link: "/nosotros" },
+            { title: t("footer.helpful.links.portfolio"), link: "/colecciones" },
+            { title: t("footer.helpful.links.privacy"), link: "/politicas" },
+            { title: t("footer.helpful.links.faqs"), link: "/preguntas-frecuentes" }
         ]
     };
 
