@@ -16,8 +16,14 @@ import {
     Zap,
     Handshake,
     Award,
+    BookOpen,
     ClipboardCheck,
-    BookOpen
+    Layers,
+    Home,
+    Grid,
+    Layout,
+    Volume2,
+    Palette
 } from "lucide-react"
 import MyButton from "My_UI/btn/main"
 import SeoHead from "components/SeoHead"
@@ -102,7 +108,7 @@ export default function AboutPage() {
                         {/* Left Side (H3 Paragraphs) */}
                         <div className="lg:col-span-5 flex flex-col gap-6 text-gray-700">
                             <p className="text-base leading-relaxed text-slate-900 font-semibold">
-                                Unitec USA Design es la empresa responsable de la operación internacional de Building Innovation en Latinoamérica. Una compañía de materiales arquitectónicos en PVC y WPC con sede principal en Doral (Miami) y showroom en Medellín, que abastece, asesora y acompaña a distribuidores, constructores y arquitectos en la implementación de nuevas técnicas constructivas, eficientes y sofisticadas.
+                                Unitec USA Design es la empresa responsable de la operation internacional de Building Innovation en Latinoamérica. Una compañía de materiales arquitectónicos en PVC y WPC con sede principal en Doral (Miami) y showroom en Medellín, que abastece, asesora y acompaña a distribuidores, constructores y arquitectos en la implementación de nuevas técnicas constructivas, eficientes y sofisticadas.
                             </p>
                             <p className="text-[14px] leading-relaxed text-gray-500 font-normal">
                                 Con más de 20 años de trayectoria en el mercado y presencia en más de 5 países del continente, Unitec se ha consolidado como una organización promotora de nuevas alternativas constructivas en el mercado, ofreciendo un portafolio integrado por más 500 productos con acabados y estilos diferentes, fáciles de instalar y de implementar en cualquier proyecto.
@@ -276,7 +282,7 @@ export default function AboutPage() {
 
 
                 {/* ================= SECTION 6: SOMOS EL ALIADO DE QUIENES VIVEN DE CONSTRUIR ================= */}
-                <section className="py-24 max-w-6xl mx-auto px-6 md:px-8">
+                <section className="py-24 max-w-6xl mx-auto px-6 md:px-8 border-b border-gray-100">
                     {/* Header */}
                     <div className="text-center max-w-4xl mx-auto mb-16">
                         <h2 className="text-2xl md:text-3xl lg:text-4xl font-black text-slate-900 tracking-wide uppercase leading-tight">
@@ -338,23 +344,141 @@ export default function AboutPage() {
                 </section>
 
 
-                {/* ================= FINAL CTA ================= */}
-                <section className="bg-[#132c3f] text-white py-16 px-6 text-center">
-                    <div className="max-w-4xl mx-auto flex flex-col items-center gap-4">
-                        <h2 className="text-2xl md:text-3xl font-extrabold uppercase tracking-wide">
-                            ¿Hablamos de su próximo proyecto?
+                {/* ================= SECTION 7: ASÍ SE IMPORTA CON UNITEC ================= */}
+                <section 
+                    className="relative py-24 text-white overflow-hidden"
+                    style={{
+                        backgroundImage: "linear-gradient(to bottom, rgba(19, 44, 63, 0.94), rgba(19, 44, 63, 0.94)), url('/raster/containers.webp')",
+                        backgroundSize: "cover",
+                        backgroundPosition: "center"
+                    }}
+                >
+                    <div className="max-w-6xl mx-auto px-6 md:px-8 relative z-10 text-center">
+                        {/* Title & Subtitle */}
+                        <h2 className="text-2xl md:text-4xl font-extrabold uppercase tracking-wide leading-tight max-w-4xl mx-auto">
+                            ASÍ SE IMPORTA CON UNITEC
                         </h2>
-                        <p className="text-sm text-white/80 leading-relaxed max-w-xl">
-                            Consiga asesoría técnica experta en PVC y WPC de inmediato con un canal directo a nuestros asesores.
+                        <p className="mt-4 text-base md:text-lg italic font-normal tracking-wide text-white/80 max-w-2xl mx-auto">
+                            Nuestra plataforma refleja cómo se planifica una importación real por contenedor, no por carrito.
                         </p>
+
+                        {/* 3 Columns Workflow Grid */}
+                        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12 text-left">
+                            {[
+                                {
+                                    id: "01",
+                                    title: "VERIFIQUE Y SELECCIONE SUS PRODUCTOS",
+                                    desc: "Elija una o varias referencias del catálogo. Podrá apoyar su decisión con la ficha técnica que está al lado de cada artículo."
+                                },
+                                {
+                                    id: "02",
+                                    title: "PÓNGALOS EN EL CARRITO Y EN EL CONTENEDOR",
+                                    desc: "Vea en tiempo real cuánto espacio ocupa cada producto y cuánta capacidad le queda. (Un contenedor de 20 pies carga ≈ 33 m³)."
+                                },
+                                {
+                                    id: "03",
+                                    title: "RECIBA LOS PRODUCTOS",
+                                    desc: "Recójalos en nuestro showroom de Medellín, si su contacto fue directo con un asesor o impórtelos vía marítima con trazabilidad, bajo el Incoterm que usted elija (FOB o CIF)."
+                                }
+                            ].map((step) => (
+                                <div 
+                                    key={step.id} 
+                                    className="relative bg-white/5 backdrop-blur-md border border-white/15 rounded-3xl p-8 shadow-lg flex flex-col justify-between"
+                                >
+                                    <div className="absolute top-6 right-8 text-5xl font-black text-white/10 italic select-none">
+                                        {step.id}
+                                    </div>
+                                    <div>
+                                        <h3 className="text-md font-extrabold tracking-wider leading-snug uppercase mb-4 w-4/5 text-white/95">
+                                            {step.title}
+                                        </h3>
+                                        <p className="text-[13px] text-white/80 leading-relaxed font-normal">
+                                            {step.desc}
+                                        </p>
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                </section>
+
+
+                {/* ================= SECTION 8: LO QUE COMERCIALIZAMOS ================= */}
+                <section className="py-24 max-w-6xl mx-auto px-6 md:px-8">
+                    {/* Centered Separator Header */}
+                    <div className="flex items-center justify-center gap-4 mb-10">
+                        <div className="flex-1 h-[1px] bg-gray-250" />
+                        <h2 className="text-2xl md:text-3xl font-black text-slate-900 tracking-wider uppercase text-center shrink-0">
+                            LO QUE COMERCIALIZAMOS
+                        </h2>
+                        <div className="flex-1 h-[1px] bg-gray-250" />
+                    </div>
+
+                    <div className="text-center max-w-4xl mx-auto mb-12">
+                        <p className="text-sm md:text-base text-gray-600 leading-relaxed font-semibold">
+                            Fabricamos nuestros productos bajo estándares de calidad y certificación ISO 9001, pruebas de laboratorio independientes e inspección física en planta que permiten garantizar la durabilidad de cada artículo constructivo.
+                        </p>
+                    </div>
+
+                    {/* 6 Grid Categories with Icons */}
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto mt-6">
+                        {[
+                            { icon: Layers, title: "Paneles de pared y revestimientos" },
+                            { icon: Home, title: "Techos y cubiertas" },
+                            { icon: Grid, title: "Pisos SPC y deck WPC" },
+                            { icon: Layout, title: "Fachadas" },
+                            { icon: Volume2, title: "Paneles acústicos" },
+                            { icon: Palette, title: "Acabados decorativos" }
+                        ].map((cat, idx) => (
+                            <div 
+                                key={idx} 
+                                className="bg-white border border-gray-200 rounded-2xl p-5 flex items-center gap-4 hover:shadow-md hover:border-[#132c3f] transition-all duration-300 cursor-default group"
+                            >
+                                <div className="text-slate-900 bg-slate-100 p-2.5 rounded-xl group-hover:bg-[#132c3f] group-hover:text-white transition-all duration-300 flex-shrink-0">
+                                    <cat.icon className="w-5 h-5" />
+                                </div>
+                                <h3 className="font-extrabold text-[14px] text-slate-800 leading-snug group-hover:text-[#132c3f] transition-colors duration-300">
+                                    {cat.title}
+                                </h3>
+                            </div>
+                        ))}
+                    </div>
+
+                    {/* Catalog Explorer Button */}
+                    <div className="text-center mt-12">
                         <MyButton
-                            label="Hable con un asesor por WhatsApp"
-                            href={whatsappLink}
+                            label="EXPLORAR EL CATÁLOGO COMPLETO"
+                            href="/colecciones"
                             className={{
-                                btn: "bg-white hover:bg-gray-150 px-8 py-3 h-12 rounded-full text-slate-900 border-none transition-all duration-300 hover:scale-105 shadow-lg mt-2",
-                                label: "font-black text-slate-900 uppercase text-[12px] tracking-widest"
+                                btn: "bg-[#132c3f] hover:bg-[#1c3e57] px-8 py-3.5 h-12 hover:scale-105 transition-all duration-300 rounded-full text-white shadow-md border-none",
+                                label: "font-black text-white uppercase text-[12px] tracking-widest"
                             }}
                         />
+                    </div>
+                </section>
+
+
+                {/* ================= SECTION 9: HABLAMOS DE SU PRÓXIMO PROYECTO ================= */}
+                <section className="bg-[#132c3f] text-white py-20 px-6 text-center">
+                    <div className="max-w-4xl mx-auto flex flex-col items-center gap-4">
+                        <h2 className="text-2xl md:text-3xl lg:text-4xl font-extrabold uppercase italic tracking-wide leading-tight">
+                            ¿HABLÁMOS DE SU PRÓXIMO PROYECTO?
+                        </h2>
+                        
+                        <p className="text-sm md:text-base text-white/85 leading-relaxed max-w-2xl mx-auto">
+                            Cotice, pida muestras o visite nuestro showroom en Medellín. Un asesor le responde en menos de 24 horas.
+                        </p>
+
+                        <div className="mt-6">
+                            <MyButton
+                                label="HABLE YA CON UN ASESOR"
+                                href={whatsappLink}
+                                className={{
+                                    btn: "bg-white hover:bg-gray-100 px-8 py-3.5 h-12 rounded-full text-slate-900 border-none transition-all duration-300 hover:scale-105 shadow-lg",
+                                    label: "font-black text-slate-900 uppercase text-[12px] tracking-widest"
+                                }}
+                            />
+                        </div>
                     </div>
                 </section>
 
