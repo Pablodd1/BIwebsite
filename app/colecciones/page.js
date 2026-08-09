@@ -42,8 +42,8 @@ export default async function Collections({ searchParams }) {
     return (
         <Collections_UI
             searchParams={sp}
-            h1={"Nuestras Colecciones de Productos"}
-            description={"Explore la gama completa de materiales de construcción de PVC y WPC de Unitec USA Design. Desde acabados interiores hasta soluciones para exteriores, nuestras colecciones están diseñadas para brindar durabilidad, cero mantenimiento y flexibilidad de diseño moderno. Encuentre todo lo que necesita para proyectos residenciales, comerciales o a gran escala en un solo lugar."}
+            h1={"MATERIALES PARA TODOS LOS GUSTOS Y PARA TODOS LOS PROYECTOS."}
+            description={"Los productos que necesita, listos para entregar e instalar. Más de 500 referencias, entre alternativas constructivas para interiores y para exteriores, categorizadas en 14 colecciones."}
             cover={{
                 src: '/raster/interior.webp',
                 alt: 'collection banner'

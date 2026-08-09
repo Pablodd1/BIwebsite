@@ -2635,7 +2635,7 @@ const translations = {
             }
         },
         "cta": {
-            "title": "SU PRÓXIMO PROYECTO EMPIEZA AQUÍ",
+            "title": "SU PROYECTO EMPIEZA AQUÍ",
             "text": "Explore aquí más de 500 referencias y escoja los productos con los que quiere darle un ambiente diferente a cada proyecto.",
             "btn": "EXPLORE NUESTROS PRODUCTOS",
             "btnSecondary": "COTICE FÁCIL POR WHATSAPP",

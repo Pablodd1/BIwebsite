@@ -53,7 +53,7 @@ export default function HomeCTA() {
 
                     {/* Title */}
                     <div className="text-left font-black tracking-wider leading-none flex flex-col justify-center">
-                        <span className="block text-2xl md:text-3xl lg:text-4xl uppercase italic">SU PRÓXIMO PROYECTO</span>
+                        <span className="block text-2xl md:text-3xl lg:text-4xl uppercase italic">SU PROYECTO</span>
                         <span className="block text-2xl md:text-3xl lg:text-4xl uppercase italic mt-1.5 text-white/95">EMPIEZA AQUÍ</span>
                     </div>
                 </motion.div>
