@@ -80,14 +80,9 @@ export default function AboutPage() {
                             transition={{ duration: 0.6, delay: 0.3 }}
                             className="mt-4"
                         >
-                            <MyButton
-                                label="Creatividad, diseño y transformación real"
-                                href="#existimos"
-                                className={{
-                                    btn: "bg-[#F37B24] hover:bg-[#E06A1A] px-8 py-3 h-12 hover:scale-105 transition-all duration-300 text-sm shadow-lg border-none rounded-full text-white",
-                                    label: "font-bold text-white uppercase text-[12px] tracking-widest"
-                                }}
-                            />
+                            <span className="text-white/90 text-xs sm:text-sm font-bold uppercase tracking-widest bg-white/10 backdrop-blur-md px-6 py-3 rounded-full border border-white/20 inline-block select-none">
+                                Creatividad, diseño y transformación real
+                            </span>
                         </motion.div>
                     </div>
                 </section>
@@ -97,20 +92,20 @@ export default function AboutPage() {
                 <section id="existimos" className="py-24 max-w-6xl mx-auto px-6 md:px-8">
                     {/* Centered Separator Header */}
                     <div className="flex items-center justify-center gap-4 mb-16">
-                        <div className="flex-1 h-[1px] bg-gray-250" />
+                        <div className="flex-1 h-[1px] bg-gray-300" />
                         <h2 className="text-2xl md:text-3xl font-black text-slate-900 tracking-wider uppercase text-center shrink-0">
                             POR QUÉ EXISTIMOS
                         </h2>
-                        <div className="flex-1 h-[1px] bg-gray-250" />
+                        <div className="flex-1 h-[1px] bg-gray-300" />
                     </div>
 
-                    <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
-                        {/* Left Side (H3 Paragraphs) */}
-                        <div className="lg:col-span-5 flex flex-col gap-6 text-gray-700">
+                    <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-stretch">
+                        {/* Left Side (H3 Paragraphs with proportional vertical distribution) */}
+                        <div className="lg:col-span-5 flex flex-col justify-between py-1 text-gray-700">
                             <p className="text-base leading-relaxed text-slate-900 font-semibold">
-                                Unitec USA Design es la empresa responsable de la operation internacional de Building Innovation en Latinoamérica. Una compañía de materiales arquitectónicos en PVC y WPC con sede principal en Doral (Miami) y showroom en Medellín, que abastece, asesora y acompaña a distribuidores, constructores y arquitectos en la implementación de nuevas técnicas constructivas, eficientes y sofisticadas.
+                                Unitec USA Design es la empresa responsable de la operación internacional de Building Innovation en Latinoamérica. Una compañía de materiales arquitectónicos en PVC y WPC con sede principal en Doral (Miami) y showroom en Medellín, que abastece, asesora y acompaña a distribuidores, constructores y arquitectos en la implementación de nuevas técnicas constructivas, eficientes y sofisticadas.
                             </p>
-                            <p className="text-[14px] leading-relaxed text-gray-500 font-normal">
+                            <p className="text-[14px] leading-relaxed text-gray-500 font-normal mt-10 md:mt-16">
                                 Con más de 20 años de trayectoria en el mercado y presencia en más de 5 países del continente, Unitec se ha consolidado como una organización promotora de nuevas alternativas constructivas en el mercado, ofreciendo un portafolio integrado por más 500 productos con acabados y estilos diferentes, fáciles de instalar y de implementar en cualquier proyecto.
                             </p>
                         </div>
@@ -118,7 +113,7 @@ export default function AboutPage() {
                         {/* Right Side (LO QUE NOS IDENTIFICA Cards) */}
                         <div className="lg:col-span-7 flex flex-col gap-5">
                             <div className="text-center lg:text-left mb-2">
-                                <h3 className="text-lg font-extrabold text-slate-800 uppercase tracking-widest pb-2 border-b border-gray-150 inline-block">
+                                <h3 className="text-lg font-extrabold text-slate-800 uppercase tracking-widest pb-2 border-b border-gray-200 inline-block">
                                     LO QUE NOS IDENTIFICA
                                 </h3>
                             </div>
@@ -176,11 +171,13 @@ export default function AboutPage() {
                         </div>
 
                         {/* Workflow Compact Badges underneath */}
-                        <div className="mt-14 pt-10 border-t border-gray-150">
-                            <div className="text-center mb-8">
-                                <span className="text-[11px] font-extrabold text-[#132c3f] uppercase tracking-[0.25em]">
+                        <div className="mt-16 pt-10 border-t border-gray-200">
+                            <div className="flex items-center justify-center gap-4 mb-10">
+                                <div className="flex-1 h-[1px] bg-gray-300" />
+                                <h2 className="text-2xl md:text-3xl font-black text-slate-900 tracking-wider uppercase text-center shrink-0">
                                     COMPROMISOS UNITEC
-                                </span>
+                                </h2>
+                                <div className="flex-1 h-[1px] bg-gray-300" />
                             </div>
                             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
                                 {[
