@@ -150,6 +150,8 @@ export default function WhyWeSection() {
                         </motion.div>
                     ))}
                 </motion.div>
+                {/* Bottom horizontal line to complete section boundary */}
+                <div className="w-full h-px bg-gray-200 mt-14"></div>
             </div>
         </section>
     );

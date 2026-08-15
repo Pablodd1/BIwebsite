@@ -120,11 +120,11 @@ export default function HeroSec() {
                                 }}
                             />
                             <MyButton
-                                label={heroCta2}
+                                label="HABLE Y COTICE SUS PROYECTOS CON UN ASESOR"
                                 href={whatsappLink}
                                 className={{
                                     btn: "bg-white/10 backdrop-blur-md border border-white/20 px-6 py-2.5 h-12 hover:bg-white/20 transition-all duration-300 hover:scale-105 text-sm md:text-base shadow-lg",
-                                    label: "font-semibold text-white"
+                                    label: "font-bold uppercase text-white"
                                 }}
                             />
                         </motion.div>
