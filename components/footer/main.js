@@ -70,12 +70,7 @@ const Footer = () => {
 
     return (
         <footer
-            className="relative text-gray-300 pt-16 overflow-hidden border-t border-slate-800"
-            style={{
-                backgroundImage: "linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.65)), url('/raster/black_acrylic_marble.jpg')",
-                backgroundSize: "cover",
-                backgroundPosition: "center"
-            }}
+            className="relative text-gray-300 pt-16 overflow-hidden border-t border-slate-800 bg-[#132c3f]"
         >
             <div className="container mx-auto px-6 relative z-10">
                 <section className=' grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-y-16 lg:gap-y-2' >

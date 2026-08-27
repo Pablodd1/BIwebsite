@@ -8,7 +8,6 @@ const CAROUSEL_IMAGES = [
     "/raster/interior.webp",
     "/raster/exterior.webp",
     "/raster/top.jpg",
-    "/raster/black_acrylic_marble.jpg",
     "/raster/modern_hero_bg.png"
 ];
 
