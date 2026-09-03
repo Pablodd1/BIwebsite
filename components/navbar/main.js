@@ -30,18 +30,7 @@ const navItems = [
         href: '#',
         catalogDropdown: true
     },
-    {
-        label: 'Institutional',
-        id: 'institutional',
-        href: '/nosotros',
-        submenu: [
-            { label: 'whoWeAre', href: '/nosotros/who-we-are' },
-            { label: 'ourMission', href: '/nosotros/mission' },
-            { label: 'ourVision', href: '/nosotros/vision' },
-            { label: 'qualityCommitment', href: '/nosotros/quality' },
-            { label: 'businessModels', href: '/nosotros/business-models' },
-        ]
-    },
+    { label: 'Institutional', id: 'institutional', href: '/nosotros' },
     { label: 'Contact', id: 'contact', href: '/contacto' },
     { label: 'Blog', id: 'blog', href: '/blog' }
 ];
